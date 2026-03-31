@@ -65,7 +65,51 @@ export default function Navbar() {
               {translateOpen && (
                 <div className="absolute right-0 top-full mt-2 bg-ms-card border border-[var(--border)] rounded-xl p-3 shadow-2xl shadow-black/40 z-50 min-w-[200px]">
                   <p className="text-xs text-[var(--text-muted)] mb-2 font-medium">Translate this page</p>
-                  <div id="google_translate_element"></div>
+                  <select
+                    className="goog-te-combo-custom w-full bg-ms-navy text-[var(--text-primary)] border border-[var(--border)] rounded-lg px-3 py-2 text-sm cursor-pointer outline-none hover:border-ms-blue/60 transition-colors"
+                    onChange={(e) => {
+                      const combo = document.querySelector('.goog-te-combo')
+                      if (combo) {
+                        combo.value = e.target.value
+                        combo.dispatchEvent(new Event('change'))
+                      }
+                    }}
+                    defaultValue=""
+                  >
+                    <option value="">Select Language</option>
+                    <option value="hi">हिन्दी (Hindi)</option>
+                    <option value="bn">বাংলা (Bengali)</option>
+                    <option value="te">తెలుగు (Telugu)</option>
+                    <option value="ta">தமிழ் (Tamil)</option>
+                    <option value="mr">मराठी (Marathi)</option>
+                    <option value="gu">ગુજરાતી (Gujarati)</option>
+                    <option value="kn">ಕನ್ನಡ (Kannada)</option>
+                    <option value="ml">മലയാളം (Malayalam)</option>
+                    <option value="pa">ਪੰਜਾਬੀ (Punjabi)</option>
+                    <option value="ur">اردو (Urdu)</option>
+                    <option value="es">Español (Spanish)</option>
+                    <option value="fr">Français (French)</option>
+                    <option value="de">Deutsch (German)</option>
+                    <option value="ja">日本語 (Japanese)</option>
+                    <option value="zh-CN">中文 (Chinese)</option>
+                    <option value="ar">العربية (Arabic)</option>
+                    <option value="pt">Português (Portuguese)</option>
+                    <option value="ru">Русский (Russian)</option>
+                    <option value="ko">한국어 (Korean)</option>
+                  </select>
+                  <button
+                    className="w-full mt-2 text-xs text-ms-accent hover:underline text-left"
+                    onClick={() => {
+                      const combo = document.querySelector('.goog-te-combo')
+                      if (combo) {
+                        combo.value = ''
+                        combo.dispatchEvent(new Event('change'))
+                      }
+                      window.location.reload()
+                    }}
+                  >
+                    ↩ Back to English
+                  </button>
                 </div>
               )}
             </div>

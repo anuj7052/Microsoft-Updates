@@ -61,6 +61,16 @@ export default function Footer() {
                 </a>
               </li>
             </ul>
+
+            <h4 className="font-syne font-bold text-sm text-[var(--text-primary)] mt-6 mb-3">Our App</h4>
+            <a
+              href="https://only4you-app.vercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex items-center gap-2 text-sm text-[var(--text-secondary)] hover:text-ms-accent transition-colors"
+            >
+              💜 Only4You App
+            </a>
           </div>
         </div>
 

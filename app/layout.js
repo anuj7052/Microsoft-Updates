@@ -60,9 +60,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${syne.variable} ${dmSans.variable}`}>
       <head>
-        <Script
-          id="google-translate-init"
-          strategy="afterInteractive"
+      </head>
+      <body className="font-dm antialiased min-h-screen">
+        {/* Google Translate - hidden container always in DOM */}
+        <div id="google_translate_element" style={{ position: 'fixed', top: '-100px', left: 0, zIndex: -1 }}></div>
+        <script
           dangerouslySetInnerHTML={{
             __html: `
               function googleTranslateElementInit() {
@@ -76,11 +78,9 @@ export default function RootLayout({ children }) {
           }}
         />
         <Script
-          src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+          src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
           strategy="afterInteractive"
         />
-      </head>
-      <body className="font-dm antialiased min-h-screen">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
