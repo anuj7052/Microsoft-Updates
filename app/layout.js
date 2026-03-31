@@ -62,14 +62,17 @@ export default function RootLayout({ children }) {
       <head>
       </head>
       <body className="font-dm antialiased min-h-screen">
-        {/* Google Translate - hidden container always in DOM */}
-        <div id="google_translate_element" style={{ position: 'fixed', top: '-100px', left: 0, zIndex: -1 }}></div>
-        <script
+        {/* Google Translate container */}
+        <div id="google_translate_element" className="google-translate-hidden"></div>
+        <Script
+          id="google-translate-init"
+          strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: `
               function googleTranslateElementInit() {
                 new google.translate.TranslateElement({
                   pageLanguage: 'en',
+                  includedLanguages: 'hi,bn,te,ta,mr,gu,kn,ml,pa,ur,es,fr,de,ja,zh-CN,ar,pt,ru,ko',
                   layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
                   autoDisplay: false,
                 }, 'google_translate_element');

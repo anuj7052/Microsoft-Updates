@@ -63,16 +63,17 @@ export default function Navbar() {
                 </svg>
               </button>
               {translateOpen && (
-                <div className="absolute right-0 top-full mt-2 bg-ms-card border border-[var(--border)] rounded-xl p-3 shadow-2xl shadow-black/40 z-50 min-w-[200px]">
+                <div className="absolute right-0 top-full mt-2 bg-ms-card border border-[var(--border)] rounded-xl p-3 shadow-2xl shadow-black/40 z-50 min-w-[220px]">
                   <p className="text-xs text-[var(--text-muted)] mb-2 font-medium">Translate this page</p>
                   <select
-                    className="goog-te-combo-custom w-full bg-ms-navy text-[var(--text-primary)] border border-[var(--border)] rounded-lg px-3 py-2 text-sm cursor-pointer outline-none hover:border-ms-blue/60 transition-colors"
+                    className="w-full bg-ms-navy text-[var(--text-primary)] border border-[var(--border)] rounded-lg px-3 py-2 text-sm cursor-pointer outline-none hover:border-ms-blue/60 transition-colors"
                     onChange={(e) => {
-                      const combo = document.querySelector('.goog-te-combo')
-                      if (combo) {
-                        combo.value = e.target.value
-                        combo.dispatchEvent(new Event('change'))
-                      }
+                      const lang = e.target.value
+                      if (!lang) return
+                      // Set Google Translate cookie and reload
+                      document.cookie = `googtrans=/en/${lang};path=/;`
+                      document.cookie = `googtrans=/en/${lang};path=/;domain=${window.location.hostname}`
+                      window.location.reload()
                     }}
                     defaultValue=""
                   >
@@ -100,11 +101,8 @@ export default function Navbar() {
                   <button
                     className="w-full mt-2 text-xs text-ms-accent hover:underline text-left"
                     onClick={() => {
-                      const combo = document.querySelector('.goog-te-combo')
-                      if (combo) {
-                        combo.value = ''
-                        combo.dispatchEvent(new Event('change'))
-                      }
+                      document.cookie = 'googtrans=;path=/;expires=Thu, 01 Jan 1970 00:00:00 UTC;'
+                      document.cookie = `googtrans=;path=/;domain=${window.location.hostname};expires=Thu, 01 Jan 1970 00:00:00 UTC;`
                       window.location.reload()
                     }}
                   >
