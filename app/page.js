@@ -1,13 +1,13 @@
 import HeroSection from '../components/HeroSection'
 import NewsTicker from '../components/NewsTicker'
-import NewsCard from '../components/NewsCard'
+import LiveNewsGrid from '../components/LiveNewsGrid'
 import FeaturedSection from '../components/FeaturedSection'
 import CategoryGrid from '../components/CategoryGrid'
 import LiveFeed from '../components/LiveFeed'
 import PricingSection from '../components/PricingSection'
-import { newsArticles } from '../data/news'
+import { fetchMicrosoftFeeds } from '../lib/feeds'
 
-export const revalidate = 900 // Revalidate every 15 minutes
+export const revalidate = 900 // ISR: Regenerate every 15 minutes automatically
 
 export const metadata = {
   title: 'Microsoft Updates — Latest Microsoft News & Updates',
@@ -24,37 +24,33 @@ export const metadata = {
   robots: { index: true, follow: true },
 }
 
-export default function HomePage() {
-  const latestNews = newsArticles.slice(0, 9)
-  const licensingNews = newsArticles.filter(a => a.category === 'licensing').slice(0, 4)
-  const azureNews = newsArticles.filter(a => a.category === 'azure').slice(0, 3)
-  const powerNews = newsArticles.filter(a => a.category === 'power-platform').slice(0, 3)
-  const copilotNews = newsArticles.filter(a => a.category === 'copilot').slice(0, 3)
-  const windowsNews = newsArticles.filter(a => a.category === 'windows').slice(0, 3)
-  const securityNews = newsArticles.filter(a => a.category === 'security').slice(0, 3)
-  const officeNews = newsArticles.filter(a => a.category === 'office365').slice(0, 3)
+export default async function HomePage() {
+  // Fetch live data from Microsoft RSS feeds at build/revalidation time (server-side)
+  let liveArticles = []
+  try {
+    liveArticles = await fetchMicrosoftFeeds()
+  } catch {}
+
+  // Categorize live articles
+  const azureLive = liveArticles.filter(a => a.feedCategory === 'azure').slice(0, 4)
+  const windowsLive = liveArticles.filter(a => a.feedCategory === 'windows').slice(0, 4)
+  const securityLive = liveArticles.filter(a => a.feedCategory === 'security').slice(0, 4)
+  const officeLive = liveArticles.filter(a => a.feedCategory === 'office365').slice(0, 4)
+  const powerLive = liveArticles.filter(a => a.feedCategory === 'power-platform').slice(0, 4)
+  const generalLive = liveArticles.filter(a => a.feedCategory === 'general').slice(0, 4)
 
   return (
     <>
-      {/* 1. Hero Section */}
-      <HeroSection />
+      {/* 1. Hero Section — server data passed as props */}
+      <HeroSection articles={liveArticles.slice(0, 4)} />
 
       {/* 2. Live News Ticker */}
-      <NewsTicker />
+      <NewsTicker articles={liveArticles.slice(0, 15)} />
 
-      {/* 3. Latest News Grid */}
-      <section className="max-w-7xl mx-auto px-4 py-10">
-        <h2 className="font-syne font-extrabold text-2xl text-[var(--text-primary)] mb-6 tracking-tight">
-          Latest Microsoft News
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-          {latestNews.map((article) => (
-            <NewsCard key={article.id} article={article} />
-          ))}
-        </div>
-      </section>
+      {/* 3. Latest News Grid — all live articles */}
+      <LiveNewsGrid articles={liveArticles.slice(0, 9)} title="Latest Microsoft News" />
 
-      {/* 5. Live Microsoft Blog Feed */}
+      {/* 4. Live Microsoft Blog Feed */}
       <section className="max-w-7xl mx-auto px-4 py-10">
         <div className="flex items-center gap-3 mb-6">
           <div className="w-1 h-6 bg-ms-accent rounded-full"></div>
@@ -62,123 +58,47 @@ export default function HomePage() {
             Live from Microsoft Blogs
           </h2>
         </div>
-        <LiveFeed limit={12} />
+        <LiveFeed articles={liveArticles.slice(0, 12)} />
       </section>
 
-      {/* 6. Featured Deep-Dive */}
+      {/* 5. Featured Deep-Dive */}
       <FeaturedSection />
 
       {/* 6. Categories Grid */}
       <CategoryGrid />
 
-      {/* 8. Licensing & Pricing Section */}
+      {/* 7. Licensing & Pricing Section */}
       <PricingSection />
 
-      {/* Licensing Articles */}
-      <section className="max-w-7xl mx-auto px-4 py-10">
-        <div className="flex items-center gap-3 mb-6">
-          <div className="w-1 h-6 bg-ms-yellow rounded-full"></div>
-          <h2 className="font-syne font-extrabold text-2xl text-[var(--text-primary)]">
-            Licensing News
-          </h2>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-          {licensingNews.map((article) => (
-            <NewsCard key={article.id} article={article} />
-          ))}
-        </div>
-      </section>
+      {/* 8. Azure News */}
+      {azureLive.length > 0 && (
+        <LiveNewsGrid articles={azureLive} title="Azure Cloud Updates" color="bg-ms-blue" />
+      )}
 
-      {/* 9. Azure News Section */}
-      <section className="max-w-7xl mx-auto px-4 py-10">
-        <div className="flex items-center gap-3 mb-6">
-          <div className="w-1 h-6 bg-ms-blue rounded-full"></div>
-          <h2 className="font-syne font-extrabold text-2xl text-[var(--text-primary)]">
-            Azure Cloud Updates
-          </h2>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-          {azureNews.map((article) => (
-            <NewsCard key={article.id} article={article} />
-          ))}
-        </div>
-      </section>
+      {/* 9. Windows News */}
+      {windowsLive.length > 0 && (
+        <LiveNewsGrid articles={windowsLive} title="Windows Updates" color="bg-ms-green" />
+      )}
 
-      {/* 10. Power Platform Section */}
-      <section className="max-w-7xl mx-auto px-4 py-10">
-        <div className="flex items-center gap-3 mb-6">
-          <div className="w-1 h-6 bg-ms-yellow rounded-full"></div>
-          <h2 className="font-syne font-extrabold text-2xl text-[var(--text-primary)]">
-            Power Platform Updates
-          </h2>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-          {powerNews.map((article) => (
-            <NewsCard key={article.id} article={article} />
-          ))}
-        </div>
-      </section>
+      {/* 10. Power Platform */}
+      {powerLive.length > 0 && (
+        <LiveNewsGrid articles={powerLive} title="Power Platform Updates" color="bg-ms-yellow" />
+      )}
 
-      {/* 11. Copilot & AI Section */}
-      <section className="max-w-7xl mx-auto px-4 py-10">
-        <div className="flex items-center gap-3 mb-6">
-          <div className="w-1 h-6 bg-ms-accent rounded-full"></div>
-          <h2 className="font-syne font-extrabold text-2xl text-[var(--text-primary)]">
-            Copilot & AI Updates
-          </h2>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-          {copilotNews.map((article) => (
-            <NewsCard key={article.id} article={article} />
-          ))}
-        </div>
-      </section>
+      {/* 11. Security */}
+      {securityLive.length > 0 && (
+        <LiveNewsGrid articles={securityLive} title="Security Updates" color="bg-[#00BCF2]" />
+      )}
 
-      {/* 12. Windows Section */}
-      <section className="max-w-7xl mx-auto px-4 py-10">
-        <div className="flex items-center gap-3 mb-6">
-          <div className="w-1 h-6 bg-ms-green rounded-full"></div>
-          <h2 className="font-syne font-extrabold text-2xl text-[var(--text-primary)]">
-            Windows Updates
-          </h2>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-          {windowsNews.map((article) => (
-            <NewsCard key={article.id} article={article} />
-          ))}
-        </div>
-      </section>
+      {/* 12. Office 365 */}
+      {officeLive.length > 0 && (
+        <LiveNewsGrid articles={officeLive} title="Office 365 & M365 Updates" color="bg-ms-orange" />
+      )}
 
-      {/* 13. Security Section */}
-      <section className="max-w-7xl mx-auto px-4 py-10">
-        <div className="flex items-center gap-3 mb-6">
-          <div className="w-1 h-6 bg-[#00BCF2] rounded-full"></div>
-          <h2 className="font-syne font-extrabold text-2xl text-[var(--text-primary)]">
-            Security Updates
-          </h2>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-          {securityNews.map((article) => (
-            <NewsCard key={article.id} article={article} />
-          ))}
-        </div>
-      </section>
-
-      {/* 14. Office 365 Section */}
-      <section className="max-w-7xl mx-auto px-4 py-10">
-        <div className="flex items-center gap-3 mb-6">
-          <div className="w-1 h-6 bg-ms-orange rounded-full"></div>
-          <h2 className="font-syne font-extrabold text-2xl text-[var(--text-primary)]">
-            Office 365 Updates
-          </h2>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-          {officeNews.map((article) => (
-            <NewsCard key={article.id} article={article} />
-          ))}
-        </div>
-      </section>
-
+      {/* 13. Developer & General */}
+      {generalLive.length > 0 && (
+        <LiveNewsGrid articles={generalLive} title="Developer Updates" color="bg-ms-accent" />
+      )}
     </>
   )
 }

@@ -1,25 +1,7 @@
-'use client'
+export default function NewsTicker({ articles = [] }) {
+  if (articles.length === 0) return null
 
-import { useState, useEffect } from 'react'
-import { newsArticles } from '../data/news'
-
-export default function NewsTicker() {
-  const [items, setItems] = useState(
-    newsArticles.slice(0, 12).map(a => ({ title: a.title, link: `/${a.category}/${a.slug}`, external: false }))
-  )
-
-  useEffect(() => {
-    async function fetchLive() {
-      try {
-        const res = await fetch('/api/feed')
-        const data = await res.json()
-        if (data.articles?.length > 0) {
-          setItems(data.articles.slice(0, 15).map(a => ({ title: a.title, link: a.link, external: true })))
-        }
-      } catch {}
-    }
-    fetchLive()
-  }, [])
+  const items = articles.map(a => ({ title: a.title, link: a.link }))
 
   return (
     <section className="bg-ms-navy border-y border-[var(--border)] overflow-hidden my-6">
@@ -37,8 +19,8 @@ export default function NewsTicker() {
               <a
                 key={i}
                 href={item.link}
-                target={item.external ? '_blank' : '_self'}
-                rel={item.external ? 'noopener noreferrer' : undefined}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center text-sm text-[var(--text-secondary)] px-6 hover:text-ms-accent transition-colors"
               >
                 <span className="text-ms-accent mr-2">●</span>

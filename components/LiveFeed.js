@@ -1,7 +1,3 @@
-'use client'
-
-import { useState, useEffect } from 'react'
-
 const categoryColors = {
   azure: { bg: 'bg-ms-blue/15', text: 'text-ms-blue' },
   windows: { bg: 'bg-ms-green/15', text: 'text-ms-green' },
@@ -22,51 +18,11 @@ function timeAgo(dateStr) {
   return date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' })
 }
 
-export default function LiveFeed({ category = null, limit = 15 }) {
-  const [articles, setArticles] = useState([])
-  const [loading, setLoading] = useState(true)
-  const [lastUpdated, setLastUpdated] = useState(null)
-
-  useEffect(() => {
-    async function fetchFeed() {
-      try {
-        const url = category
-          ? `/api/feed?category=${category}`
-          : '/api/feed'
-        const res = await fetch(url)
-        const data = await res.json()
-        setArticles(data.articles?.slice(0, limit) || [])
-        setLastUpdated(data.updated)
-      } catch {
-        setArticles([])
-      } finally {
-        setLoading(false)
-      }
-    }
-    fetchFeed()
-    // Refresh every 30 minutes
-    const interval = setInterval(fetchFeed, 30 * 60 * 1000)
-    return () => clearInterval(interval)
-  }, [category, limit])
-
-  if (loading) {
-    return (
-      <div className="space-y-4">
-        {[...Array(5)].map((_, i) => (
-          <div key={i} className="bg-ms-card rounded-xl border border-[var(--border)] p-4 animate-pulse">
-            <div className="h-3 w-20 bg-ms-navy rounded mb-3"></div>
-            <div className="h-4 w-3/4 bg-ms-navy rounded mb-2"></div>
-            <div className="h-3 w-full bg-ms-navy rounded"></div>
-          </div>
-        ))}
-      </div>
-    )
-  }
-
+export default function LiveFeed({ articles = [] }) {
   if (articles.length === 0) {
     return (
       <div className="bg-ms-card rounded-xl border border-[var(--border)] p-8 text-center">
-        <p className="text-[var(--text-muted)] text-sm">Unable to load live feed. Showing cached content.</p>
+        <p className="text-[var(--text-muted)] text-sm">Loading live feed...</p>
       </div>
     )
   }
@@ -82,11 +38,9 @@ export default function LiveFeed({ category = null, limit = 15 }) {
           </span>
           <span className="text-xs text-[var(--text-muted)] font-dm">from Microsoft Official Blogs</span>
         </div>
-        {lastUpdated && (
-          <span className="text-[10px] text-[var(--text-muted)] font-dm">
-            Updated {timeAgo(lastUpdated)}
-          </span>
-        )}
+        <span className="text-[10px] text-[var(--text-muted)] font-dm">
+          Auto-updates every 15 min
+        </span>
       </div>
 
       {/* Articles */}
