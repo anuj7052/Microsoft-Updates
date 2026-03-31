@@ -74,10 +74,17 @@ export default function RootLayout({ children }) {
     <html lang="en" className={`${syne.variable} ${dmSans.variable}`}>
       <head>
         <meta name="theme-color" content="#0a0e1a" />
+        <meta name="google-adsense-account" content="ca-pub-2413226939900202" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
       </head>
       <body className="font-dm antialiased min-h-screen">
+        <Script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2413226939900202"
+          crossOrigin="anonymous"
+          strategy="afterInteractive"
+        />
         {/* Google Translate container */}
         <div id="google_translate_element" className="google-translate-hidden"></div>
         <Script
