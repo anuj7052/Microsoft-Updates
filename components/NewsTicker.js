@@ -1,8 +1,26 @@
+'use client'
+
+import { useState, useEffect } from 'react'
 import { newsArticles } from '../data/news'
 
-const tickerItems = newsArticles.slice(0, 12).map(a => a.title)
-
 export default function NewsTicker() {
+  const [items, setItems] = useState(
+    newsArticles.slice(0, 12).map(a => ({ title: a.title, link: `/${a.category}/${a.slug}`, external: false }))
+  )
+
+  useEffect(() => {
+    async function fetchLive() {
+      try {
+        const res = await fetch('/api/feed')
+        const data = await res.json()
+        if (data.articles?.length > 0) {
+          setItems(data.articles.slice(0, 15).map(a => ({ title: a.title, link: a.link, external: true })))
+        }
+      } catch {}
+    }
+    fetchLive()
+  }, [])
+
   return (
     <section className="bg-ms-navy border-y border-[var(--border)] overflow-hidden my-6">
       <div className="flex items-center">
@@ -15,11 +33,17 @@ export default function NewsTicker() {
         {/* Scrolling ticker */}
         <div className="overflow-hidden whitespace-nowrap">
           <div className="ticker-animate inline-flex items-center">
-            {[...tickerItems, ...tickerItems].map((item, i) => (
-              <span key={i} className="inline-flex items-center text-sm text-[var(--text-secondary)] px-6">
+            {[...items, ...items].map((item, i) => (
+              <a
+                key={i}
+                href={item.link}
+                target={item.external ? '_blank' : '_self'}
+                rel={item.external ? 'noopener noreferrer' : undefined}
+                className="inline-flex items-center text-sm text-[var(--text-secondary)] px-6 hover:text-ms-accent transition-colors"
+              >
                 <span className="text-ms-accent mr-2">●</span>
-                {item}
-              </span>
+                {item.title}
+              </a>
             ))}
           </div>
         </div>
