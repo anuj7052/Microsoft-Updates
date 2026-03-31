@@ -7,6 +7,8 @@ import LiveFeed from '../components/LiveFeed'
 import PricingSection from '../components/PricingSection'
 import { newsArticles } from '../data/news'
 
+export const revalidate = 900 // Revalidate every 15 minutes
+
 export const metadata = {
   title: 'Microsoft Updates — Latest Microsoft News & Updates',
   description: 'Your go-to source for the latest Microsoft news, updates, and insights covering Windows, Azure, Power Platform, Microsoft Fabric, Copilot AI, Office 365, Licensing, and Security.',
