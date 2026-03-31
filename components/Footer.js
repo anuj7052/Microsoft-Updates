@@ -8,12 +8,12 @@ export default function Footer() {
           {/* Logo & Tagline */}
           <div className="md:col-span-2">
             <div className="flex items-center gap-3 mb-4">
-              <div className="grid grid-cols-2 gap-0.5 w-6 h-6">
-                <div className="bg-[#F25022] rounded-sm"></div>
-                <div className="bg-[#7FBA00] rounded-sm"></div>
-                <div className="bg-[#00A4EF] rounded-sm"></div>
-                <div className="bg-[#FFB900] rounded-sm"></div>
-              </div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
+                <rect x="0" y="0" width="10" height="10" fill="#F25022" />
+                <rect x="11" y="0" width="10" height="10" fill="#7FBA00" />
+                <rect x="0" y="11" width="10" height="10" fill="#00A4EF" />
+                <rect x="11" y="11" width="10" height="10" fill="#FFB900" />
+              </svg>
               <span className="font-syne font-bold text-base text-[var(--text-primary)]">
                 Microsoft Updates
               </span>

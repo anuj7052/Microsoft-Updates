@@ -1,6 +1,10 @@
 import Link from 'next/link'
 import NewsCard from '../../components/NewsCard'
+import LiveCategoryArticles from '../../components/LiveCategoryArticles'
 import { newsArticles } from '../../data/news'
+import { fetchMicrosoftFeeds } from '../../lib/feeds'
+
+export const revalidate = 900
 
 export const metadata = {
   title: 'Power Platform Updates | MicrosoftUpdates.co.in',
@@ -17,8 +21,13 @@ export const metadata = {
   robots: { index: true, follow: true },
 }
 
-export default function PowerPlatformPage() {
+export default async function PowerPlatformPage() {
   const articles = newsArticles.filter(a => a.category === 'power-platform')
+
+  let liveArticles = []
+  try {
+    liveArticles = await fetchMicrosoftFeeds('power-platform')
+  } catch {}
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-8">
@@ -41,6 +50,9 @@ export default function PowerPlatformPage() {
         <div className="h-1 w-16 bg-ms-yellow rounded-full mt-4"></div>
       </div>
 
+      <LiveCategoryArticles articles={liveArticles} />
+
+      <h2 className="font-syne font-extrabold text-xl text-[var(--text-primary)] mb-5">All Articles</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
         {articles.map((article, i) => (
           <div key={article.id}>

@@ -10,15 +10,15 @@ import { fetchMicrosoftFeeds } from '../lib/feeds'
 export const revalidate = 900 // ISR: Regenerate every 15 minutes automatically
 
 export const metadata = {
-  title: 'Microsoft Updates — Latest Microsoft News & Updates',
-  description: 'Your go-to source for the latest Microsoft news, updates, and insights covering Windows, Azure, Power Platform, Microsoft Fabric, Copilot AI, Office 365, Licensing, and Security.',
-  keywords: 'microsoft, windows, azure, power platform, microsoft fabric, copilot, office 365, licensing, security, news, updates',
+  title: 'Microsoft Updates — Latest Windows, Azure, Copilot, M365, Fabric News',
+  description: 'Get real-time Microsoft news updates every 15 minutes. Latest Windows 11/12 updates, Azure cloud announcements, Microsoft Copilot AI news, Microsoft 365 features, Power Platform, Microsoft Fabric, security patches, and licensing changes. Trusted by IT professionals worldwide.',
+  keywords: 'microsoft updates today, latest microsoft news, windows 11 update, windows 12, azure updates, microsoft copilot, copilot ai news, microsoft 365 update, office 365 new features, power platform updates, power bi, microsoft fabric, security patches, patch tuesday, microsoft licensing, microsoft india news, teams update, excel update',
   openGraph: {
-    title: 'Microsoft Updates — Latest Microsoft News & Updates',
-    description: 'Your go-to source for the latest Microsoft news, updates, and insights.',
+    title: 'Microsoft Updates — Latest Windows, Azure, Copilot, M365, Fabric News',
+    description: 'Real-time Microsoft news updated every 15 minutes. Windows, Azure, Copilot AI, M365, Power Platform, Fabric, Security.',
     url: 'https://microsoftupdates.co.in',
     siteName: 'Microsoft Updates',
-    locale: 'en',
+    locale: 'en_IN',
     type: 'website',
   },
   robots: { index: true, follow: true },
@@ -32,12 +32,14 @@ export default async function HomePage() {
   } catch {}
 
   // Categorize live articles
-  const azureLive = liveArticles.filter(a => a.feedCategory === 'azure').slice(0, 4)
-  const windowsLive = liveArticles.filter(a => a.feedCategory === 'windows').slice(0, 4)
-  const securityLive = liveArticles.filter(a => a.feedCategory === 'security').slice(0, 4)
-  const officeLive = liveArticles.filter(a => a.feedCategory === 'office365').slice(0, 4)
-  const powerLive = liveArticles.filter(a => a.feedCategory === 'power-platform').slice(0, 4)
-  const generalLive = liveArticles.filter(a => a.feedCategory === 'general').slice(0, 4)
+  const azureLive = liveArticles.filter(a => a.feedCategory === 'azure').slice(0, 6)
+  const windowsLive = liveArticles.filter(a => a.feedCategory === 'windows').slice(0, 6)
+  const securityLive = liveArticles.filter(a => a.feedCategory === 'security').slice(0, 6)
+  const officeLive = liveArticles.filter(a => a.feedCategory === 'office365').slice(0, 6)
+  const powerLive = liveArticles.filter(a => a.feedCategory === 'power-platform').slice(0, 6)
+  const fabricLive = liveArticles.filter(a => a.feedCategory === 'fabric').slice(0, 6)
+  const copilotLive = liveArticles.filter(a => a.feedCategory === 'copilot').slice(0, 6)
+  const generalLive = liveArticles.filter(a => a.feedCategory === 'general').slice(0, 6)
 
   return (
     <>
@@ -95,7 +97,17 @@ export default async function HomePage() {
         <LiveNewsGrid articles={officeLive} title="Office 365 & M365 Updates" color="bg-ms-orange" />
       )}
 
-      {/* 13. Developer & General */}
+      {/* 13. Microsoft Fabric */}
+      {fabricLive.length > 0 && (
+        <LiveNewsGrid articles={fabricLive} title="Microsoft Fabric Updates" color="bg-ms-purple" />
+      )}
+
+      {/* 14. Copilot & AI */}
+      {copilotLive.length > 0 && (
+        <LiveNewsGrid articles={copilotLive} title="Copilot & AI Updates" color="bg-ms-accent" />
+      )}
+
+      {/* 15. Developer & General */}
       {generalLive.length > 0 && (
         <LiveNewsGrid articles={generalLive} title="Developer Updates" color="bg-ms-accent" />
       )}
