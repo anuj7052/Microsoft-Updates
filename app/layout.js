@@ -3,7 +3,7 @@ import './globals.css'
 import Script from 'next/script'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
-import PromoBanner from '../components/PromoBanner'
+
 
 const syne = Syne({
   subsets: ['latin'],
@@ -106,7 +106,6 @@ export default function RootLayout({ children }) {
         <Navbar />
         <main>{children}</main>
         <Footer />
-        <PromoBanner />
       </body>
     </html>
   )

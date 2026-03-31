@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import NewsCard from '../../components/NewsCard'
-import AdSlot from '../../components/AdSlot'
 import { newsArticles } from '../../data/news'
 
 export const metadata = {
@@ -46,7 +45,6 @@ export default function AzurePage() {
         {articles.map((article, i) => (
           <div key={article.id}>
             <NewsCard article={article} />
-            {(i + 1) % 6 === 0 && <div className="col-span-full"><AdSlot id={`adsense-azure-${i}`} size="leaderboard" /></div>}
           </div>
         ))}
       </div>

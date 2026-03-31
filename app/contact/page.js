@@ -128,21 +128,6 @@ export default function ContactPage() {
                 <span>Instagram</span>
               </a>
             </div>
-
-            {/* App Promo */}
-            <a
-              href="https://only4you-app.vercel.app"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group mt-4 block bg-gradient-to-r from-ms-accent/20 to-[#E1306C]/20 rounded-xl border border-ms-accent/30 p-4 hover:border-ms-accent/60 transition-all duration-300 hover:-translate-y-0.5"
-            >
-              <div className="flex items-center gap-2 mb-1">
-                <span className="text-lg">💜</span>
-                <span className="font-syne font-bold text-sm text-ms-accent">Only4You App</span>
-              </div>
-              <p className="text-xs text-[var(--text-secondary)] leading-relaxed">Built by the creator of Microsoft Updates — check it out!</p>
-              <span className="text-[10px] text-ms-accent font-bold mt-1 inline-block group-hover:underline">Open App →</span>
-            </a>
           </div>
 
           <div className="bg-ms-navy/50 rounded-2xl border border-[var(--border)] p-6">

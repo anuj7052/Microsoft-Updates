@@ -61,24 +61,6 @@ export default function Footer() {
                 </a>
               </li>
             </ul>
-
-            {/* App Promo */}
-            <div className="mt-6">
-              <h4 className="font-syne font-bold text-sm text-[var(--text-primary)] mb-3">Our App</h4>
-              <a
-                href="https://only4you-app.vercel.app"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group block bg-gradient-to-r from-ms-accent/20 to-ms-blue/20 rounded-xl border border-ms-accent/30 p-4 hover:border-ms-accent/60 transition-all duration-300 hover:-translate-y-0.5"
-              >
-                <div className="flex items-center gap-2 mb-1">
-                  <span className="text-lg">💜</span>
-                  <span className="font-syne font-bold text-sm text-ms-accent">Only4You</span>
-                </div>
-                <p className="text-xs text-[var(--text-secondary)] leading-relaxed">Check out our exclusive app — built just for you.</p>
-                <span className="text-[10px] text-ms-accent font-bold mt-2 inline-block group-hover:underline">Try it now →</span>
-              </a>
-            </div>
           </div>
         </div>
 

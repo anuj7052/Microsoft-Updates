@@ -3,7 +3,6 @@ import NewsTicker from '../components/NewsTicker'
 import NewsCard from '../components/NewsCard'
 import FeaturedSection from '../components/FeaturedSection'
 import CategoryGrid from '../components/CategoryGrid'
-import AdSlot from '../components/AdSlot'
 import LiveFeed from '../components/LiveFeed'
 import PricingSection from '../components/PricingSection'
 import { newsArticles } from '../data/news'
@@ -41,12 +40,7 @@ export default function HomePage() {
       {/* 2. Live News Ticker */}
       <NewsTicker />
 
-      {/* 3. AdSense Slot - Top */}
-      <div className="max-w-7xl mx-auto px-4">
-        <AdSlot id="adsense-top" size="leaderboard" />
-      </div>
-
-      {/* 4. Latest News Grid */}
+      {/* 3. Latest News Grid */}
       <section className="max-w-7xl mx-auto px-4 py-10">
         <h2 className="font-syne font-extrabold text-2xl text-[var(--text-primary)] mb-6 tracking-tight">
           Latest Microsoft News
@@ -75,12 +69,7 @@ export default function HomePage() {
       {/* 6. Categories Grid */}
       <CategoryGrid />
 
-      {/* 7. AdSense Slot - Mid */}
-      <div className="max-w-7xl mx-auto px-4">
-        <AdSlot id="adsense-mid" size="rectangle" />
-      </div>
-
-      {/* 9. Licensing & Pricing Section */}
+      {/* 8. Licensing & Pricing Section */}
       <PricingSection />
 
       {/* Licensing Articles */}
@@ -188,10 +177,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 15. AdSense Slot - Bottom */}
-      <div className="max-w-7xl mx-auto px-4">
-        <AdSlot id="adsense-bottom" size="leaderboard" />
-      </div>
     </>
   )
 }

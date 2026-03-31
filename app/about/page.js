@@ -96,9 +96,6 @@ export default function AboutPage() {
             <a href="https://instagram.com/its_anujsinghh" target="_blank" rel="noopener noreferrer" className="bg-gradient-to-r from-[#833AB4] via-[#E1306C] to-[#F77737] text-white text-xs font-bold px-4 py-2 rounded-lg transition-all font-syne">
               📸 Instagram
             </a>
-            <a href="https://only4you-app.vercel.app" target="_blank" rel="noopener noreferrer" className="bg-ms-accent hover:bg-ms-accent/80 text-white text-xs font-bold px-4 py-2 rounded-lg transition-all font-syne">
-              💜 Only4You App
-            </a>
           </div>
         </section>
       </div>

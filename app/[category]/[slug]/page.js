@@ -1,6 +1,5 @@
 import { newsArticles, categories } from '../../../data/news'
 import Link from 'next/link'
-import AdSlot from '../../../components/AdSlot'
 import CommentSection from '../../../components/CommentSection'
 import { notFound } from 'next/navigation'
 
@@ -149,9 +148,6 @@ export default async function ArticlePage({ params }) {
           </div>
         </div>
       </article>
-
-      {/* Ad Slot */}
-      <AdSlot id="adsense-article" size="rectangle" />
 
       {/* Comments */}
       <CommentSection articleId={`${category}-${slug}`} />
