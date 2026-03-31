@@ -86,6 +86,20 @@ export default function AboutPage() {
             For partnership and advertising inquiries:{' '}
             <span className="text-ms-accent">ads@microsoftupdates.co.in</span>
           </p>
+          <div className="flex flex-wrap gap-3 mt-4">
+            <a href="https://www.linkedin.com/in/anuj-singh-46140116a/" target="_blank" rel="noopener noreferrer" className="bg-[#0077B5] hover:bg-[#005885] text-white text-xs font-bold px-4 py-2 rounded-lg transition-all font-syne">
+              💼 LinkedIn
+            </a>
+            <a href="https://youtube.com/@its_anujsinghh?si=IjM_Vp3iu4tbTW2i&sub_confirmation=1" target="_blank" rel="noopener noreferrer" className="bg-[#FF0000] hover:bg-[#CC0000] text-white text-xs font-bold px-4 py-2 rounded-lg transition-all font-syne">
+              ▶ YouTube — Subscribe
+            </a>
+            <a href="https://instagram.com/its_anujsinghh" target="_blank" rel="noopener noreferrer" className="bg-gradient-to-r from-[#833AB4] via-[#E1306C] to-[#F77737] text-white text-xs font-bold px-4 py-2 rounded-lg transition-all font-syne">
+              📸 Instagram
+            </a>
+            <a href="https://only4you-app.vercel.app" target="_blank" rel="noopener noreferrer" className="bg-ms-accent hover:bg-ms-accent/80 text-white text-xs font-bold px-4 py-2 rounded-lg transition-all font-syne">
+              💜 Only4You App
+            </a>
+          </div>
         </section>
       </div>
     </div>

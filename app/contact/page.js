@@ -115,19 +115,34 @@ export default function ContactPage() {
           <div className="bg-ms-card rounded-2xl border border-[var(--border)] p-6">
             <h2 className="font-syne font-bold text-lg text-[var(--text-primary)] mb-4">Follow Us</h2>
             <div className="space-y-3">
-              <div className="flex items-center gap-3 text-sm text-[var(--text-secondary)] hover:text-ms-accent transition-colors cursor-pointer">
-                <span className="text-lg">𝕏</span>
-                <span>Twitter / X</span>
-              </div>
-              <div className="flex items-center gap-3 text-sm text-[var(--text-secondary)] hover:text-ms-accent transition-colors cursor-pointer">
+              <a href="https://www.linkedin.com/in/anuj-singh-46140116a/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-sm text-[var(--text-secondary)] hover:text-ms-accent transition-colors">
                 <span className="text-lg">💼</span>
                 <span>LinkedIn</span>
-              </div>
-              <div className="flex items-center gap-3 text-sm text-[var(--text-secondary)] hover:text-ms-accent transition-colors cursor-pointer">
+              </a>
+              <a href="https://youtube.com/@its_anujsinghh?si=IjM_Vp3iu4tbTW2i" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-sm text-[var(--text-secondary)] hover:text-[#FF0000] transition-colors">
                 <span className="text-lg">▶️</span>
-                <span>YouTube</span>
-              </div>
+                <span>YouTube — Subscribe Now!</span>
+              </a>
+              <a href="https://instagram.com/its_anujsinghh" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-sm text-[var(--text-secondary)] hover:text-[#E1306C] transition-colors">
+                <span className="text-lg">📸</span>
+                <span>Instagram</span>
+              </a>
             </div>
+
+            {/* App Promo */}
+            <a
+              href="https://only4you-app.vercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group mt-4 block bg-gradient-to-r from-ms-accent/20 to-[#E1306C]/20 rounded-xl border border-ms-accent/30 p-4 hover:border-ms-accent/60 transition-all duration-300 hover:-translate-y-0.5"
+            >
+              <div className="flex items-center gap-2 mb-1">
+                <span className="text-lg">💜</span>
+                <span className="font-syne font-bold text-sm text-ms-accent">Only4You App</span>
+              </div>
+              <p className="text-xs text-[var(--text-secondary)] leading-relaxed">Built by the creator of Microsoft Updates — check it out!</p>
+              <span className="text-[10px] text-ms-accent font-bold mt-1 inline-block group-hover:underline">Open App →</span>
+            </a>
           </div>
 
           <div className="bg-ms-navy/50 rounded-2xl border border-[var(--border)] p-6">

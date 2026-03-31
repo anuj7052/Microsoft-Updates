@@ -46,21 +46,39 @@ export default function Footer() {
             <h4 className="font-syne font-bold text-sm text-[var(--text-primary)] mb-4">Follow Us</h4>
             <ul className="space-y-2">
               <li>
-                <span className="text-sm text-[var(--text-secondary)] hover:text-ms-accent transition-colors cursor-pointer">
-                  𝕏 Twitter / X
-                </span>
-              </li>
-              <li>
-                <span className="text-sm text-[var(--text-secondary)] hover:text-ms-accent transition-colors cursor-pointer">
+                <a href="https://www.linkedin.com/in/anuj-singh-46140116a/" target="_blank" rel="noopener noreferrer" className="text-sm text-[var(--text-secondary)] hover:text-ms-accent transition-colors flex items-center gap-2">
                   💼 LinkedIn
-                </span>
+                </a>
               </li>
               <li>
-                <span className="text-sm text-[var(--text-secondary)] hover:text-ms-accent transition-colors cursor-pointer">
+                <a href="https://youtube.com/@its_anujsinghh?si=IjM_Vp3iu4tbTW2i" target="_blank" rel="noopener noreferrer" className="text-sm text-[var(--text-secondary)] hover:text-[#FF0000] transition-colors flex items-center gap-2">
                   ▶️ YouTube
-                </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://instagram.com/its_anujsinghh" target="_blank" rel="noopener noreferrer" className="text-sm text-[var(--text-secondary)] hover:text-[#E1306C] transition-colors flex items-center gap-2">
+                  📸 Instagram
+                </a>
               </li>
             </ul>
+
+            {/* App Promo */}
+            <div className="mt-6">
+              <h4 className="font-syne font-bold text-sm text-[var(--text-primary)] mb-3">Our App</h4>
+              <a
+                href="https://only4you-app.vercel.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group block bg-gradient-to-r from-ms-accent/20 to-ms-blue/20 rounded-xl border border-ms-accent/30 p-4 hover:border-ms-accent/60 transition-all duration-300 hover:-translate-y-0.5"
+              >
+                <div className="flex items-center gap-2 mb-1">
+                  <span className="text-lg">💜</span>
+                  <span className="font-syne font-bold text-sm text-ms-accent">Only4You</span>
+                </div>
+                <p className="text-xs text-[var(--text-secondary)] leading-relaxed">Check out our exclusive app — built just for you.</p>
+                <span className="text-[10px] text-ms-accent font-bold mt-2 inline-block group-hover:underline">Try it now →</span>
+              </a>
+            </div>
           </div>
         </div>
 
