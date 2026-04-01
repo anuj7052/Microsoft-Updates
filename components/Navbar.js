@@ -3,9 +3,11 @@
 import Link from 'next/link'
 import { useState, useEffect } from 'react'
 import ThemeToggle from './ThemeToggle'
+import Logo from './Logo'
 
 const navCategories = [
   { name: 'All', href: '/' },
+  { name: 'Live Updates', href: '/live' },
   { name: 'Windows', href: '/windows' },
   { name: 'Azure', href: '/azure' },
   { name: 'Power Platform', href: '/power-platform' },
@@ -37,16 +39,16 @@ export default function Navbar() {
         {/* Top bar */}
         <div className="flex items-center justify-between h-16">
           {/* Left - Logo */}
-          <Link href="/" className="flex items-center gap-3 shrink-0">
-            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
-              <rect x="0" y="0" width="10" height="10" fill="#F25022" />
-              <rect x="11" y="0" width="10" height="10" fill="#7FBA00" />
-              <rect x="0" y="11" width="10" height="10" fill="#00A4EF" />
-              <rect x="11" y="11" width="10" height="10" fill="#FFB900" />
-            </svg>
-            <span className="font-syne font-bold text-sm md:text-base text-[var(--text-primary)]">
-              Microsoft Updates
-            </span>
+          <Link href="/" className="flex items-center gap-2.5 shrink-0">
+            <Logo size={28} />
+            <div className="flex flex-col leading-none">
+              <span className="font-syne font-bold text-sm md:text-[15px] text-[var(--text-primary)] tracking-tight">
+                Latest Microsoft Updates
+              </span>
+              <span className="text-[9px] text-[var(--text-muted)] font-dm tracking-wide hidden md:block">
+                Independent Updates Blog
+              </span>
+            </div>
           </Link>
 
           {/* Right side */}

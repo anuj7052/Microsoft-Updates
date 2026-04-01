@@ -10,14 +10,14 @@ import { fetchMicrosoftFeeds } from '../lib/feeds'
 export const revalidate = 900 // ISR: Regenerate every 15 minutes automatically
 
 export const metadata = {
-  title: 'Microsoft Updates — Latest Windows, Azure, Copilot, M365, Fabric News',
-  description: 'Get real-time Microsoft news updates every 15 minutes. Latest Windows 11/12 updates, Azure cloud announcements, Microsoft Copilot AI news, Microsoft 365 features, Power Platform, Microsoft Fabric, security patches, and licensing changes. Trusted by IT professionals worldwide.',
-  keywords: 'microsoft updates today, latest microsoft news, windows 11 update, windows 12, azure updates, microsoft copilot, copilot ai news, microsoft 365 update, office 365 new features, power platform updates, power bi, microsoft fabric, security patches, patch tuesday, microsoft licensing, microsoft india news, teams update, excel update',
+  title: 'Latest Microsoft Updates & News — Independent Blog',
+  description: 'Independent coverage of Microsoft updates every 30 minutes. Windows, Azure, Copilot AI, Microsoft 365, Power Platform, Fabric, Security patches. Trusted by IT professionals.',
+  keywords: 'microsoft updates today, latest microsoft news, windows 11 update, azure updates, microsoft copilot, microsoft 365 update, office 365, power platform, microsoft fabric, security patches, patch tuesday',
   openGraph: {
-    title: 'Microsoft Updates — Latest Windows, Azure, Copilot, M365, Fabric News',
-    description: 'Real-time Microsoft news updated every 15 minutes. Windows, Azure, Copilot AI, M365, Power Platform, Fabric, Security.',
+    title: 'Latest Microsoft Updates & News — Independent Blog',
+    description: 'Independent Microsoft updates coverage updated every 30 minutes. Windows, Azure, Copilot, M365, Security.',
     url: 'https://microsoftupdates.co.in',
-    siteName: 'Microsoft Updates',
+    siteName: 'Latest Microsoft Updates & News',
     locale: 'en_IN',
     type: 'website',
   },
@@ -50,14 +50,53 @@ export default async function HomePage() {
       <NewsTicker articles={liveArticles.slice(0, 15)} />
 
       {/* 3. Latest News Grid — all live articles */}
-      <LiveNewsGrid articles={liveArticles.slice(0, 9)} title="Latest Microsoft News" />
+      <LiveNewsGrid articles={liveArticles.slice(0, 9)} title="Latest Microsoft Updates & News" />
 
-      {/* 4. Live Microsoft Blog Feed */}
+      {/* 4. Live Updates Quick-View section */}
+      <section className="max-w-7xl mx-auto px-4 py-8">
+        <div className="flex items-center justify-between mb-6">
+          <div className="flex items-center gap-3">
+            <span className="flex items-center gap-1.5 bg-ms-red/15 text-ms-red text-xs font-bold px-3 py-1 rounded-full">
+              <span className="w-2 h-2 bg-ms-red rounded-full animate-pulse"></span>
+              LIVE
+            </span>
+            <h2 className="font-syne font-extrabold text-2xl text-[var(--text-primary)]">
+              Live Updates Feed
+            </h2>
+          </div>
+          <a href="/live" className="text-xs text-ms-accent hover:underline font-medium">
+            View all →
+          </a>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-3">
+          {liveArticles.slice(0, 6).map((article, i) => (
+            <div key={i} className="bg-ms-card rounded-xl border border-[var(--border)] p-4 flex flex-col gap-2">
+              <p className="text-[10px] text-[var(--text-muted)] font-dm">
+                {new Date(article.pubDate).toLocaleDateString('en-IN', { day: 'numeric', month: 'short', year: 'numeric' })}
+                {' · '}{article.source}
+              </p>
+              <p className="font-syne font-bold text-sm text-[var(--text-primary)] leading-snug line-clamp-2">
+                {article.title}
+              </p>
+              <a
+                href={article.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[10px] text-ms-accent hover:underline mt-auto font-medium"
+              >
+                Verify from Microsoft →
+              </a>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* 5. Live Microsoft Blog Feed */}
       <section className="max-w-7xl mx-auto px-4 py-10">
         <div className="flex items-center gap-3 mb-6">
           <div className="w-1 h-6 bg-ms-accent rounded-full"></div>
           <h2 className="font-syne font-extrabold text-2xl text-[var(--text-primary)]">
-            Live from Microsoft Blogs
+            Latest Microsoft Blog Posts
           </h2>
         </div>
         <LiveFeed articles={liveArticles.slice(0, 12)} />

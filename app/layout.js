@@ -21,10 +21,10 @@ const dmSans = DM_Sans({
 
 export const metadata = {
   title: {
-    default: 'Microsoft Updates — Latest Microsoft News, Windows, Azure, Copilot & More',
-    template: '%s | Microsoft Updates',
+    default: 'Latest Microsoft Updates & News — Independent Blog',
+    template: '%s | Latest Microsoft Updates & News',
   },
-  description: 'Microsoft Updates is your #1 source for the latest Microsoft news, Windows 11 updates, Azure cloud announcements, Microsoft 365, Copilot AI, Power Platform, Fabric, security patches, and licensing changes. Updated every 15 minutes with live RSS feeds from official Microsoft blogs.',
+  description: 'Independent coverage of the latest Microsoft updates — Windows, Azure, Copilot AI, Microsoft 365, Power Platform, Fabric, security patches. Updated every 30 minutes from official Microsoft sources.',
   keywords: 'microsoft updates, microsoft news, windows 11 update, windows 12, azure updates, microsoft 365, office 365, copilot ai, microsoft copilot, power platform, power bi, microsoft fabric, microsoft security, patch tuesday, microsoft licensing, microsoft india, azure india, teams update, excel update, word update, outlook update, microsoft defender, microsoft sentinel, github copilot, copilot pro, copilot studio, power apps, power automate, onelake, windows server',
   metadataBase: new URL('https://microsoftupdates.co.in'),
   alternates: {
@@ -34,7 +34,7 @@ export const metadata = {
     title: 'Microsoft Updates — Latest Microsoft News & Updates',
     description: 'Your #1 source for latest Microsoft news — Windows, Azure, Copilot AI, Microsoft 365, Power Platform, Fabric, Security. Live updates every 15 minutes.',
     url: 'https://microsoftupdates.co.in',
-    siteName: 'Microsoft Updates',
+    siteName: 'Latest Microsoft Updates & News',
     locale: 'en_IN',
     type: 'website',
     images: [{

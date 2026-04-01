@@ -2,9 +2,14 @@
 'use strict'
 
 /**
- * Microsoft Updates — Automated Content Pipeline
+ * Latest Microsoft Updates & News — Automated Content Pipeline
  * Runs every 30 min via GitHub Actions.
- * Fetches RSS feeds → detects new items → generates AI articles → saves markdown → updates tracker JSON.
+ *
+ * TWO outputs:
+ *  1. data/live-updates.json  — latest 60 items for real-time homepage display
+ *  2. data/history.json       — 1-year dedup tracker (seen GUIDs)
+ *  3. content/updates/*.md    — full AI articles only for "major" updates
+ *
  * No database required.
  */
 
@@ -17,8 +22,15 @@ const { XMLParser } = require('fast-xml-parser')
 // ─── Paths ────────────────────────────────────────────────────────────────────
 
 const ROOT = path.join(__dirname, '..')
-const TRACKER_PATH = path.join(ROOT, 'data', 'updates.json')
+const TRACKER_PATH = path.join(ROOT, 'data', 'updates.json')       // legacy compat
+const LIVE_PATH = path.join(ROOT, 'data', 'live-updates.json')
+const HISTORY_PATH = path.join(ROOT, 'data', 'history.json')
 const CONTENT_DIR = path.join(ROOT, 'content', 'updates')
+
+// How many live items to keep in the JSON file
+const MAX_LIVE_ITEMS = 60
+// How many history GUIDs to retain (covers ~1 year at current volume)
+const MAX_HISTORY_GUIDS = 5000
 
 // ─── RSS Feeds ────────────────────────────────────────────────────────────────
 
@@ -34,7 +46,20 @@ const FEEDS = [
 
 const MAX_RETRIES = 3
 const DELAY_MS = 3000
-const MAX_TRACKER_SIZE = 1000 // Keep last N processed items
+const MAX_TRACKER_SIZE = 1000 // Keep last N processed items (legacy)
+
+// Keywords that mark an update as "major" → triggers full AI article generation
+const MAJOR_KEYWORDS = [
+  'security update', 'patch tuesday', 'critical', 'vulnerability', 'cve-',
+  'zero-day', '0-day', 'cumulative update', 'feature update', 'kb', 'windows 11',
+  'windows 12', 'azure openai', 'breaking change', 'general availability', 'ga release',
+  'major release', 'deprecated', 'end of life', 'eol',
+]
+
+function isMajorUpdate(title, description) {
+  const text = `${title} ${description}`.toLowerCase()
+  return MAJOR_KEYWORDS.some((kw) => text.includes(kw))
+}
 
 // ─── Utilities ────────────────────────────────────────────────────────────────
 
@@ -385,22 +410,21 @@ For full patch notes, affected versions, and workarounds:
   return content.slug
 }
 
-// ─── Tracker ──────────────────────────────────────────────────────────────────
+// ─── Data store helpers ───────────────────────────────────────────────────────
 
-function loadTracker() {
-  if (!fs.existsSync(TRACKER_PATH)) {
-    return { lastFetchedAt: null, processed: [] }
-  }
-  try {
-    return JSON.parse(fs.readFileSync(TRACKER_PATH, 'utf8'))
-  } catch {
-    return { lastFetchedAt: null, processed: [] }
-  }
+function loadJSON(filePath, fallback) {
+  if (!fs.existsSync(filePath)) return fallback
+  try { return JSON.parse(fs.readFileSync(filePath, 'utf8')) } catch { return fallback }
 }
 
-function saveTracker(tracker) {
-  fs.mkdirSync(path.dirname(TRACKER_PATH), { recursive: true })
-  fs.writeFileSync(TRACKER_PATH, JSON.stringify(tracker, null, 2), 'utf8')
+function saveJSON(filePath, data) {
+  fs.mkdirSync(path.dirname(filePath), { recursive: true })
+  fs.writeFileSync(filePath, JSON.stringify(data, null, 2), 'utf8')
+}
+
+// Legacy tracker — kept for backward compatibility
+function loadTracker() {
+  return loadJSON(TRACKER_PATH, { lastFetchedAt: null, processed: [] })
 }
 
 // ─── Main ─────────────────────────────────────────────────────────────────────
@@ -408,14 +432,24 @@ function saveTracker(tracker) {
 async function main() {
   console.log(`\n🚀 Pipeline started — ${new Date().toISOString()}`)
 
+  // ── Load state ───────────────────────────────────────────────────────────────
   const tracker = loadTracker()
-  const processedGuids = new Set(tracker.processed.map((p) => p.guid))
+  const history = loadJSON(HISTORY_PATH, { lastFetchedAt: null, seenGuids: [], totalArticles: 0 })
+
+  const seenGuids = new Set(history.seenGuids)
   const processedUrls = new Set(tracker.processed.map((p) => p.url))
-  const lastFetchedAt = tracker.lastFetchedAt ? new Date(tracker.lastFetchedAt) : null
 
-  const newItems = []
+  // Use the most recent lastFetchedAt from either source
+  const lastRaw = [tracker.lastFetchedAt, history.lastFetchedAt]
+    .filter(Boolean)
+    .sort()
+    .pop()
+  const lastFetchedAt = lastRaw ? new Date(lastRaw) : null
 
-  // ── Fetch all feeds ──────────────────────────────────────────────────────────
+  // ── Accumulate all feed items for live-updates.json ──────────────────────────
+  const allFeedItems = []   // everything from this run (for live display)
+  const newItems = []       // only truly new items (for article generation)
+
   for (const feed of FEEDS) {
     console.log(`\n📡 ${feed.category.toUpperCase()}: ${feed.url}`)
 
@@ -425,19 +459,26 @@ async function main() {
       console.log(`   ${items.length} items in feed`)
 
       for (const item of items) {
-        // Skip items older than last fetch
+        // Enrich with category for live display — include all recent items
+        const enriched = {
+          title: item.title,
+          description: item.description,
+          url: item.url,
+          guid: item.guid,
+          pubDate: toISODate(item.pubDate),
+          category: feed.category,
+        }
+        allFeedItems.push(enriched)
+
+        // For article generation: only genuinely new items
         if (lastFetchedAt && item.pubDate) {
           const itemDate = new Date(item.pubDate)
           if (!isNaN(itemDate.getTime()) && itemDate <= lastFetchedAt) continue
         }
+        if (seenGuids.has(item.guid) || processedUrls.has(item.url)) continue
 
-        // Dedup by guid and url
-        if (processedGuids.has(item.guid) || processedUrls.has(item.url)) continue
-
-        // Mark seen immediately to prevent cross-feed dups
-        processedGuids.add(item.guid)
+        seenGuids.add(item.guid)
         processedUrls.add(item.url)
-
         newItems.push({ ...item, category: feed.category })
       }
     } catch (err) {
@@ -445,34 +486,52 @@ async function main() {
     }
   }
 
-  console.log(`\n📊 ${newItems.length} new items to process`)
+  // ── Save live-updates.json (all recent items across all feeds) ───────────────
+  // Sort by date descending, keep latest MAX_LIVE_ITEMS
+  const liveItems = allFeedItems
+    .sort((a, b) => new Date(b.pubDate) - new Date(a.pubDate))
+    .slice(0, MAX_LIVE_ITEMS)
+    .map((item) => ({
+      title: item.title,
+      summary: item.description.substring(0, 220),
+      date: item.pubDate,
+      category: item.category,
+      sourceUrl: item.url,
+      // internal article page (may not exist for non-major updates)
+      slug: generateSlug(item.title, extractKBNumber(`${item.title} ${item.description}`)),
+    }))
 
-  let newCount = 0
+  saveJSON(LIVE_PATH, { updatedAt: new Date().toISOString(), items: liveItems })
+  console.log(`\n💾 live-updates.json updated — ${liveItems.length} items`)
 
-  // ── Process each new item ────────────────────────────────────────────────────
-  for (let i = 0; i < newItems.length; i++) {
-    const item = newItems[i]
-    console.log(`\n[${i + 1}/${newItems.length}] ${item.title.substring(0, 70)}`)
+  // ── Generate articles ONLY for new + major updates ───────────────────────────
+  const majorNewItems = newItems.filter((item) => isMajorUpdate(item.title, item.description))
+  console.log(`\n📊 ${newItems.length} new items total, ${majorNewItems.length} major (article generation)`)
+
+  let newArticleCount = 0
+
+  for (let i = 0; i < majorNewItems.length; i++) {
+    const item = majorNewItems[i]
+    console.log(`\n[${i + 1}/${majorNewItems.length}] ${item.title.substring(0, 70)}`)
 
     const kbNumber = extractKBNumber(`${item.title} ${item.description}`)
 
     try {
       const content = await generateContent(item, item.category, kbNumber)
-      const slug = saveMarkdown(content, item, item.category, kbNumber)
+      saveMarkdown(content, item, item.category, kbNumber)
 
       tracker.processed.push({
         guid: item.guid,
         url: item.url,
-        slug,
+        slug: content.slug,
         category: item.category,
         riskLevel: content.riskLevel,
         savedAt: new Date().toISOString(),
       })
 
-      newCount++
+      newArticleCount++
 
-      // Rate-limit AI calls to avoid 429 errors
-      if (process.env.OPENAI_API_KEY && i < newItems.length - 1) {
+      if (process.env.OPENAI_API_KEY && i < majorNewItems.length - 1) {
         await sleep(DELAY_MS)
       }
     } catch (err) {
@@ -480,17 +539,24 @@ async function main() {
     }
   }
 
-  // ── Update tracker ───────────────────────────────────────────────────────────
-  tracker.lastFetchedAt = new Date().toISOString()
+  // ── Update trackers ──────────────────────────────────────────────────────────
+  const now = new Date().toISOString()
 
   // Trim to prevent unbounded growth
   if (tracker.processed.length > MAX_TRACKER_SIZE) {
     tracker.processed = tracker.processed.slice(-MAX_TRACKER_SIZE)
   }
+  tracker.lastFetchedAt = now
+  saveJSON(TRACKER_PATH, tracker)
 
-  saveTracker(tracker)
+  // History: keep last MAX_HISTORY_GUIDS entries (covers ~1 year)
+  const guidArray = [...seenGuids]
+  history.seenGuids = guidArray.slice(-MAX_HISTORY_GUIDS)
+  history.lastFetchedAt = now
+  history.totalArticles = (history.totalArticles || 0) + newArticleCount
+  saveJSON(HISTORY_PATH, history)
 
-  console.log(`\n✅ Done — ${newCount} new articles saved\n`)
+  console.log(`\n✅ Done — ${newArticleCount} new articles | ${liveItems.length} live items\n`)
   process.exit(0)
 }
 
