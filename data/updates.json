@@ -1,4 +1,165 @@
 {
-  "lastFetchedAt": null,
-  "processed": []
+  "lastFetchedAt": "2026-04-01T07:19:17.911Z",
+  "processed": [
+    {
+      "guid": "https://blogs.windows.com/blog/2026/03/30/announcing-windows-11-insider-preview-build-for-canary-channel-29558-1000/",
+      "url": "https://blogs.windows.com/windows-insider/2026/03/30/announcing-windows-11-insider-preview-build-for-canary-channel-29558-1000/",
+      "slug": "announcing-windows-11-insider-preview-build-for-canary-channel-295581000",
+      "category": "windows",
+      "riskLevel": "SAFE",
+      "savedAt": "2026-04-01T07:19:17.906Z"
+    },
+    {
+      "guid": "https://blogs.windows.com/blog/2026/03/30/announcing-windows-11-insider-preview-build-28020-1797-canary-channel/",
+      "url": "https://blogs.windows.com/windows-insider/2026/03/30/announcing-windows-11-insider-preview-build-28020-1797-canary-channel/",
+      "slug": "announcing-windows-11-insider-preview-build-280201797-canary-channel",
+      "category": "windows",
+      "riskLevel": "SAFE",
+      "savedAt": "2026-04-01T07:19:17.906Z"
+    },
+    {
+      "guid": "https://blogs.windows.com/blog/2026/03/30/announcing-windows-11-insider-preview-build-26300-8142-dev-channel/",
+      "url": "https://blogs.windows.com/windows-insider/2026/03/30/announcing-windows-11-insider-preview-build-26300-8142-dev-channel/",
+      "slug": "announcing-windows-11-insider-preview-build-263008142-dev-channel",
+      "category": "windows",
+      "riskLevel": "SAFE",
+      "savedAt": "2026-04-01T07:19:17.906Z"
+    },
+    {
+      "guid": "https://blogs.windows.com/blog/2026/03/30/part-2-babylon-js-9-0-tooling-updates-and-new-geospatial-features/",
+      "url": "https://blogs.windows.com/windowsdeveloper/2026/03/30/part-2-babylon-js-9-0-tooling-updates-and-new-geospatial-features/",
+      "slug": "part-2-8211-babylonjs-90-tooling-updates-and-new-geospatial-features",
+      "category": "windows",
+      "riskLevel": "SAFE",
+      "savedAt": "2026-04-01T07:19:17.907Z"
+    },
+    {
+      "guid": "https://blogs.windows.com/blog/2026/03/30/announcing-windows-11-insider-preview-build-26220-8138-beta-channel/",
+      "url": "https://blogs.windows.com/windows-insider/2026/03/30/announcing-windows-11-insider-preview-build-26220-8138-beta-channel/",
+      "slug": "announcing-windows-11-insider-preview-build-262208138-beta-channel",
+      "category": "windows",
+      "riskLevel": "SAFE",
+      "savedAt": "2026-04-01T07:19:17.907Z"
+    },
+    {
+      "guid": "https://blogs.windows.com/blog/2026/03/26/announcing-babylon-js-9-0/",
+      "url": "https://blogs.windows.com/windowsdeveloper/2026/03/26/announcing-babylon-js-9-0/",
+      "slug": "announcing-babylonjs-90",
+      "category": "windows",
+      "riskLevel": "SAFE",
+      "savedAt": "2026-04-01T07:19:17.907Z"
+    },
+    {
+      "guid": "https://blogs.windows.com/blog/2026/03/26/xbox-partner-preview-highlights-upcoming-games/",
+      "url": "https://blogs.windows.com/windowsexperience/2026/03/26/xbox-partner-preview-highlights-upcoming-games/",
+      "slug": "xbox-partner-preview-highlights-upcoming-games",
+      "category": "windows",
+      "riskLevel": "SAFE",
+      "savedAt": "2026-04-01T07:19:17.908Z"
+    },
+    {
+      "guid": "https://blogs.windows.com/blog/2026/03/23/protect-your-enterprise-from-shadow-ai-and-more-announcements-at-rsac-2026/",
+      "url": "https://blogs.windows.com/msedgedev/2026/03/23/protect-your-enterprise-from-shadow-ai-and-more-announcements-at-rsac-2026/",
+      "slug": "protect-your-enterprise-from-shadow-ai-and-more-announcements-at-rsac-2026",
+      "category": "windows",
+      "riskLevel": "SAFE",
+      "savedAt": "2026-04-01T07:19:17.908Z"
+    },
+    {
+      "guid": "https://blogs.windows.com/blog/2026/03/20/our-commitment-to-windows-quality/",
+      "url": "https://blogs.windows.com/windows-insider/2026/03/20/our-commitment-to-windows-quality/",
+      "slug": "our-commitment-to-windows-quality",
+      "category": "windows",
+      "riskLevel": "SAFE",
+      "savedAt": "2026-04-01T07:19:17.908Z"
+    },
+    {
+      "guid": "https://blogs.windows.com/blog/2026/03/20/announcing-windows-11-insider-preview-build-for-canary-channel-29553-1000/",
+      "url": "https://blogs.windows.com/windows-insider/2026/03/20/announcing-windows-11-insider-preview-build-for-canary-channel-29553-1000/",
+      "slug": "announcing-windows-11-insider-preview-build-for-canary-channel-295531000",
+      "category": "windows",
+      "riskLevel": "SAFE",
+      "savedAt": "2026-04-01T07:19:17.909Z"
+    },
+    {
+      "guid": "https://azure.microsoft.com/en-us/blog/?p=50094",
+      "url": "https://www.microsoft.com/en-us/industry/blog/energy-and-resources/2026/03/24/ai-for-nuclear-energy-powering-an-intelligent-resilient-future/",
+      "slug": "ai-for-nuclear-energy-powering-an-intelligent-resilient-future",
+      "category": "azure",
+      "riskLevel": "SAFE",
+      "savedAt": "2026-04-01T07:19:17.909Z"
+    },
+    {
+      "guid": "https://azure.microsoft.com/en-us/blog/?p=50082",
+      "url": "https://opensource.microsoft.com/blog/2026/03/24/whats-new-with-microsoft-in-open-source-and-kubernetes-at-kubecon-cloudnativecon-europe-2026/",
+      "slug": "whats-new-with-microsoft-in-open-source-and-kubernetes-at-kubecon-cloudnativecon",
+      "category": "azure",
+      "riskLevel": "SAFE",
+      "savedAt": "2026-04-01T07:19:17.909Z"
+    },
+    {
+      "guid": "https://azure.microsoft.com/en-us/blog/?p=50042",
+      "url": "https://www.microsoft.com/en-us/sql-server/blog/2026/03/18/advancing-agentic-ai-with-microsoft-databases-across-a-unified-data-estate/",
+      "slug": "advancing-agentic-ai-with-microsoft-databases-across-a-unified-data-estate",
+      "category": "azure",
+      "riskLevel": "SAFE",
+      "savedAt": "2026-04-01T07:19:17.910Z"
+    },
+    {
+      "guid": "https://azure.microsoft.com/en-us/blog/?p=49975",
+      "url": "https://azure.microsoft.com/en-us/blog/fabcon-and-sqlcon-2026-unifying-databases-and-fabric-on-a-single-data-platform/",
+      "slug": "fabcon-and-sqlcon-2026-unifying-databases-and-fabric-on-a-single-data-platform",
+      "category": "azure",
+      "riskLevel": "SAFE",
+      "savedAt": "2026-04-01T07:19:17.910Z"
+    },
+    {
+      "guid": "https://azure.microsoft.com/en-us/blog/?p=50022",
+      "url": "https://blogs.microsoft.com/blog/2026/03/16/microsoft-at-nvidia-gtc-new-solutions-for-microsoft-foundry-azure-ai-infrastructure-and-physical-ai/",
+      "slug": "microsoft-at-nvidia-gtc-new-solutions-for-microsoft-foundry-azure-ai-infrastruct",
+      "category": "azure",
+      "riskLevel": "SAFE",
+      "savedAt": "2026-04-01T07:19:17.910Z"
+    },
+    {
+      "guid": "https://azure.microsoft.com/en-us/blog/?p=49743",
+      "url": "https://azure.microsoft.com/en-us/blog/from-legacy-to-leadership-how-postgresql-on-azure-powers-enterprise-agility-and-innovation/",
+      "slug": "from-legacy-to-leadership-how-postgresql-on-azure-powers-enterprise-agility-and",
+      "category": "azure",
+      "riskLevel": "SAFE",
+      "savedAt": "2026-04-01T07:19:17.910Z"
+    },
+    {
+      "guid": "https://azure.microsoft.com/en-us/blog/?p=49949",
+      "url": "https://www.microsoft.com/en-us/industry/blog/general/2026/03/11/modernizing-regulated-industries-with-cloud-and-agentic-ai/",
+      "slug": "modernizing-regulated-industries-with-cloud-and-agentic-ai",
+      "category": "azure",
+      "riskLevel": "SAFE",
+      "savedAt": "2026-04-01T07:19:17.910Z"
+    },
+    {
+      "guid": "https://azure.microsoft.com/en-us/blog/?p=49797",
+      "url": "https://azure.microsoft.com/en-us/blog/many-agents-one-team-scaling-modernization-on-azure/",
+      "slug": "many-agents-one-team-scaling-modernization-on-azure",
+      "category": "azure",
+      "riskLevel": "SAFE",
+      "savedAt": "2026-04-01T07:19:17.911Z"
+    },
+    {
+      "guid": "https://azure.microsoft.com/en-us/blog/?p=49830",
+      "url": "https://azure.microsoft.com/en-us/blog/introducing-fireworks-ai-on-microsoft-foundry-bringing-high-performance-low-latency-open-model-inference-to-azure/",
+      "slug": "introducing-fireworks-ai-on-microsoft-foundry-bringing-high-performance-low-late",
+      "category": "azure",
+      "riskLevel": "SAFE",
+      "savedAt": "2026-04-01T07:19:17.911Z"
+    },
+    {
+      "guid": "https://azure.microsoft.com/en-us/blog/?p=49666",
+      "url": "https://azure.microsoft.com/en-us/blog/unpacking-your-top-questions-on-agentic-ai-the-shift-podcast/",
+      "slug": "unpacking-your-top-questions-on-agentic-ai-the-shift-podcast",
+      "category": "azure",
+      "riskLevel": "SAFE",
+      "savedAt": "2026-04-01T07:19:17.911Z"
+    }
+  ]
 }
