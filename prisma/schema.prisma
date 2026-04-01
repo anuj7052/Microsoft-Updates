@@ -1,0 +1,49 @@
+// Prisma schema for Microsoft Updates platform
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Update {
+  id              String    @id @default(cuid())
+  title           String
+  kbNumber        String?   @unique
+  category        String
+  description     String    @db.Text
+  summaryEn       String?   @db.Text
+  summaryHi       String?   @db.Text
+  keyChanges      String[]
+  riskLevel       RiskLevel @default(SAFE)
+  shouldInstall   String?   @db.Text
+  slug            String    @unique
+  metaTitle       String?
+  metaDescription String?
+  sourceUrl       String    @unique
+  views           Int       @default(0)
+  publishedAt     DateTime  @default(now())
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+
+  @@index([category])
+  @@index([publishedAt(sort: Desc)])
+  @@index([views(sort: Desc)])
+  @@index([createdAt(sort: Desc)])
+}
+
+enum RiskLevel {
+  SAFE
+  CAUTION
+  AVOID
+}
+
+// Tracks last successful pipeline run to avoid reprocessing
+model FetchState {
+  id            String   @id @default("singleton")
+  lastFetchedAt DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+}
