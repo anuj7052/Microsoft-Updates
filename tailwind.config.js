@@ -7,16 +7,16 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'ms-blue': '#0078D4',
-        'ms-accent': '#50E6FF',
-        'ms-dark': '#050F1C',
-        'ms-navy': '#0A1628',
-        'ms-card': '#0D1F35',
-        'ms-green': '#6DC947',
-        'ms-yellow': '#FFB900',
-        'ms-purple': '#7B68EE',
-        'ms-red': '#D13438',
-        'ms-orange': '#D83B01',
+        'ms-blue': 'var(--ms-blue)',
+        'ms-accent': 'var(--ms-accent)',
+        'ms-dark': 'var(--ms-dark)',
+        'ms-navy': 'var(--ms-navy)',
+        'ms-card': 'var(--ms-card)',
+        'ms-green': 'var(--ms-green)',
+        'ms-yellow': 'var(--ms-yellow)',
+        'ms-purple': 'var(--ms-purple)',
+        'ms-red': 'var(--ms-red)',
+        'ms-orange': 'var(--ms-orange)',
       },
       fontFamily: {
         syne: ['var(--font-syne)', 'sans-serif'],

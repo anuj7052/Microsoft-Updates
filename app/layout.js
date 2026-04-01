@@ -77,6 +77,11 @@ export default function RootLayout({ children }) {
         <meta name="google-adsense-account" content="ca-pub-2413226939900202" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){try{var t=localStorage.getItem('theme')||'dark';document.documentElement.setAttribute('data-theme',t)}catch(e){}})()`,
+          }}
+        />
       </head>
       <body className="font-dm antialiased min-h-screen">
         <Script
@@ -100,6 +105,16 @@ export default function RootLayout({ children }) {
                   autoDisplay: false,
                 }, 'google_translate_element');
               }
+            `,
+          }}
+        />
+        <Script
+          id="google-translate-shim"
+          strategy="beforeInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              if(typeof mgt==='undefined'){window.mgt={clearMarks:function(){},mark:function(){}};}
+              if(typeof performance!=='undefined'&&!performance.clearMarks){performance.clearMarks=function(){};}
             `,
           }}
         />

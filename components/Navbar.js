@@ -2,6 +2,7 @@
 
 import Link from 'next/link'
 import { useState, useEffect } from 'react'
+import ThemeToggle from './ThemeToggle'
 
 const navCategories = [
   { name: 'All', href: '/' },
@@ -31,7 +32,7 @@ export default function Navbar() {
   }, [])
 
   return (
-    <nav className="sticky top-0 z-50 bg-ms-dark/80 backdrop-blur-xl border-b border-[rgba(0,120,212,0.18)]">
+    <nav className="sticky top-0 z-50 backdrop-blur-xl border-b border-[var(--border)]" style={{ backgroundColor: 'color-mix(in srgb, var(--ms-dark) 80%, transparent)' }}>
       <div className="max-w-7xl mx-auto px-4">
         {/* Top bar */}
         <div className="flex items-center justify-between h-16">
@@ -49,7 +50,9 @@ export default function Navbar() {
           </Link>
 
           {/* Right side */}
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-2">
+            {/* Theme toggle */}
+            <ThemeToggle />
             {/* Translate button */}
             <div className="translate-wrapper relative">
               <button
@@ -144,7 +147,7 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="md:hidden border-t border-[var(--border)] bg-ms-dark/95 backdrop-blur-xl">
+        <div className="md:hidden border-t border-[var(--border)] backdrop-blur-xl" style={{ backgroundColor: 'color-mix(in srgb, var(--ms-dark) 95%, transparent)' }}>
           <div className="px-4 py-3 space-y-1">
             {navCategories.map((cat) => (
               <Link
