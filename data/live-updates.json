@@ -1,4 +1,165 @@
 {
-  "updatedAt": null,
-  "items": []
+  "updatedAt": "2026-04-01T11:31:15.590Z",
+  "items": [
+    {
+      "title": "Announcing Windows 11 Insider Preview Build for Canary Channel 29558.1000",
+      "summary": "Hello Windows Insiders, today we’re releasing Windows Insider Preview Build 29558.1000 to the Windows 11 Insider Canary Channel on the optional 29500 build series. What’s new in Canary Build 29558.1000 Change The post An",
+      "date": "2026-03-30T21:06:04.000Z",
+      "category": "windows",
+      "sourceUrl": "https://blogs.windows.com/windows-insider/2026/03/30/announcing-windows-11-insider-preview-build-for-canary-channel-29558-1000/",
+      "slug": "announcing-windows-11-insider-preview-build-for-canary-channel-295581000"
+    },
+    {
+      "title": "Announcing Windows 11 Insider Preview Build 28020.1797 (Canary Channel)",
+      "summary": "Hello Windows Insiders, today we are releasing Windows 11 Insider Preview Build 28020.1797 to the Canary Channel. (KB 5079490) What’s new in Canary Build 28020.1797 Changes and Improvements g The post Announcing Windows ",
+      "date": "2026-03-30T21:05:51.000Z",
+      "category": "windows",
+      "sourceUrl": "https://blogs.windows.com/windows-insider/2026/03/30/announcing-windows-11-insider-preview-build-28020-1797-canary-channel/",
+      "slug": "announcing-windows-11-insider-preview-build-280201797-canary-channel"
+    },
+    {
+      "title": "Announcing Windows 11 Insider Preview Build 26300.8142 (Dev Channel)",
+      "summary": "Hello Windows Insiders, today we are releasing Windows 11 Insider Preview Build 26300.8142 (KB 5079492 The post Announcing Windows 11 Insider Preview Build 26300.8142 (Dev Channel) appeared first on Windows Blog.",
+      "date": "2026-03-30T21:04:17.000Z",
+      "category": "windows",
+      "sourceUrl": "https://blogs.windows.com/windows-insider/2026/03/30/announcing-windows-11-insider-preview-build-26300-8142-dev-channel/",
+      "slug": "announcing-windows-11-insider-preview-build-263008142-dev-channel"
+    },
+    {
+      "title": "Part 2 &#8211; Babylon.js 9.0: Tooling updates and new geospatial features",
+      "summary": "Our mission is to create one of the most powerful, beautiful and accessible web rendering engines in the world. With Babylon.js 9.0, we’re delivering a major set of enhancements to help you build stunning experiences. Ba",
+      "date": "2026-03-30T17:00:08.000Z",
+      "category": "windows",
+      "sourceUrl": "https://blogs.windows.com/windowsdeveloper/2026/03/30/part-2-babylon-js-9-0-tooling-updates-and-new-geospatial-features/",
+      "slug": "part-2-8211-babylonjs-90-tooling-updates-and-new-geospatial-features"
+    },
+    {
+      "title": "Announcing Windows 11 Insider Preview Build 26220.8138 (Beta Channel)",
+      "summary": "Hello Windows Insiders, today we are releasing Windows 11 Insider Preview Build 26220.8138 (KB 5079491 The post Announcing Windows 11 Insider Preview Build 26220.8138 (Beta Channel) appeared first on Windows Blog.",
+      "date": "2026-03-30T09:05:21.000Z",
+      "category": "windows",
+      "sourceUrl": "https://blogs.windows.com/windows-insider/2026/03/30/announcing-windows-11-insider-preview-build-26220-8138-beta-channel/",
+      "slug": "announcing-windows-11-insider-preview-build-262208138-beta-channel"
+    },
+    {
+      "title": "Announcing Babylon.js 9.0",
+      "summary": "Our mission is to build one of the most powerful, beautiful, simple and open web rendering engines in the world. Today, we are thrilled to announce that mission takes a monumental leap forward with the release of Babylon",
+      "date": "2026-03-26T18:20:54.000Z",
+      "category": "windows",
+      "sourceUrl": "https://blogs.windows.com/windowsdeveloper/2026/03/26/announcing-babylon-js-9-0/",
+      "slug": "announcing-babylonjs-90"
+    },
+    {
+      "title": "Xbox Partner Preview highlights upcoming games",
+      "summary": "With the latest installment of the Xbox Partner Preview, players got up close to 19 games, 14 of which will be playable day one with Xbox Game Pass Ultimate. Fans of PC games will see a lot of favorites, along with new t",
+      "date": "2026-03-26T17:57:50.000Z",
+      "category": "windows",
+      "sourceUrl": "https://blogs.windows.com/windowsexperience/2026/03/26/xbox-partner-preview-highlights-upcoming-games/",
+      "slug": "xbox-partner-preview-highlights-upcoming-games"
+    },
+    {
+      "title": "AI for nuclear energy: Powering an intelligent, resilient future",
+      "summary": "To break the infrastructure bottleneck and shift the industry from ambition to delivery, Microsoft is announcing an AI for nuclear collaboration with NVIDIA, to provide end-to-end tools that streamline permitting, accele",
+      "date": "2026-03-25T15:00:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://www.microsoft.com/en-us/industry/blog/energy-and-resources/2026/03/24/ai-for-nuclear-energy-powering-an-intelligent-resilient-future/",
+      "slug": "ai-for-nuclear-energy-powering-an-intelligent-resilient-future"
+    },
+    {
+      "title": "What’s new with Microsoft in open-source and Kubernetes at KubeCon + CloudNativeCon Europe 2026",
+      "summary": "At KubeCon + CloudNativeCon Europe 2026 in Amsterdam, we're making announcements that reflect the goal of bringing the operational maturity of Kubernetes to today's workloads and demands. The post What’s new with Microso",
+      "date": "2026-03-24T07:05:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://opensource.microsoft.com/blog/2026/03/24/whats-new-with-microsoft-in-open-source-and-kubernetes-at-kubecon-cloudnativecon-europe-2026/",
+      "slug": "whats-new-with-microsoft-in-open-source-and-kubernetes-at-kubecon-cloudnativecon"
+    },
+    {
+      "title": "Protect your enterprise from shadow AI and more: Announcements at RSAC 2026",
+      "summary": "AI has changed how—and where—work happens. Many of today's security risks occur inside the browser, where traditional controls can fall short. At RSAC 2026, we're highlighting strengthened Edge for Business capabilities ",
+      "date": "2026-03-23T15:59:04.000Z",
+      "category": "windows",
+      "sourceUrl": "https://blogs.windows.com/msedgedev/2026/03/23/protect-your-enterprise-from-shadow-ai-and-more-announcements-at-rsac-2026/",
+      "slug": "protect-your-enterprise-from-shadow-ai-and-more-announcements-at-rsac-2026"
+    },
+    {
+      "title": "Our commitment to Windows quality",
+      "summary": "Hello Windows Insiders, I want to speak to you directly, as an engineer who has spent his career building technology that people depend on every day. Windows touches more people's lives than almost any technology on Eart",
+      "date": "2026-03-20T19:00:11.000Z",
+      "category": "windows",
+      "sourceUrl": "https://blogs.windows.com/windows-insider/2026/03/20/our-commitment-to-windows-quality/",
+      "slug": "our-commitment-to-windows-quality"
+    },
+    {
+      "title": "Announcing Windows 11 Insider Preview Build for Canary Channel 29553.1000",
+      "summary": "Hello Windows Insiders, today we’re releasing Windows Insider Preview Build 29553.1000 to the Windows 11 Insider Canary Channel on the optional 29500 build series. What’s new in Canary Build 29553.1000 Change The post An",
+      "date": "2026-03-20T17:06:13.000Z",
+      "category": "windows",
+      "sourceUrl": "https://blogs.windows.com/windows-insider/2026/03/20/announcing-windows-11-insider-preview-build-for-canary-channel-29553-1000/",
+      "slug": "announcing-windows-11-insider-preview-build-for-canary-channel-295531000"
+    },
+    {
+      "title": "Advancing agentic AI with Microsoft databases across a unified data estate",
+      "summary": "Built on a consistent Microsoft SQL foundation from on premises to the cloud, Azure SQL brings AI capabilities directly into your database experience. The post Advancing agentic AI with Microsoft databases across a unifi",
+      "date": "2026-03-18T12:50:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://www.microsoft.com/en-us/sql-server/blog/2026/03/18/advancing-agentic-ai-with-microsoft-databases-across-a-unified-data-estate/",
+      "slug": "advancing-agentic-ai-with-microsoft-databases-across-a-unified-data-estate"
+    },
+    {
+      "title": "FabCon and SQLCon 2026: Unifying databases and Fabric on a single data platform",
+      "summary": "We're bring attendees together to share real experiences and solve challenges side-by-side. Only together can we move into meaningful results. The post FabCon and SQLCon 2026: Unifying databases and Fabric on a single da",
+      "date": "2026-03-18T12:45:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/fabcon-and-sqlcon-2026-unifying-databases-and-fabric-on-a-single-data-platform/",
+      "slug": "fabcon-and-sqlcon-2026-unifying-databases-and-fabric-on-a-single-data-platform"
+    },
+    {
+      "title": "Microsoft at NVIDIA GTC: New solutions for Microsoft Foundry, Azure AI infrastructure and Physical AI",
+      "summary": "Microsoft combines accelerated computing with cloud scale engineering to bring advanced AI capabilities to our customers. For years, we’ve worked with NVIDIA to integrate hardware, software and infrastructure to power ma",
+      "date": "2026-03-16T21:21:14.000Z",
+      "category": "azure",
+      "sourceUrl": "https://blogs.microsoft.com/blog/2026/03/16/microsoft-at-nvidia-gtc-new-solutions-for-microsoft-foundry-azure-ai-infrastructure-and-physical-ai/",
+      "slug": "microsoft-at-nvidia-gtc-new-solutions-for-microsoft-foundry-azure-ai-infrastruct"
+    },
+    {
+      "title": "From legacy to leadership: How PostgreSQL on Azure powers enterprise agility and innovation",
+      "summary": "Our mission is to make PostgreSQL the most performant, scalable, and enterprise-ready open database platform available. With Azure Database for PostgreSQL and the newly introduced Azure HorizonDB, we’re delivering on tha",
+      "date": "2026-03-16T17:00:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/from-legacy-to-leadership-how-postgresql-on-azure-powers-enterprise-agility-and-innovation/",
+      "slug": "from-legacy-to-leadership-how-postgresql-on-azure-powers-enterprise-agility-and"
+    },
+    {
+      "title": "Modernizing regulated industries with cloud and agentic AI",
+      "summary": "Discover how cloud modernization and agentic AI are accelerating migration across healthcare, financial services, and manufacturing. The post Modernizing regulated industries with cloud and agentic AI appeared first on M",
+      "date": "2026-03-11T16:00:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://www.microsoft.com/en-us/industry/blog/general/2026/03/11/modernizing-regulated-industries-with-cloud-and-agentic-ai/",
+      "slug": "modernizing-regulated-industries-with-cloud-and-agentic-ai"
+    },
+    {
+      "title": "Many agents, one team: Scaling modernization on Azure",
+      "summary": "We’re announcing the first agentic end-to-end modernization solution that brings IT and developers into a single, connected workflow. The post Many agents, one team: Scaling modernization on Azure appeared first on Micro",
+      "date": "2026-03-11T15:00:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/many-agents-one-team-scaling-modernization-on-azure/",
+      "slug": "many-agents-one-team-scaling-modernization-on-azure"
+    },
+    {
+      "title": "Introducing Fireworks AI on Microsoft Foundry: Bringing high performance, low latency open model inference to Azure",
+      "summary": "We’re announcing the public preview of Fireworks AI on Microsoft Foundry, bringing high‑performance open model inference into Azure. This integration reflects Microsoft Foundry’s broader direction: providing a single pla",
+      "date": "2026-03-11T07:00:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/introducing-fireworks-ai-on-microsoft-foundry-bringing-high-performance-low-latency-open-model-inference-to-azure/",
+      "slug": "introducing-fireworks-ai-on-microsoft-foundry-bringing-high-performance-low-late"
+    },
+    {
+      "title": "Unpacking your top questions on agentic AI: The Shift podcast",
+      "summary": "Today we're introducing \"The Shift\" podcast, an evolution of \"Leading the Shift,\" to share more dialogue. Grounded in questions we heard from you after announcements at Ignite, we’re releasing eight episodes this spring.",
+      "date": "2026-03-09T18:11:08.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/unpacking-your-top-questions-on-agentic-ai-the-shift-podcast/",
+      "slug": "unpacking-your-top-questions-on-agentic-ai-the-shift-podcast"
+    }
+  ]
 }
