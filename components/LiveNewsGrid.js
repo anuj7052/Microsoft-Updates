@@ -33,49 +33,54 @@ export default function LiveNewsGrid({ articles = [], title, color = 'bg-ms-acce
 
   return (
     <section className="max-w-7xl mx-auto px-4 py-10">
-      <div className="flex items-center gap-3 mb-6">
-        <div className={`w-1 h-6 ${color} rounded-full`}></div>
+      <div className="flex items-center gap-3 mb-7">
+        <div className="section-line"></div>
         <h2 className="font-syne font-extrabold text-2xl text-[var(--text-primary)]">
           {title}
         </h2>
-        <span className="flex items-center gap-1.5 bg-ms-red/15 text-ms-red text-[10px] font-bold px-2 py-0.5 rounded-full">
-          <span className="w-1.5 h-1.5 bg-ms-red rounded-full pulse-dot"></span>
+        <span className="flex items-center gap-1.5 text-[#F87171] text-[10px] font-bold px-2 py-0.5 rounded-full" style={{background:'rgba(248,113,113,0.1)',border:'1px solid rgba(248,113,113,0.2)'}}>
+          <span className="w-1.5 h-1.5 bg-[#F87171] rounded-full pulse-dot"></span>
           LIVE
         </span>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
         {articles.map((article, i) => {
           const internalSlug = article.slug || makeSlug(article.title)
+          const colorCls = sourceColors[article.source] || 'bg-ms-accent/15 text-ms-accent'
           return (
             <div
               key={i}
-              className="group relative bg-ms-card rounded-xl border border-[var(--border)] overflow-hidden hover:border-ms-blue/40 transition-all duration-200 hover:-translate-y-1"
+              className="group relative rounded-xl border border-[var(--border)] overflow-hidden glow-hover transition-all duration-200 hover:-translate-y-1"
+              style={{ background: 'var(--ms-card)' }}
             >
               {/* Full-card link */}
               <a href={`/live/${internalSlug}`} className="absolute inset-0 z-0" aria-label={article.title} />
 
               {/* Article image */}
-              {article.image && (
-                <div className="w-full aspect-[16/9] overflow-hidden bg-ms-dark">
+              {article.image ? (
+                <div className="w-full aspect-[16/9] overflow-hidden relative">
                   <img
                     src={article.image}
                     alt={article.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                     loading="lazy"
                   />
+                  <div className="absolute inset-0 img-overlay" />
                 </div>
+              ) : (
+                <div className="w-full h-20 bg-gradient-to-br from-[rgba(168,85,247,0.08)] to-[rgba(34,211,238,0.03)]" />
               )}
 
               <div className="relative z-10 p-5">
                 <div className="flex items-center gap-2 mb-3">
-                  <span className={`${sourceColors[article.source] || 'bg-ms-accent/15 text-ms-accent'} text-[10px] font-bold px-2 py-0.5 rounded-full`}>
+                  <span className={`${colorCls} text-[10px] font-bold px-2 py-0.5 rounded-full`}>
                     {article.source}
                   </span>
                   <span className="text-[10px] text-[var(--text-muted)] font-dm">
                     {timeAgo(article.pubDate)}
                   </span>
                 </div>
-                <h3 className="font-syne font-bold text-sm text-[var(--text-primary)] leading-snug group-hover:text-ms-accent transition-colors line-clamp-2 tracking-tight mb-2">
+                <h3 className="font-syne font-bold text-sm text-[var(--text-primary)] leading-snug group-hover:text-[#C084FC] transition-colors line-clamp-2 tracking-tight mb-2">
                   {article.title}
                 </h3>
                 {article.description && (
@@ -83,8 +88,8 @@ export default function LiveNewsGrid({ articles = [], title, color = 'bg-ms-acce
                     {article.description}
                   </p>
                 )}
-                <div className="flex items-center gap-3 pt-1 border-t border-[var(--border)]">
-                  <span className="text-[10px] text-ms-accent font-semibold group-hover:opacity-100 opacity-0 transition-opacity">
+                <div className="flex items-center gap-3 pt-2 border-t border-[var(--border)]">
+                  <span className="text-[10px] font-semibold gradient-text opacity-0 group-hover:opacity-100 transition-opacity">
                     Read article →
                   </span>
                   {article.link && (
@@ -105,6 +110,9 @@ export default function LiveNewsGrid({ articles = [], title, color = 'bg-ms-acce
                   )}
                 </div>
               </div>
+
+              {/* Bottom gradient line on hover */}
+              <div className="absolute bottom-0 left-0 right-0 h-[2px] opacity-0 group-hover:opacity-100 transition-opacity" style={{background:'linear-gradient(90deg,#A855F7,#22D3EE)'}} />
             </div>
           )
         })}

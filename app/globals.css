@@ -2,51 +2,59 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Dark theme (default) */
+/* Dark theme (default) — modern AI aesthetic */
 :root,
 [data-theme="dark"] {
-  --ms-dark: #050F1C;
-  --ms-navy: #0A1628;
-  --ms-card: #0D1F35;
-  --ms-blue: #0078D4;
-  --ms-accent: #50E6FF;
-  --ms-green: #6DC947;
-  --ms-yellow: #FFB900;
-  --ms-purple: #7B68EE;
-  --ms-red: #D13438;
-  --ms-orange: #D83B01;
-  --text-primary: #F0F6FF;
-  --text-secondary: #8BA5C2;
-  --text-muted: #4A6580;
-  --border: rgba(0, 120, 212, 0.18);
-  --grid-color: rgba(0, 120, 212, 0.04);
-  --scrollbar-track: #050F1C;
-  --scrollbar-thumb: rgba(0, 120, 212, 0.3);
-  --scrollbar-thumb-hover: rgba(0, 120, 212, 0.5);
-  --shadow-color: rgba(0, 0, 0, 0.4);
+  --ms-dark: #08070F;
+  --ms-navy: #0E0D1C;
+  --ms-card: #13122A;
+  --ms-blue: #A855F7;
+  --ms-accent: #22D3EE;
+  --ms-green: #34D399;
+  --ms-yellow: #FBBF24;
+  --ms-purple: #C084FC;
+  --ms-red: #F87171;
+  --ms-orange: #FB923C;
+  --text-primary: #F4F0FF;
+  --text-secondary: #9B8EC4;
+  --text-muted: #514B6E;
+  --border: rgba(168, 85, 247, 0.16);
+  --grid-color: rgba(168, 85, 247, 0.03);
+  --scrollbar-track: #08070F;
+  --scrollbar-thumb: rgba(168, 85, 247, 0.3);
+  --scrollbar-thumb-hover: rgba(168, 85, 247, 0.55);
+  --shadow-color: rgba(0, 0, 0, 0.5);
+  --glow-purple: rgba(168, 85, 247, 0.12);
+  --glow-cyan: rgba(34, 211, 238, 0.08);
+  --gradient-primary: linear-gradient(135deg, #A855F7, #22D3EE);
+  --gradient-subtle: linear-gradient(135deg, rgba(168,85,247,0.15), rgba(34,211,238,0.05));
 }
 
 /* Light theme */
 [data-theme="light"] {
-  --ms-dark: #F5F5F5;
-  --ms-navy: #EAEAEA;
+  --ms-dark: #F8F7FF;
+  --ms-navy: #EEECFA;
   --ms-card: #FFFFFF;
-  --ms-blue: #0078D4;
-  --ms-accent: #005A9E;
-  --ms-green: #107C10;
-  --ms-yellow: #CA8D01;
-  --ms-purple: #5C2D91;
-  --ms-red: #D13438;
-  --ms-orange: #D83B01;
-  --text-primary: #242424;
-  --text-secondary: #616161;
-  --text-muted: #9E9E9E;
-  --border: rgba(0, 0, 0, 0.1);
-  --grid-color: rgba(0, 0, 0, 0.03);
-  --scrollbar-track: #F5F5F5;
-  --scrollbar-thumb: rgba(0, 0, 0, 0.2);
-  --scrollbar-thumb-hover: rgba(0, 0, 0, 0.35);
-  --shadow-color: rgba(0, 0, 0, 0.1);
+  --ms-blue: #7C3AED;
+  --ms-accent: #0891B2;
+  --ms-green: #059669;
+  --ms-yellow: #D97706;
+  --ms-purple: #6D28D9;
+  --ms-red: #DC2626;
+  --ms-orange: #EA580C;
+  --text-primary: #1A1625;
+  --text-secondary: #4B4566;
+  --text-muted: #8B83A8;
+  --border: rgba(124, 58, 237, 0.12);
+  --grid-color: rgba(124, 58, 237, 0.03);
+  --scrollbar-track: #F8F7FF;
+  --scrollbar-thumb: rgba(124, 58, 237, 0.2);
+  --scrollbar-thumb-hover: rgba(124, 58, 237, 0.4);
+  --shadow-color: rgba(0, 0, 0, 0.08);
+  --glow-purple: rgba(124, 58, 237, 0.06);
+  --glow-cyan: rgba(8, 145, 178, 0.05);
+  --gradient-primary: linear-gradient(135deg, #7C3AED, #0891B2);
+  --gradient-subtle: linear-gradient(135deg, rgba(124,58,237,0.1), rgba(8,145,178,0.04));
 }
 
 * {
@@ -60,9 +68,10 @@ body {
   color: var(--text-primary);
   font-family: var(--font-dm-sans), sans-serif;
   background-image:
+    radial-gradient(ellipse 80% 50% at 50% -20%, rgba(168, 85, 247, 0.07), transparent),
     linear-gradient(var(--grid-color) 1px, transparent 1px),
     linear-gradient(90deg, var(--grid-color) 1px, transparent 1px);
-  background-size: 40px 40px;
+  background-size: auto, 40px 40px, 40px 40px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -158,14 +167,14 @@ body {
 }
 
 /* Category badge colors */
-.badge-windows { background: rgba(109, 201, 71, 0.15); color: #6DC947; }
-.badge-azure { background: rgba(0, 120, 212, 0.15); color: #0078D4; }
-.badge-power-platform { background: rgba(255, 185, 0, 0.15); color: #FFB900; }
-.badge-fabric { background: rgba(123, 104, 238, 0.15); color: #7B68EE; }
-.badge-licensing { background: rgba(255, 138, 138, 0.15); color: #FF8A8A; }
-.badge-copilot { background: rgba(80, 230, 255, 0.15); color: #50E6FF; }
-.badge-office365 { background: rgba(216, 59, 1, 0.15); color: #D83B01; }
-.badge-security { background: rgba(0, 188, 242, 0.15); color: #00BCF2; }
+.badge-windows { background: rgba(52,211,153,0.12); color: #34D399; }
+.badge-azure { background: rgba(168,85,247,0.12); color: #A855F7; }
+.badge-power-platform { background: rgba(251,191,36,0.12); color: #FBBF24; }
+.badge-fabric { background: rgba(192,132,252,0.12); color: #C084FC; }
+.badge-licensing { background: rgba(248,113,113,0.12); color: #F87171; }
+.badge-copilot { background: rgba(34,211,238,0.12); color: #22D3EE; }
+.badge-office365 { background: rgba(251,146,60,0.12); color: #FB923C; }
+.badge-security { background: rgba(34,211,238,0.12); color: #22D3EE; }
 
 /* Pulsing dot for breaking news */
 @keyframes pulse {
@@ -251,12 +260,97 @@ body {
   font-style: italic;
 }
 .article-content code {
-  background: rgba(80, 230, 255, 0.1);
+  background: rgba(34, 211, 238, 0.1);
   color: var(--ms-accent);
   padding: 0.15rem 0.4rem;
   border-radius: 4px;
   font-size: 0.88em;
   font-family: 'Courier New', monospace;
+}
+
+/* =====================
+   Modern AI UI Utilities
+   ===================== */
+
+/* Gradient text */
+.gradient-text {
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Glass card */
+.glass-card {
+  background: rgba(19, 18, 42, 0.7);
+  border: 1px solid var(--border);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Glow border on hover */
+.glow-hover {
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.glow-hover:hover {
+  border-color: rgba(168, 85, 247, 0.5) !important;
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.1);
+}
+
+/* AI badge */
+.ai-badge {
+  background: linear-gradient(135deg, rgba(168,85,247,0.2), rgba(34,211,238,0.1));
+  border: 1px solid rgba(168, 85, 247, 0.3);
+  color: #C084FC;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  padding: 2px 8px;
+  border-radius: 100px;
+}
+
+/* Category badge — updated colors */
+.badge-windows { background: rgba(52,211,153,0.12); color: #34D399; }
+.badge-azure { background: rgba(168,85,247,0.12); color: #A855F7; }
+.badge-power-platform { background: rgba(251,191,36,0.12); color: #FBBF24; }
+.badge-fabric { background: rgba(192,132,252,0.12); color: #C084FC; }
+.badge-licensing { background: rgba(248,113,113,0.12); color: #F87171; }
+.badge-copilot { background: rgba(34,211,238,0.12); color: #22D3EE; }
+.badge-office365 { background: rgba(251,146,60,0.12); color: #FB923C; }
+.badge-security { background: rgba(34,211,238,0.12); color: #22D3EE; }
+
+/* Section heading gradient line */
+.section-line {
+  height: 3px;
+  width: 36px;
+  background: var(--gradient-primary);
+  border-radius: 4px;
+}
+
+/* Reading time chip */
+.reading-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  background: rgba(168, 85, 247, 0.07);
+  border: 1px solid rgba(168, 85, 247, 0.12);
+  padding: 2px 10px;
+  border-radius: 100px;
+}
+
+/* Card image overlay gradient */
+.img-overlay {
+  background: linear-gradient(to top, rgba(8,7,15,0.8) 0%, transparent 50%);
+}
+
+/* Thin gradient divider */
+.grad-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(168,85,247,0.3), rgba(34,211,238,0.2), transparent);
+  border: none;
+  margin: 2rem 0;
 }
 .article-content hr {
   border: none;

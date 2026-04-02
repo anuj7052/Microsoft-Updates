@@ -34,16 +34,16 @@ export default function Navbar() {
   }, [])
 
   return (
-    <nav className="sticky top-0 z-50 backdrop-blur-xl border-b border-[var(--border)]" style={{ backgroundColor: 'color-mix(in srgb, var(--ms-dark) 80%, transparent)' }}>
+    <nav className="sticky top-0 z-50 backdrop-blur-xl" style={{ background:'rgba(8,7,15,0.85)', borderBottom:'1px solid rgba(168,85,247,0.15)', boxShadow:'0 1px 40px rgba(168,85,247,0.06)' }}>
       <div className="max-w-7xl mx-auto px-4">
         {/* Top bar */}
         <div className="flex items-center justify-between h-16">
           {/* Left - Logo */}
-          <Link href="/" className="flex items-center gap-2.5 shrink-0">
-            <Logo size={28} />
+          <Link href="/" className="flex items-center gap-2.5 shrink-0 group">
+            <Logo size={32} />
             <div className="flex flex-col leading-none">
-              <span className="font-syne font-bold text-sm md:text-[15px] text-[var(--text-primary)] tracking-tight">
-                Latest Microsoft Updates
+              <span className="font-syne font-bold text-sm md:text-[15px] tracking-tight" style={{background:'linear-gradient(90deg,#C084FC,#22D3EE)',WebkitBackgroundClip:'text',WebkitTextFillColor:'transparent'}}>
+                Latest Microsoft Updates &amp; News
               </span>
               <span className="text-[9px] text-[var(--text-muted)] font-dm tracking-wide hidden md:block">
                 Independent Updates Blog
@@ -139,7 +139,7 @@ export default function Navbar() {
             <Link
               key={cat.name}
               href={cat.href}
-              className="px-3 py-1.5 text-xs font-medium text-[var(--text-secondary)] hover:text-ms-accent hover:bg-ms-card rounded-md transition-colors whitespace-nowrap"
+              className="px-3 py-1.5 text-xs font-medium text-[var(--text-secondary)] hover:text-[#C084FC] hover:bg-[rgba(168,85,247,0.08)] rounded-md transition-colors whitespace-nowrap"
             >
               {cat.name}
             </Link>
