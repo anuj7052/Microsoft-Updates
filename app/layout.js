@@ -79,22 +79,7 @@ export default function RootLayout({ children }) {
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <script
           dangerouslySetInnerHTML={{
-            __html: `(function(){try{var t=localStorage.getItem('theme')||'dark';document.documentElement.setAttribute('data-theme',t)}catch(e){}})();
-(function(){
-  var noop=function(){};
-  var methods=['clearMarks','mark','measure','clearMeasures','clearResourceTimings','getEntriesByName','getEntriesByType','getEntries','now'];
-  function patch(obj){methods.forEach(function(m){if(typeof obj[m]!=='function')obj[m]=noop;});}
-  var _mgt={};
-  patch(_mgt);
-  try{
-    Object.defineProperty(window,'mgt',{
-      configurable:true,
-      get:function(){return _mgt;},
-      set:function(v){if(v&&typeof v==='object'){patch(v);_mgt=v;}},
-    });
-  }catch(e){window.mgt=_mgt;}
-  if(typeof performance!=='undefined'){patch(performance);}
-})();`,
+            __html: `(function(){try{var t=localStorage.getItem('theme')||'dark';document.documentElement.setAttribute('data-theme',t)}catch(e){}})();`,
           }}
         />
       </head>
@@ -103,29 +88,6 @@ export default function RootLayout({ children }) {
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2413226939900202"
           crossOrigin="anonymous"
-          strategy="afterInteractive"
-        />
-        {/* Google Translate container */}
-        <div id="google_translate_element" className="google-translate-hidden"></div>
-        <Script
-          id="google-translate-init"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
-              function googleTranslateElementInit() {
-                new google.translate.TranslateElement({
-                  pageLanguage: 'en',
-                  includedLanguages: 'hi,bn,te,ta,mr,gu,kn,ml,pa,ur,es,fr,de,ja,zh-CN,ar,pt,ru,ko',
-                  layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-                  autoDisplay: false,
-                }, 'google_translate_element');
-              }
-            `,
-          }}
-        />
-
-        <Script
-          src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
           strategy="afterInteractive"
         />
         <script
