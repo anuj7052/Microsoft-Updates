@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-02T08:12:13.114Z",
+  "updatedAt": "2026-04-02T09:36:22.360Z",
   "items": [
     {
       "title": "Announcing Windows 11 Insider Preview Build for Canary Channel 29558.1000",
@@ -8,7 +8,7 @@
       "category": "windows",
       "sourceUrl": "https://blogs.windows.com/windows-insider/2026/03/30/announcing-windows-11-insider-preview-build-for-canary-channel-29558-1000/",
       "slug": "announcing-windows-11-insider-preview-build-for-canary-channel-295581000",
-      "image": null
+      "image": "/api/og?title=Announcing%20Windows%2011%20Insider%20Preview%20Build%20for%20Canary%20Channel%2029558.1000&category=windows"
     },
     {
       "title": "Announcing Windows 11 Insider Preview Build 28020.1797 (Canary Channel)",
@@ -17,7 +17,7 @@
       "category": "windows",
       "sourceUrl": "https://blogs.windows.com/windows-insider/2026/03/30/announcing-windows-11-insider-preview-build-28020-1797-canary-channel/",
       "slug": "announcing-windows-11-insider-preview-build-280201797-canary-channel",
-      "image": null
+      "image": "/api/og?title=Announcing%20Windows%2011%20Insider%20Preview%20Build%2028020.1797%20(Canary%20Channel)&category=windows"
     },
     {
       "title": "Announcing Windows 11 Insider Preview Build 26300.8142 (Dev Channel)",
@@ -26,7 +26,7 @@
       "category": "windows",
       "sourceUrl": "https://blogs.windows.com/windows-insider/2026/03/30/announcing-windows-11-insider-preview-build-26300-8142-dev-channel/",
       "slug": "announcing-windows-11-insider-preview-build-263008142-dev-channel",
-      "image": null
+      "image": "/api/og?title=Announcing%20Windows%2011%20Insider%20Preview%20Build%2026300.8142%20(Dev%20Channel)&category=windows"
     },
     {
       "title": "Part 2 &#8211; Babylon.js 9.0: Tooling updates and new geospatial features",
@@ -35,7 +35,7 @@
       "category": "windows",
       "sourceUrl": "https://blogs.windows.com/windowsdeveloper/2026/03/30/part-2-babylon-js-9-0-tooling-updates-and-new-geospatial-features/",
       "slug": "part-2-8211-babylonjs-90-tooling-updates-and-new-geospatial-features",
-      "image": null
+      "image": "/api/og?title=Part%202%20%26%238211%3B%20Babylon.js%209.0%3A%20Tooling%20updates%20and%20new%20geospatial%20features&category=windows"
     },
     {
       "title": "Announcing Windows 11 Insider Preview Build 26220.8138 (Beta Channel)",
@@ -44,7 +44,7 @@
       "category": "windows",
       "sourceUrl": "https://blogs.windows.com/windows-insider/2026/03/30/announcing-windows-11-insider-preview-build-26220-8138-beta-channel/",
       "slug": "announcing-windows-11-insider-preview-build-262208138-beta-channel",
-      "image": null
+      "image": "/api/og?title=Announcing%20Windows%2011%20Insider%20Preview%20Build%2026220.8138%20(Beta%20Channel)&category=windows"
     },
     {
       "title": "Announcing Babylon.js 9.0",
@@ -53,7 +53,7 @@
       "category": "windows",
       "sourceUrl": "https://blogs.windows.com/windowsdeveloper/2026/03/26/announcing-babylon-js-9-0/",
       "slug": "announcing-babylonjs-90",
-      "image": null
+      "image": "/api/og?title=Announcing%20Babylon.js%209.0&category=windows"
     },
     {
       "title": "Xbox Partner Preview highlights upcoming games",
@@ -62,7 +62,7 @@
       "category": "windows",
       "sourceUrl": "https://blogs.windows.com/windowsexperience/2026/03/26/xbox-partner-preview-highlights-upcoming-games/",
       "slug": "xbox-partner-preview-highlights-upcoming-games",
-      "image": null
+      "image": "/api/og?title=Xbox%20Partner%20Preview%20highlights%20upcoming%20games&category=windows"
     },
     {
       "title": "AI for nuclear energy: Powering an intelligent, resilient future",
@@ -71,7 +71,7 @@
       "category": "azure",
       "sourceUrl": "https://www.microsoft.com/en-us/industry/blog/energy-and-resources/2026/03/24/ai-for-nuclear-energy-powering-an-intelligent-resilient-future/",
       "slug": "ai-for-nuclear-energy-powering-an-intelligent-resilient-future",
-      "image": null
+      "image": "/api/og?title=AI%20for%20nuclear%20energy%3A%20Powering%20an%20intelligent%2C%20resilient%20future&category=azure"
     },
     {
       "title": "What’s new with Microsoft in open-source and Kubernetes at KubeCon + CloudNativeCon Europe 2026",
@@ -80,7 +80,7 @@
       "category": "azure",
       "sourceUrl": "https://opensource.microsoft.com/blog/2026/03/24/whats-new-with-microsoft-in-open-source-and-kubernetes-at-kubecon-cloudnativecon-europe-2026/",
       "slug": "whats-new-with-microsoft-in-open-source-and-kubernetes-at-kubecon-cloudnativecon",
-      "image": null
+      "image": "/api/og?title=What%E2%80%99s%20new%20with%20Microsoft%20in%20open-source%20and%20Kubernetes%20at%20KubeCon%20%2B%20CloudNativeCon%20Europe%202026&category=azure"
     },
     {
       "title": "Protect your enterprise from shadow AI and more: Announcements at RSAC 2026",
@@ -89,7 +89,7 @@
       "category": "windows",
       "sourceUrl": "https://blogs.windows.com/msedgedev/2026/03/23/protect-your-enterprise-from-shadow-ai-and-more-announcements-at-rsac-2026/",
       "slug": "protect-your-enterprise-from-shadow-ai-and-more-announcements-at-rsac-2026",
-      "image": null
+      "image": "/api/og?title=Protect%20your%20enterprise%20from%20shadow%20AI%20and%20more%3A%20Announcements%20at%20RSAC%202026&category=windows"
     },
     {
       "title": "Our commitment to Windows quality",
@@ -98,7 +98,7 @@
       "category": "windows",
       "sourceUrl": "https://blogs.windows.com/windows-insider/2026/03/20/our-commitment-to-windows-quality/",
       "slug": "our-commitment-to-windows-quality",
-      "image": null
+      "image": "/api/og?title=Our%20commitment%20to%20Windows%20quality&category=windows"
     },
     {
       "title": "Announcing Windows 11 Insider Preview Build for Canary Channel 29553.1000",
@@ -107,7 +107,7 @@
       "category": "windows",
       "sourceUrl": "https://blogs.windows.com/windows-insider/2026/03/20/announcing-windows-11-insider-preview-build-for-canary-channel-29553-1000/",
       "slug": "announcing-windows-11-insider-preview-build-for-canary-channel-295531000",
-      "image": null
+      "image": "/api/og?title=Announcing%20Windows%2011%20Insider%20Preview%20Build%20for%20Canary%20Channel%2029553.1000&category=windows"
     },
     {
       "title": "Advancing agentic AI with Microsoft databases across a unified data estate",
@@ -116,7 +116,7 @@
       "category": "azure",
       "sourceUrl": "https://www.microsoft.com/en-us/sql-server/blog/2026/03/18/advancing-agentic-ai-with-microsoft-databases-across-a-unified-data-estate/",
       "slug": "advancing-agentic-ai-with-microsoft-databases-across-a-unified-data-estate",
-      "image": null
+      "image": "/api/og?title=Advancing%20agentic%20AI%20with%20Microsoft%20databases%20across%20a%20unified%20data%20estate&category=azure"
     },
     {
       "title": "FabCon and SQLCon 2026: Unifying databases and Fabric on a single data platform",
@@ -125,7 +125,7 @@
       "category": "azure",
       "sourceUrl": "https://azure.microsoft.com/en-us/blog/fabcon-and-sqlcon-2026-unifying-databases-and-fabric-on-a-single-data-platform/",
       "slug": "fabcon-and-sqlcon-2026-unifying-databases-and-fabric-on-a-single-data-platform",
-      "image": null
+      "image": "/api/og?title=FabCon%20and%20SQLCon%202026%3A%20Unifying%20databases%20and%20Fabric%20on%20a%20single%20data%20platform&category=azure"
     },
     {
       "title": "Microsoft at NVIDIA GTC: New solutions for Microsoft Foundry, Azure AI infrastructure and Physical AI",
@@ -134,7 +134,7 @@
       "category": "azure",
       "sourceUrl": "https://blogs.microsoft.com/blog/2026/03/16/microsoft-at-nvidia-gtc-new-solutions-for-microsoft-foundry-azure-ai-infrastructure-and-physical-ai/",
       "slug": "microsoft-at-nvidia-gtc-new-solutions-for-microsoft-foundry-azure-ai-infrastruct",
-      "image": null
+      "image": "/api/og?title=Microsoft%20at%20NVIDIA%20GTC%3A%20New%20solutions%20for%20Microsoft%20Foundry%2C%20Azure%20AI%20infrastructure%20and%20Physical%20A&category=azure"
     },
     {
       "title": "From legacy to leadership: How PostgreSQL on Azure powers enterprise agility and innovation",
@@ -143,7 +143,7 @@
       "category": "azure",
       "sourceUrl": "https://azure.microsoft.com/en-us/blog/from-legacy-to-leadership-how-postgresql-on-azure-powers-enterprise-agility-and-innovation/",
       "slug": "from-legacy-to-leadership-how-postgresql-on-azure-powers-enterprise-agility-and",
-      "image": null
+      "image": "/api/og?title=From%20legacy%20to%20leadership%3A%20How%20PostgreSQL%20on%20Azure%20powers%20enterprise%20agility%20and%20innovation&category=azure"
     },
     {
       "title": "Modernizing regulated industries with cloud and agentic AI",
@@ -152,7 +152,7 @@
       "category": "azure",
       "sourceUrl": "https://www.microsoft.com/en-us/industry/blog/general/2026/03/11/modernizing-regulated-industries-with-cloud-and-agentic-ai/",
       "slug": "modernizing-regulated-industries-with-cloud-and-agentic-ai",
-      "image": null
+      "image": "/api/og?title=Modernizing%20regulated%20industries%20with%20cloud%20and%20agentic%20AI&category=azure"
     },
     {
       "title": "Many agents, one team: Scaling modernization on Azure",
@@ -161,7 +161,7 @@
       "category": "azure",
       "sourceUrl": "https://azure.microsoft.com/en-us/blog/many-agents-one-team-scaling-modernization-on-azure/",
       "slug": "many-agents-one-team-scaling-modernization-on-azure",
-      "image": null
+      "image": "/api/og?title=Many%20agents%2C%20one%20team%3A%20Scaling%20modernization%20on%20Azure&category=azure"
     },
     {
       "title": "Introducing Fireworks AI on Microsoft Foundry: Bringing high performance, low latency open model inference to Azure",
@@ -170,7 +170,7 @@
       "category": "azure",
       "sourceUrl": "https://azure.microsoft.com/en-us/blog/introducing-fireworks-ai-on-microsoft-foundry-bringing-high-performance-low-latency-open-model-inference-to-azure/",
       "slug": "introducing-fireworks-ai-on-microsoft-foundry-bringing-high-performance-low-late",
-      "image": null
+      "image": "/api/og?title=Introducing%20Fireworks%20AI%20on%20Microsoft%20Foundry%3A%20Bringing%20high%20performance%2C%20low%20latency%20open%20model%20inf&category=azure"
     },
     {
       "title": "Unpacking your top questions on agentic AI: The Shift podcast",
