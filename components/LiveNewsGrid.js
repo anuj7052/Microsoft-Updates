@@ -28,6 +28,22 @@ const sourceColors = {
   'Microsoft Dev Blogs': 'bg-ms-accent/15 text-ms-accent',
 }
 
+const feedCategoryMap = {
+  'Azure Blog': 'azure',
+  'Windows Blog': 'windows',
+  'Microsoft Security': 'security',
+  'Microsoft 365 Dev': 'office365',
+  'Power Platform': 'power-platform',
+  'Microsoft Dev Blogs': 'copilot',
+}
+
+function getImageUrl(article) {
+  if (article.image) return article.image
+  const cat = article.feedCategory || feedCategoryMap[article.source] || 'general'
+  const title = encodeURIComponent((article.title || '').substring(0, 100))
+  return `/api/og?title=${title}&category=${cat}`
+}
+
 export default function LiveNewsGrid({ articles = [], title }) {
   if (articles.length === 0) return null
 
@@ -52,28 +68,19 @@ export default function LiveNewsGrid({ articles = [], title }) {
               {/* Full-card link */}
               <a href={`/live/${internalSlug}`} className="absolute inset-0 z-0" aria-label={article.title} />
 
-              {/* Article image — bigger ratio */}
-              {article.image ? (
-                <div className="w-full aspect-[16/10] overflow-hidden relative">
-                  <img
-                    src={article.image}
-                    alt={article.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                    loading="lazy"
-                  />
-                  <div className="absolute inset-0 img-overlay" />
-                  <span className={`absolute top-3 left-3 ${colorCls} text-[11px] font-bold px-2.5 py-1 rounded-full backdrop-blur-sm`}>
-                    {article.source}
-                  </span>
-                </div>
-              ) : (
-                <div className="w-full aspect-[16/10] bg-gradient-to-br from-[rgba(168,85,247,0.12)] to-[rgba(34,211,238,0.05)] flex items-center justify-center relative">
-                  <svg className="w-10 h-10 opacity-15 text-[var(--text-muted)]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 12h6"/></svg>
-                  <span className={`absolute top-3 left-3 ${colorCls} text-[11px] font-bold px-2.5 py-1 rounded-full`}>
-                    {article.source}
-                  </span>
-                </div>
-              )}
+              {/* Article image — always shown */}
+              <div className="w-full aspect-[16/10] overflow-hidden relative">
+                <img
+                  src={getImageUrl(article)}
+                  alt={article.title}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 img-overlay" />
+                <span className={`absolute top-3 left-3 ${colorCls} text-[11px] font-bold px-2.5 py-1 rounded-full backdrop-blur-sm`}>
+                  {article.source}
+                </span>
+              </div>
 
               <div className="relative z-10 p-5">
                 <div className="flex items-center gap-2 mb-3">

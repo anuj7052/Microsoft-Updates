@@ -550,7 +550,7 @@ async function main() {
       sourceUrl: item.url,
       // internal article page
       slug: generateSlug(item.title, extractKBNumber(`${item.title} ${item.description}`)),
-      image: item.image || null,
+      image: item.image || `/api/og?title=${encodeURIComponent(item.title.substring(0, 100))}&category=${item.category}`,
     }))
 
   saveJSON(LIVE_PATH, { updatedAt: new Date().toISOString(), items: liveItems })

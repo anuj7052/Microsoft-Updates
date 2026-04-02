@@ -20,12 +20,20 @@ function makeSlug(title) {
 }
 
 const categoryMap = {
-  'Azure Blog': { badge: 'bg-ms-blue/15 text-ms-blue', label: 'Azure' },
-  'Windows Blog': { badge: 'bg-ms-green/15 text-ms-green', label: 'Windows' },
-  'Microsoft Security': { badge: 'bg-[#00BCF2]/15 text-[#00BCF2]', label: 'Security' },
-  'Microsoft 365 Dev': { badge: 'bg-ms-orange/15 text-ms-orange', label: 'Office 365' },
-  'Power Platform': { badge: 'bg-ms-yellow/15 text-ms-yellow', label: 'Power Platform' },
-  'Microsoft Dev Blogs': { badge: 'bg-ms-accent/15 text-ms-accent', label: 'Developer' },
+  'Azure Blog': { badge: 'bg-ms-blue/15 text-ms-blue', label: 'Azure', cat: 'azure' },
+  'Windows Blog': { badge: 'bg-ms-green/15 text-ms-green', label: 'Windows', cat: 'windows' },
+  'Microsoft Security': { badge: 'bg-[#00BCF2]/15 text-[#00BCF2]', label: 'Security', cat: 'security' },
+  'Microsoft 365 Dev': { badge: 'bg-ms-orange/15 text-ms-orange', label: 'Office 365', cat: 'office365' },
+  'Power Platform': { badge: 'bg-ms-yellow/15 text-ms-yellow', label: 'Power Platform', cat: 'power-platform' },
+  'Microsoft Dev Blogs': { badge: 'bg-ms-accent/15 text-ms-accent', label: 'Developer', cat: 'copilot' },
+}
+
+function getImageUrl(article) {
+  if (article.image) return article.image
+  const meta = categoryMap[article.source]
+  const cat = article.feedCategory || (meta && meta.cat) || 'general'
+  const title = encodeURIComponent((article.title || '').substring(0, 100))
+  return `/api/og?title=${title}&category=${cat}`
 }
 
 export default function HeroSection({ articles = [] }) {
@@ -54,17 +62,11 @@ export default function HeroSection({ articles = [] }) {
           className="group lg:col-span-2 rounded-2xl border border-[var(--border)] overflow-hidden glow-hover transition-all duration-300 block relative"
           style={{ background: 'var(--ms-card)' }}
         >
-          {/* Hero image */}
-          {hero.image ? (
-            <div className="w-full aspect-[16/7] overflow-hidden relative">
-              <img src={hero.image} alt={hero.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="eager" />
-              <div className="absolute inset-0 img-overlay" />
-            </div>
-          ) : (
-            <div className="w-full aspect-[16/7] bg-gradient-to-br from-[rgba(168,85,247,0.15)] to-[rgba(34,211,238,0.05)] flex items-center justify-center">
-              <svg className="w-12 h-12 opacity-20" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 12h6"/></svg>
-            </div>
-          )}
+          {/* Hero image — always shown */}
+          <div className="w-full aspect-[16/7] overflow-hidden relative">
+            <img src={getImageUrl(hero)} alt={hero.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="eager" />
+            <div className="absolute inset-0 img-overlay" />
+          </div>
 
           <div className="p-6 md:p-8">
             <div className="flex flex-wrap items-center gap-2 mb-4">
@@ -112,14 +114,10 @@ export default function HeroSection({ articles = [] }) {
                 className="group rounded-xl border border-[var(--border)] overflow-hidden glow-hover transition-all duration-200 hover:-translate-y-0.5 block relative"
                 style={{ background: 'var(--ms-card)' }}
               >
-                {article.image ? (
-                  <div className="w-full aspect-[16/7] overflow-hidden relative">
-                    <img src={article.image} alt={article.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
-                    <div className="absolute inset-0 img-overlay" />
-                  </div>
-                ) : (
-                  <div className="w-full h-16 bg-gradient-to-r from-[rgba(168,85,247,0.08)] to-[rgba(34,211,238,0.04)]" />
-                )}
+                <div className="w-full aspect-[16/7] overflow-hidden relative">
+                  <img src={getImageUrl(article)} alt={article.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+                  <div className="absolute inset-0 img-overlay" />
+                </div>
                 <div className="p-4">
                   <span className={`${meta.badge} text-[10px] px-2 py-0.5 rounded-full font-medium`}>
                     {meta.label}
