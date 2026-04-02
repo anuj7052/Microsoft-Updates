@@ -79,8 +79,22 @@ export default function RootLayout({ children }) {
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <script
           dangerouslySetInnerHTML={{
-            __html: `(function(){try{var t=localStorage.getItem('theme')||'dark';document.documentElement.setAttribute('data-theme',t)}catch(e){}})()
-;(function(){var noop=function(){};if(typeof window.mgt==='undefined'){window.mgt={clearMarks:noop,mark:noop,measure:noop,clearMeasures:noop,clearResourceTimings:noop};}if(typeof performance!=='undefined'){if(!performance.clearMarks)performance.clearMarks=noop;if(!performance.mark)performance.mark=noop;if(!performance.measure)performance.measure=noop;}})();`,
+            __html: `(function(){try{var t=localStorage.getItem('theme')||'dark';document.documentElement.setAttribute('data-theme',t)}catch(e){}})();
+(function(){
+  var noop=function(){};
+  var methods=['clearMarks','mark','measure','clearMeasures','clearResourceTimings','getEntriesByName','getEntriesByType','getEntries','now'];
+  function patch(obj){methods.forEach(function(m){if(typeof obj[m]!=='function')obj[m]=noop;});}
+  var _mgt={};
+  patch(_mgt);
+  try{
+    Object.defineProperty(window,'mgt',{
+      configurable:true,
+      get:function(){return _mgt;},
+      set:function(v){if(v&&typeof v==='object'){patch(v);_mgt=v;}},
+    });
+  }catch(e){window.mgt=_mgt;}
+  if(typeof performance!=='undefined'){patch(performance);}
+})();`,
           }}
         />
       </head>
