@@ -56,7 +56,9 @@ const categoryIcons = {
 
 function getImageUrl(article) {
   if (article.image) return article.image
-  return null // Will use gradient fallback instead
+  const cat = article.feedCategory || 'general'
+  const title = encodeURIComponent((article.title || '').substring(0, 100))
+  return `/api/og?title=${title}&category=${cat}`
 }
 
 export default function LiveNewsGrid({ articles = [], title }) {
@@ -87,18 +89,12 @@ export default function LiveNewsGrid({ articles = [], title }) {
               className="group bg-ms-card rounded-2xl border border-[var(--border)] overflow-hidden glow-hover transition-all duration-300 flex flex-col"
             >
               <div className="aspect-video overflow-hidden relative">
-                {imageUrl ? (
-                  <img
-                    src={imageUrl}
-                    alt={article.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                    loading="lazy"
-                  />
-                ) : (
-                  <div className="w-full h-full flex items-center justify-center" style={{ background: gradient }}>
-                    <span className="text-5xl opacity-30">{icon}</span>
-                  </div>
-                )}
+                <img
+                  src={imageUrl}
+                  alt={article.title}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  loading="lazy"
+                />
                 <div className="absolute inset-0 img-overlay" />
               </div>
 

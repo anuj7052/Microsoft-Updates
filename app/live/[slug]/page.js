@@ -289,18 +289,13 @@ export default async function LiveArticlePage({ params }) {
         <article>
           {/* Hero Image */}
           <div className="w-full aspect-[2/1] overflow-hidden rounded-2xl mb-6 relative" style={{ background: 'linear-gradient(135deg,rgba(168,85,247,0.15),rgba(34,211,238,0.07))' }}>
-            {item.image ? (
-              <>
-                <img src={item.image} alt={item.title} className="w-full h-full object-cover" loading="eager" />
-                <div className="absolute inset-0" style={{ background: 'linear-gradient(to top,rgba(8,7,15,0.7) 0%,transparent 50%)' }} />
-              </>
-            ) : (
-              <div className="w-full h-full flex items-center justify-center">
-                <div className="text-center">
-                  <span className="text-6xl opacity-20">📰</span>
-                </div>
-              </div>
-            )}
+            <img 
+              src={item.image || `/api/og?title=${encodeURIComponent((item.title || '').substring(0, 100))}&category=${item.category || 'general'}`} 
+              alt={item.title} 
+              className="w-full h-full object-cover" 
+              loading="eager" 
+            />
+            <div className="absolute inset-0" style={{ background: 'linear-gradient(to top,rgba(8,7,15,0.7) 0%,transparent 50%)' }} />
             <div className="absolute top-4 left-4 flex items-center gap-2">
               <span className={`text-xs font-bold px-3 py-1 rounded-full backdrop-blur-sm ${colorTxt}`} style={{ background: colorBg, border: `1px solid ${colorBg.replace('0.12', '0.3')}` }}>{label}</span>
               <span className="flex items-center gap-1 text-[#F87171] text-[10px] font-bold px-2.5 py-1 rounded-full backdrop-blur-sm" style={{ background: 'rgba(248,113,113,0.15)', border: '1px solid rgba(248,113,113,0.3)' }}>

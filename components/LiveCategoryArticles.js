@@ -9,6 +9,13 @@ function timeAgo(dateStr) {
   return date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' })
 }
 
+function getImageUrl(article) {
+  if (article.image) return article.image
+  const cat = article.feedCategory || 'general'
+  const title = encodeURIComponent((article.title || '').substring(0, 100))
+  return `/api/og?title=${title}&category=${cat}`
+}
+
 function makeSlug(title) {
   return String(title || '')
     .toLowerCase()
@@ -40,9 +47,19 @@ export default function LiveCategoryArticles({ articles = [] }) {
             <a
               key={i}
               href={`/live/${artSlug}`}
-              className="group bg-ms-card rounded-xl border border-[var(--border)] p-5 hover:border-[#C084FC] transition-all duration-200 hover:-translate-y-1 block glow-hover"
+              className="group bg-ms-card rounded-xl border border-[var(--border)] overflow-hidden hover:border-[#C084FC] transition-all duration-200 hover:-translate-y-1 block glow-hover flex flex-col"
             >
-              <div className="flex items-center gap-2 mb-3">
+              <div className="aspect-video overflow-hidden relative">
+                <img
+                  src={getImageUrl(article)}
+                  alt={article.title}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 img-overlay" />
+              </div>
+              <div className="p-5 flex-1 flex flex-col">
+                <div className="flex items-center gap-2 mb-3">
                 <span className="bg-ms-accent/15 text-ms-accent text-[10px] font-bold px-2 py-0.5 rounded-full">
                   {article.source}
                 </span>
@@ -58,9 +75,10 @@ export default function LiveCategoryArticles({ articles = [] }) {
                   {article.description}
                 </p>
               )}
-              <span className="text-[10px] gradient-text font-semibold opacity-0 group-hover:opacity-100 transition-opacity">
+              <span className="text-[10px] gradient-text font-semibold opacity-0 group-hover:opacity-100 transition-opacity mt-auto">
                 Read full article →
               </span>
+              </div>
             </a>
           )
         })}

@@ -79,15 +79,9 @@ export default function HeroSection({ articles = [] }) {
           className="group lg:col-span-2 rounded-2xl border border-[var(--border)] overflow-hidden glow-hover transition-all duration-300 block relative"
           style={{ background: 'var(--ms-card)' }}
         >
-          {/* Hero image with gradient fallback */}
+          {/* Hero image with API fallback */}
           <div className="w-full aspect-[16/7] overflow-hidden relative">
-            {hero.image ? (
-              <img src={hero.image} alt={hero.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="eager" />
-            ) : (
-              <div className="w-full h-full flex items-center justify-center" style={{ background: heroMeta.gradient }}>
-                <span className="text-7xl opacity-30">{heroIcon}</span>
-              </div>
-            )}
+            <img src={getImageUrl(hero)} alt={hero.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="eager" />
             <div className="absolute inset-0 img-overlay" />
           </div>
 
@@ -140,13 +134,7 @@ export default function HeroSection({ articles = [] }) {
                 style={{ background: 'var(--ms-card)' }}
               >
                 <div className="w-full aspect-[16/7] overflow-hidden relative">
-                  {article.image ? (
-                    <img src={article.image} alt={article.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
-                  ) : (
-                    <div className="w-full h-full flex items-center justify-center" style={{ background: meta.gradient }}>
-                      <span className="text-4xl opacity-30">{artIcon}</span>
-                    </div>
-                  )}
+                  <img src={getImageUrl(article)} alt={article.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
                   <div className="absolute inset-0 img-overlay" />
                 </div>
                 <div className="p-4">

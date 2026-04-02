@@ -18,6 +18,23 @@
   --ms-accent: #C084FC;
 }
 
+:root[data-theme="light"] {
+  --background: #F8FAFC;
+  --foreground: #08070F;
+  --ms-card: #FFFFFF;
+  --border: rgba(168, 85, 247, 0.2);
+  --text-primary: #0F172A;
+  --text-secondary: #334155;
+  --text-muted: #64748B;
+  --ms-blue: #0078D4;
+  --ms-green: #107C10;
+  --ms-red: #D13438;
+  --ms-orange: #D83B01;
+  --ms-yellow: #806000;
+  --ms-accent: #A855F7;
+}
+
+
 * {
   box-sizing: border-box;
 }
