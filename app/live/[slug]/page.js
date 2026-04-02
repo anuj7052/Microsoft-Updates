@@ -3,6 +3,7 @@ import { join } from 'path'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { fetchMicrosoftFeeds } from '../../../lib/feeds'
+import { prisma } from '../../../lib/db'
 
 export const revalidate = 1800
 
@@ -22,10 +23,9 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }) {
   const { slug } = await params
   const items = loadLiveItems()
-  const item = items.find((i) => i.slug === slug)
+  let item = items.find((i) => i.slug === slug)
 
   if (!item) {
-    // Try RSS fallback
     try {
       const feeds = await fetchMicrosoftFeeds()
       const match = feeds.find((a) => {
@@ -39,6 +39,18 @@ export async function generateMetadata({ params }) {
         }
       }
     } catch {}
+
+    // Check DB
+    try {
+      const dbItem = await prisma.update.findUnique({ where: { slug } })
+      if (dbItem) {
+        return {
+          title: `${dbItem.title} | Microsoft Updates`,
+          description: dbItem.metaDescription || dbItem.description,
+        }
+      }
+    } catch {}
+
     return { title: 'Update Not Found | Microsoft Updates' }
   }
 
@@ -295,7 +307,7 @@ export default async function LiveArticlePage({ params }) {
               className="w-full h-full object-cover" 
               loading="eager" 
             />
-            <div className="absolute inset-0" style={{ background: 'linear-gradient(to top,rgba(8,7,15,0.7) 0%,transparent 50%)' }} />
+            <div className="absolute inset-0 bg-gradient-to-t from-[var(--ms-card)] via-transparent to-transparent opacity-80" />
             <div className="absolute top-4 left-4 flex items-center gap-2">
               <span className={`text-xs font-bold px-3 py-1 rounded-full backdrop-blur-sm ${colorTxt}`} style={{ background: colorBg, border: `1px solid ${colorBg.replace('0.12', '0.3')}` }}>{label}</span>
               <span className="flex items-center gap-1 text-[#F87171] text-[10px] font-bold px-2.5 py-1 rounded-full backdrop-blur-sm" style={{ background: 'rgba(248,113,113,0.15)', border: '1px solid rgba(248,113,113,0.3)' }}>
@@ -350,7 +362,7 @@ export default async function LiveArticlePage({ params }) {
 
           {/* Full Article Sections */}
           {sections.map((section, i) => (
-            <div key={i} className="rounded-2xl p-6 mb-6" style={{ background: 'rgba(19,18,42,0.6)', border: '1px solid var(--border)' }}>
+            <div key={i} className="rounded-2xl p-6 mb-6 bg-ms-card shadow-sm border border-[var(--border)]">
               <div className="flex items-center gap-2 mb-4">
                 <span className="text-lg">{section.icon}</span>
                 <h2 className="font-syne font-bold text-sm text-[var(--text-primary)] uppercase tracking-widest">{section.heading}</h2>

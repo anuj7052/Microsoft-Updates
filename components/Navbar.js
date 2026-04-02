@@ -37,7 +37,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="sticky top-0 z-50 backdrop-blur-xl" style={{ background:'rgba(8,7,15,0.85)', borderBottom:'1px solid rgba(168,85,247,0.15)', boxShadow:'0 1px 40px rgba(168,85,247,0.06)' }}>
+      <nav className="sticky top-0 z-50 backdrop-blur-xl border-b border-[var(--border)]" style={{ background:'var(--ms-card)', opacity: 0.95, boxShadow:'0 1px 40px rgba(168,85,247,0.06)' }}>
         <div className="max-w-7xl mx-auto px-4">
           {/* Top bar */}
           <div className="flex items-center justify-between h-16">
@@ -106,7 +106,7 @@ export default function Navbar() {
 
         {/* Mobile menu */}
         {mobileOpen && (
-          <div className="md:hidden border-t border-[var(--border)] backdrop-blur-xl" style={{ backgroundColor: 'color-mix(in srgb, var(--ms-dark) 95%, transparent)' }}>
+          <div className="md:hidden border-t border-[var(--border)] backdrop-blur-xl" style={{ background: 'var(--ms-card)' }}>
             <div className="px-4 py-3 space-y-1">
               {navCategories.map((cat) => (
                 <Link

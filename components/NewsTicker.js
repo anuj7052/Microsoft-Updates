@@ -17,7 +17,7 @@ export default function NewsTicker({ articles = [] }) {
   }))
 
   return (
-    <section className="border-y border-[var(--border)] overflow-hidden my-6" style={{ background: 'rgba(8,7,15,0.9)' }}>
+    <section className="border-y border-[var(--border)] overflow-hidden my-6 bg-ms-card">
       <div className="flex items-center">
         {/* LIVE label */}
         <div className="shrink-0 flex items-center gap-1.5 px-4 py-2.5 z-10" style={{ background: '#F25022' }}>
