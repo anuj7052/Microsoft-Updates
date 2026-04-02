@@ -1,4 +1,4 @@
-import { readFileSync, existsSync, readdirSync } from 'fs'
+import { readFileSync, existsSync } from 'fs'
 import { join } from 'path'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
@@ -14,47 +14,9 @@ function loadLiveItems() {
   return []
 }
 
-// Try to find a matching markdown article for richer content
-function loadMarkdownContent(slug) {
-  const baseDir = join(process.cwd(), 'content', 'updates')
-  try {
-    const cats = readdirSync(baseDir, { withFileTypes: true }).filter(d => d.isDirectory())
-    for (const cat of cats) {
-      const mdPath = join(baseDir, cat.name, `${slug}.md`)
-      if (existsSync(mdPath)) {
-        const raw = readFileSync(mdPath, 'utf8')
-        const fmMatch = raw.match(/^---\n([\s\S]*?)\n---/)
-        if (!fmMatch) return null
-        const body = raw.slice(fmMatch[0].length).trim()
-        const fm = {}
-        fmMatch[1].split('\n').forEach(line => {
-          const m = line.match(/^(\w+):\s*"?(.+?)"?\s*$/)
-          if (m) fm[m[1]] = m[2]
-        })
-        // Extract sections from markdown body
-        const sections = {}
-        let currentSection = null
-        for (const line of body.split('\n')) {
-          const heading = line.match(/^##\s+(.+)/)
-          if (heading) {
-            currentSection = heading[1].trim()
-            sections[currentSection] = ''
-          } else if (currentSection) {
-            sections[currentSection] += line + '\n'
-          }
-        }
-        return { frontmatter: fm, sections, rawBody: body }
-      }
-    }
-  } catch {}
-  return null
-}
-
 export async function generateStaticParams() {
   const items = loadLiveItems()
-  return items
-    .filter((i) => i.slug)
-    .map((i) => ({ slug: i.slug }))
+  return items.filter((i) => i.slug).map((i) => ({ slug: i.slug }))
 }
 
 export async function generateMetadata({ params }) {
@@ -62,7 +24,23 @@ export async function generateMetadata({ params }) {
   const items = loadLiveItems()
   const item = items.find((i) => i.slug === slug)
 
-  if (!item) return { title: 'Update Not Found | Microsoft Updates' }
+  if (!item) {
+    // Try RSS fallback
+    try {
+      const feeds = await fetchMicrosoftFeeds()
+      const match = feeds.find((a) => {
+        const s = a.title.toLowerCase().replace(/[^a-z0-9\s-]/g, '').trim().replace(/\s+/g, '-').substring(0, 80)
+        return s === slug
+      })
+      if (match) {
+        return {
+          title: `${match.title} | Microsoft Updates`,
+          description: match.description || `Latest Microsoft update: ${match.title}`,
+        }
+      }
+    } catch {}
+    return { title: 'Update Not Found | Microsoft Updates' }
+  }
 
   const cat = item.category?.replace('-', ' ').replace(/\b\w/g, (l) => l.toUpperCase()) || 'Microsoft'
   const ogImage = `https://microsoftupdates.co.in/api/og?title=${encodeURIComponent(item.title.substring(0, 100))}&category=${encodeURIComponent(item.category || 'general')}`
@@ -78,12 +56,7 @@ export async function generateMetadata({ params }) {
       publishedTime: item.date,
       images: [{ url: ogImage, width: 1200, height: 630 }],
     },
-    twitter: {
-      card: 'summary_large_image',
-      title: item.title,
-      description: item.summary || '',
-      images: [ogImage],
-    },
+    twitter: { card: 'summary_large_image', title: item.title, description: item.summary || '', images: [ogImage] },
     alternates: { canonical: `/live/${slug}` },
     robots: { index: true, follow: true },
   }
@@ -122,21 +95,123 @@ const categoryLabels = {
   general: 'General',
 }
 
-// Extract bullet points from description text for key points section
 function extractKeyPoints(text = '') {
   if (!text) return []
   const clean = text.replace(/<[^>]+>/g, ' ')
-  // Split on `. ` or `! ` or `? ` boundaries
-  const sentences = clean
-    .split(/[.!?]\s+/)
-    .map(s => s.trim())
-    .filter(s => s.length > 30 && s.length < 250)
-  return sentences.slice(0, 4)
+  const sentences = clean.split(/[.!?]\s+/).map(s => s.trim()).filter(s => s.length > 30 && s.length < 300)
+  return sentences.slice(0, 5)
 }
 
 function estimateReadTime(text = '') {
   const words = text.split(/\s+/).length
-  return Math.max(1, Math.ceil(words / 200))
+  return Math.max(2, Math.ceil(words / 200))
+}
+
+// Generate full article body from RSS summary
+function generateArticleBody(item) {
+  const title = item.title || ''
+  const summary = item.summary || item.description || ''
+  const category = categoryLabels[item.category] || item.category || 'Microsoft'
+  const date = item.date || item.pubDate || ''
+
+  let formattedDate = ''
+  try {
+    formattedDate = new Date(date).toLocaleDateString('en-IN', { day: 'numeric', month: 'long', year: 'numeric' })
+  } catch {}
+
+  // Clean up the summary text
+  const cleanSummary = summary.replace(/<[^>]+>/g, ' ').trim()
+
+  // Build article sections
+  const sections = []
+
+  // Section 1: Overview
+  sections.push({
+    heading: 'Overview',
+    icon: '📋',
+    content: cleanSummary || `Microsoft has released a new ${category} update. This article covers the key details and what you need to know about this announcement.`
+  })
+
+  // Section 2: What's New
+  const whatsNew = generateWhatsNew(title, category, cleanSummary)
+  sections.push({
+    heading: "What's New",
+    icon: '🆕',
+    content: whatsNew
+  })
+
+  // Section 3: Who's Affected
+  sections.push({
+    heading: "Who's Affected",
+    icon: '👥',
+    content: generateWhosAffected(category)
+  })
+
+  // Section 4: What You Should Do
+  sections.push({
+    heading: 'What You Should Do',
+    icon: '✅',
+    content: generateActionItems(category)
+  })
+
+  // Section 5: Background Context
+  sections.push({
+    heading: 'Background & Context',
+    icon: '📖',
+    content: generateContext(category, title)
+  })
+
+  return { sections, formattedDate, cleanSummary }
+}
+
+function generateWhatsNew(title, category, summary) {
+  const lowerTitle = title.toLowerCase()
+  
+  if (lowerTitle.includes('security') || lowerTitle.includes('vulnerability') || lowerTitle.includes('patch') || lowerTitle.includes('cve')) {
+    return `This security update addresses important vulnerabilities and improvements in the ${category} ecosystem. Microsoft regularly releases security patches to protect enterprise and consumer environments from emerging threats. ${summary ? `Specifically, ${summary.substring(0, 200)}` : ''} Organizations should review the full security bulletin to understand the scope of changes and plan their deployment accordingly.`
+  }
+  
+  if (lowerTitle.includes('update') || lowerTitle.includes('release') || lowerTitle.includes('new')) {
+    return `Microsoft has announced significant updates to its ${category} platform. ${summary ? summary.substring(0, 250) : `These changes bring new capabilities and improvements designed to enhance productivity, security, and user experience across the ${category} ecosystem.`} This release continues Microsoft's commitment to delivering regular updates and improvements to its product lineup.`
+  }
+
+  if (lowerTitle.includes('preview') || lowerTitle.includes('beta') || lowerTitle.includes('insider')) {
+    return `A new preview build has been announced for the ${category} platform, giving early adopters and IT professionals a chance to test upcoming features before general availability. ${summary ? summary.substring(0, 200) : ''} Preview releases help Microsoft gather feedback and ensure quality before wider deployment.`
+  }
+
+  return `${summary || `Microsoft has made an important announcement regarding its ${category} platform. This update brings notable changes that IT professionals and end users should be aware of.`} These changes reflect Microsoft's ongoing investment in the ${category} ecosystem and their commitment to continuous improvement.`
+}
+
+function generateWhosAffected(category) {
+  const affectedMap = {
+    windows: 'This update affects Windows users across consumer and enterprise environments. IT administrators managing Windows devices through Intune, SCCM, or Group Policy should review compatibility requirements. Home users will typically receive this update automatically through Windows Update.',
+    azure: 'This update primarily impacts Azure cloud subscribers, DevOps teams, and cloud architects. Organizations running production workloads on Azure should review the changes for any impact on service level agreements, pricing, or feature availability.',
+    security: 'This security bulletin affects all Microsoft product users but particularly organizations running enterprise deployments. Security teams, system administrators, and compliance officers should prioritize reviewing vulnerability severity ratings and applying patches based on their risk assessment.',
+    office365: 'Organizations using Microsoft 365 (formerly Office 365) will be affected by this change. This includes users of Outlook, Teams, SharePoint, OneDrive, and other productivity applications. Administrators managing Microsoft 365 tenants should review the admin center for deployment details.',
+    'power-platform': 'Power Platform users including Power BI, Power Apps, Power Automate, and Power Virtual Agents users are affected. Citizen developers and IT departments leveraging low-code solutions should review how these changes impact their existing applications and workflows.',
+    copilot: 'Users of Microsoft Copilot and AI-powered features across Microsoft 365, Edge, Windows, and Azure are affected. Organizations evaluating or deploying AI capabilities should review the updates for new features, policy controls, and data handling information.',
+    fabric: 'Data engineers, analysts, and organizations using Microsoft Fabric for data analytics and AI workloads are affected. Teams using Data Factory, Synapse, Power BI, or Real-Time Analytics within Fabric should review changes for impact on existing pipelines.',
+    general: 'This update may affect users across multiple Microsoft products and services. IT professionals and system administrators should review the specifics to determine the impact on their environment.',
+  }
+  return affectedMap[category] || affectedMap.general
+}
+
+function generateActionItems(category) {
+  const actionMap = {
+    windows: '1. Check Windows Update for the latest patches and updates.\n2. Review the release notes for any known issues before deploying.\n3. Test updates in a non-production environment first if managing enterprise deployments.\n4. Ensure your backup strategy is current before applying major updates.\n5. Monitor the Microsoft Tech Community for user feedback on potential issues.',
+    azure: '1. Review the Azure Updates page for detailed change documentation.\n2. Check Azure Service Health for any planned maintenance windows.\n3. Test affected services in a dev/staging environment before production.\n4. Review pricing changes if any are announced.\n5. Update infrastructure-as-code templates to align with new features or deprecations.',
+    security: '1. Review CVSS scores and severity ratings for each vulnerability addressed.\n2. Apply critical and high-severity patches within your organization\'s SLA.\n3. Use Microsoft Defender vulnerability management to track patch status.\n4. Test patches in a controlled environment before broad deployment.\n5. Document remediation actions for compliance and audit purposes.',
+    office365: '1. Check the Microsoft 365 Admin Center for rollout timelines.\n2. Communicate changes to end users if the UI or workflows are affected.\n3. Update training materials and internal documentation.\n4. Test impacted workflows, especially custom integrations and add-ins.\n5. Review message center posts for additional context and timelines.',
+    'power-platform': '1. Review the Power Platform Admin Center for change notifications.\n2. Test existing Power Apps and Power Automate flows for compatibility.\n3. Update solution packages if using ALM for Power Platform.\n4. Review data loss prevention (DLP) policies if new connectors are involved.\n5. Check maker documentation for any API changes.',
+    copilot: '1. Review Copilot admin controls and data governance settings.\n2. Test new AI features in a pilot group before organization-wide rollout.\n3. Update responsible AI policies and usage guidelines.\n4. Monitor usage analytics through the Microsoft 365 Admin Center.\n5. Gather user feedback on AI feature accuracy and usefulness.',
+    fabric: '1. Review changes to Data Factory pipelines and Synapse workspaces.\n2. Validate existing data models and refresh schedules.\n3. Test real-time analytics queries for performance changes.\n4. Update lakehouse and warehouse configurations if needed.\n5. Monitor capacity consumption metrics after the update.',
+    general: '1. Review the official Microsoft documentation for full details.\n2. Assess impact on your specific environment and use cases.\n3. Test changes in a non-production environment before deploying.\n4. Keep an eye on Microsoft community forums for user feedback.\n5. Bookmark the official announcement for reference.',
+  }
+  return actionMap[category] || actionMap.general
+}
+
+function generateContext(category, title) {
+  return `Microsoft regularly releases updates, patches, and feature announcements across its product ecosystem. This ${category} announcement is part of Microsoft's ongoing commitment to improving security, performance, and user experience across all platforms. For context, Microsoft typically follows a monthly update cycle (Patch Tuesday) for security updates, while feature updates and announcements may come at any time through preview channels and official blog posts. This independent coverage summarizes official Microsoft announcements to help IT professionals stay informed without needing to monitor multiple sources.`
 }
 
 export default async function LiveArticlePage({ params }) {
@@ -152,18 +227,14 @@ export default async function LiveArticlePage({ params }) {
     try {
       const feeds = await fetchMicrosoftFeeds()
       const match = feeds.find((a) => {
-        const s = a.title
-          .toLowerCase()
-          .replace(/[^a-z0-9\s-]/g, '')
-          .trim()
-          .replace(/\s+/g, '-')
-          .substring(0, 80)
+        const s = a.title.toLowerCase().replace(/[^a-z0-9\s-]/g, '').trim().replace(/\s+/g, '-').substring(0, 80)
         return s === slug || (a.slug && a.slug === slug)
       })
       if (match) {
         item = {
           title: match.title,
           summary: match.description || '',
+          description: match.description || '',
           date: match.pubDate,
           category: match.feedCategory || 'general',
           sourceUrl: match.link,
@@ -176,22 +247,17 @@ export default async function LiveArticlePage({ params }) {
 
   if (!item) notFound()
 
-  // Try loading rich markdown content for this slug
-  const mdContent = loadMarkdownContent(slug)
-
   const colorTxt = categoryColors[item.category] || categoryColors.general
   const colorBg = categoryBg[item.category] || categoryBg.general
   const label = categoryLabels[item.category] || item.category
-  const allText = mdContent ? mdContent.rawBody : (item.summary || '') + (item.description || '')
-  const readMin = estimateReadTime(allText)
-  const keyPoints = mdContent
-    ? (mdContent.sections['Key Changes'] || '').split('\n').filter(l => l.startsWith('- ')).map(l => l.replace(/^-\s+/, ''))
-    : extractKeyPoints(item.summary || item.description || '')
-  const formattedDate = (() => {
-    try { return new Date(item.date).toLocaleDateString('en-IN', { day: 'numeric', month: 'long', year: 'numeric' }) } catch { return '' }
-  })()
 
-  // JSON-LD schema — NewsArticle
+  // Generate the full article body
+  const { sections, formattedDate, cleanSummary } = generateArticleBody(item)
+  const keyPoints = extractKeyPoints(cleanSummary)
+  const allText = sections.map(s => s.content).join(' ')
+  const readMin = estimateReadTime(allText)
+
+  // JSON-LD schema
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'NewsArticle',
@@ -203,7 +269,6 @@ export default async function LiveArticlePage({ params }) {
     publisher: { '@type': 'Organization', name: 'Latest Microsoft Updates & News', url: 'https://microsoftupdates.co.in', logo: { '@type': 'ImageObject', url: 'https://microsoftupdates.co.in/icon.png' } },
     mainEntityOfPage: { '@type': 'WebPage', '@id': `https://microsoftupdates.co.in/live/${slug}` },
     isAccessibleForFree: true,
-    ...(item.image ? { image: { '@type': 'ImageObject', url: item.image } } : {}),
     ...(item.sourceUrl ? { sameAs: item.sourceUrl } : {}),
   }
 
@@ -222,66 +287,65 @@ export default async function LiveArticlePage({ params }) {
         </nav>
 
         <article>
-          {/* Hero image — always shown (gradient fallback) */}
-          <div className="w-full aspect-[2/1] overflow-hidden rounded-2xl mb-6 relative" style={{background:'linear-gradient(135deg,rgba(168,85,247,0.15),rgba(34,211,238,0.07))'}}>
+          {/* Hero Image */}
+          <div className="w-full aspect-[2/1] overflow-hidden rounded-2xl mb-6 relative" style={{ background: 'linear-gradient(135deg,rgba(168,85,247,0.15),rgba(34,211,238,0.07))' }}>
             {item.image ? (
               <>
                 <img src={item.image} alt={item.title} className="w-full h-full object-cover" loading="eager" />
-                <div className="absolute inset-0" style={{background:'linear-gradient(to top,rgba(8,7,15,0.7) 0%,transparent 50%)'}} />
+                <div className="absolute inset-0" style={{ background: 'linear-gradient(to top,rgba(8,7,15,0.7) 0%,transparent 50%)' }} />
               </>
             ) : (
               <div className="w-full h-full flex items-center justify-center">
-                <svg className="w-16 h-16 opacity-15" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={0.8} d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 12h6"/></svg>
+                <div className="text-center">
+                  <span className="text-6xl opacity-20">📰</span>
+                </div>
               </div>
             )}
-            {/* Category label overlaid on image */}
             <div className="absolute top-4 left-4 flex items-center gap-2">
-              <span className={`text-xs font-bold px-3 py-1 rounded-full backdrop-blur-sm ${colorTxt}`} style={{background:colorBg,border:`1px solid ${colorBg.replace('0.12','0.3')}`}}>{label}</span>
-              <span className="flex items-center gap-1 text-[#F87171] text-[10px] font-bold px-2.5 py-1 rounded-full backdrop-blur-sm" style={{background:'rgba(248,113,113,0.15)',border:'1px solid rgba(248,113,113,0.3)'}}>
+              <span className={`text-xs font-bold px-3 py-1 rounded-full backdrop-blur-sm ${colorTxt}`} style={{ background: colorBg, border: `1px solid ${colorBg.replace('0.12', '0.3')}` }}>{label}</span>
+              <span className="flex items-center gap-1 text-[#F87171] text-[10px] font-bold px-2.5 py-1 rounded-full backdrop-blur-sm" style={{ background: 'rgba(248,113,113,0.15)', border: '1px solid rgba(248,113,113,0.3)' }}>
                 <span className="w-1.5 h-1.5 bg-[#F87171] rounded-full pulse-dot"></span>LIVE
               </span>
             </div>
           </div>
 
-          {/* Article header */}
+          {/* Article Header */}
           <div className="mb-8">
-            {/* Meta row */}
             <div className="flex flex-wrap items-center gap-3 mb-4 text-xs text-[var(--text-muted)] font-dm">
               {formattedDate && <span>{formattedDate}</span>}
               <span className="opacity-40">·</span>
-              <span className="reading-chip">
-                <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              <span className="reading-chip inline-flex items-center gap-1">
+                <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
                 {readMin} min read
               </span>
               <span className="opacity-40">·</span>
               <span className="ai-badge">INDEPENDENT COVERAGE</span>
             </div>
 
-            <h1 className="font-syne font-extrabold text-2xl md:text-3xl lg:text-[2rem] text-[var(--text-primary)] leading-snug tracking-tight mb-5">
+            <h1 className="font-syne font-extrabold text-2xl md:text-3xl lg:text-[2.2rem] text-[var(--text-primary)] leading-snug tracking-tight mb-5">
               {item.title}
             </h1>
 
-            {/* Summary lead */}
-            {item.summary && (
+            {cleanSummary && (
               <p className="text-[1.05rem] text-[var(--text-secondary)] font-dm leading-relaxed border-l-2 border-[#A855F7] pl-4">
-                {item.summary}
+                {cleanSummary}
               </p>
             )}
           </div>
 
           <hr className="grad-divider" />
 
-          {/* Key Points / Key Changes */}
+          {/* Key Points */}
           {keyPoints.length > 0 && (
-            <div className="rounded-2xl p-6 mb-8" style={{background:'linear-gradient(135deg,rgba(168,85,247,0.06),rgba(34,211,238,0.03))',border:'1px solid rgba(168,85,247,0.18)'}}>
+            <div className="rounded-2xl p-6 mb-8" style={{ background: 'linear-gradient(135deg,rgba(168,85,247,0.06),rgba(34,211,238,0.03))', border: '1px solid rgba(168,85,247,0.18)' }}>
               <div className="flex items-center gap-2 mb-4">
-                <svg className="w-4 h-4 text-[#C084FC]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
-                <h2 className="font-syne font-bold text-sm text-[var(--text-primary)] uppercase tracking-widest">Key Changes</h2>
+                <span className="text-lg">📌</span>
+                <h2 className="font-syne font-bold text-sm text-[var(--text-primary)] uppercase tracking-widest">Key Points</h2>
               </div>
               <ul className="space-y-3">
                 {keyPoints.map((pt, i) => (
                   <li key={i} className="flex items-start gap-3 text-sm text-[var(--text-secondary)] font-dm leading-relaxed">
-                    <span className="mt-1 w-5 h-5 rounded-full flex items-center justify-center shrink-0 text-[10px] font-bold text-[#C084FC]" style={{background:'rgba(168,85,247,0.12)'}}>{i+1}</span>
+                    <span className="mt-1 w-5 h-5 rounded-full flex items-center justify-center shrink-0 text-[10px] font-bold text-[#C084FC]" style={{ background: 'rgba(168,85,247,0.12)' }}>{i + 1}</span>
                     {pt}
                   </li>
                 ))}
@@ -289,121 +353,46 @@ export default async function LiveArticlePage({ params }) {
             </div>
           )}
 
-          {/* Detailed Analysis — from markdown only */}
-          {mdContent && mdContent.sections['Detailed Analysis'] && (
-            <div className="rounded-2xl p-6 mb-8" style={{background:'rgba(19,18,42,0.6)',border:'1px solid var(--border)'}}>
+          {/* Full Article Sections */}
+          {sections.map((section, i) => (
+            <div key={i} className="rounded-2xl p-6 mb-6" style={{ background: 'rgba(19,18,42,0.6)', border: '1px solid var(--border)' }}>
               <div className="flex items-center gap-2 mb-4">
-                <svg className="w-4 h-4 text-[#A855F7]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
-                <h2 className="font-syne font-bold text-sm text-[var(--text-primary)] uppercase tracking-widest">Detailed Analysis</h2>
+                <span className="text-lg">{section.icon}</span>
+                <h2 className="font-syne font-bold text-sm text-[var(--text-primary)] uppercase tracking-widest">{section.heading}</h2>
               </div>
               <div className="text-sm text-[var(--text-secondary)] font-dm leading-relaxed whitespace-pre-line">
-                {mdContent.sections['Detailed Analysis'].trim()}
+                {section.content}
               </div>
             </div>
-          )}
-
-          {/* Who Is Affected — from markdown only */}
-          {mdContent && mdContent.sections['Who Is Affected?'] && (
-            <div className="rounded-2xl p-6 mb-8" style={{background:'rgba(34,211,238,0.04)',border:'1px solid rgba(34,211,238,0.12)'}}>
-              <div className="flex items-center gap-2 mb-4">
-                <svg className="w-4 h-4 text-[#22D3EE]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
-                <h2 className="font-syne font-bold text-sm text-[var(--text-primary)] uppercase tracking-widest">Who Is Affected?</h2>
-              </div>
-              <div className="text-sm text-[var(--text-secondary)] font-dm leading-relaxed whitespace-pre-line">
-                {mdContent.sections['Who Is Affected?'].trim()}
-              </div>
-            </div>
-          )}
-
-          {/* Summary (Hindi) — from markdown */}
-          {mdContent && mdContent.sections['Summary (हिंदी में)'] && (
-            <div className="rounded-2xl p-6 mb-8" style={{background:'rgba(168,85,247,0.04)',border:'1px solid rgba(168,85,247,0.12)'}}>
-              <div className="flex items-center gap-2 mb-4">
-                <span className="text-sm">🇮🇳</span>
-                <h2 className="font-syne font-bold text-sm text-[var(--text-primary)] uppercase tracking-widest">हिंदी में सारांश</h2>
-              </div>
-              <p className="text-sm text-[var(--text-secondary)] font-dm leading-relaxed">
-                {mdContent.sections['Summary (हिंदी में)'].trim()}
-              </p>
-            </div>
-          )}
-
-          {/* Should You Install — from markdown or fallback */}
-          <div className="rounded-2xl p-6 mb-8" style={{background:'rgba(34,211,238,0.04)',border:'1px solid rgba(34,211,238,0.12)'}}>
-            <div className="flex items-center gap-2 mb-3">
-              <svg className="w-4 h-4 text-[#22D3EE]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-              <h2 className="font-syne font-bold text-sm text-[var(--text-primary)] uppercase tracking-widest">
-                {mdContent && mdContent.sections['Should You Install?'] ? 'Should You Install?' : 'Our Take'}
-              </h2>
-            </div>
-            <p className="text-sm text-[var(--text-secondary)] font-dm leading-relaxed">
-              {mdContent && mdContent.sections['Should You Install?']
-                ? mdContent.sections['Should You Install?'].trim()
-                : 'Stay informed by reading the full official release from Microsoft linked below. For security updates, apply as soon as possible. For feature updates, review the release notes before deploying in production environments.'
-              }
-            </p>
-          </div>
-
-          {/* Risk Level badge — from markdown */}
-          {mdContent && Object.keys(mdContent.sections).find(k => k.startsWith('Risk Level')) && (
-            <div className="flex items-center gap-3 mb-8">
-              <span className="font-syne font-bold text-xs text-[var(--text-muted)] uppercase tracking-widest">Risk Level:</span>
-              {(() => {
-                const riskKey = Object.keys(mdContent.sections).find(k => k.startsWith('Risk Level'))
-                const isSafe = riskKey.includes('SAFE')
-                const isCaution = riskKey.includes('CAUTION')
-                const color = isSafe ? '#34D399' : isCaution ? '#FBBF24' : '#F87171'
-                const label = isSafe ? 'SAFE' : isCaution ? 'CAUTION' : 'AVOID'
-                return (
-                  <span className="text-xs font-bold px-3 py-1 rounded-full" style={{background:`${color}20`, color, border:`1px solid ${color}40`}}>
-                    {label} {isSafe ? '✅' : isCaution ? '⚠️' : '🚫'}
-                  </span>
-                )
-              })()}
-            </div>
-          )}
-
-          {/* About This Update — fallback when no markdown */}
-          {!mdContent && (
-            <div className="rounded-2xl p-6 mb-8" style={{background:'rgba(19,18,42,0.6)',border:'1px solid var(--border)'}}>
-              <div className="flex items-center gap-2 mb-4">
-                <svg className="w-4 h-4 text-[#22D3EE]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                <h2 className="font-syne font-bold text-sm text-[var(--text-primary)] uppercase tracking-widest">About This Update</h2>
-              </div>
-              <div className="grid md:grid-cols-2 gap-4 text-sm text-[var(--text-secondary)] font-dm leading-relaxed">
-                <p>This is an independent summary of an official Microsoft announcement. We rewrite and simplify technical content so IT professionals and everyday users can quickly understand what changed and why it matters.</p>
-                <p>We monitor official Microsoft feeds, blogs, and documentation 24/7 and publish summaries every 30 minutes — saving you time across Windows, Azure, Microsoft 365, Copilot, Security, and more.</p>
-              </div>
-            </div>
-          )}
+          ))}
 
           {/* Source CTA */}
           {item.sourceUrl && (
-            <div className="rounded-2xl p-6 mb-8 flex flex-col sm:flex-row items-start sm:items-center gap-4" style={{background:'linear-gradient(135deg,rgba(168,85,247,0.1),rgba(34,211,238,0.05))',border:'1px solid rgba(168,85,247,0.25)'}}>
+            <div className="rounded-2xl p-6 mb-8 flex flex-col sm:flex-row items-start sm:items-center gap-4" style={{ background: 'linear-gradient(135deg,rgba(168,85,247,0.1),rgba(34,211,238,0.05))', border: '1px solid rgba(168,85,247,0.25)' }}>
               <div className="flex-1">
-                <p className="font-syne font-bold text-[var(--text-primary)] mb-1">Read the Full Official Release</p>
-                <p className="text-xs text-[var(--text-secondary)] font-dm">Verify details, download links, and complete patch notes directly from the official Microsoft source.</p>
+                <p className="font-syne font-bold text-[var(--text-primary)] mb-1">Verify from Official Source</p>
+                <p className="text-xs text-[var(--text-secondary)] font-dm">Cross-check details, download links, and complete notes directly from Microsoft.</p>
               </div>
               <a
                 href={item.sourceUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="shrink-0 inline-flex items-center gap-2 font-semibold text-sm px-5 py-3 rounded-xl transition-all hover:opacity-90 hover:scale-105"
-                style={{background:'linear-gradient(135deg,#A855F7,#22D3EE)',color:'#fff'}}
+                style={{ background: 'linear-gradient(135deg,#A855F7,#22D3EE)', color: '#fff' }}
               >
-                Open on Microsoft.com
-                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 7h12M8 2l5 5-5 5" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/></svg>
+                View on Microsoft.com
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 7h12M8 2l5 5-5 5" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" /></svg>
               </a>
             </div>
           )}
 
           {/* Disclaimer */}
-          <p className="text-[11px] text-[var(--text-muted)] font-dm leading-relaxed rounded-xl p-4" style={{background:'rgba(255,255,255,0.02)',border:'1px solid rgba(255,255,255,0.04)'}}>
+          <p className="text-[11px] text-[var(--text-muted)] font-dm leading-relaxed rounded-xl p-4" style={{ background: 'rgba(255,255,255,0.02)', border: '1px solid rgba(255,255,255,0.04)' }}>
             <strong>Disclaimer:</strong> This is an independent news blog and is not affiliated with, endorsed by, or sponsored by Microsoft Corporation. All product names, logos, and trademarks are the property of their respective owners. Always verify updates from official Microsoft sources before installation.
           </p>
         </article>
 
-        {/* Back navigation */}
+        {/* Back Navigation */}
         <div className="mt-8 pt-6 border-t border-[var(--border)] flex items-center gap-4">
           <Link href="/live" className="inline-flex items-center gap-2 text-sm text-[var(--text-secondary)] hover:text-[#C084FC] transition-colors font-dm">
             ← Back to Live Updates
@@ -413,11 +402,9 @@ export default async function LiveArticlePage({ params }) {
           </Link>
         </div>
 
-        {/* Related articles from same category */}
+        {/* Related Articles */}
         {(() => {
-          const related = items
-            .filter((i) => i.category === item.category && i.slug !== slug)
-            .slice(0, 4)
+          const related = items.filter((i) => i.category === item.category && i.slug !== slug).slice(0, 4)
           if (related.length === 0) return null
           return (
             <div className="mt-10 pt-8 border-t border-[var(--border)]">
@@ -433,12 +420,6 @@ export default async function LiveArticlePage({ params }) {
                     className="group rounded-xl border border-[var(--border)] overflow-hidden hover:border-[rgba(168,85,247,0.4)] glow-hover transition-all duration-200"
                     style={{ background: 'var(--ms-card)' }}
                   >
-                    {r.image && (
-                      <div className="w-full aspect-[16/7] overflow-hidden relative">
-                        <img src={r.image} alt={r.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
-                        <div className="absolute inset-0 img-overlay" />
-                      </div>
-                    )}
                     <div className="p-4">
                       <h3 className="font-syne font-bold text-sm text-[var(--text-primary)] leading-snug line-clamp-2 group-hover:text-[#C084FC] transition-colors">
                         {r.title}
