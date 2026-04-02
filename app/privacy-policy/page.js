@@ -93,7 +93,7 @@ export default function PrivacyPolicyPage() {
           <ul className="list-disc list-inside space-y-2 text-[var(--text-secondary)]">
             <li><strong className="text-[var(--text-primary)]">Google AdSense:</strong> For displaying advertisements. Google may use cookies and web beacons to collect data for ad personalization.</li>
             <li><strong className="text-[var(--text-primary)]">Google Analytics:</strong> For analyzing website traffic and user behavior. Google Analytics collects data such as pages visited, time spent on pages, and demographic information in an anonymized manner.</li>
-            <li><strong className="text-[var(--text-primary)]">Google Translate:</strong> We use the Google Translate widget to provide multi-language support. Google may collect usage data when you use this feature.</li>
+
           </ul>
         </section>
 

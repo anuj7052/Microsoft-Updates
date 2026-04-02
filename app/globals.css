@@ -83,52 +83,7 @@ a {
   text-decoration: none;
 }
 
-/* Google Translate - hide default widget UI */
-.google-translate-hidden {
-  position: absolute !important;
-  top: -9999px !important;
-  left: -9999px !important;
-  opacity: 0 !important;
-  height: 0 !important;
-  overflow: hidden !important;
-}
 
-.goog-te-gadget {
-  color: transparent !important;
-  font-size: 0 !important;
-}
-
-.goog-te-gadget span {
-  display: none !important;
-}
-
-.goog-te-banner-frame {
-  display: none !important;
-}
-
-body {
-  top: 0 !important;
-}
-
-.skiptranslate {
-  display: none !important;
-}
-
-.VIpgJd-ZVi9od-ORHb-OEVmcd {
-  display: none !important;
-}
-
-#goog-gt-tt, .goog-te-balloon-frame {
-  display: none !important;
-}
-
-.skiptranslate.goog-te-gadget {
-  display: block !important;
-}
-
-#google_translate_element {
-  min-height: 30px;
-}
 
 /* Scrollbar */
 ::-webkit-scrollbar {
