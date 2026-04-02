@@ -1,5 +1,5 @@
 {
-  "lastFetchedAt": "2026-04-02T15:36:39.343Z",
+  "lastFetchedAt": "2026-04-02T17:04:37.034Z",
   "processed": [
     {
       "guid": "https://blogs.windows.com/blog/2026/03/30/announcing-windows-11-insider-preview-build-for-canary-channel-29558-1000/",
@@ -160,6 +160,14 @@
       "category": "azure",
       "riskLevel": "SAFE",
       "savedAt": "2026-04-01T07:19:17.911Z"
+    },
+    {
+      "guid": "https://blogs.windows.com/blog/2026/04/02/part-3-babylon-js-9-0-openpbr-and-additional-engine-updates/",
+      "url": "https://blogs.windows.com/windowsdeveloper/2026/04/02/part-3-babylon-js-9-0-openpbr-and-additional-engine-updates/",
+      "slug": "part-3-8211-babylonjs-90-openpbr-and-additional-engine-updates",
+      "category": "windows",
+      "riskLevel": "SAFE",
+      "savedAt": "2026-04-02T17:04:37.034Z"
     }
   ]
 }

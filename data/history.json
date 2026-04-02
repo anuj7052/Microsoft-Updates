@@ -1,5 +1,7 @@
 {
-  "lastFetchedAt": "2026-04-02T15:36:39.343Z",
-  "seenGuids": [],
-  "totalArticles": 0
+  "lastFetchedAt": "2026-04-02T17:04:37.034Z",
+  "seenGuids": [
+    "https://blogs.windows.com/blog/2026/04/02/part-3-babylon-js-9-0-openpbr-and-additional-engine-updates/"
+  ],
+  "totalArticles": 1
 }
