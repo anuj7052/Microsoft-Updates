@@ -316,7 +316,7 @@ async function generateContent(item, category, kbNumber) {
       model = 'gpt-4o-mini'
     }
 
-    const prompt = `You are an expert Microsoft technology journalist. Analyze this update and respond ONLY with valid JSON, no markdown.
+    const prompt = `You are an expert Microsoft technology journalist writing for an independent blog. Analyze this update and respond ONLY with valid JSON, no markdown.
 
 Title: ${item.title}
 Category: ${category}
@@ -324,28 +324,31 @@ Description: ${item.description.substring(0, 700)}${kbNumber ? `\nKB Number: ${k
 
 Return exactly this JSON structure:
 {
-  "seoTitle": "SEO-optimized title under 65 characters",
+  "seoTitle": "Compelling SEO-optimized title under 65 characters",
   "metaTitle": "Meta title under 60 characters",
-  "metaDescription": "Compelling meta description under 155 characters",
-  "summaryEn": "2-3 clear sentences in English for IT professionals",
-  "summaryHi": "2-3 वाक्य हिंदी में भारतीय IT पेशेवरों के लिए",
-  "keyChanges": ["specific improvement 1", "specific fix 2", "specific feature 3"],
-  "shouldInstall": "Direct 2-sentence recommendation on deploying this update",
-  "beginnerExplanation": "1-2 simple sentences for non-technical users",
-  "riskLevel": "SAFE or CAUTION or AVOID"
+  "metaDescription": "Compelling meta description under 155 characters that makes people click",
+  "summaryEn": "3-4 clear sentences in English summarizing what changed, why it matters, and who should care",
+  "summaryHi": "3-4 वाक्य हिंदी में भारतीय IT पेशेवरों के लिए — सरल भाषा में",
+  "keyChanges": ["specific improvement 1", "specific fix 2", "specific feature 3", "specific benefit 4", "specific impact 5"],
+  "detailedAnalysis": "A 200-300 word detailed analysis paragraph covering: what exactly changed, technical details, who is affected, migration steps if any, comparison with previous version, and real-world impact. Write in a clear, informative tone.",
+  "impactAssessment": "Who is affected and how — 2-3 sentences covering enterprise users, developers, end users as applicable",
+  "shouldInstall": "Direct 2-sentence recommendation on deploying this update with specific actions",
+  "beginnerExplanation": "2-3 simple sentences for non-technical users explaining what this means in everyday language",
+  "riskLevel": "SAFE or CAUTION or AVOID",
+  "relatedTopics": ["related topic 1", "related topic 2", "related topic 3"]
 }
 
 Risk classification:
-- SAFE: security fixes, bug fixes, performance improvements, new features
-- CAUTION: known issues, compatibility concerns, workarounds needed
-- AVOID: data loss risk, critical crashes, widespread breakage`
+- SAFE: security fixes, bug fixes, performance improvements, new features, GA releases
+- CAUTION: known issues mentioned, compatibility concerns, preview/beta features
+- AVOID: data loss risk, critical crashes, widespread breakage reported`
 
     const response = await client.chat.completions.create({
       model,
       messages: [{ role: 'user', content: prompt }],
       response_format: { type: 'json_object' },
-      temperature: 0.2,
-      max_tokens: 900,
+      temperature: 0.3,
+      max_tokens: 1800,
     })
 
     const data = JSON.parse(response.choices[0].message.content)
@@ -359,9 +362,12 @@ Risk classification:
       summaryEn: data.summaryEn || item.description.substring(0, 500),
       summaryHi: data.summaryHi || '',
       keyChanges: Array.isArray(data.keyChanges) ? data.keyChanges : [],
+      detailedAnalysis: data.detailedAnalysis || '',
+      impactAssessment: data.impactAssessment || '',
       shouldInstall: data.shouldInstall || '',
       beginnerExplanation: data.beginnerExplanation || '',
       riskLevel: ['SAFE', 'CAUTION', 'AVOID'].includes(data.riskLevel) ? data.riskLevel : classifyRisk(item.title, item.description),
+      relatedTopics: Array.isArray(data.relatedTopics) ? data.relatedTopics : [],
     }
   } catch (err) {
     console.warn(`  ⚠ AI failed (${err.message}), using fallback`)
@@ -401,6 +407,7 @@ riskLevel: "${content.riskLevel}"
 sourceUrl: "${item.url}"
 image: "${item.image || ''}"
 publishedAt: "${toISODate(item.pubDate)}"
+relatedTopics: ${JSON.stringify(content.relatedTopics || [])}
 ---
 
 ## Summary
@@ -415,6 +422,14 @@ ${content.summaryHi}
 
 ${keyChangesList}
 
+## Detailed Analysis
+
+${content.detailedAnalysis || `Microsoft has released this ${category.replace('-', ' ')} update with several improvements and changes. The update addresses various aspects of the platform including performance enhancements, bug fixes, and feature additions. IT administrators should review the official release notes linked below for complete technical specifications and deployment guidance.`}
+
+## Who Is Affected?
+
+${content.impactAssessment || `This update affects ${category.replace('-', ' ')} users and administrators. Organizations using Microsoft ${category.replace('-', ' ')} services should review the changes and plan their deployment accordingly.`}
+
 ## Should You Install?
 
 ${content.shouldInstall}
@@ -427,7 +442,7 @@ ${content.beginnerExplanation}
 
 ${
   content.riskLevel === 'SAFE'
-    ? 'This update is generally safe to deploy. Always run a quick test in a staging environment first.'
+    ? 'This update is generally safe to deploy. Always test in a staging environment before production rollout.'
     : content.riskLevel === 'CAUTION'
     ? 'Proceed carefully. Review the known issues section and test on a few machines before wide deployment.'
     : 'Hold off on this update. Wait until Microsoft releases a fix for the reported issues before installing.'
@@ -541,15 +556,14 @@ async function main() {
   saveJSON(LIVE_PATH, { updatedAt: new Date().toISOString(), items: liveItems })
   console.log(`\n💾 live-updates.json updated — ${liveItems.length} items`)
 
-  // ── Generate articles ONLY for new + major updates ───────────────────────────
-  const majorNewItems = newItems.filter((item) => isMajorUpdate(item.title, item.description))
-  console.log(`\n📊 ${newItems.length} new items total, ${majorNewItems.length} major (article generation)`)
+  // ── Generate articles for ALL new updates ───────────────────────────────────
+  console.log(`\n📊 ${newItems.length} new items — generating articles for all`)
 
   let newArticleCount = 0
 
-  for (let i = 0; i < majorNewItems.length; i++) {
-    const item = majorNewItems[i]
-    console.log(`\n[${i + 1}/${majorNewItems.length}] ${item.title.substring(0, 70)}`)
+  for (let i = 0; i < newItems.length; i++) {
+    const item = newItems[i]
+    console.log(`\n[${i + 1}/${newItems.length}] ${item.title.substring(0, 70)}`)
 
     const kbNumber = extractKBNumber(`${item.title} ${item.description}`)
 
@@ -568,7 +582,7 @@ async function main() {
 
       newArticleCount++
 
-      if (process.env.OPENAI_API_KEY && i < majorNewItems.length - 1) {
+      if ((process.env.OPENAI_API_KEY || process.env.AZURE_OPENAI_KEY) && i < newItems.length - 1) {
         await sleep(DELAY_MS)
       }
     } catch (err) {

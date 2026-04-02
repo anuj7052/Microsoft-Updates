@@ -143,13 +143,13 @@ a {
 /* Article content — styles for markdown-rendered HTML */
 .article-content {
   color: var(--text-secondary);
-  line-height: 1.75;
-  font-size: 0.97rem;
+  line-height: 1.85;
+  font-size: 1.05rem;
 }
 .article-content h2 {
   font-family: var(--font-syne), sans-serif;
   font-weight: 700;
-  font-size: 1.2rem;
+  font-size: 1.35rem;
   color: var(--text-primary);
   margin-top: 2rem;
   margin-bottom: 0.75rem;
@@ -159,7 +159,7 @@ a {
 .article-content h3 {
   font-family: var(--font-syne), sans-serif;
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 1.15rem;
   color: var(--text-primary);
   margin-top: 1.5rem;
   margin-bottom: 0.5rem;
@@ -264,15 +264,7 @@ a {
   border-radius: 100px;
 }
 
-/* Category badge — updated colors */
-.badge-windows { background: rgba(52,211,153,0.12); color: #34D399; }
-.badge-azure { background: rgba(168,85,247,0.12); color: #A855F7; }
-.badge-power-platform { background: rgba(251,191,36,0.12); color: #FBBF24; }
-.badge-fabric { background: rgba(192,132,252,0.12); color: #C084FC; }
-.badge-licensing { background: rgba(248,113,113,0.12); color: #F87171; }
-.badge-copilot { background: rgba(34,211,238,0.12); color: #22D3EE; }
-.badge-office365 { background: rgba(251,146,60,0.12); color: #FB923C; }
-.badge-security { background: rgba(34,211,238,0.12); color: #22D3EE; }
+/* Category badge colors (single definition) */
 
 /* Section heading gradient line */
 .section-line {

@@ -28,7 +28,7 @@ const sourceColors = {
   'Microsoft Dev Blogs': 'bg-ms-accent/15 text-ms-accent',
 }
 
-export default function LiveNewsGrid({ articles = [], title, color = 'bg-ms-accent' }) {
+export default function LiveNewsGrid({ articles = [], title }) {
   if (articles.length === 0) return null
 
   return (
@@ -38,10 +38,6 @@ export default function LiveNewsGrid({ articles = [], title, color = 'bg-ms-acce
         <h2 className="font-syne font-extrabold text-2xl text-[var(--text-primary)]">
           {title}
         </h2>
-        <span className="flex items-center gap-1.5 text-[#F87171] text-[10px] font-bold px-2 py-0.5 rounded-full" style={{background:'rgba(248,113,113,0.1)',border:'1px solid rgba(248,113,113,0.2)'}}>
-          <span className="w-1.5 h-1.5 bg-[#F87171] rounded-full pulse-dot"></span>
-          LIVE
-        </span>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
         {articles.map((article, i) => {
@@ -56,9 +52,9 @@ export default function LiveNewsGrid({ articles = [], title, color = 'bg-ms-acce
               {/* Full-card link */}
               <a href={`/live/${internalSlug}`} className="absolute inset-0 z-0" aria-label={article.title} />
 
-              {/* Article image */}
+              {/* Article image — bigger ratio */}
               {article.image ? (
-                <div className="w-full aspect-[16/9] overflow-hidden relative">
+                <div className="w-full aspect-[16/10] overflow-hidden relative">
                   <img
                     src={article.image}
                     alt={article.title}
@@ -66,41 +62,46 @@ export default function LiveNewsGrid({ articles = [], title, color = 'bg-ms-acce
                     loading="lazy"
                   />
                   <div className="absolute inset-0 img-overlay" />
+                  <span className={`absolute top-3 left-3 ${colorCls} text-[11px] font-bold px-2.5 py-1 rounded-full backdrop-blur-sm`}>
+                    {article.source}
+                  </span>
                 </div>
               ) : (
-                <div className="w-full h-20 bg-gradient-to-br from-[rgba(168,85,247,0.08)] to-[rgba(34,211,238,0.03)]" />
+                <div className="w-full aspect-[16/10] bg-gradient-to-br from-[rgba(168,85,247,0.12)] to-[rgba(34,211,238,0.05)] flex items-center justify-center relative">
+                  <svg className="w-10 h-10 opacity-15 text-[var(--text-muted)]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 12h6"/></svg>
+                  <span className={`absolute top-3 left-3 ${colorCls} text-[11px] font-bold px-2.5 py-1 rounded-full`}>
+                    {article.source}
+                  </span>
+                </div>
               )}
 
               <div className="relative z-10 p-5">
                 <div className="flex items-center gap-2 mb-3">
-                  <span className={`${colorCls} text-[10px] font-bold px-2 py-0.5 rounded-full`}>
-                    {article.source}
-                  </span>
-                  <span className="text-[10px] text-[var(--text-muted)] font-dm">
+                  <span className="text-[11px] text-[var(--text-muted)] font-dm">
                     {timeAgo(article.pubDate)}
                   </span>
                 </div>
-                <h3 className="font-syne font-bold text-sm text-[var(--text-primary)] leading-snug group-hover:text-[#C084FC] transition-colors line-clamp-2 tracking-tight mb-2">
+                <h3 className="font-syne font-bold text-[15px] text-[var(--text-primary)] leading-snug group-hover:text-[#C084FC] transition-colors line-clamp-2 tracking-tight mb-2">
                   {article.title}
                 </h3>
                 {article.description && (
-                  <p className="text-xs text-[var(--text-secondary)] font-dm line-clamp-2 leading-relaxed mb-3">
+                  <p className="text-[13px] text-[var(--text-secondary)] font-dm line-clamp-2 leading-relaxed mb-3">
                     {article.description}
                   </p>
                 )}
-                <div className="flex items-center gap-3 pt-2 border-t border-[var(--border)]">
-                  <span className="text-[10px] font-semibold gradient-text opacity-0 group-hover:opacity-100 transition-opacity">
-                    Read article →
+                <div className="flex items-center gap-3 pt-3 border-t border-[var(--border)]">
+                  <span className="text-[11px] font-semibold gradient-text opacity-0 group-hover:opacity-100 transition-opacity">
+                    Read full article →
                   </span>
                   {article.link && (
                     <a
                       href={article.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="relative z-20 text-[10px] text-[var(--text-muted)] hover:text-[var(--text-primary)] flex items-center gap-1 ml-auto transition-colors"
+                      className="relative z-20 text-[11px] text-[var(--text-muted)] hover:text-[var(--text-primary)] flex items-center gap-1 ml-auto transition-colors"
                       title="Verify from official Microsoft source"
                     >
-                      <svg className="w-2.5 h-2.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <svg className="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                         <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/>
                         <polyline points="15 3 21 3 21 9"/>
                         <line x1="10" y1="14" x2="21" y2="3"/>

@@ -29,6 +29,7 @@ export async function generateMetadata({ params }) {
   if (!item) return { title: 'Update Not Found | Microsoft Updates' }
 
   const cat = item.category?.replace('-', ' ').replace(/\b\w/g, (l) => l.toUpperCase()) || 'Microsoft'
+  const ogImage = `https://microsoftupdates.co.in/api/og?title=${encodeURIComponent(item.title.substring(0, 100))}&category=${encodeURIComponent(item.category || 'general')}`
   return {
     title: `${item.title} | Microsoft Updates`,
     description: item.summary || `Latest ${cat} update from Microsoft.`,
@@ -39,7 +40,13 @@ export async function generateMetadata({ params }) {
       siteName: 'Latest Microsoft Updates & News',
       type: 'article',
       publishedTime: item.date,
-      images: item.image ? [{ url: item.image }] : [],
+      images: [{ url: ogImage, width: 1200, height: 630 }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: item.title,
+      description: item.summary || '',
+      images: [ogImage],
     },
     alternates: { canonical: `/live/${slug}` },
     robots: { index: true, follow: true },
@@ -298,6 +305,47 @@ export default async function LiveArticlePage({ params }) {
             Home
           </Link>
         </div>
+
+        {/* Related articles from same category */}
+        {(() => {
+          const related = items
+            .filter((i) => i.category === item.category && i.slug !== slug)
+            .slice(0, 4)
+          if (related.length === 0) return null
+          return (
+            <div className="mt-10 pt-8 border-t border-[var(--border)]">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="section-line"></div>
+                <h2 className="font-syne font-bold text-lg text-[var(--text-primary)]">Related Updates</h2>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                {related.map((r, i) => (
+                  <Link
+                    key={i}
+                    href={`/live/${r.slug}`}
+                    className="group rounded-xl border border-[var(--border)] overflow-hidden hover:border-[rgba(168,85,247,0.4)] glow-hover transition-all duration-200"
+                    style={{ background: 'var(--ms-card)' }}
+                  >
+                    {r.image && (
+                      <div className="w-full aspect-[16/7] overflow-hidden relative">
+                        <img src={r.image} alt={r.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+                        <div className="absolute inset-0 img-overlay" />
+                      </div>
+                    )}
+                    <div className="p-4">
+                      <h3 className="font-syne font-bold text-sm text-[var(--text-primary)] leading-snug line-clamp-2 group-hover:text-[#C084FC] transition-colors">
+                        {r.title}
+                      </h3>
+                      <p className="text-[11px] text-[var(--text-muted)] mt-2 font-dm">
+                        {(() => { try { return new Date(r.date).toLocaleDateString('en-IN', { day: 'numeric', month: 'short' }) } catch { return '' } })()}
+                      </p>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          )
+        })()}
       </main>
     </>
   )

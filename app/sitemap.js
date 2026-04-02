@@ -20,7 +20,6 @@ export default function sitemap() {
     priority: 0.8,
   }))
 
-  // Static news articles from data/news.js
   const articlePages = newsArticles.map((article) => ({
     url: `${baseUrl}/${article.category}/${article.slug}`,
     lastModified: new Date(article.date),
@@ -40,13 +39,12 @@ export default function sitemap() {
         const files = fs.readdirSync(catDir).filter((f) => f.endsWith('.md'))
         for (const file of files) {
           const slug = file.replace('.md', '')
-          // Quick-parse date from frontmatter without gray-matter
           let lastMod = new Date()
           try {
             const raw = fs.readFileSync(path.join(catDir, file), 'utf8')
             const dateMatch = raw.match(/publishedAt:\s*"?([^"\n]+)"?/)
             if (dateMatch) lastMod = new Date(dateMatch[1])
-          } catch { /* skip */ }
+          } catch {}
 
           markdownPages.push({
             url: `${baseUrl}/updates/${cat}/${slug}`,
@@ -55,9 +53,28 @@ export default function sitemap() {
             priority: 0.75,
           })
         }
-      } catch { /* skip unreadable dirs */ }
+      } catch {}
     }
   }
 
-  return [...staticPages, ...categoryPages, ...articlePages, ...markdownPages]
+  // Live update pages from data/live-updates.json
+  const livePages = []
+  try {
+    const livePath = path.join(process.cwd(), 'data', 'live-updates.json')
+    if (fs.existsSync(livePath)) {
+      const data = JSON.parse(fs.readFileSync(livePath, 'utf8'))
+      const items = data.items || []
+      for (const item of items) {
+        if (!item.slug) continue
+        livePages.push({
+          url: `${baseUrl}/live/${item.slug}`,
+          lastModified: item.date ? new Date(item.date) : new Date(),
+          changeFrequency: 'weekly',
+          priority: 0.7,
+        })
+      }
+    }
+  } catch {}
+
+  return [...staticPages, ...categoryPages, ...articlePages, ...markdownPages, ...livePages]
 }

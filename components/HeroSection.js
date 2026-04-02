@@ -78,11 +78,11 @@ export default function HeroSection({ articles = [] }) {
               <span className="ai-badge">INDEPENDENT</span>
             </div>
 
-            <h1 className="font-syne font-extrabold text-2xl md:text-3xl lg:text-[1.85rem] text-[var(--text-primary)] leading-snug tracking-tight mb-4 group-hover:text-[#C084FC] transition-colors">
+            <h1 className="font-syne font-extrabold text-2xl md:text-3xl lg:text-[2rem] text-[var(--text-primary)] leading-snug tracking-tight mb-4 group-hover:text-[#C084FC] transition-colors">
               {hero.title}
             </h1>
 
-            <p className="font-dm font-light text-[var(--text-secondary)] text-sm md:text-base leading-relaxed mb-6 max-w-2xl line-clamp-3">
+            <p className="font-dm font-light text-[var(--text-secondary)] text-[15px] md:text-base leading-relaxed mb-6 max-w-2xl line-clamp-3">
               {hero.description}
             </p>
 
@@ -124,7 +124,7 @@ export default function HeroSection({ articles = [] }) {
                   <span className={`${meta.badge} text-[10px] px-2 py-0.5 rounded-full font-medium`}>
                     {meta.label}
                   </span>
-                  <h3 className="font-syne font-bold text-sm text-[var(--text-primary)] mt-2 mb-1 leading-snug line-clamp-2 tracking-tight group-hover:text-[#C084FC] transition-colors">
+                  <h3 className="font-syne font-bold text-[15px] text-[var(--text-primary)] mt-2 mb-1 leading-snug line-clamp-2 tracking-tight group-hover:text-[#C084FC] transition-colors">
                     {article.title}
                   </h3>
                   <p className="text-xs text-[var(--text-muted)] font-dm flex items-center gap-1">

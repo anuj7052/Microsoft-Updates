@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Logo from './Logo'
 
 export default function Footer() {
   return (
@@ -8,18 +9,13 @@ export default function Footer() {
           {/* Logo & Tagline */}
           <div className="md:col-span-2">
             <div className="flex items-center gap-3 mb-4">
-              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
-                <rect x="0" y="0" width="10" height="10" fill="#F25022" />
-                <rect x="11" y="0" width="10" height="10" fill="#7FBA00" />
-                <rect x="0" y="11" width="10" height="10" fill="#00A4EF" />
-                <rect x="11" y="11" width="10" height="10" fill="#FFB900" />
-              </svg>
-              <span className="font-syne font-bold text-base text-[var(--text-primary)]">
-                Microsoft Updates
+              <Logo size={28} />
+              <span className="font-syne font-bold text-base gradient-text">
+                Latest Microsoft Updates & News
               </span>
             </div>
             <p className="text-sm text-[var(--text-secondary)] max-w-md leading-relaxed">
-              Your trusted source for the latest Microsoft news, updates, and insights — for the global IT community.
+              Independent coverage of Microsoft news, updates, and insights — trusted by IT professionals worldwide.
             </p>
           </div>
 
@@ -77,7 +73,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="mt-10 pt-6 border-t border-[var(--border)]">
           <p className="text-xs text-[var(--text-muted)] text-center leading-relaxed">
-            © 2026 Microsoft Updates — Not affiliated with Microsoft Corporation.
+            © 2026 Latest Microsoft Updates & News — Not affiliated with Microsoft Corporation.
           </p>
           <p className="text-xs text-[var(--text-muted)] text-center mt-2 leading-relaxed max-w-2xl mx-auto">
             Disclaimer: Microsoft Updates is an independent news website and is not affiliated with, endorsed by, or connected to Microsoft Corporation in any way. Microsoft, Windows, Azure, and other product names are trademarks of Microsoft Corporation.
