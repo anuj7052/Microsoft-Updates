@@ -48,19 +48,6 @@ const MAX_RETRIES = 3
 const DELAY_MS = 3000
 const MAX_TRACKER_SIZE = 1000 // Keep last N processed items (legacy)
 
-// Keywords that mark an update as "major" → triggers full AI article generation
-const MAJOR_KEYWORDS = [
-  'security update', 'patch tuesday', 'critical', 'vulnerability', 'cve-',
-  'zero-day', '0-day', 'cumulative update', 'feature update', 'kb', 'windows 11',
-  'windows 12', 'azure openai', 'breaking change', 'general availability', 'ga release',
-  'major release', 'deprecated', 'end of life', 'eol',
-]
-
-function isMajorUpdate(title, description) {
-  const text = `${title} ${description}`.toLowerCase()
-  return MAJOR_KEYWORDS.some((kw) => text.includes(kw))
-}
-
 // ─── Utilities ────────────────────────────────────────────────────────────────
 
 function sleep(ms) {

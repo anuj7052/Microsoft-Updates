@@ -84,7 +84,7 @@ export default function LiveNewsGrid({ articles = [], title }) {
 
               <div className="relative z-10 p-5">
                 <div className="flex items-center gap-2 mb-3">
-                  <span className="text-[11px] text-[var(--text-muted)] font-dm">
+                  <span className="text-[12px] text-[var(--text-muted)] font-dm">
                     {timeAgo(article.pubDate)}
                   </span>
                 </div>
@@ -92,7 +92,7 @@ export default function LiveNewsGrid({ articles = [], title }) {
                   {article.title}
                 </h3>
                 {article.description && (
-                  <p className="text-[13px] text-[var(--text-secondary)] font-dm line-clamp-2 leading-relaxed mb-3">
+                  <p className="text-[14px] text-[var(--text-secondary)] font-dm line-clamp-2 leading-relaxed mb-3">
                     {article.description}
                   </p>
                 )}
@@ -105,7 +105,7 @@ export default function LiveNewsGrid({ articles = [], title }) {
                       href={article.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="relative z-20 text-[11px] text-[var(--text-muted)] hover:text-[var(--text-primary)] flex items-center gap-1 ml-auto transition-colors"
+                      className="relative z-20 text-[12px] text-[var(--text-muted)] hover:text-[var(--text-primary)] flex items-center gap-1 ml-auto transition-colors"
                       title="Verify from official Microsoft source"
                     >
                       <svg className="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">

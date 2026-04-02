@@ -119,7 +119,7 @@ export default function HeroSection({ articles = [] }) {
                   <div className="absolute inset-0 img-overlay" />
                 </div>
                 <div className="p-4">
-                  <span className={`${meta.badge} text-[10px] px-2 py-0.5 rounded-full font-medium`}>
+                  <span className={`${meta.badge} text-[11px] px-2 py-0.5 rounded-full font-medium`}>
                     {meta.label}
                   </span>
                   <h3 className="font-syne font-bold text-[15px] text-[var(--text-primary)] mt-2 mb-1 leading-snug line-clamp-2 tracking-tight group-hover:text-[#C084FC] transition-colors">

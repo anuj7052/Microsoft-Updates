@@ -1,4 +1,4 @@
-import { readFileSync, existsSync } from 'fs'
+import { readFileSync, existsSync, readdirSync } from 'fs'
 import { join } from 'path'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
@@ -12,6 +12,42 @@ function loadLiveItems() {
     if (existsSync(p)) return JSON.parse(readFileSync(p, 'utf8')).items || []
   } catch {}
   return []
+}
+
+// Try to find a matching markdown article for richer content
+function loadMarkdownContent(slug) {
+  const baseDir = join(process.cwd(), 'content', 'updates')
+  try {
+    const cats = readdirSync(baseDir, { withFileTypes: true }).filter(d => d.isDirectory())
+    for (const cat of cats) {
+      const mdPath = join(baseDir, cat.name, `${slug}.md`)
+      if (existsSync(mdPath)) {
+        const raw = readFileSync(mdPath, 'utf8')
+        const fmMatch = raw.match(/^---\n([\s\S]*?)\n---/)
+        if (!fmMatch) return null
+        const body = raw.slice(fmMatch[0].length).trim()
+        const fm = {}
+        fmMatch[1].split('\n').forEach(line => {
+          const m = line.match(/^(\w+):\s*"?(.+?)"?\s*$/)
+          if (m) fm[m[1]] = m[2]
+        })
+        // Extract sections from markdown body
+        const sections = {}
+        let currentSection = null
+        for (const line of body.split('\n')) {
+          const heading = line.match(/^##\s+(.+)/)
+          if (heading) {
+            currentSection = heading[1].trim()
+            sections[currentSection] = ''
+          } else if (currentSection) {
+            sections[currentSection] += line + '\n'
+          }
+        }
+        return { frontmatter: fm, sections, rawBody: body }
+      }
+    }
+  } catch {}
+  return null
 }
 
 export async function generateStaticParams() {
@@ -140,11 +176,17 @@ export default async function LiveArticlePage({ params }) {
 
   if (!item) notFound()
 
+  // Try loading rich markdown content for this slug
+  const mdContent = loadMarkdownContent(slug)
+
   const colorTxt = categoryColors[item.category] || categoryColors.general
   const colorBg = categoryBg[item.category] || categoryBg.general
   const label = categoryLabels[item.category] || item.category
-  const readMin = estimateReadTime((item.summary || '') + (item.description || ''))
-  const keyPoints = extractKeyPoints(item.summary || item.description || '')
+  const allText = mdContent ? mdContent.rawBody : (item.summary || '') + (item.description || '')
+  const readMin = estimateReadTime(allText)
+  const keyPoints = mdContent
+    ? (mdContent.sections['Key Changes'] || '').split('\n').filter(l => l.startsWith('- ')).map(l => l.replace(/^-\s+/, ''))
+    : extractKeyPoints(item.summary || item.description || '')
   const formattedDate = (() => {
     try { return new Date(item.date).toLocaleDateString('en-IN', { day: 'numeric', month: 'long', year: 'numeric' }) } catch { return '' }
   })()
@@ -229,12 +271,12 @@ export default async function LiveArticlePage({ params }) {
 
           <hr className="grad-divider" />
 
-          {/* Key Points section */}
+          {/* Key Points / Key Changes */}
           {keyPoints.length > 0 && (
             <div className="rounded-2xl p-6 mb-8" style={{background:'linear-gradient(135deg,rgba(168,85,247,0.06),rgba(34,211,238,0.03))',border:'1px solid rgba(168,85,247,0.18)'}}>
               <div className="flex items-center gap-2 mb-4">
                 <svg className="w-4 h-4 text-[#C084FC]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
-                <h2 className="font-syne font-bold text-sm text-[var(--text-primary)] uppercase tracking-widest">Key Points</h2>
+                <h2 className="font-syne font-bold text-sm text-[var(--text-primary)] uppercase tracking-widest">Key Changes</h2>
               </div>
               <ul className="space-y-3">
                 {keyPoints.map((pt, i) => (
@@ -247,28 +289,93 @@ export default async function LiveArticlePage({ params }) {
             </div>
           )}
 
-          {/* What This Means */}
-          <div className="rounded-2xl p-6 mb-8" style={{background:'rgba(19,18,42,0.6)',border:'1px solid var(--border)'}}>
-            <div className="flex items-center gap-2 mb-4">
-              <svg className="w-4 h-4 text-[#22D3EE]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-              <h2 className="font-syne font-bold text-sm text-[var(--text-primary)] uppercase tracking-widest">About This Update</h2>
+          {/* Detailed Analysis — from markdown only */}
+          {mdContent && mdContent.sections['Detailed Analysis'] && (
+            <div className="rounded-2xl p-6 mb-8" style={{background:'rgba(19,18,42,0.6)',border:'1px solid var(--border)'}}>
+              <div className="flex items-center gap-2 mb-4">
+                <svg className="w-4 h-4 text-[#A855F7]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+                <h2 className="font-syne font-bold text-sm text-[var(--text-primary)] uppercase tracking-widest">Detailed Analysis</h2>
+              </div>
+              <div className="text-sm text-[var(--text-secondary)] font-dm leading-relaxed whitespace-pre-line">
+                {mdContent.sections['Detailed Analysis'].trim()}
+              </div>
             </div>
-            <div className="grid md:grid-cols-2 gap-4 text-sm text-[var(--text-secondary)] font-dm leading-relaxed">
-              <p>This is an independent summary of an official Microsoft announcement. We rewrite and simplify technical content so IT professionals and everyday users can quickly understand what changed and why it matters.</p>
-              <p>We monitor official Microsoft feeds, blogs, and documentation 24/7 and publish summaries every 30 minutes — saving you time across Windows, Azure, Microsoft 365, Copilot, Security, and more.</p>
-            </div>
-          </div>
+          )}
 
-          {/* Should you install / act? */}
+          {/* Who Is Affected — from markdown only */}
+          {mdContent && mdContent.sections['Who Is Affected?'] && (
+            <div className="rounded-2xl p-6 mb-8" style={{background:'rgba(34,211,238,0.04)',border:'1px solid rgba(34,211,238,0.12)'}}>
+              <div className="flex items-center gap-2 mb-4">
+                <svg className="w-4 h-4 text-[#22D3EE]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                <h2 className="font-syne font-bold text-sm text-[var(--text-primary)] uppercase tracking-widest">Who Is Affected?</h2>
+              </div>
+              <div className="text-sm text-[var(--text-secondary)] font-dm leading-relaxed whitespace-pre-line">
+                {mdContent.sections['Who Is Affected?'].trim()}
+              </div>
+            </div>
+          )}
+
+          {/* Summary (Hindi) — from markdown */}
+          {mdContent && mdContent.sections['Summary (हिंदी में)'] && (
+            <div className="rounded-2xl p-6 mb-8" style={{background:'rgba(168,85,247,0.04)',border:'1px solid rgba(168,85,247,0.12)'}}>
+              <div className="flex items-center gap-2 mb-4">
+                <span className="text-sm">🇮🇳</span>
+                <h2 className="font-syne font-bold text-sm text-[var(--text-primary)] uppercase tracking-widest">हिंदी में सारांश</h2>
+              </div>
+              <p className="text-sm text-[var(--text-secondary)] font-dm leading-relaxed">
+                {mdContent.sections['Summary (हिंदी में)'].trim()}
+              </p>
+            </div>
+          )}
+
+          {/* Should You Install — from markdown or fallback */}
           <div className="rounded-2xl p-6 mb-8" style={{background:'rgba(34,211,238,0.04)',border:'1px solid rgba(34,211,238,0.12)'}}>
             <div className="flex items-center gap-2 mb-3">
               <svg className="w-4 h-4 text-[#22D3EE]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-              <h2 className="font-syne font-bold text-sm text-[var(--text-primary)] uppercase tracking-widest">Our Take</h2>
+              <h2 className="font-syne font-bold text-sm text-[var(--text-primary)] uppercase tracking-widest">
+                {mdContent && mdContent.sections['Should You Install?'] ? 'Should You Install?' : 'Our Take'}
+              </h2>
             </div>
             <p className="text-sm text-[var(--text-secondary)] font-dm leading-relaxed">
-              Stay informed by reading the full official release from Microsoft linked below. For security updates, apply as soon as possible. For feature updates, review the release notes before deploying in production environments.
+              {mdContent && mdContent.sections['Should You Install?']
+                ? mdContent.sections['Should You Install?'].trim()
+                : 'Stay informed by reading the full official release from Microsoft linked below. For security updates, apply as soon as possible. For feature updates, review the release notes before deploying in production environments.'
+              }
             </p>
           </div>
+
+          {/* Risk Level badge — from markdown */}
+          {mdContent && Object.keys(mdContent.sections).find(k => k.startsWith('Risk Level')) && (
+            <div className="flex items-center gap-3 mb-8">
+              <span className="font-syne font-bold text-xs text-[var(--text-muted)] uppercase tracking-widest">Risk Level:</span>
+              {(() => {
+                const riskKey = Object.keys(mdContent.sections).find(k => k.startsWith('Risk Level'))
+                const isSafe = riskKey.includes('SAFE')
+                const isCaution = riskKey.includes('CAUTION')
+                const color = isSafe ? '#34D399' : isCaution ? '#FBBF24' : '#F87171'
+                const label = isSafe ? 'SAFE' : isCaution ? 'CAUTION' : 'AVOID'
+                return (
+                  <span className="text-xs font-bold px-3 py-1 rounded-full" style={{background:`${color}20`, color, border:`1px solid ${color}40`}}>
+                    {label} {isSafe ? '✅' : isCaution ? '⚠️' : '🚫'}
+                  </span>
+                )
+              })()}
+            </div>
+          )}
+
+          {/* About This Update — fallback when no markdown */}
+          {!mdContent && (
+            <div className="rounded-2xl p-6 mb-8" style={{background:'rgba(19,18,42,0.6)',border:'1px solid var(--border)'}}>
+              <div className="flex items-center gap-2 mb-4">
+                <svg className="w-4 h-4 text-[#22D3EE]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                <h2 className="font-syne font-bold text-sm text-[var(--text-primary)] uppercase tracking-widest">About This Update</h2>
+              </div>
+              <div className="grid md:grid-cols-2 gap-4 text-sm text-[var(--text-secondary)] font-dm leading-relaxed">
+                <p>This is an independent summary of an official Microsoft announcement. We rewrite and simplify technical content so IT professionals and everyday users can quickly understand what changed and why it matters.</p>
+                <p>We monitor official Microsoft feeds, blogs, and documentation 24/7 and publish summaries every 30 minutes — saving you time across Windows, Azure, Microsoft 365, Copilot, Security, and more.</p>
+              </div>
+            </div>
+          )}
 
           {/* Source CTA */}
           {item.sourceUrl && (
