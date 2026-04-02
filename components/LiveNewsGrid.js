@@ -9,6 +9,16 @@ function timeAgo(dateStr) {
   return date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' })
 }
 
+function makeSlug(title) {
+  return String(title || '')
+    .toLowerCase()
+    .replace(/[^a-z0-9\s-]/g, '')
+    .trim()
+    .replace(/\s+/g, '-')
+    .substring(0, 80)
+    .replace(/-$/, '')
+}
+
 const sourceColors = {
   'Azure Blog': 'bg-ms-blue/15 text-ms-blue',
   'Windows Blog': 'bg-ms-green/15 text-ms-green',
@@ -34,35 +44,70 @@ export default function LiveNewsGrid({ articles = [], title, color = 'bg-ms-acce
         </span>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-        {articles.map((article, i) => (
-          <a
-            key={i}
-            href={article.link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group bg-ms-card rounded-xl border border-[var(--border)] p-5 hover:border-ms-blue/40 transition-all duration-200 hover:-translate-y-1 block"
-          >
-            <div className="flex items-center gap-2 mb-3">
-              <span className={`${sourceColors[article.source] || 'bg-ms-accent/15 text-ms-accent'} text-[10px] font-bold px-2 py-0.5 rounded-full`}>
-                {article.source}
-              </span>
-              <span className="text-[10px] text-[var(--text-muted)] font-dm">
-                {timeAgo(article.pubDate)}
-              </span>
+        {articles.map((article, i) => {
+          const internalSlug = article.slug || makeSlug(article.title)
+          return (
+            <div
+              key={i}
+              className="group relative bg-ms-card rounded-xl border border-[var(--border)] overflow-hidden hover:border-ms-blue/40 transition-all duration-200 hover:-translate-y-1"
+            >
+              {/* Full-card link */}
+              <a href={`/live/${internalSlug}`} className="absolute inset-0 z-0" aria-label={article.title} />
+
+              {/* Article image */}
+              {article.image && (
+                <div className="w-full aspect-[16/9] overflow-hidden bg-ms-dark">
+                  <img
+                    src={article.image}
+                    alt={article.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    loading="lazy"
+                  />
+                </div>
+              )}
+
+              <div className="relative z-10 p-5">
+                <div className="flex items-center gap-2 mb-3">
+                  <span className={`${sourceColors[article.source] || 'bg-ms-accent/15 text-ms-accent'} text-[10px] font-bold px-2 py-0.5 rounded-full`}>
+                    {article.source}
+                  </span>
+                  <span className="text-[10px] text-[var(--text-muted)] font-dm">
+                    {timeAgo(article.pubDate)}
+                  </span>
+                </div>
+                <h3 className="font-syne font-bold text-sm text-[var(--text-primary)] leading-snug group-hover:text-ms-accent transition-colors line-clamp-2 tracking-tight mb-2">
+                  {article.title}
+                </h3>
+                {article.description && (
+                  <p className="text-xs text-[var(--text-secondary)] font-dm line-clamp-2 leading-relaxed mb-3">
+                    {article.description}
+                  </p>
+                )}
+                <div className="flex items-center gap-3 pt-1 border-t border-[var(--border)]">
+                  <span className="text-[10px] text-ms-accent font-semibold group-hover:opacity-100 opacity-0 transition-opacity">
+                    Read article →
+                  </span>
+                  {article.link && (
+                    <a
+                      href={article.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="relative z-20 text-[10px] text-[var(--text-muted)] hover:text-[var(--text-primary)] flex items-center gap-1 ml-auto transition-colors"
+                      title="Verify from official Microsoft source"
+                    >
+                      <svg className="w-2.5 h-2.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/>
+                        <polyline points="15 3 21 3 21 9"/>
+                        <line x1="10" y1="14" x2="21" y2="3"/>
+                      </svg>
+                      Source
+                    </a>
+                  )}
+                </div>
+              </div>
             </div>
-            <h3 className="font-syne font-bold text-sm text-[var(--text-primary)] leading-snug group-hover:text-ms-accent transition-colors line-clamp-2 tracking-tight mb-2">
-              {article.title}
-            </h3>
-            {article.description && (
-              <p className="text-xs text-[var(--text-secondary)] font-dm line-clamp-2 leading-relaxed mb-3">
-                {article.description}
-              </p>
-            )}
-            <span className="text-[10px] text-ms-accent font-medium opacity-0 group-hover:opacity-100 transition-opacity">
-              Read on Microsoft →
-            </span>
-          </a>
-        ))}
+          )
+        })}
       </div>
     </section>
   )

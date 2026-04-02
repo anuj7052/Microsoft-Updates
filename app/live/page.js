@@ -3,6 +3,16 @@ import { readFileSync, existsSync } from 'fs'
 import { join } from 'path'
 import Link from 'next/link'
 
+function makeSlug(title) {
+  return String(title || '')
+    .toLowerCase()
+    .replace(/[^a-z0-9\s-]/g, '')
+    .trim()
+    .replace(/\s+/g, '-')
+    .substring(0, 80)
+    .replace(/-$/, '')
+}
+
 export const revalidate = 1800 // Revalidate every 30 minutes
 
 export const metadata = {
@@ -108,7 +118,7 @@ export default async function LiveUpdatesPage() {
         ))}
       </div>
 
-      {/* Updates grid */}
+          {/* Updates grid */}
       {items.length === 0 ? (
         <div className="bg-ms-card rounded-2xl border border-[var(--border)] p-12 text-center">
           <p className="text-[var(--text-muted)] font-dm">Loading live updates...</p>
@@ -118,60 +128,68 @@ export default async function LiveUpdatesPage() {
           {items.map((item, i) => {
             const colorClass = categoryColors[item.category] || categoryColors.general
             const label = categoryLabels[item.category] || item.category
+            const internalSlug = item.slug || makeSlug(item.title)
 
             return (
-              <article
-                key={i}
-                className="bg-ms-card rounded-xl border border-[var(--border)] p-5 flex flex-col gap-3 hover:border-ms-blue/40 transition-all duration-200 hover:-translate-y-0.5"
-              >
-                {/* Badge + time */}
-                <div className="flex items-center justify-between">
-                  <span className={`text-[10px] font-bold px-2.5 py-0.5 rounded-full ${colorClass}`}>
-                    {label}
-                  </span>
-                  <span className="text-[10px] text-[var(--text-muted)] font-dm">{timeAgo(item.date)}</span>
-                </div>
+              <div key={i} className="group relative bg-ms-card rounded-xl border border-[var(--border)] overflow-hidden flex flex-col hover:border-ms-blue/40 transition-all duration-200 hover:-translate-y-0.5">
+                {/* Full card link */}
+                <Link href={`/live/${internalSlug}`} className="absolute inset-0 z-0" aria-label={item.title} />
 
-                {/* Title */}
-                <h2 className="font-syne font-bold text-sm text-[var(--text-primary)] leading-snug tracking-tight line-clamp-3 flex-1">
-                  {item.title}
-                </h2>
-
-                {/* Summary */}
-                {item.summary && (
-                  <p className="text-xs text-[var(--text-secondary)] font-dm leading-relaxed line-clamp-3">
-                    {item.summary}
-                  </p>
+                {/* Image */}
+                {item.image && (
+                  <div className="w-full aspect-[16/9] overflow-hidden bg-ms-dark">
+                    <img
+                      src={item.image}
+                      alt={item.title}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      loading="lazy"
+                    />
+                  </div>
                 )}
 
-                {/* Actions */}
-                <div className="flex items-center gap-3 pt-1 mt-auto">
-                  {/* Read full article (internal page — only if article exists) */}
-                  {item.slug && (
-                    <Link
-                      href={`/updates/${item.category}/${item.slug}`}
-                      className="text-xs font-semibold text-ms-accent hover:underline"
-                    >
-                      Read article →
-                    </Link>
+                <div className="relative z-10 p-5 flex flex-col gap-3 flex-1">
+                  {/* Badge + time */}
+                  <div className="flex items-center justify-between">
+                    <span className={`text-[10px] font-bold px-2.5 py-0.5 rounded-full ${colorClass}`}>
+                      {label}
+                    </span>
+                    <span className="text-[10px] text-[var(--text-muted)] font-dm">{timeAgo(item.date)}</span>
+                  </div>
+
+                  {/* Title */}
+                  <h2 className="font-syne font-bold text-sm text-[var(--text-primary)] leading-snug tracking-tight line-clamp-3 flex-1 group-hover:text-ms-accent transition-colors">
+                    {item.title}
+                  </h2>
+
+                  {/* Summary */}
+                  {item.summary && (
+                    <p className="text-xs text-[var(--text-secondary)] font-dm leading-relaxed line-clamp-2">
+                      {item.summary}
+                    </p>
                   )}
-                  {/* Official Microsoft source */}
-                  <a
-                    href={item.sourceUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-xs font-medium text-[var(--text-muted)] hover:text-[var(--text-primary)] flex items-center gap-1 ml-auto transition-colors"
-                    title="Verify from official Microsoft source"
-                  >
-                    <svg className="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                      <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/>
-                      <polyline points="15 3 21 3 21 9"/>
-                      <line x1="10" y1="14" x2="21" y2="3"/>
-                    </svg>
-                    Verify from Microsoft
-                  </a>
+
+                  {/* Footer row */}
+                  <div className="flex items-center gap-3 pt-1 mt-auto border-t border-[var(--border)]">
+                    <span className="text-xs font-semibold text-ms-accent">Read article →</span>
+                    {item.sourceUrl && (
+                      <a
+                        href={item.sourceUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="relative z-20 text-[10px] text-[var(--text-muted)] hover:text-[var(--text-primary)] flex items-center gap-1 ml-auto transition-colors"
+                        title="Verify from official Microsoft source"
+                      >
+                        <svg className="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                          <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/>
+                          <polyline points="15 3 21 3 21 9"/>
+                          <line x1="10" y1="14" x2="21" y2="3"/>
+                        </svg>
+                        Verify from Microsoft
+                      </a>
+                    )}
+                  </div>
                 </div>
-              </article>
+              </div>
             )
           })}
         </div>

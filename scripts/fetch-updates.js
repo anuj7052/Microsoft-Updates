@@ -67,6 +67,11 @@ function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms))
 }
 
+function extractFirstImg(html) {
+  const m = String(html || '').match(/<img[^>]+src=["']([^"']+)["']/i)
+  return m ? m[1] : null
+}
+
 function stripHtml(str) {
   return String(str || '')
     .replace(/<!\[CDATA\[|\]\]>/g, '')
@@ -231,7 +236,20 @@ function parseRSS(xml) {
 
         const pubDate = item.pubDate || item.published || item.updated || ''
 
-        return { title, description, url: url.trim(), guid: String(guid).trim(), pubDate }
+        // Extract image from media fields or inline HTML
+        const rawHtml =
+          item['content:encoded']?.['__cdata'] ||
+          item.description?.['__cdata'] ||
+          item.description?.['#text'] ||
+          ''
+        const image =
+          item['media:content']?.['@_url'] ||
+          item['media:thumbnail']?.['@_url'] ||
+          (item['enclosure'] && item['enclosure']['@_url']?.startsWith('http') ? item['enclosure']['@_url'] : null) ||
+          extractFirstImg(rawHtml) ||
+          null
+
+        return { title, description, url: url.trim(), guid: String(guid).trim(), pubDate, image }
       })
       .filter((item) => item.title && item.url)
   } catch (err) {
@@ -273,14 +291,30 @@ function generateFallback(item, category, kbNumber) {
 // ─── AI content generation ────────────────────────────────────────────────────
 
 async function generateContent(item, category, kbNumber) {
-  if (!process.env.OPENAI_API_KEY) {
+  const hasAzure = process.env.AZURE_OPENAI_KEY && process.env.AZURE_OPENAI_ENDPOINT
+  const hasOpenAI = process.env.OPENAI_API_KEY
+
+  if (!hasAzure && !hasOpenAI) {
     return generateFallback(item, category, kbNumber)
   }
 
   try {
-    // Lazy-load openai to avoid crash if not installed
-    const { OpenAI } = require('openai')
-    const client = new OpenAI({ apiKey: process.env.OPENAI_API_KEY })
+    const { OpenAI, AzureOpenAI } = require('openai')
+    let client
+    let model
+
+    if (hasAzure) {
+      client = new AzureOpenAI({
+        apiKey: process.env.AZURE_OPENAI_KEY,
+        endpoint: process.env.AZURE_OPENAI_ENDPOINT,
+        deployment: process.env.AZURE_OPENAI_DEPLOYMENT || 'gpt-4o-mini',
+        apiVersion: process.env.AZURE_OPENAI_API_VERSION || '2026-03-03',
+      })
+      model = process.env.AZURE_OPENAI_DEPLOYMENT || 'gpt-4o-mini'
+    } else {
+      client = new OpenAI({ apiKey: process.env.OPENAI_API_KEY })
+      model = 'gpt-4o-mini'
+    }
 
     const prompt = `You are an expert Microsoft technology journalist. Analyze this update and respond ONLY with valid JSON, no markdown.
 
@@ -307,7 +341,7 @@ Risk classification:
 - AVOID: data loss risk, critical crashes, widespread breakage`
 
     const response = await client.chat.completions.create({
-      model: 'gpt-4o-mini',
+      model,
       messages: [{ role: 'user', content: prompt }],
       response_format: { type: 'json_object' },
       temperature: 0.2,
@@ -365,6 +399,7 @@ category: "${category}"
 slug: "${content.slug}"${kbNumber ? `\nkbNumber: "${kbNumber}"` : ''}
 riskLevel: "${content.riskLevel}"
 sourceUrl: "${item.url}"
+image: "${item.image || ''}"
 publishedAt: "${toISODate(item.pubDate)}"
 ---
 
@@ -467,6 +502,7 @@ async function main() {
           guid: item.guid,
           pubDate: toISODate(item.pubDate),
           category: feed.category,
+          image: item.image || null,
         }
         allFeedItems.push(enriched)
 
@@ -497,8 +533,9 @@ async function main() {
       date: item.pubDate,
       category: item.category,
       sourceUrl: item.url,
-      // internal article page (may not exist for non-major updates)
+      // internal article page
       slug: generateSlug(item.title, extractKBNumber(`${item.title} ${item.description}`)),
+      image: item.image || null,
     }))
 
   saveJSON(LIVE_PATH, { updatedAt: new Date().toISOString(), items: liveItems })
