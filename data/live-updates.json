@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-03T06:49:18.350Z",
+  "updatedAt": "2026-04-03T08:06:11.362Z",
   "items": [
     {
       "title": "Part 3 &#8211; Babylon.js 9.0: OpenPBR and additional engine updates",
@@ -9,33 +9,6 @@
       "sourceUrl": "https://blogs.windows.com/windowsdeveloper/2026/04/02/part-3-babylon-js-9-0-openpbr-and-additional-engine-updates/",
       "slug": "part-3-8211-babylonjs-90-openpbr-and-additional-engine-updates",
       "image": "/api/og?title=Part%203%20%26%238211%3B%20Babylon.js%209.0%3A%20OpenPBR%20and%20additional%20engine%20updates&category=windows"
-    },
-    {
-      "title": "Azure IaaS: Keep critical applications running with built-in resiliency at scale",
-      "summary": "Azure IaaS provides foundational capabilities across compute, storage, and networking to help organizations stay resilient. The post Azure IaaS: Keep critical applications running with built-in resiliency at scale appear",
-      "date": "2026-04-01T16:00:00.000Z",
-      "category": "azure",
-      "sourceUrl": "https://azure.microsoft.com/en-us/blog/azure-iaas-keep-critical-applications-running-with-built-in-resiliency-at-scale/",
-      "slug": "azure-iaas-keep-critical-applications-running-with-built-in-resiliency-at-scale",
-      "image": "/api/og?title=Azure%20IaaS%3A%20Keep%20critical%20applications%20running%20with%20built-in%20resiliency%20at%20scale&category=azure"
-    },
-    {
-      "title": "Building sovereign AI at the edge: Microsoft and Armada collaborate to deliver Azure Local on Galleon modular datacenters",
-      "summary": "Explore how Microsoft and Armada bring sovereign AI to the edge with Azure Local, enabling secure, resilient workloads in disconnected and regulated environments. The post Building sovereign AI at the edge: Microsoft and",
-      "date": "2026-03-31T16:00:00.000Z",
-      "category": "azure",
-      "sourceUrl": "https://azure.microsoft.com/en-us/blog/building-sovereign-ai-at-the-edge-microsoft-and-armada-collaborate-to-deliver-azure-local-on-galleon-modular-datacenters/",
-      "slug": "building-sovereign-ai-at-the-edge-microsoft-and-armada-collaborate-to-deliver-az",
-      "image": "/api/og?title=Building%20sovereign%20AI%20at%20the%20edge%3A%20Microsoft%20and%20Armada%20collaborate%20to%20deliver%20Azure%20Local%20on%20Galleo&category=azure"
-    },
-    {
-      "title": "Navigating digital sovereignty at the frontier of transformation",
-      "summary": "Digital sovereignty has become a practical leadership discipline grounded in risk management, continuity planning, and long-term accountability. The post Navigating digital sovereignty at the frontier of transformation a",
-      "date": "2026-03-30T21:27:39.000Z",
-      "category": "azure",
-      "sourceUrl": "https://www.microsoft.com/en-us/microsoft-cloud/blog/2026/03/25/navigating-digital-sovereignty-at-the-frontier-of-transformation/",
-      "slug": "navigating-digital-sovereignty-at-the-frontier-of-transformation",
-      "image": "/api/og?title=Navigating%20digital%20sovereignty%20at%20the%20frontier%20of%20transformation&category=azure"
     },
     {
       "title": "Announcing Windows 11 Insider Preview Build for Canary Channel 29558.1000",
@@ -72,15 +45,6 @@
       "sourceUrl": "https://blogs.windows.com/windowsdeveloper/2026/03/30/part-2-babylon-js-9-0-tooling-updates-and-new-geospatial-features/",
       "slug": "part-2-8211-babylonjs-90-tooling-updates-and-new-geospatial-features",
       "image": "/api/og?title=Part%202%20%26%238211%3B%20Babylon.js%209.0%3A%20Tooling%20updates%20and%20new%20geospatial%20features&category=windows"
-    },
-    {
-      "title": "Microsoft named a Leader in 2026 Gartner® Magic Quadrant™ for Integration Platform as a Service",
-      "summary": "Read why Microsoft was named a Leader for integration services in the 2026 Gartner® Magic Quadrant™ for Integration Platform as a Service. The post Microsoft named a Leader in 2026 Gartner® Magic Quadrant™ for Integratio",
-      "date": "2026-03-30T16:00:00.000Z",
-      "category": "azure",
-      "sourceUrl": "https://azure.microsoft.com/en-us/blog/microsoft-named-a-leader-in-2026-gartner-magic-quadrant-for-integration-platform-as-a-service/",
-      "slug": "microsoft-named-a-leader-in-2026-gartner-magic-quadrant-for-integration-platform",
-      "image": "/api/og?title=Microsoft%20named%20a%20Leader%20in%202026%20Gartner%C2%AE%20Magic%20Quadrant%E2%84%A2%20for%20Integration%20Platform%20as%20a%20Service&category=azure"
     },
     {
       "title": "Announcing Windows 11 Insider Preview Build 26220.8138 (Beta Channel)",
@@ -180,6 +144,42 @@
       "sourceUrl": "https://azure.microsoft.com/en-us/blog/from-legacy-to-leadership-how-postgresql-on-azure-powers-enterprise-agility-and-innovation/",
       "slug": "from-legacy-to-leadership-how-postgresql-on-azure-powers-enterprise-agility-and",
       "image": "/api/og?title=From%20legacy%20to%20leadership%3A%20How%20PostgreSQL%20on%20Azure%20powers%20enterprise%20agility%20and%20innovation&category=azure"
+    },
+    {
+      "title": "Modernizing regulated industries with cloud and agentic AI",
+      "summary": "Discover how cloud modernization and agentic AI are accelerating migration across healthcare, financial services, and manufacturing. The post Modernizing regulated industries with cloud and agentic AI appeared first on M",
+      "date": "2026-03-11T16:00:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://www.microsoft.com/en-us/industry/blog/general/2026/03/11/modernizing-regulated-industries-with-cloud-and-agentic-ai/",
+      "slug": "modernizing-regulated-industries-with-cloud-and-agentic-ai",
+      "image": "/api/og?title=Modernizing%20regulated%20industries%20with%20cloud%20and%20agentic%20AI&category=azure"
+    },
+    {
+      "title": "Many agents, one team: Scaling modernization on Azure",
+      "summary": "We’re announcing the first agentic end-to-end modernization solution that brings IT and developers into a single, connected workflow. The post Many agents, one team: Scaling modernization on Azure appeared first on Micro",
+      "date": "2026-03-11T15:00:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/many-agents-one-team-scaling-modernization-on-azure/",
+      "slug": "many-agents-one-team-scaling-modernization-on-azure",
+      "image": "/api/og?title=Many%20agents%2C%20one%20team%3A%20Scaling%20modernization%20on%20Azure&category=azure"
+    },
+    {
+      "title": "Introducing Fireworks AI on Microsoft Foundry: Bringing high performance, low latency open model inference to Azure",
+      "summary": "We’re announcing the public preview of Fireworks AI on Microsoft Foundry, bringing high‑performance open model inference into Azure. This integration reflects Microsoft Foundry’s broader direction: providing a single pla",
+      "date": "2026-03-11T07:00:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/introducing-fireworks-ai-on-microsoft-foundry-bringing-high-performance-low-latency-open-model-inference-to-azure/",
+      "slug": "introducing-fireworks-ai-on-microsoft-foundry-bringing-high-performance-low-late",
+      "image": "/api/og?title=Introducing%20Fireworks%20AI%20on%20Microsoft%20Foundry%3A%20Bringing%20high%20performance%2C%20low%20latency%20open%20model%20inf&category=azure"
+    },
+    {
+      "title": "Unpacking your top questions on agentic AI: The Shift podcast",
+      "summary": "Today we're introducing \"The Shift\" podcast, an evolution of \"Leading the Shift,\" to share more dialogue. Grounded in questions we heard from you after announcements at Ignite, we’re releasing eight episodes this spring.",
+      "date": "2026-03-09T18:11:08.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/unpacking-your-top-questions-on-agentic-ai-the-shift-podcast/",
+      "slug": "unpacking-your-top-questions-on-agentic-ai-the-shift-podcast",
+      "image": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/3233302-Shift-Season2-Trailer"
     }
   ]
 }
