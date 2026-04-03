@@ -1,5 +1,5 @@
 {
-  "lastFetchedAt": "2026-04-03T17:05:14.748Z",
+  "lastFetchedAt": "2026-04-03T18:04:07.638Z",
   "processed": [
     {
       "guid": "https://blogs.windows.com/blog/2026/03/30/announcing-windows-11-insider-preview-build-for-canary-channel-29558-1000/",
@@ -176,6 +176,30 @@
       "category": "windows",
       "riskLevel": "SAFE",
       "savedAt": "2026-04-03T17:05:14.748Z"
+    },
+    {
+      "guid": "https://blogs.windows.com/blog/2026/04/03/announcing-windows-11-insider-preview-build-28020-1803-canary-channel/",
+      "url": "https://blogs.windows.com/windows-insider/2026/04/03/announcing-windows-11-insider-preview-build-28020-1803-canary-channel/",
+      "slug": "announcing-windows-11-insider-preview-build-280201803-canary-channel",
+      "category": "windows",
+      "riskLevel": "SAFE",
+      "savedAt": "2026-04-03T18:04:07.637Z"
+    },
+    {
+      "guid": "https://blogs.windows.com/blog/2026/04/03/announcing-windows-11-insider-preview-build-for-canary-channel-29560-1000/",
+      "url": "https://blogs.windows.com/windows-insider/2026/04/03/announcing-windows-11-insider-preview-build-for-canary-channel-29560-1000/",
+      "slug": "announcing-windows-11-insider-preview-build-for-canary-channel-295601000",
+      "category": "windows",
+      "riskLevel": "SAFE",
+      "savedAt": "2026-04-03T18:04:07.638Z"
+    },
+    {
+      "guid": "https://blogs.windows.com/blog/2026/04/03/announcing-windows-11-insider-preview-build-26300-8155-dev-channel/",
+      "url": "https://blogs.windows.com/windows-insider/2026/04/03/announcing-windows-11-insider-preview-build-26300-8155-dev-channel/",
+      "slug": "announcing-windows-11-insider-preview-build-263008155-dev-channel",
+      "category": "windows",
+      "riskLevel": "SAFE",
+      "savedAt": "2026-04-03T18:04:07.638Z"
     }
   ]
 }
