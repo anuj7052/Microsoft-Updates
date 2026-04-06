@@ -2,7 +2,7 @@ import Link from 'next/link'
 import NewsCard from '../../components/NewsCard'
 import LiveCategoryArticles from '../../components/LiveCategoryArticles'
 import { newsArticles } from '../../data/news'
-import { fetchMicrosoftFeeds } from '../../lib/feeds'
+import { getUpdatesFromDb } from '../../lib/feeds'
 
 export const revalidate = 900
 
@@ -26,7 +26,7 @@ export default async function WindowsPage() {
 
   let liveArticles = []
   try {
-    liveArticles = await fetchMicrosoftFeeds('windows')
+    liveArticles = await getUpdatesFromDb('windows')
   } catch {}
 
   return (

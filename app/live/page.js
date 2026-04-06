@@ -1,4 +1,4 @@
-import { fetchMicrosoftFeeds } from '../../lib/feeds'
+import { getUpdatesFromDb } from '../../lib/feeds'
 import Link from 'next/link'
 
 export const revalidate = 900
@@ -16,7 +16,7 @@ function timeAgo(dateStr) {
   if (diff < 3600) return `${Math.floor(diff / 60)}m ago`
   if (diff < 86400) return `${Math.floor(diff / 3600)}h ago`
   if (diff < 604800) return `${Math.floor(diff / 86400)}d ago`
-  return date.toLocaleDateString('en-IN', { month: 'short', day: 'numeric' })
+  return date.toLocaleDateString('en-IN', { month: 'short', day: 'numeric', year: 'numeric' })
 }
 
 function makeSlug(title) {
@@ -50,7 +50,7 @@ function getImageUrl(article) {
 export default async function LivePage() {
   let articles = []
   try {
-    articles = await fetchMicrosoftFeeds()
+    articles = await getUpdatesFromDb(null, 150)
   } catch {}
 
   return (

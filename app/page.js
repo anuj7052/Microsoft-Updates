@@ -2,7 +2,7 @@ import HeroSection from '../components/HeroSection'
 import NewsTicker from '../components/NewsTicker'
 import LiveNewsGrid from '../components/LiveNewsGrid'
 import CategoryGrid from '../components/CategoryGrid'
-import { fetchMicrosoftFeeds } from '../lib/feeds'
+import { getUpdatesFromDb } from '../lib/feeds'
 
 export const revalidate = 900
 
@@ -24,7 +24,7 @@ export const metadata = {
 export default async function HomePage() {
   let liveArticles = []
   try {
-    liveArticles = await fetchMicrosoftFeeds()
+    liveArticles = await getUpdatesFromDb(null, 100)
   } catch {}
 
   const azureLive = liveArticles.filter(a => a.feedCategory === 'azure').slice(0, 6)
