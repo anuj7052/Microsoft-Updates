@@ -1,5 +1,14 @@
 const { PrismaClient } = require('@prisma/client')
-const cheerio = require('cheerio')
+const RSS_FEEDS = [
+  { url: 'https://devblogs.microsoft.com/landingpage/feed/', category: 'general', name: 'Microsoft Dev Blogs' },
+  { url: 'https://azure.microsoft.com/en-us/blog/feed/', category: 'azure', name: 'Azure Blog' },
+  { url: 'https://blogs.windows.com/feed/', category: 'windows', name: 'Windows Blog' },
+  { url: 'https://www.microsoft.com/en-us/security/blog/feed/', category: 'security', name: 'Microsoft Security' },
+  { url: 'https://devblogs.microsoft.com/microsoft365dev/feed/', category: 'office365', name: 'Microsoft 365 Dev' },
+  { url: 'https://devblogs.microsoft.com/powerplatform/feed/', category: 'power-platform', name: 'Power Platform' },
+  { url: 'https://blog.fabric.microsoft.com/en-us/blog/feed/', category: 'fabric', name: 'Microsoft Fabric' },
+  { url: 'https://devblogs.microsoft.com/microsoft365dev/feed/', category: 'copilot', name: 'Copilot & AI' },
+]
 
 const prisma = new PrismaClient()
 
@@ -14,68 +23,64 @@ function makeSlug(title) {
     .replace(/-$/, '')
 }
 
-async function scrapePage(pageNum) {
-  const url = `https://devblogs.microsoft.com/landingpage/page/${pageNum}/`
-  console.log(`\nFetching ${url}...`)
-  
-  try {
-    const res = await fetch(url, {
-      headers: {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
-        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
-      }
-    })
-    
-    if (!res.ok) {
-      console.log(`Failed to fetch page ${pageNum}: ${res.status}`)
-      return []
+function parseXMLItems(xmlText) {
+  const items = []
+  const itemRegex = /<item>([\s\S]*?)<\/item>/g
+  let match
+
+  while ((match = itemRegex.exec(xmlText)) !== null) {
+    let itemXml = match[1]
+    const getTag = (tag) => {
+      const r = new RegExp(`<${tag}[^>]*>(?:<!\\[CDATA\\[)?(.*?)(?:\\]\\]>)?<\\/${tag}>`, 's')
+      const m = itemXml.match(r)
+      return m ? m[1].trim() : ''
     }
+
+    const title = getTag('title')
+    const link = getTag('link')
+    const pubDate = getTag('pubDate')
+    const rawDesc = getTag('description') || getTag('content:encoded') || ''
+    const description = rawDesc.replace(/<[^>]+>/g, '').substring(0, 300).trim()
     
-    const html = await res.text()
-    const $ = cheerio.load(html)
-    
-    const items = []
-    
-    // Find article cards
-    $('article').each((i, el) => {
-      const titleEl = $(el).find('h2.entry-title a')
-      const title = titleEl.text().trim()
-      const link = titleEl.attr('href')
-      
-      const categoryEl = $(el).find('.entry-category')
-      const categoryText = categoryEl.text().trim() || 'General'
-      
-      const dateEl = $(el).find('.entry-date')
-      const dateText = dateEl.text().trim()
-      
-      const descEl = $(el).find('.entry-content p, .entry-summary p').first()
-      const description = descEl.text().trim()
-      
-      if (title && link) {
-        items.push({
-          title,
-          link,
-          pubDate: dateText ? new Date(dateText) : new Date(),
-          description: description || title,
-          category: categoryText,
-          source: 'Microsoft Dev Blogs',
-          feedCategory: 'general'
-        })
-      }
-    })
-    
-    return items
-  } catch (err) {
-    console.error(`Error scraping page ${pageNum}:`, err.message)
-    return []
+    if (title) {
+      items.push({ title, link, pubDate, description })
+    }
   }
+  return items
+}
+
+async function scrapeFeeds() {
+  const items = []
+  
+  for (const feed of RSS_FEEDS) {
+    console.log(`\nFetching ${feed.name}...`)
+    try {
+      const res = await fetch(feed.url)
+      if (!res.ok) continue
+      
+      const xml = await res.text()
+      const parsed = parseXMLItems(xml)
+      
+      parsed.forEach(item => {
+          items.push({
+             ...item,
+             category: feed.category,
+             sourceUrl: feed.url
+          })
+      })
+      console.log(`Found ${parsed.length} recent articles for ${feed.name}.`)
+    } catch(e) {
+      console.error('Error fetching feed:', e.message)
+    }
+  }
+  
+  return items
 }
 
 async function insertItem(item) {
   const slug = makeSlug(item.title)
   const sourceUrl = item.link || `https://microsoftupdates.co.in/fallback/${slug}-${Date.now()}`
   
-  // Check if exists
   const exists = await prisma.update.findFirst({
     where: { OR: [{ slug }, { sourceUrl }] }
   })
@@ -85,7 +90,6 @@ async function insertItem(item) {
     return false
   }
 
-  // Classify risk level
   let riskLevel = 'SAFE'
   const titleLower = item.title.toLowerCase()
   if (titleLower.includes('fix') || titleLower.includes('warning') || titleLower.includes('issue') || titleLower.includes('security') || titleLower.includes('cve')) {
@@ -94,22 +98,19 @@ async function insertItem(item) {
 
   const cleanDesc = item.description.replace(/<[^>]+>/g, '')
   const shortDesc = cleanDesc.substring(0, 155).trim() + (cleanDesc.length > 155 ? '...' : '')
-  const metaTitle = item.title.substring(0, 60).trim()
 
   try {
     await prisma.update.create({
       data: {
         title: item.title,
-        category: item.feedCategory || 'general',
+        category: item.category || 'general',
         description: cleanDesc,
         summaryEn: `Microsoft has published a past update: ${item.title}. This historical update is archived for your reference.`,
-        keyChanges: [
-          `Archived ${item.title}`,
-        ],
+        keyChanges: [`Archived ${item.title}`],
         riskLevel,
         shouldInstall: 'This is a historical update spanning the past 2 years.',
         slug,
-        metaTitle,
+        metaTitle: item.title.substring(0, 60).trim(),
         metaDescription: shortDesc,
         sourceUrl,
         publishedAt: item.pubDate ? new Date(item.pubDate) : new Date(),
@@ -119,37 +120,23 @@ async function insertItem(item) {
     process.stdout.write('+')
     return true
   } catch (e) {
-    console.error(`\nFailed to insert ${slug}:`, e.message)
     return false
   }
 }
 
 async function main() {
-  console.log("Starting 2-year history backfill scraper...")
+  console.log("Starting backfill via main RSS Feeds...")
   
-  // Scrape up to 50 pages (approx 2 years depending on frequency)
-  const MAX_PAGES = 50
-  let totalInserted = 0
+  const allItems = await scrapeFeeds()
+  console.log(`\nFound a total of ${allItems.length} cross-platform articles. Inserting...`)
   
-  for (let page = 1; page <= MAX_PAGES; page++) {
-    const items = await scrapePage(page)
-    if (items.length === 0) {
-      console.log(`\nNo items found on page ${page}. Stopping.`)
-      break
-    }
-    
-    console.log(`Found ${items.length} items. Inserting...`)
-    
-    for (const item of items) {
-      const inserted = await insertItem(item)
-      if (inserted) totalInserted++
-    }
-    
-    // Polite delay
-    await new Promise(r => setTimeout(r, 1000))
+  let inserted = 0
+  for (const item of allItems) {
+      const added = await insertItem(item)
+      if (added) inserted++
   }
   
-  console.log(`\n\nDone! Successfully backfilled ${totalInserted} historical updates.`)
+  console.log(`\n\nDone! Successfully seeded database with ${inserted} new historic updates!`)
 }
 
 main()
