@@ -1,8 +1,9 @@
 import fs from 'fs'
 import path from 'path'
 import { newsArticles, categories } from '../data/news'
+import { prisma } from '../lib/db'
 
-export default function sitemap() {
+export default async function sitemap() {
   const baseUrl = 'https://microsoftupdates.co.in'
 
   const staticPages = [
@@ -58,7 +59,7 @@ export default function sitemap() {
   }
 
   // Live update pages from data/live-updates.json
-  const livePages = []
+  const livePagesLocal = []
   try {
     const livePath = path.join(process.cwd(), 'data', 'live-updates.json')
     if (fs.existsSync(livePath)) {
@@ -66,7 +67,7 @@ export default function sitemap() {
       const items = data.items || []
       for (const item of items) {
         if (!item.slug) continue
-        livePages.push({
+        livePagesLocal.push({
           url: `${baseUrl}/live/${item.slug}`,
           lastModified: item.date ? new Date(item.date) : new Date(),
           changeFrequency: 'weekly',
@@ -76,5 +77,35 @@ export default function sitemap() {
     }
   } catch {}
 
-  return [...staticPages, ...categoryPages, ...articlePages, ...markdownPages, ...livePages]
+  // Live update pages from database (New Backfill items + Crons)
+  let dbUpdates = []
+  try {
+    const records = await prisma.update.findMany({
+      select: { slug: true, updatedAt: true, publishedAt: true },
+      orderBy: { publishedAt: 'desc' },
+      take: 45000 // To leave room for static
+    })
+    
+    dbUpdates = records.map(update => ({
+      url: `${baseUrl}/live/${update.slug}`,
+      lastModified: update.updatedAt || update.publishedAt || new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.7,
+    }))
+  } catch (e) {
+    console.error('Error fetching DB updates for sitemap:', e)
+  }
+
+  // Deduplicate
+  const allLive = [...livePagesLocal, ...dbUpdates]
+  const uniqueUrls = new Set()
+  const cleanLive = []
+  for (const page of allLive) {
+    if (!uniqueUrls.has(page.url)) {
+      uniqueUrls.add(page.url)
+      cleanLive.push(page)
+    }
+  }
+
+  return [...staticPages, ...categoryPages, ...articlePages, ...markdownPages, ...cleanLive]
 }

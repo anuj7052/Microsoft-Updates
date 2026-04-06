@@ -97,9 +97,9 @@ export default function HeroSection({ articles = [] }) {
               <span className="ai-badge">INDEPENDENT</span>
             </div>
 
-            <h1 className="font-syne font-extrabold text-2xl md:text-3xl lg:text-[2rem] text-[var(--text-primary)] leading-snug tracking-tight mb-4 group-hover:text-[#C084FC] transition-colors">
+            <h2 className="font-syne font-extrabold text-2xl md:text-3xl lg:text-[2rem] text-[var(--text-primary)] leading-snug tracking-tight mb-4 group-hover:text-[#C084FC] transition-colors">
               {hero.title}
-            </h1>
+            </h2>
 
             <p className="font-dm font-light text-[var(--text-secondary)] text-[15px] md:text-base leading-relaxed mb-6 max-w-2xl line-clamp-3">
               {hero.description}

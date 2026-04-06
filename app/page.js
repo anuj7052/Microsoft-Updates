@@ -33,6 +33,7 @@ export default async function HomePage() {
 
   return (
     <>
+      <h1 className="sr-only">Latest Microsoft Updates & News</h1>
       {/* 1. Hero Section */}
       <HeroSection articles={liveArticles.slice(0, 4)} />
 
