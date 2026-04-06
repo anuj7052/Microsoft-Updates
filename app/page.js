@@ -36,30 +36,46 @@ export default async function HomePage() {
   const securityLive = liveArticles.filter(a => a.feedCategory === 'security').slice(0, 6)
 
   return (
-    <>
+    <main className="min-h-screen pb-20">
       <h1 className="sr-only">Latest Microsoft Updates & News</h1>
-      {/* 1. Hero Section */}
-      <HeroSection articles={liveArticles.slice(0, 4)} />
+      
+      {liveArticles.length === 0 ? (
+        <div className="max-w-7xl mx-auto px-4 py-20 text-center">
+          <div className="bg-ms-card rounded-2xl border border-[var(--border)] p-12">
+            <h2 className="font-syne font-extrabold text-2xl mb-4">Connecting to News Stream...</h2>
+            <p className="text-[var(--text-muted)] max-w-md mx-auto mb-8">
+              We are fetching the latest Microsoft updates. If this persists, please refresh or check back in a few minutes.
+            </p>
+            <div className="inline-block w-8 h-8 border-4 border-ms-accent border-t-transparent rounded-full animate-spin"></div>
+          </div>
+        </div>
+      ) : (
+        <>
+          {/* 1. Hero Section */}
+          <HeroSection articles={liveArticles.slice(0, 4)} />
 
-      {/* 2. News Ticker */}
-      <NewsTicker articles={liveArticles.slice(0, 15)} />
+          {/* 2. News Ticker */}
+          <NewsTicker articles={liveArticles.slice(0, 15)} />
 
-      {/* 3. Latest Updates Grid */}
-      <LiveNewsGrid articles={liveArticles.slice(0, 9)} title="Latest Updates" />
+          {/* 3. Latest Updates Grid */}
+          <LiveNewsGrid articles={liveArticles.slice(0, 9)} title="Latest Updates" />
 
-      {/* 4. Categories */}
-      <CategoryGrid />
+          {/* 4. Categories */}
+          <CategoryGrid />
 
-      {/* 5. Top category sections */}
-      {windowsLive.length > 0 && (
-        <LiveNewsGrid articles={windowsLive} title="Windows Updates" />
+          {/* 5. Top category sections */}
+          {windowsLive.length > 0 && (
+            <LiveNewsGrid articles={windowsLive} title="Windows Updates" />
+          )}
+          {azureLive.length > 0 && (
+            <LiveNewsGrid articles={azureLive} title="Azure Cloud Updates" />
+          )}
+          {securityLive.length > 0 && (
+            <LiveNewsGrid articles={securityLive} title="Security Updates" />
+          )}
+        </>
       )}
-      {azureLive.length > 0 && (
-        <LiveNewsGrid articles={azureLive} title="Azure Cloud Updates" />
-      )}
-      {securityLive.length > 0 && (
-        <LiveNewsGrid articles={securityLive} title="Security Updates" />
-      )}
-    </>
+    </main>
   )
 }
+
