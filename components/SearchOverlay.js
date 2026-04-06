@@ -16,22 +16,11 @@ function makeSlug(title) {
 export default function SearchOverlay({ onClose }) {
   const [query, setQuery] = useState('')
   const [results, setResults] = useState([])
-  const [allItems, setAllItems] = useState([])
+  const [isLoading, setIsLoading] = useState(false)
   const inputRef = useRef(null)
 
   useEffect(() => {
     inputRef.current?.focus()
-
-    // Load live-updates data for searching
-    fetch('/api/feed')
-      .then((r) => r.json())
-      .then((data) => {
-        if (Array.isArray(data)) setAllItems(data)
-        else if (data.articles) setAllItems(data.articles)
-        else if (data.items) setAllItems(data.items)
-      })
-      .catch(() => {})
-
     const handleEsc = (e) => { if (e.key === 'Escape') onClose() }
     window.addEventListener('keydown', handleEsc)
     return () => window.removeEventListener('keydown', handleEsc)
@@ -42,18 +31,22 @@ export default function SearchOverlay({ onClose }) {
       setResults([])
       return
     }
-    const q = query.toLowerCase()
-    const filtered = allItems.filter(
-      (item) =>
-        (item.title && item.title.toLowerCase().includes(q)) ||
-        (item.summary && item.summary.toLowerCase().includes(q)) ||
-        (item.description && item.description.toLowerCase().includes(q)) ||
-        (item.category && item.category.toLowerCase().includes(q)) ||
-        (item.feedCategory && item.feedCategory.toLowerCase().includes(q)) ||
-        (item.source && item.source.toLowerCase().includes(q))
-    ).slice(0, 8)
-    setResults(filtered)
-  }, [query, allItems])
+    
+    // Debounce the call
+    setIsLoading(true)
+    const timeout = setTimeout(() => {
+      fetch(`/api/search?q=${encodeURIComponent(query)}`)
+        .then(r => r.json())
+        .then(data => {
+            if (Array.isArray(data)) setResults(data)
+            else setResults([])
+        })
+        .catch(() => setResults([]))
+        .finally(() => setIsLoading(false))
+    }, 400)
+
+    return () => clearTimeout(timeout)
+  }, [query])
 
   return (
     <div className="fixed inset-0 z-[100] flex items-start justify-center pt-[15vh]" onClick={onClose}>
