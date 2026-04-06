@@ -1,6 +1,7 @@
 import { NextResponse } from 'next/server'
 import { prisma } from '../../../lib/db'
 import { fetchMicrosoftFeeds } from '../../../lib/feeds'
+import { generateArticleContent } from '../../../lib/ai-writer'
 
 export const maxDuration = 300 // Set max execution time to 5 mins
 
@@ -19,8 +20,8 @@ export async function GET(request) {
     const items = await fetchMicrosoftFeeds()
     const saved = []
     
-    // We only process up to 30 items per run to avoid Vercel timeouts
-    const itemsToProcess = items.slice(0, 30)
+    // We only process up to 10 items per run to avoid Vercel timeouts with AI generation
+    const itemsToProcess = items.slice(0, 10)
     
     for (const item of itemsToProcess) {
       // Create a URL-friendly slug
@@ -42,39 +43,31 @@ export async function GET(request) {
       
       if (exists) continue;
 
-      // Classify risk level
-      let riskLevel = 'SAFE'
-      const titleLower = item.title.toLowerCase()
-      if (titleLower.includes('fix') || titleLower.includes('warning') || titleLower.includes('issue')) {
-          riskLevel = 'CAUTION'
+      // Generate AI Content
+      const aiContent = await generateArticleContent(item.title, item.description, item.feedCategory)
+
+      // Fallback to template if AI writer is disabled or fails
+      const data = {
+        title: item.title,
+        category: item.feedCategory || 'general',
+        description: aiContent?.summaryEn || item.description || item.title,
+        summaryEn: aiContent?.summaryEn || `Microsoft has published a new ${item.feedCategory || 'platform'} update: ${item.title}. Review core changes directly from Microsoft.`,
+        summaryHi: aiContent?.summaryHi || `माइक्रोसॉफ्ट ने एक नया अपडेट जारी किया है: ${item.title}। यह अपडेट कार्यक्षमता और सुरक्षा को और ऊपर लाता है।`,
+        keyChanges: aiContent?.keyChanges || [
+          `Performance improvements for ${item.source || 'Microsoft'}.`,
+          `Security fixes for reported bugs.`
+        ],
+        riskLevel: aiContent?.riskLevel || 'SAFE',
+        shouldInstall: aiContent?.shouldInstall || 'Generally safe to roll out after staging tests.',
+        slug,
+        metaTitle: aiContent?.metaTitle || item.title.substring(0, 60),
+        metaDescription: aiContent?.metaDescription || (item.description || item.title).substring(0, 155),
+        sourceUrl,
+        publishedAt: item.pubDate ? new Date(item.pubDate) : new Date(),
+        views: 0
       }
 
-      // Automatically format rich metadata
-      const cleanDesc = (item.description || item.title).replace(/<[^>]+>/g, '')
-      const shortDesc = cleanDesc.substring(0, 155).trim() + (cleanDesc.length > 155 ? '...' : '')
-      const metaTitle = item.title.substring(0, 60).trim()
-
-      await prisma.update.create({
-        data: {
-          title: item.title,
-          category: item.feedCategory || 'general',
-          description: cleanDesc,
-          summaryEn: `Microsoft has published a new ${item.feedCategory || 'platform'} update: ${item.title}. This update may introduce new functionality, address known issues, or deliver security improvements. Review the core changes and patch notes directly from Microsoft to identify potential impacts on your environment.`,
-          summaryHi: `माइक्रोसॉफ्ट ने एक नया अपडेट जारी किया है: ${item.title}। यह अपडेट कार्यक्षमता में सुधार और सुरक्षा को बढ़ाता है।`,
-          keyChanges: [
-            `Performance enhancements for ${item.source || 'Microsoft'} platform components.`,
-            `Potentially includes bug fixes for reported community issues.`
-          ],
-          riskLevel,
-          shouldInstall: 'This update is generally safe to roll out. Ensure you test in a staging environment before widespread production deployment.',
-          slug,
-          metaTitle,
-          metaDescription: shortDesc,
-          sourceUrl,
-          publishedAt: item.pubDate ? new Date(item.pubDate) : new Date(),
-          views: 0
-        }
-      })
+      await prisma.update.create({ data })
       saved.push(slug)
     }
     

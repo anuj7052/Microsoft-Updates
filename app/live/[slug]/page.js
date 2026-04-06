@@ -229,12 +229,33 @@ function generateContext(category, title) {
 export default async function LiveArticlePage({ params }) {
   const { slug } = await params
 
-  // 1. Try live-updates.json
+  // 1. Try database first (primary source)
   let item = null
-  const items = loadLiveItems()
-  item = items.find((i) => i.slug === slug) || null
+  try {
+    const dbItem = await prisma.update.findUnique({ where: { slug } })
+    if (dbItem) {
+      // Increment views
+      await prisma.update.update({ where: { slug }, data: { views: { increment: 1 } } }).catch(() => {})
+      item = {
+        title: dbItem.title,
+        summary: dbItem.summaryEn || dbItem.description,
+        description: dbItem.description,
+        date: dbItem.publishedAt.toISOString(),
+        category: dbItem.category,
+        sourceUrl: dbItem.sourceUrl,
+        slug: dbItem.slug,
+        image: dbItem.image || null,
+      }
+    }
+  } catch {}
 
-  // 2. Fallback: try to find in live RSS feed by slug match
+  // 2. Fallback: try live-updates.json
+  if (!item) {
+    const items = loadLiveItems()
+    item = items.find((i) => i.slug === slug) || null
+  }
+
+  // 3. Fallback: try live RSS feed by slug match
   if (!item) {
     try {
       const feeds = await fetchMicrosoftFeeds()

@@ -2,7 +2,7 @@ import HeroSection from '../components/HeroSection'
 import NewsTicker from '../components/NewsTicker'
 import LiveNewsGrid from '../components/LiveNewsGrid'
 import CategoryGrid from '../components/CategoryGrid'
-import { getUpdatesFromDb } from '../lib/feeds'
+import { getUpdatesFromDb, fetchMicrosoftFeeds } from '../lib/feeds'
 
 export const revalidate = 900
 
@@ -26,6 +26,10 @@ export default async function HomePage() {
   try {
     liveArticles = await getUpdatesFromDb(null, 100)
   } catch {}
+  // Fallback to live RSS if DB is empty
+  if (liveArticles.length === 0) {
+    try { liveArticles = await fetchMicrosoftFeeds() } catch {}
+  }
 
   const azureLive = liveArticles.filter(a => a.feedCategory === 'azure').slice(0, 6)
   const windowsLive = liveArticles.filter(a => a.feedCategory === 'windows').slice(0, 6)

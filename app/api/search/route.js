@@ -29,7 +29,6 @@ export async function GET(request) {
         slug: true,
         category: true,
         publishedAt: true,
-        image: true,
         sourceUrl: true,
       }
     })
@@ -40,7 +39,7 @@ export async function GET(request) {
       category: doc.category,
       pubDate: doc.publishedAt ? doc.publishedAt.toISOString() : new Date().toISOString(),
       slug: doc.slug,
-      image: doc.image,
+      image: null, // Image field doesn't exist in DB, components will fallback to OG image
     }))
 
     return NextResponse.json(formatted)

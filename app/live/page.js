@@ -1,4 +1,4 @@
-import { getUpdatesFromDb } from '../../lib/feeds'
+import { getUpdatesFromDb, fetchMicrosoftFeeds } from '../../lib/feeds'
 import Link from 'next/link'
 
 export const revalidate = 900
@@ -52,6 +52,9 @@ export default async function LivePage() {
   try {
     articles = await getUpdatesFromDb(null, 150)
   } catch {}
+  if (articles.length === 0) {
+    try { articles = await fetchMicrosoftFeeds() } catch {}
+  }
 
   return (
     <main className="max-w-7xl mx-auto px-4 py-10">
