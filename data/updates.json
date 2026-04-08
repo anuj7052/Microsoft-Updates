@@ -1,5 +1,5 @@
 {
-  "lastFetchedAt": "2026-04-08T15:24:50.001Z",
+  "lastFetchedAt": "2026-04-08T16:42:45.501Z",
   "processed": [
     {
       "guid": "https://blogs.windows.com/blog/2026/03/30/announcing-windows-11-insider-preview-build-for-canary-channel-29558-1000/",
@@ -200,6 +200,14 @@
       "category": "windows",
       "riskLevel": "SAFE",
       "savedAt": "2026-04-03T18:04:07.638Z"
+    },
+    {
+      "guid": "https://blogs.windows.com/blog/2026/04/08/forza-horizon-6-most-explorable-adventure-yet/",
+      "url": "https://blogs.windows.com/windowsexperience/2026/04/08/forza-horizon-6-most-explorable-adventure-yet/",
+      "slug": "forza-horizon-6-most-explorable-adventure-yet",
+      "category": "windows",
+      "riskLevel": "SAFE",
+      "savedAt": "2026-04-08T16:42:45.501Z"
     }
   ]
 }

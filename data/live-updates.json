@@ -1,6 +1,15 @@
 {
-  "updatedAt": "2026-04-08T15:24:50.000Z",
+  "updatedAt": "2026-04-08T16:42:45.500Z",
   "items": [
+    {
+      "title": "Forza Horizon 6: Most explorable adventure yet",
+      "summary": "If you’ve ever wanted to visit Japan, you will be able do so virtually through Forza Horizon 6, where you’re a festival tourist. If you love travel and driving, this game may be a good way to combine both. You’ll get a f",
+      "date": "2026-04-08T16:14:54.000Z",
+      "category": "windows",
+      "sourceUrl": "https://blogs.windows.com/windowsexperience/2026/04/08/forza-horizon-6-most-explorable-adventure-yet/",
+      "slug": "forza-horizon-6-most-explorable-adventure-yet",
+      "image": "/api/og?title=Forza%20Horizon%206%3A%20Most%20explorable%20adventure%20yet&category=windows"
+    },
     {
       "title": "Announcing Windows 11 Insider Preview Build 28020.1803 (Canary Channel)",
       "summary": "Hello Windows Insiders, today we are releasing Windows 11 Insider Preview Build 28020.1803 to the Canary Channel. (KB 5083824) What’s new in Canary Build 28020.1803 Changes and Improvements g The post Announcing Windows ",
@@ -117,15 +126,6 @@
       "sourceUrl": "https://azure.microsoft.com/en-us/blog/microsoft-named-a-leader-in-2026-gartner-magic-quadrant-for-integration-platform-as-a-service/",
       "slug": "microsoft-named-a-leader-in-2026-gartner-magic-quadrant-for-integration-platform",
       "image": "/api/og?title=Microsoft%20named%20a%20Leader%20in%202026%20Gartner%C2%AE%20Magic%20Quadrant%E2%84%A2%20for%20Integration%20Platform%20as%20a%20Service&category=azure"
-    },
-    {
-      "title": "Announcing Windows 11 Insider Preview Build 26220.8138 (Beta Channel)",
-      "summary": "Hello Windows Insiders, today we are releasing Windows 11 Insider Preview Build 26220.8138 (KB 5079491 The post Announcing Windows 11 Insider Preview Build 26220.8138 (Beta Channel) appeared first on Windows Blog.",
-      "date": "2026-03-30T09:05:21.000Z",
-      "category": "windows",
-      "sourceUrl": "https://blogs.windows.com/windows-insider/2026/03/30/announcing-windows-11-insider-preview-build-26220-8138-beta-channel/",
-      "slug": "announcing-windows-11-insider-preview-build-262208138-beta-channel",
-      "image": "/api/og?title=Announcing%20Windows%2011%20Insider%20Preview%20Build%2026220.8138%20(Beta%20Channel)&category=windows"
     },
     {
       "title": "AI for nuclear energy: Powering an intelligent, resilient future",
