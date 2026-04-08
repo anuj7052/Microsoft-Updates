@@ -1,0 +1,29 @@
+name: Fetch Microsoft Articles
+
+on:
+  schedule:
+    # Run every 30 minutes
+    - cron: '*/30 * * * *'
+  workflow_dispatch: # Allow manual trigger from GitHub UI
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Trigger article fetch pipeline
+        run: |
+          response=$(curl -s -o /dev/null -w "%{http_code}" \
+            "https://microsoftupdates.co.in/api/cron?secret=${{ secrets.PIPELINE_SECRET }}")
+          echo "Response status: $response"
+          if [ "$response" != "200" ]; then
+            echo "Pipeline returned non-200 status: $response"
+            exit 1
+          fi
+          echo "Pipeline triggered successfully"
+
+      - name: Fetch result
+        run: |
+          curl -s "https://microsoftupdates.co.in/api/cron?secret=${{ secrets.PIPELINE_SECRET }}" | \
+            python3 -c "import sys,json; d=json.load(sys.stdin); print(f'Saved: {d.get(\"count\",0)} new articles, Skipped: {d.get(\"skipped\",0)} existing')" || true
