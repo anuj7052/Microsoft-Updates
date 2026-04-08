@@ -229,6 +229,9 @@ function generateContext(category, title) {
 export default async function LiveArticlePage({ params }) {
   const { slug } = await params
 
+  // Load live-updates.json once — used for fallback AND related articles
+  const liveItems = loadLiveItems()
+
   // 1. Try database first (primary source)
   let item = null
   try {
@@ -251,8 +254,7 @@ export default async function LiveArticlePage({ params }) {
 
   // 2. Fallback: try live-updates.json
   if (!item) {
-    const items = loadLiveItems()
-    item = items.find((i) => i.slug === slug) || null
+    item = liveItems.find((i) => i.slug === slug) || null
   }
 
   // 3. Fallback: try live RSS feed by slug match
@@ -451,7 +453,7 @@ export default async function LiveArticlePage({ params }) {
 
         {/* Related Articles */}
         {(() => {
-          const related = items.filter((i) => i.category === item.category && i.slug !== slug).slice(0, 4)
+          const related = liveItems.filter((i) => i.category === item.category && i.slug !== slug).slice(0, 4)
           if (related.length === 0) return null
           return (
             <div className="mt-10 pt-8 border-t border-[var(--border)]">
