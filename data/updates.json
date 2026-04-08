@@ -1,5 +1,5 @@
 {
-  "lastFetchedAt": "2026-04-08T16:42:45.501Z",
+  "lastFetchedAt": "2026-04-08T18:12:23.809Z",
   "processed": [
     {
       "guid": "https://blogs.windows.com/blog/2026/03/30/announcing-windows-11-insider-preview-build-for-canary-channel-29558-1000/",
@@ -208,6 +208,14 @@
       "category": "windows",
       "riskLevel": "SAFE",
       "savedAt": "2026-04-08T16:42:45.501Z"
+    },
+    {
+      "guid": "https://blogs.windows.com/blog/2026/04/08/youre-invited-windows-insiders-meetups-are-back/",
+      "url": "https://blogs.windows.com/windows-insider/2026/04/08/youre-invited-windows-insiders-meetups-are-back/",
+      "slug": "you8217re-invited-windows-insiders-meetups-are-back",
+      "category": "windows",
+      "riskLevel": "SAFE",
+      "savedAt": "2026-04-08T18:12:23.809Z"
     }
   ]
 }

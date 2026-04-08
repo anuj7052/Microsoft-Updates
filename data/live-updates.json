@@ -1,6 +1,15 @@
 {
-  "updatedAt": "2026-04-08T16:42:45.500Z",
+  "updatedAt": "2026-04-08T18:12:23.807Z",
   "items": [
+    {
+      "title": "You&#8217;re invited. Windows Insiders meetups are back",
+      "summary": "Hi Insiders, It’s Marcus. I lead Design and Research across Windows &#38; Devices, everything from Windows and Windows Cloud to user experience research, and the industrial design behind Surface and Xbox. What I love mos",
+      "date": "2026-04-08T17:00:05.000Z",
+      "category": "windows",
+      "sourceUrl": "https://blogs.windows.com/windows-insider/2026/04/08/youre-invited-windows-insiders-meetups-are-back/",
+      "slug": "you8217re-invited-windows-insiders-meetups-are-back",
+      "image": "/api/og?title=You%26%238217%3Bre%20invited.%20Windows%20Insiders%20meetups%20are%20back&category=windows"
+    },
     {
       "title": "Forza Horizon 6: Most explorable adventure yet",
       "summary": "If you’ve ever wanted to visit Japan, you will be able do so virtually through Forza Horizon 6, where you’re a festival tourist. If you love travel and driving, this game may be a good way to combine both. You’ll get a f",
@@ -108,15 +117,6 @@
       "sourceUrl": "https://blogs.windows.com/windows-insider/2026/03/30/announcing-windows-11-insider-preview-build-26300-8142-dev-channel/",
       "slug": "announcing-windows-11-insider-preview-build-263008142-dev-channel",
       "image": "/api/og?title=Announcing%20Windows%2011%20Insider%20Preview%20Build%2026300.8142%20(Dev%20Channel)&category=windows"
-    },
-    {
-      "title": "Part 2 &#8211; Babylon.js 9.0: Tooling updates and new geospatial features",
-      "summary": "Our mission is to create one of the most powerful, beautiful and accessible web rendering engines in the world. With Babylon.js 9.0, we’re delivering a major set of enhancements to help you build stunning experiences. Ba",
-      "date": "2026-03-30T17:00:08.000Z",
-      "category": "windows",
-      "sourceUrl": "https://blogs.windows.com/windowsdeveloper/2026/03/30/part-2-babylon-js-9-0-tooling-updates-and-new-geospatial-features/",
-      "slug": "part-2-8211-babylonjs-90-tooling-updates-and-new-geospatial-features",
-      "image": "/api/og?title=Part%202%20%26%238211%3B%20Babylon.js%209.0%3A%20Tooling%20updates%20and%20new%20geospatial%20features&category=windows"
     },
     {
       "title": "Microsoft named a Leader in 2026 Gartner® Magic Quadrant™ for Integration Platform as a Service",
