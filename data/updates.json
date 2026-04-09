@@ -1,5 +1,5 @@
 {
-  "lastFetchedAt": "2026-04-09T19:20:47.054Z",
+  "lastFetchedAt": "2026-04-09T20:27:11.259Z",
   "processed": [
     {
       "guid": "https://blogs.windows.com/blog/2026/03/30/announcing-windows-11-insider-preview-build-for-canary-channel-29558-1000/",
@@ -216,6 +216,14 @@
       "category": "windows",
       "riskLevel": "SAFE",
       "savedAt": "2026-04-08T18:12:23.809Z"
+    },
+    {
+      "guid": "https://blogs.windows.com/blog/2026/04/09/kiln-open-beta-throwdown-is-underway-on-steam-sign-up-through-april-11/",
+      "url": "https://blogs.windows.com/windowsexperience/2026/04/09/kiln-open-beta-throwdown-is-underway-on-steam-sign-up-through-april-11/",
+      "slug": "kiln-open-beta-throwdown-is-underway-on-steam-sign-up-through-april-11",
+      "category": "windows",
+      "riskLevel": "SAFE",
+      "savedAt": "2026-04-09T20:27:11.259Z"
     }
   ]
 }

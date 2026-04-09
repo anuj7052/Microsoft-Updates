@@ -1,6 +1,15 @@
 {
-  "updatedAt": "2026-04-09T19:20:47.053Z",
+  "updatedAt": "2026-04-09T20:27:11.258Z",
   "items": [
+    {
+      "title": "Kiln Open Beta Throwdown is underway on Steam, sign up through April 11",
+      "summary": "Double Fine’s pottery brawler, Ki The post Kiln Open Beta Throwdown is underway on Steam, sign up through April 11 appeared first on Windows Blog.",
+      "date": "2026-04-09T20:11:25.000Z",
+      "category": "windows",
+      "sourceUrl": "https://blogs.windows.com/windowsexperience/2026/04/09/kiln-open-beta-throwdown-is-underway-on-steam-sign-up-through-april-11/",
+      "slug": "kiln-open-beta-throwdown-is-underway-on-steam-sign-up-through-april-11",
+      "image": "/api/og?title=Kiln%20Open%20Beta%20Throwdown%20is%20underway%20on%20Steam%2C%20sign%20up%20through%20April%2011&category=windows"
+    },
     {
       "title": "You&#8217;re invited. Windows Insiders meetups are back",
       "summary": "Hi Insiders, It’s Marcus. I lead Design and Research across Windows &#38; Devices, everything from Windows and Windows Cloud to user experience research, and the industrial design behind Surface and Xbox. What I love mos",
@@ -18,6 +27,15 @@
       "sourceUrl": "https://blogs.windows.com/windowsexperience/2026/04/08/forza-horizon-6-most-explorable-adventure-yet/",
       "slug": "forza-horizon-6-most-explorable-adventure-yet",
       "image": "/api/og?title=Forza%20Horizon%206%3A%20Most%20explorable%20adventure%20yet&category=windows"
+    },
+    {
+      "title": "Cloud Cost Optimization: How to maximize ROI from AI, manage costs, and unlock real business value",
+      "summary": "Get practical strategies and best practices to help you plan, design, and manage AI investments for sustainable value and efficiency. The post Cloud Cost Optimization: How to maximize ROI from AI, manage costs, and unloc",
+      "date": "2026-04-08T16:00:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/cloud-cost-optimization-how-to-maximize-roi-from-ai-manage-costs-and-unlock-real-business-value/",
+      "slug": "cloud-cost-optimization-how-to-maximize-roi-from-ai-manage-costs-and-unlock-real",
+      "image": "/api/og?title=Cloud%20Cost%20Optimization%3A%20How%20to%20maximize%20ROI%20from%20AI%2C%20manage%20costs%2C%20and%20unlock%20real%20business%20value&category=azure"
     },
     {
       "title": "Announcing Windows 11 Insider Preview Build 28020.1803 (Canary Channel)",
@@ -110,15 +128,6 @@
       "image": "/api/og?title=Announcing%20Windows%2011%20Insider%20Preview%20Build%2028020.1797%20(Canary%20Channel)&category=windows"
     },
     {
-      "title": "Announcing Windows 11 Insider Preview Build 26300.8142 (Dev Channel)",
-      "summary": "Hello Windows Insiders, today we are releasing Windows 11 Insider Preview Build 26300.8142 (KB 5079492 The post Announcing Windows 11 Insider Preview Build 26300.8142 (Dev Channel) appeared first on Windows Blog.",
-      "date": "2026-03-30T21:04:17.000Z",
-      "category": "windows",
-      "sourceUrl": "https://blogs.windows.com/windows-insider/2026/03/30/announcing-windows-11-insider-preview-build-26300-8142-dev-channel/",
-      "slug": "announcing-windows-11-insider-preview-build-263008142-dev-channel",
-      "image": "/api/og?title=Announcing%20Windows%2011%20Insider%20Preview%20Build%2026300.8142%20(Dev%20Channel)&category=windows"
-    },
-    {
       "title": "Microsoft named a Leader in 2026 Gartner® Magic Quadrant™ for Integration Platform as a Service",
       "summary": "Read why Microsoft was named a Leader for integration services in the 2026 Gartner® Magic Quadrant™ for Integration Platform as a Service. The post Microsoft named a Leader in 2026 Gartner® Magic Quadrant™ for Integratio",
       "date": "2026-03-30T16:00:00.000Z",
@@ -171,15 +180,6 @@
       "sourceUrl": "https://blogs.microsoft.com/blog/2026/03/16/microsoft-at-nvidia-gtc-new-solutions-for-microsoft-foundry-azure-ai-infrastructure-and-physical-ai/",
       "slug": "microsoft-at-nvidia-gtc-new-solutions-for-microsoft-foundry-azure-ai-infrastruct",
       "image": "/api/og?title=Microsoft%20at%20NVIDIA%20GTC%3A%20New%20solutions%20for%20Microsoft%20Foundry%2C%20Azure%20AI%20infrastructure%20and%20Physical%20A&category=azure"
-    },
-    {
-      "title": "From legacy to leadership: How PostgreSQL on Azure powers enterprise agility and innovation",
-      "summary": "Our mission is to make PostgreSQL the most performant, scalable, and enterprise-ready open database platform available. With Azure Database for PostgreSQL and the newly introduced Azure HorizonDB, we’re delivering on tha",
-      "date": "2026-03-16T17:00:00.000Z",
-      "category": "azure",
-      "sourceUrl": "https://azure.microsoft.com/en-us/blog/from-legacy-to-leadership-how-postgresql-on-azure-powers-enterprise-agility-and-innovation/",
-      "slug": "from-legacy-to-leadership-how-postgresql-on-azure-powers-enterprise-agility-and",
-      "image": "/api/og?title=From%20legacy%20to%20leadership%3A%20How%20PostgreSQL%20on%20Azure%20powers%20enterprise%20agility%20and%20innovation&category=azure"
     }
   ]
 }
