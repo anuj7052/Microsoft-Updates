@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-10T21:05:36.170Z",
+  "updatedAt": "2026-04-10T22:05:34.574Z",
   "items": [
     {
       "title": "Announcing Windows 11 Insider Preview Build 28020.1812 (Canary Channel)",
@@ -56,15 +56,6 @@
       "image": "/api/og?title=Kiln%20Open%20Beta%20Throwdown%20is%20underway%20on%20Steam%2C%20sign%20up%20through%20April%2011&category=windows"
     },
     {
-      "title": "How Drasi used GitHub Copilot to find documentation bugs",
-      "summary": "How Microsoft uses AI agents and Drasi to keep open‑source documentation accurate and working. The post How Drasi used GitHub Copilot to find documentation bugs appeared first on Microsoft Azure Blog.",
-      "date": "2026-04-09T15:05:00.000Z",
-      "category": "azure",
-      "sourceUrl": "https://opensource.microsoft.com/blog/2026/04/09/how-drasi-used-github-copilot-to-find-documentation-bugs/",
-      "slug": "how-drasi-used-github-copilot-to-find-documentation-bugs",
-      "image": "/api/og?title=How%20Drasi%20used%20GitHub%20Copilot%20to%20find%20documentation%20bugs&category=azure"
-    },
-    {
       "title": "You&#8217;re invited. Windows Insiders meetups are back",
       "summary": "Hi Insiders, It’s Marcus. I lead Design and Research across Windows &#38; Devices, everything from Windows and Windows Cloud to user experience research, and the industrial design behind Surface and Xbox. What I love mos",
       "date": "2026-04-08T17:00:05.000Z",
@@ -81,15 +72,6 @@
       "sourceUrl": "https://blogs.windows.com/windowsexperience/2026/04/08/forza-horizon-6-most-explorable-adventure-yet/",
       "slug": "forza-horizon-6-most-explorable-adventure-yet",
       "image": "/api/og?title=Forza%20Horizon%206%3A%20Most%20explorable%20adventure%20yet&category=windows"
-    },
-    {
-      "title": "Cloud Cost Optimization: How to maximize ROI from AI, manage costs, and unlock real business value",
-      "summary": "Get practical strategies and best practices to help you plan, design, and manage AI investments for sustainable value and efficiency. The post Cloud Cost Optimization: How to maximize ROI from AI, manage costs, and unloc",
-      "date": "2026-04-08T16:00:00.000Z",
-      "category": "azure",
-      "sourceUrl": "https://azure.microsoft.com/en-us/blog/cloud-cost-optimization-how-to-maximize-roi-from-ai-manage-costs-and-unlock-real-business-value/",
-      "slug": "cloud-cost-optimization-how-to-maximize-roi-from-ai-manage-costs-and-unlock-real",
-      "image": "/api/og?title=Cloud%20Cost%20Optimization%3A%20How%20to%20maximize%20ROI%20from%20AI%2C%20manage%20costs%2C%20and%20unlock%20real%20business%20value&category=azure"
     },
     {
       "title": "Announcing Windows 11 Insider Preview Build 28020.1803 (Canary Channel)",
@@ -180,6 +162,24 @@
       "sourceUrl": "https://azure.microsoft.com/en-us/blog/fabcon-and-sqlcon-2026-unifying-databases-and-fabric-on-a-single-data-platform/",
       "slug": "fabcon-and-sqlcon-2026-unifying-databases-and-fabric-on-a-single-data-platform",
       "image": "/api/og?title=FabCon%20and%20SQLCon%202026%3A%20Unifying%20databases%20and%20Fabric%20on%20a%20single%20data%20platform&category=azure"
+    },
+    {
+      "title": "Microsoft at NVIDIA GTC: New solutions for Microsoft Foundry, Azure AI infrastructure and Physical AI",
+      "summary": "Microsoft combines accelerated computing with cloud scale engineering to bring advanced AI capabilities to our customers. For years, we’ve worked with NVIDIA to integrate hardware, software and infrastructure to power ma",
+      "date": "2026-03-16T21:21:14.000Z",
+      "category": "azure",
+      "sourceUrl": "https://blogs.microsoft.com/blog/2026/03/16/microsoft-at-nvidia-gtc-new-solutions-for-microsoft-foundry-azure-ai-infrastructure-and-physical-ai/",
+      "slug": "microsoft-at-nvidia-gtc-new-solutions-for-microsoft-foundry-azure-ai-infrastruct",
+      "image": "/api/og?title=Microsoft%20at%20NVIDIA%20GTC%3A%20New%20solutions%20for%20Microsoft%20Foundry%2C%20Azure%20AI%20infrastructure%20and%20Physical%20A&category=azure"
+    },
+    {
+      "title": "From legacy to leadership: How PostgreSQL on Azure powers enterprise agility and innovation",
+      "summary": "Our mission is to make PostgreSQL the most performant, scalable, and enterprise-ready open database platform available. With Azure Database for PostgreSQL and the newly introduced Azure HorizonDB, we’re delivering on tha",
+      "date": "2026-03-16T17:00:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/from-legacy-to-leadership-how-postgresql-on-azure-powers-enterprise-agility-and-innovation/",
+      "slug": "from-legacy-to-leadership-how-postgresql-on-azure-powers-enterprise-agility-and",
+      "image": "/api/og?title=From%20legacy%20to%20leadership%3A%20How%20PostgreSQL%20on%20Azure%20powers%20enterprise%20agility%20and%20innovation&category=azure"
     }
   ]
 }
