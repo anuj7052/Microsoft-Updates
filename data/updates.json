@@ -1,5 +1,5 @@
 {
-  "lastFetchedAt": "2026-04-10T18:11:05.611Z",
+  "lastFetchedAt": "2026-04-10T19:27:47.107Z",
   "processed": [
     {
       "guid": "https://blogs.windows.com/blog/2026/03/30/announcing-windows-11-insider-preview-build-for-canary-channel-29558-1000/",
@@ -232,6 +232,38 @@
       "category": "windows",
       "riskLevel": "SAFE",
       "savedAt": "2026-04-10T18:11:05.611Z"
+    },
+    {
+      "guid": "https://blogs.windows.com/blog/2026/04/10/announcing-windows-11-insider-preview-build-28020-1812-canary-channel/",
+      "url": "https://blogs.windows.com/windows-insider/2026/04/10/announcing-windows-11-insider-preview-build-28020-1812-canary-channel/",
+      "slug": "announcing-windows-11-insider-preview-build-280201812-canary-channel",
+      "category": "windows",
+      "riskLevel": "SAFE",
+      "savedAt": "2026-04-10T19:27:47.107Z"
+    },
+    {
+      "guid": "https://blogs.windows.com/blog/2026/04/10/announcing-windows-11-insider-preview-build-for-canary-channel-29565-1000/",
+      "url": "https://blogs.windows.com/windows-insider/2026/04/10/announcing-windows-11-insider-preview-build-for-canary-channel-29565-1000/",
+      "slug": "announcing-windows-11-insider-preview-build-for-canary-channel-295651000",
+      "category": "windows",
+      "riskLevel": "SAFE",
+      "savedAt": "2026-04-10T19:27:47.107Z"
+    },
+    {
+      "guid": "https://blogs.windows.com/blog/2026/04/10/announcing-windows-11-insider-preview-build-26300-8170-dev-channel/",
+      "url": "https://blogs.windows.com/windows-insider/2026/04/10/announcing-windows-11-insider-preview-build-26300-8170-dev-channel/",
+      "slug": "announcing-windows-11-insider-preview-build-263008170-dev-channel",
+      "category": "windows",
+      "riskLevel": "SAFE",
+      "savedAt": "2026-04-10T19:27:47.107Z"
+    },
+    {
+      "guid": "https://blogs.windows.com/blog/2026/04/10/announcing-windows-11-insider-preview-build-26220-8165-beta-channel/",
+      "url": "https://blogs.windows.com/windows-insider/2026/04/10/announcing-windows-11-insider-preview-build-26220-8165-beta-channel/",
+      "slug": "announcing-windows-11-insider-preview-build-262208165-beta-channel",
+      "category": "windows",
+      "riskLevel": "SAFE",
+      "savedAt": "2026-04-10T19:27:47.107Z"
     }
   ]
 }
