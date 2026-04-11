@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-11T06:39:56.538Z",
+  "updatedAt": "2026-04-11T07:55:37.381Z",
   "items": [
     {
       "title": "Announcing Windows 11 Insider Preview Build 28020.1812 (Canary Channel)",
@@ -54,6 +54,15 @@
       "sourceUrl": "https://blogs.windows.com/windowsexperience/2026/04/09/kiln-open-beta-throwdown-is-underway-on-steam-sign-up-through-april-11/",
       "slug": "kiln-open-beta-throwdown-is-underway-on-steam-sign-up-through-april-11",
       "image": "/api/og?title=Kiln%20Open%20Beta%20Throwdown%20is%20underway%20on%20Steam%2C%20sign%20up%20through%20April%2011&category=windows"
+    },
+    {
+      "title": "Microsoft named a Leader in The Forrester Wave™ for Sovereign Cloud Platforms",
+      "summary": "Microsoft is named a Leader in The Forrester Wave™ for Sovereign Cloud Platforms, recognizing Microsoft Sovereign Cloud leadership in evolving sovereignty needs. The post Microsoft named a Leader in The Forrester Wave™ f",
+      "date": "2026-04-09T19:00:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/microsoft-named-a-leader-in-the-forrester-wave-for-sovereign-cloud-platforms/",
+      "slug": "microsoft-named-a-leader-in-the-forrester-wave-for-sovereign-cloud-platforms",
+      "image": "/api/og?title=Microsoft%20named%20a%20Leader%20in%20The%20Forrester%20Wave%E2%84%A2%20for%20Sovereign%20Cloud%20Platforms&category=azure"
     },
     {
       "title": "How Drasi used GitHub Copilot to find documentation bugs",
@@ -171,15 +180,6 @@
       "sourceUrl": "https://www.microsoft.com/en-us/sql-server/blog/2026/03/18/advancing-agentic-ai-with-microsoft-databases-across-a-unified-data-estate/",
       "slug": "advancing-agentic-ai-with-microsoft-databases-across-a-unified-data-estate",
       "image": "/api/og?title=Advancing%20agentic%20AI%20with%20Microsoft%20databases%20across%20a%20unified%20data%20estate&category=azure"
-    },
-    {
-      "title": "FabCon and SQLCon 2026: Unifying databases and Fabric on a single data platform",
-      "summary": "We're bring attendees together to share real experiences and solve challenges side-by-side. Only together can we move into meaningful results. The post FabCon and SQLCon 2026: Unifying databases and Fabric on a single da",
-      "date": "2026-03-18T12:45:00.000Z",
-      "category": "azure",
-      "sourceUrl": "https://azure.microsoft.com/en-us/blog/fabcon-and-sqlcon-2026-unifying-databases-and-fabric-on-a-single-data-platform/",
-      "slug": "fabcon-and-sqlcon-2026-unifying-databases-and-fabric-on-a-single-data-platform",
-      "image": "/api/og?title=FabCon%20and%20SQLCon%202026%3A%20Unifying%20databases%20and%20Fabric%20on%20a%20single%20data%20platform&category=azure"
     }
   ]
 }
