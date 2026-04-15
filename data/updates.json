@@ -1,5 +1,5 @@
 {
-  "lastFetchedAt": "2026-04-15T17:41:01.562Z",
+  "lastFetchedAt": "2026-04-15T19:39:38.477Z",
   "processed": [
     {
       "guid": "https://blogs.windows.com/blog/2026/03/30/announcing-windows-11-insider-preview-build-for-canary-channel-29558-1000/",
@@ -264,6 +264,14 @@
       "category": "windows",
       "riskLevel": "SAFE",
       "savedAt": "2026-04-10T19:27:47.107Z"
+    },
+    {
+      "guid": "https://blogs.windows.com/blog/2026/04/15/introducing-the-ultimate-college-bundle-built-for-student-life/",
+      "url": "https://blogs.windows.com/windowsexperience/2026/04/15/introducing-the-ultimate-college-bundle-built-for-student-life/",
+      "slug": "introducing-the-ultimate-college-bundle-built-for-student-life",
+      "category": "windows",
+      "riskLevel": "SAFE",
+      "savedAt": "2026-04-15T19:39:38.477Z"
     }
   ]
 }
