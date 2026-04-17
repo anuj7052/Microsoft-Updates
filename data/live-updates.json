@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-17T06:09:46.201Z",
+  "updatedAt": "2026-04-17T08:14:13.710Z",
   "items": [
     {
       "title": "Xbox gives PC gaming fans a first look at Metro 2039",
@@ -18,15 +18,6 @@
       "sourceUrl": "https://blogs.windows.com/windowsexperience/2026/04/15/introducing-the-ultimate-college-bundle-built-for-student-life/",
       "slug": "introducing-the-ultimate-college-bundle-built-for-student-life",
       "image": "/api/og?title=Introducing%20the%20ultimate%20college%20bundle%3A%20built%20for%20student%20life&category=windows"
-    },
-    {
-      "title": "Optimize object storage costs automatically with smart tier—now generally available",
-      "summary": "By continuously optimizing data placement, smart tier ensures your storage costs are aligned with actual usage. The post Optimize object storage costs automatically with smart tier—now generally available appeared first ",
-      "date": "2026-04-14T15:00:00.000Z",
-      "category": "azure",
-      "sourceUrl": "https://azure.microsoft.com/en-us/blog/optimize-object-storage-costs-automatically-with-smart-tier-now-generally-available/",
-      "slug": "optimize-object-storage-costs-automatically-with-smart-tiernow-generally-availab",
-      "image": "/api/og?title=Optimize%20object%20storage%20costs%20automatically%20with%20smart%20tier%E2%80%94now%20generally%20available&category=azure"
     },
     {
       "title": "Announcing Windows 11 Insider Preview Build 28020.1812 (Canary Channel)",
@@ -180,6 +171,15 @@
       "sourceUrl": "https://opensource.microsoft.com/blog/2026/03/24/whats-new-with-microsoft-in-open-source-and-kubernetes-at-kubecon-cloudnativecon-europe-2026/",
       "slug": "whats-new-with-microsoft-in-open-source-and-kubernetes-at-kubecon-cloudnativecon",
       "image": "/api/og?title=What%E2%80%99s%20new%20with%20Microsoft%20in%20open-source%20and%20Kubernetes%20at%20KubeCon%20%2B%20CloudNativeCon%20Europe%202026&category=azure"
+    },
+    {
+      "title": "Advancing agentic AI with Microsoft databases across a unified data estate",
+      "summary": "Built on a consistent Microsoft SQL foundation from on premises to the cloud, Azure SQL brings AI capabilities directly into your database experience. The post Advancing agentic AI with Microsoft databases across a unifi",
+      "date": "2026-03-18T12:50:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://www.microsoft.com/en-us/sql-server/blog/2026/03/18/advancing-agentic-ai-with-microsoft-databases-across-a-unified-data-estate/",
+      "slug": "advancing-agentic-ai-with-microsoft-databases-across-a-unified-data-estate",
+      "image": "/api/og?title=Advancing%20agentic%20AI%20with%20Microsoft%20databases%20across%20a%20unified%20data%20estate&category=azure"
     }
   ]
 }
