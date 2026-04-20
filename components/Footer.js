@@ -67,12 +67,18 @@ function FooterBrand() {
         if (xLabelRef.current) xLabelRef.current.textContent = `x: ${Math.round(x)}`
         if (yLabelRef.current) yLabelRef.current.textContent = `y: ${Math.round(y)}`
 
-        // ── font variation ────────────────────────────────────────
+        // ── thickness via stroke driven by mouse Y ─────────────────
         if (brandRef.current) {
-          const yP   = Math.max(0, Math.min(1, y / (height || 1)))
-          const wght = Math.round(100 + yP * 800)
-          brandRef.current.style.fontVariationSettings = `'wght' ${wght}`
+          const yP     = Math.max(0, Math.min(1, y / (height || 1)))
+          const stroke = (yP * 5).toFixed(2)
+          brandRef.current.style.setProperty('-webkit-text-stroke', `${stroke}px #191c1d`)
+          brandRef.current.querySelectorAll('span').forEach(s => {
+            s.style.setProperty('-webkit-text-stroke', `${stroke}px #0078d4`)
+          })
         }
+      } else if (brandRef.current) {
+        brandRef.current.style.setProperty('-webkit-text-stroke', '0px')
+        brandRef.current.querySelectorAll('span').forEach(s => s.style.setProperty('-webkit-text-stroke', '0px'))
       }
 
       rafRef.current = requestAnimationFrame(animate)
@@ -214,25 +220,14 @@ function FooterBrand() {
         <Link href="/" tabIndex={-1} aria-label="PowerTool home">
           <span
             ref={brandRef}
-            className="font-grotesk text-[clamp(3.5rem,12vw,9rem)] leading-none tracking-tighter text-[#191c1d] block"
-            style={{ fontVariationSettings: "'wght' 400", fontStyle: 'normal' }}
+            className="font-oi leading-none tracking-tight select-none block text-[#191c1d] transition-none"
+            style={{ fontSize: '5rem', WebkitTextStroke: '0px' }}
           >
-            PowerTool
+            Power<span className="text-[#0078d4]">tool</span>
           </span>
         </Link>
-        <span
-          className="font-grotesk text-sm tracking-wide"
-          style={{
-            display: 'inline-block',
-            fontStyle: 'normal',
-            fontVariationSettings: "'wght' 500",
-            background: 'linear-gradient(90deg, #F25022 0%, #FFB900 33%, #7FBA00 66%, #00A4EF 100%)',
-            WebkitBackgroundClip: 'text',
-            WebkitTextFillColor: 'transparent',
-            backgroundClip: 'text',
-          }}
-        >
-          Your all-in-one place for the latest Microsoft updates
+        <span className="font-grotesk text-sm tracking-wide" style={{ fontStyle: 'normal' }}>
+          <span style={{ color: '#191c1d' }}>Your all-in-one place for the latest </span><span style={{ color: '#0078d4' }}>Microsoft updates</span>
         </span>
       </div>
     </div>

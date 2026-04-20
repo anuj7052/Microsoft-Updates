@@ -10,12 +10,12 @@ module.exports = {
       fontFamily: {
         headline: ['Newsreader', 'Georgia', 'serif'],
         oi: ['var(--font-oi)', 'Georgia', 'serif'],
-        body: ['Inter', 'sans-serif'],
-        label: ['Inter', 'sans-serif'],
-        inter: ['Inter', 'sans-serif'],
-        grotesk: ['var(--font-grotesk)', 'Roboto Flex', 'sans-serif'],
-        syne: ['Inter', 'sans-serif'],
-        dm: ['Inter', 'sans-serif'],
+        body: ['Segoe UI', 'system-ui', 'sans-serif'],
+        label: ['Segoe UI', 'system-ui', 'sans-serif'],
+        inter: ['Segoe UI', 'system-ui', 'sans-serif'],
+        grotesk: ['Segoe UI', 'system-ui', 'sans-serif'],
+        syne: ['Segoe UI', 'system-ui', 'sans-serif'],
+        dm: ['Segoe UI', 'system-ui', 'sans-serif'],
       },
       colors: {
         // Microsoft brand
