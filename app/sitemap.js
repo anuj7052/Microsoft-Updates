@@ -1,7 +1,6 @@
 import fs from 'fs'
 import path from 'path'
 import { newsArticles, categories } from '../data/news'
-import { prisma } from '../lib/db'
 
 export default async function sitemap() {
   const baseUrl = 'https://microsoftupdates.co.in'
@@ -77,27 +76,8 @@ export default async function sitemap() {
     }
   } catch {}
 
-  // Live update pages from database (New Backfill items + Crons)
-  let dbUpdates = []
-  try {
-    const records = await prisma.update.findMany({
-      select: { slug: true, updatedAt: true, publishedAt: true },
-      orderBy: { publishedAt: 'desc' },
-      take: 45000 // To leave room for static
-    })
-    
-    dbUpdates = records.map(update => ({
-      url: `${baseUrl}/live/${update.slug}`,
-      lastModified: update.updatedAt || update.publishedAt || new Date(),
-      changeFrequency: 'weekly',
-      priority: 0.7,
-    }))
-  } catch (e) {
-    console.error('Error fetching DB updates for sitemap:', e)
-  }
-
   // Deduplicate
-  const allLive = [...livePagesLocal, ...dbUpdates]
+  const allLive = [...livePagesLocal]
   const uniqueUrls = new Set()
   const cleanLive = []
   for (const page of allLive) {

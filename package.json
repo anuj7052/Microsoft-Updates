@@ -9,6 +9,8 @@
     "start": "next start",
     "lint": "next lint",
     "fetch": "node scripts/fetch-updates.js",
+    "fetch:news": "node scripts/fetchNews.js",
+    "fetch:watch": "nodemon scripts/fetch-updates.js",
     "db:generate": "prisma generate",
     "db:push": "prisma db push",
     "db:migrate": "prisma migrate deploy",
@@ -24,10 +26,12 @@
     "next": "14.2.0",
     "openai": "^4.74.0",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "rss-parser": "^3.13.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.0.0",
+    "nodemon": "^3.1.14",
     "postcss": "^8.0.0",
     "prisma": "^5.22.0",
     "tailwindcss": "^3.4.0"

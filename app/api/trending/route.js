@@ -1,9 +1,19 @@
 import { NextResponse } from 'next/server'
-import { prisma } from '../../../lib/db'
 import { cacheGet, cacheSet, CACHE_TTL } from '../../../lib/redis'
+import fs from 'fs'
+import path from 'path'
 
 export const runtime = 'nodejs'
 export const dynamic = 'force-dynamic'
+
+function loadItems() {
+  try {
+    const p = path.join(process.cwd(), 'data', 'live-updates.json')
+    return JSON.parse(fs.readFileSync(p, 'utf8')).items || []
+  } catch {
+    return []
+  }
+}
 
 export async function GET() {
   const cacheKey = 'updates:trending'
@@ -15,20 +25,19 @@ export async function GET() {
     })
   }
 
-  const trending = await prisma.update.findMany({
-    orderBy: [{ views: 'desc' }, { publishedAt: 'desc' }],
-    take: 10,
-    select: {
-      id: true,
-      title: true,
-      category: true,
-      slug: true,
-      riskLevel: true,
-      views: true,
-      publishedAt: true,
-      summaryEn: true,
-    },
-  })
+  // Return the 10 most recent items as "trending" (no view counter in JSON)
+  const trending = loadItems()
+    .slice(0, 10)
+    .map((i) => ({
+      id: i.slug,
+      title: i.title,
+      category: i.category,
+      slug: i.slug,
+      riskLevel: i.riskLevel || 'SAFE',
+      views: 0,
+      publishedAt: i.date,
+      summaryEn: i.summary || '',
+    }))
 
   await cacheSet(cacheKey, JSON.stringify(trending), CACHE_TTL.TRENDING)
 

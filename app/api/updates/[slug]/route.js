@@ -1,9 +1,19 @@
 import { NextResponse } from 'next/server'
-import { prisma } from '../../../../lib/db'
-import { cacheGet, cacheSet, cacheDel, CACHE_TTL } from '../../../../lib/redis'
+import { cacheGet, cacheSet, CACHE_TTL } from '../../../../lib/redis'
+import fs from 'fs'
+import path from 'path'
 
 export const runtime = 'nodejs'
 export const dynamic = 'force-dynamic'
+
+function loadItems() {
+  try {
+    const p = path.join(process.cwd(), 'data', 'live-updates.json')
+    return JSON.parse(fs.readFileSync(p, 'utf8')).items || []
+  } catch {
+    return []
+  }
+}
 
 export async function GET(request, { params }) {
   const { slug } = await params
@@ -16,19 +26,31 @@ export async function GET(request, { params }) {
     })
   }
 
-  const update = await prisma.update.findUnique({ where: { slug } })
+  const items = loadItems()
+  const item = items.find((i) => i.slug === slug)
 
-  if (!update) {
+  if (!item) {
     return NextResponse.json({ error: 'Not found' }, { status: 404 })
   }
 
-  await cacheSet(cacheKey, JSON.stringify(update), CACHE_TTL.SINGLE_UPDATE)
+  const update = {
+    id: item.slug,
+    title: item.title,
+    category: item.category,
+    slug: item.slug,
+    description: item.summary || '',
+    summaryEn: item.summary || '',
+    summaryHi: item.summaryHi || '',
+    riskLevel: item.riskLevel || 'SAFE',
+    keyChanges: item.keyChanges || [],
+    sourceUrl: item.sourceUrl,
+    publishedAt: item.date,
+    metaTitle: item.metaTitle || item.title,
+    metaDescription: item.metaDescription || item.summary || '',
+    image: item.image || null,
+  }
 
-  // Increment view count asynchronously (fire-and-forget, then invalidate trending)
-  prisma.update
-    .update({ where: { slug }, data: { views: { increment: 1 } } })
-    .then(() => cacheDel('updates:trending'))
-    .catch(() => {})
+  await cacheSet(cacheKey, JSON.stringify(update), CACHE_TTL.SINGLE_UPDATE)
 
   return NextResponse.json(update, { headers: { 'X-Cache': 'MISS' } })
 }

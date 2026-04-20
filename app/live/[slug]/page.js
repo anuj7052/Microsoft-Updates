@@ -2,8 +2,8 @@ import { readFileSync, existsSync } from 'fs'
 import { join } from 'path'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
-import { fetchMicrosoftFeeds } from '../../../lib/feeds'
-import { prisma } from '../../../lib/db'
+import { getNewsBySlug } from '../../../lib/newsData'
+import LinkedInButton from '../../../components/LinkedInButton'
 
 export const revalidate = 1800
 
@@ -16,41 +16,32 @@ function loadLiveItems() {
 }
 
 export async function generateStaticParams() {
-  const items = loadLiveItems()
-  return items.filter((i) => i.slug).map((i) => ({ slug: i.slug }))
+  const liveItems = loadLiveItems()
+  // Also include slugs from news.json so detail pages are pre-rendered
+  try {
+    const p = join(process.cwd(), 'data', 'news.json')
+    if (existsSync(p)) {
+      const newsItems = JSON.parse(readFileSync(p, 'utf8'))
+      const newsSlugs = newsItems.filter((i) => i.slug).map((i) => ({ slug: i.slug }))
+      const liveSlugs = liveItems.filter((i) => i.slug).map((i) => ({ slug: i.slug }))
+      // Deduplicate
+      const seen = new Set()
+      return [...liveSlugs, ...newsSlugs].filter(({ slug }) => {
+        if (seen.has(slug)) return false
+        seen.add(slug)
+        return true
+      })
+    }
+  } catch {}
+  return liveItems.filter((i) => i.slug).map((i) => ({ slug: i.slug }))
 }
 
 export async function generateMetadata({ params }) {
   const { slug } = await params
-  const items = loadLiveItems()
-  let item = items.find((i) => i.slug === slug)
+  const liveItems = loadLiveItems()
+  let item = liveItems.find((i) => i.slug === slug) || getNewsBySlug(slug)
 
   if (!item) {
-    try {
-      const feeds = await fetchMicrosoftFeeds()
-      const match = feeds.find((a) => {
-        const s = a.title.toLowerCase().replace(/[^a-z0-9\s-]/g, '').trim().replace(/\s+/g, '-').substring(0, 80)
-        return s === slug
-      })
-      if (match) {
-        return {
-          title: `${match.title} | Microsoft Updates`,
-          description: match.description || `Latest Microsoft update: ${match.title}`,
-        }
-      }
-    } catch {}
-
-    // Check DB
-    try {
-      const dbItem = await prisma.update.findUnique({ where: { slug } })
-      if (dbItem) {
-        return {
-          title: `${dbItem.title} | Microsoft Updates`,
-          description: dbItem.metaDescription || dbItem.description,
-        }
-      }
-    } catch {}
-
     return { title: 'Update Not Found | Microsoft Updates' }
   }
 
@@ -232,52 +223,25 @@ export default async function LiveArticlePage({ params }) {
   // Load live-updates.json once — used for fallback AND related articles
   const liveItems = loadLiveItems()
 
-  // 1. Try database first (primary source)
-  let item = null
-  try {
-    const dbItem = await prisma.update.findUnique({ where: { slug } })
-    if (dbItem) {
-      // Increment views
-      await prisma.update.update({ where: { slug }, data: { views: { increment: 1 } } }).catch(() => {})
+  // 1. Try live-updates.json (primary static source)
+  let item = liveItems.find((i) => i.slug === slug) || null
+
+  // 2. Fallback: try news.json (RSS pipeline)
+  if (!item) {
+    item = getNewsBySlug(slug)
+    if (item) {
+      // Normalise to the shape the render code expects
       item = {
-        title: dbItem.title,
-        summary: dbItem.summaryEn || dbItem.description,
-        description: dbItem.description,
-        date: dbItem.publishedAt.toISOString(),
-        category: dbItem.category,
-        sourceUrl: dbItem.sourceUrl,
-        slug: dbItem.slug,
-        image: dbItem.image || null,
+        title: item.title,
+        summary: item.description || '',
+        description: item.description || '',
+        date: item.pubDate || item.publishedAt || '',
+        category: item.feedCategory || 'general',
+        sourceUrl: item.url || item.link || '',
+        slug: item.slug,
+        image: item.image || (item.images && item.images[0]) || null,
       }
     }
-  } catch {}
-
-  // 2. Fallback: try live-updates.json
-  if (!item) {
-    item = liveItems.find((i) => i.slug === slug) || null
-  }
-
-  // 3. Fallback: try live RSS feed by slug match
-  if (!item) {
-    try {
-      const feeds = await fetchMicrosoftFeeds()
-      const match = feeds.find((a) => {
-        const s = a.title.toLowerCase().replace(/[^a-z0-9\s-]/g, '').trim().replace(/\s+/g, '-').substring(0, 80)
-        return s === slug || (a.slug && a.slug === slug)
-      })
-      if (match) {
-        item = {
-          title: match.title,
-          summary: match.description || '',
-          description: match.description || '',
-          date: match.pubDate,
-          category: match.feedCategory || 'general',
-          sourceUrl: match.link,
-          slug,
-          image: match.image || null,
-        }
-      }
-    } catch {}
   }
 
   if (!item) notFound()
@@ -484,6 +448,13 @@ export default async function LiveArticlePage({ params }) {
           )
         })()}
       </main>
+
+      <LinkedInButton
+        title={item.title}
+        description={item.summary || item.description || ''}
+        content={allText}
+        articleUrl={`https://microsoftupdates.co.in/live/${slug}`}
+      />
     </>
   )
 }

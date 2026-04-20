@@ -335,7 +335,7 @@ Risk classification:
       messages: [{ role: 'user', content: prompt }],
       response_format: { type: 'json_object' },
       temperature: 0.3,
-      max_tokens: 1800,
+      max_completion_tokens: 1800,
     })
 
     const data = JSON.parse(response.choices[0].message.content)

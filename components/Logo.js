@@ -1,40 +1,38 @@
 /**
- * SiteLogo — original abstract AI/news pulse icon
- * Custom design. No trademarked colors, logos, or branding.
+ * Powertool Logo — 4-square grid with yellow lightning bolt overlay.
  */
 export default function Logo({ size = 32 }) {
-  const id = 'logo-grad'
   return (
     <svg
       width={size}
       height={size}
-      viewBox="0 0 36 36"
+      viewBox="0 0 40 40"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      aria-hidden="true"
+      aria-label="Powertool logo"
     >
-      <defs>
-        <linearGradient id={`${id}-a`} x1="0" y1="0" x2="36" y2="36" gradientUnits="userSpaceOnUse">
-          <stop offset="0%" stopColor="#A855F7" />
-          <stop offset="100%" stopColor="#06B6D4" />
-        </linearGradient>
-        <linearGradient id={`${id}-b`} x1="36" y1="0" x2="0" y2="36" gradientUnits="userSpaceOnUse">
-          <stop offset="0%" stopColor="#06B6D4" stopOpacity="0.6" />
-          <stop offset="100%" stopColor="#A855F7" stopOpacity="0.3" />
-        </linearGradient>
-      </defs>
-
-      {/* Outer ring */}
-      <circle cx="18" cy="18" r="16" stroke={`url(#${id}-a)`} strokeWidth="2" strokeDasharray="6 3" strokeLinecap="round" />
-
-      {/* Signal pulse bars — abstract broadcast / update icon */}
-      <rect x="11" y="20" width="3" height="6" rx="1.5" fill={`url(#${id}-a)`} opacity="0.6" />
-      <rect x="16.5" y="16" width="3" height="10" rx="1.5" fill={`url(#${id}-a)`} opacity="0.8" />
-      <rect x="22" y="12" width="3" height="14" rx="1.5" fill={`url(#${id}-a)`} />
-
-      {/* Top-left accent dot */}
-      <circle cx="10" cy="10" r="2.5" fill="#A855F7" opacity="0.9" />
-      <circle cx="10" cy="10" r="4.5" stroke="#A855F7" strokeWidth="1" opacity="0.25" />
+      {/* Top-left: red */}
+      <rect x="2" y="2" width="17" height="17" rx="1.5" fill="#f35325" />
+      {/* Top-right: green */}
+      <rect x="21" y="2" width="17" height="17" rx="1.5" fill="#81bc06" />
+      {/* Bottom-left: blue */}
+      <rect x="2" y="21" width="17" height="17" rx="1.5" fill="#05a6f0" />
+      {/* Bottom-right: yellow */}
+      <rect x="21" y="21" width="17" height="17" rx="1.5" fill="#ffba08" />
+      {/* Lightning bolt — yellow, fully filled with white border */}
+      <path
+        d="M24 2 L12 22 L19 22 L16 38 L28 18 L21 18 Z"
+        fill="#ffba08"
+        stroke="white"
+        strokeWidth="1.5"
+        strokeLinejoin="round"
+      />
+      {/* Inner fill to close the hollow gap in the centre of the bolt */}
+      <path
+        d="M21 18 L19 22 L20 20 Z"
+        fill="#ffba08"
+      />
     </svg>
   )
 }
+

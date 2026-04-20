@@ -7,7 +7,6 @@ import { getUpdatesFromDb } from '../../lib/feeds'
 export const revalidate = 900
 
 export const metadata = {
-  title: 'Office 365 Updates | MicrosoftUpdates.co.in',
   description: 'Latest Microsoft Office 365 and Microsoft 365 news including Teams, Excel, Word, Outlook, Planner, and Loop updates for Indian organizations.',
   keywords: 'office 365, microsoft 365, teams, excel, word, outlook, planner, loop, india',
   openGraph: {
@@ -30,29 +29,21 @@ export default async function Office365Page() {
   } catch {}
 
   return (
-    <div className="max-w-7xl mx-auto px-4 py-8">
-      <nav className="flex items-center gap-2 text-sm text-[var(--text-muted)] mb-6">
-        <Link href="/" className="hover:text-ms-accent transition-colors">Home</Link>
+    <div className="max-w-7xl mx-auto px-4 md:px-6 py-8">
+      <nav className="flex items-center gap-2 text-sm text-on-surface-variant mb-6">
+        <Link href="/" className="hover:text-primary transition-colors">Home</Link>
         <span>/</span>
-        <span className="text-[var(--text-primary)]">Office 365</span>
+        <span className="text-on-surface font-semibold">Office 365</span>
       </nav>
 
-      <div className="bg-ms-card rounded-2xl border border-[var(--border)] p-6 md:p-10 mb-8">
-        <div className="flex items-center gap-3 mb-3">
-          <span className="text-4xl">📊</span>
-          <h1 className="font-syne font-extrabold text-3xl md:text-4xl text-[var(--text-primary)]">
-            Office 365 Updates
-          </h1>
-        </div>
-        <p className="text-[var(--text-secondary)] max-w-2xl">
-          Feature updates across Microsoft Teams, Excel, Word, Outlook, Planner, Loop, and the broader Microsoft 365 suite for Indian businesses and professionals.
-        </p>
-        <div className="h-1 w-16 bg-ms-orange rounded-full mt-4"></div>
+      <div className="mb-8">
+        <h1 className="font-inter font-bold tracking-tight text-3xl md:text-4xl text-on-surface">Office 365 Updates</h1>
+        <p className="text-on-surface-variant mt-2">Feature updates across Microsoft Teams, Excel, Word, Outlook, Planner, Loop, and the broader Microsoft 365 suite.</p>
       </div>
 
       <LiveCategoryArticles articles={liveArticles} />
 
-      <h2 className="font-syne font-extrabold text-xl text-[var(--text-primary)] mb-5">All Articles</h2>
+      <h2 className="font-inter font-bold text-xl text-on-surface mb-5">All Articles</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
         {articles.map((article, i) => (
           <div key={article.id}>

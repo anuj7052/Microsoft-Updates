@@ -1,7 +1,6 @@
 import Link from 'next/link'
 
 export const metadata = {
-  title: 'Privacy Policy | MicrosoftUpdates.co.in',
   description: 'Privacy Policy for MicrosoftUpdates.co.in — learn how we collect, use, and protect your data, including our use of Google AdSense and cookies.',
   keywords: 'privacy policy, cookies, google adsense, data protection, microsoftupdates',
   openGraph: {

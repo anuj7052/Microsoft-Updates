@@ -1,7 +1,8 @@
 import { NextResponse } from 'next/server'
-import { prisma } from '../../../lib/db'
 import { fetchMicrosoftFeeds } from '../../../lib/feeds'
 import { generateArticleContent } from '../../../lib/ai-writer'
+import fs from 'fs'
+import path from 'path'
 
 export const maxDuration = 300 // Set max execution time to 5 mins
 
@@ -31,55 +32,52 @@ export async function GET(request) {
   }
 
   try {
+    const dataPath = path.join(process.cwd(), 'data', 'live-updates.json')
+    let existing = { updatedAt: new Date().toISOString(), items: [] }
+    try { existing = JSON.parse(fs.readFileSync(dataPath, 'utf8')) } catch {}
+
+    const existingSlugs = new Set((existing.items || []).map((i) => i.slug))
+    const existingUrls = new Set((existing.items || []).map((i) => i.sourceUrl).filter(Boolean))
+
     const items = await fetchMicrosoftFeeds()
     const saved = []
     const skipped = []
-    
+    const newItems = []
+
     for (const item of items) {
       const slug = makeSlug(item.title)
       const sourceUrl = item.link || `https://microsoftupdates.co.in/fallback/${slug}`
-      
-      // Skip if already exists
-      const exists = await prisma.update.findFirst({
-        where: { OR: [{ slug }, { sourceUrl }] }
-      })
-      if (exists) { skipped.push(slug); continue }
 
-      // Generate AI Content (SEO-optimised article)
-      const aiContent = await generateArticleContent(item.title, item.description, item.feedCategory)
-
-      const catLabel = {
-        azure: 'Azure', windows: 'Windows', security: 'Security',
-        office365: 'Microsoft 365', 'power-platform': 'Power Platform',
-        copilot: 'Copilot & AI', fabric: 'Microsoft Fabric'
-      }[item.feedCategory] || 'Microsoft'
-
-      const data = {
-        title: item.title,
-        category: item.feedCategory || 'general',
-        description: aiContent?.summaryEn || item.description || item.title,
-        summaryEn: aiContent?.summaryEn || `${item.title} — Microsoft has released a new ${catLabel} update. ${item.description || ''} Stay current with the latest Microsoft changes to ensure your systems are secure and up to date.`,
-        summaryHi: aiContent?.summaryHi || `माइक्रोसॉफ्ट ने ${catLabel} के लिए एक नया अपडेट जारी किया है: ${item.title}। यह अपडेट सुरक्षा और प्रदर्शन में सुधार करता है। अपने सिस्टम को अद्यतन रखें।`,
-        keyChanges: aiContent?.keyChanges || [
-          `New ${catLabel} update release: ${item.title}`,
-          `Performance and reliability improvements for ${catLabel}`,
-          `Security enhancements and bug fixes included`,
-          `Review Microsoft's official release notes for full details`,
-        ],
-        riskLevel: aiContent?.riskLevel || 'SAFE',
-        shouldInstall: aiContent?.shouldInstall || 'Test in a staging environment first, then deploy to production systems.',
-        slug,
-        metaTitle: aiContent?.metaTitle || item.title.substring(0, 60),
-        metaDescription: aiContent?.metaDescription || `${item.title} — Latest ${catLabel} update from Microsoft. ${(item.description || '').substring(0, 100)}`.substring(0, 155),
-        sourceUrl,
-        publishedAt: item.pubDate ? new Date(item.pubDate) : new Date(),
-        views: 0,
+      if (existingSlugs.has(slug) || existingUrls.has(sourceUrl)) {
+        skipped.push(slug)
+        continue
       }
 
-      await prisma.update.create({ data })
+      const aiContent = await generateArticleContent(item.title, item.description, item.feedCategory)
+
+      newItems.push({
+        title: item.title,
+        summary: aiContent?.summaryEn || item.description || item.title,
+        date: item.pubDate ? new Date(item.pubDate).toISOString() : new Date().toISOString(),
+        category: item.feedCategory || 'general',
+        sourceUrl,
+        slug,
+        image: `/api/og?title=${encodeURIComponent(item.title)}&category=${item.feedCategory || 'general'}`,
+        riskLevel: aiContent?.riskLevel || 'SAFE',
+        keyChanges: aiContent?.keyChanges || [],
+        summaryHi: aiContent?.summaryHi || '',
+        metaTitle: aiContent?.metaTitle || item.title.substring(0, 60),
+        metaDescription: aiContent?.metaDescription || '',
+      })
       saved.push(slug)
     }
-    
+
+    if (newItems.length > 0) {
+      existing.items = [...newItems, ...(existing.items || [])]
+      existing.updatedAt = new Date().toISOString()
+      fs.writeFileSync(dataPath, JSON.stringify(existing, null, 2))
+    }
+
     console.log(`CRON: Saved ${saved.length} new articles, skipped ${skipped.length} existing`)
     return NextResponse.json({ success: true, count: saved.length, saved, skipped: skipped.length })
   } catch (error) {

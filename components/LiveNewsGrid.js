@@ -54,6 +54,12 @@ const categoryIcons = {
   general: '📰',
 }
 
+const categoryLogos = {
+  azure: '/cloud.png',
+  fabric: '/Fabric-transparent-logo-1.webp',
+  'power-platform': '/power-platform-2.png',
+}
+
 function getImageUrl(article) {
   if (article.image) return article.image
   const cat = article.feedCategory || 'general'
@@ -80,6 +86,7 @@ export default function LiveNewsGrid({ articles = [], title }) {
           const cat = article.feedCategory || 'general'
           const gradient = categoryGradients[cat] || categoryGradients.general
           const icon = categoryIcons[cat] || '📰'
+          const logo = categoryLogos[cat] || null
           const imageUrl = getImageUrl(article)
 
           return (
@@ -94,8 +101,19 @@ export default function LiveNewsGrid({ articles = [], title }) {
                   alt={article.title}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   loading="lazy"
+                  onError={e => {
+                    if (logo) {
+                      e.currentTarget.src = logo
+                      e.currentTarget.className = 'w-full h-full object-contain p-8 opacity-80'
+                    }
+                  }}
                 />
                 <div className="absolute inset-0 img-overlay" />
+                {logo && (
+                  <div className="absolute bottom-2 right-2">
+                    <img src={logo} alt={cat} className="h-5 object-contain opacity-80" />
+                  </div>
+                )}
               </div>
 
               <div className="p-5 flex-1 flex flex-col">

@@ -1,7 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ['microsoftupdates.co.in'],
+    remotePatterns: [
+      { protocol: 'https', hostname: '**' },
+    ],
   },
   async headers() {
     return [

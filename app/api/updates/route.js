@@ -1,9 +1,19 @@
 import { NextResponse } from 'next/server'
-import { prisma } from '../../../lib/db'
 import { cacheGet, cacheSet, CACHE_TTL } from '../../../lib/redis'
+import fs from 'fs'
+import path from 'path'
 
 export const runtime = 'nodejs'
 export const dynamic = 'force-dynamic'
+
+function loadItems() {
+  try {
+    const p = path.join(process.cwd(), 'data', 'live-updates.json')
+    return JSON.parse(fs.readFileSync(p, 'utf8')).items || []
+  } catch {
+    return []
+  }
+}
 
 export async function GET(request) {
   const { searchParams } = new URL(request.url)
@@ -11,11 +21,10 @@ export async function GET(request) {
   const page = Math.max(1, parseInt(searchParams.get('page') || '1'))
   const limit = Math.min(50, Math.max(1, parseInt(searchParams.get('limit') || '12')))
   const search = searchParams.get('search') || ''
-  const risk = searchParams.get('risk') || '' // SAFE | CAUTION | AVOID
+  const risk = searchParams.get('risk') || ''
 
   const cacheKey = `updates:${category}:${page}:${search}:${risk}`
 
-  // Try Redis cache first
   const cached = await cacheGet(cacheKey)
   if (cached) {
     return NextResponse.json(typeof cached === 'string' ? JSON.parse(cached) : cached, {
@@ -23,55 +32,38 @@ export async function GET(request) {
     })
   }
 
-  const where = {
-    ...(category ? { category } : {}),
-    ...(risk ? { riskLevel: risk } : {}),
-    ...(search
-      ? {
-          OR: [
-            { title: { contains: search, mode: 'insensitive' } },
-            { description: { contains: search, mode: 'insensitive' } },
-            { summaryEn: { contains: search, mode: 'insensitive' } },
-          ],
-        }
-      : {}),
+  let items = loadItems()
+
+  if (category) items = items.filter((i) => i.category === category)
+  if (risk) items = items.filter((i) => (i.riskLevel || 'SAFE') === risk)
+  if (search) {
+    const q = search.toLowerCase()
+    items = items.filter(
+      (i) =>
+        (i.title || '').toLowerCase().includes(q) ||
+        (i.summary || '').toLowerCase().includes(q)
+    )
   }
 
-  const [updates, total] = await Promise.all([
-    prisma.update.findMany({
-      where,
-      orderBy: { publishedAt: 'desc' },
-      skip: (page - 1) * limit,
-      take: limit,
-      select: {
-        id: true,
-        title: true,
-        category: true,
-        description: true,
-        summaryEn: true,
-        riskLevel: true,
-        slug: true,
-        kbNumber: true,
-        publishedAt: true,
-        views: true,
-        metaTitle: true,
-        metaDescription: true,
-      },
-    }),
-    prisma.update.count({ where }),
-  ])
+  const total = items.length
+  const updates = items.slice((page - 1) * limit, page * limit).map((i) => ({
+    id: i.slug,
+    title: i.title,
+    category: i.category,
+    description: i.summary || '',
+    summaryEn: i.summary || '',
+    riskLevel: i.riskLevel || 'SAFE',
+    slug: i.slug,
+    kbNumber: i.kbNumber || null,
+    publishedAt: i.date,
+    views: 0,
+    metaTitle: i.metaTitle || i.title,
+    metaDescription: i.metaDescription || i.summary || '',
+  }))
 
-  const result = {
-    updates,
-    total,
-    page,
-    pages: Math.ceil(total / limit),
-    limit,
-  }
+  const result = { updates, total, page, pages: Math.ceil(total / limit), limit }
 
   await cacheSet(cacheKey, JSON.stringify(result), CACHE_TTL.UPDATES_LIST)
 
-  return NextResponse.json(result, {
-    headers: { 'X-Cache': 'MISS' },
-  })
+  return NextResponse.json(result, { headers: { 'X-Cache': 'MISS' } })
 }

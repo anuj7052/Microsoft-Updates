@@ -1,7 +1,6 @@
 import Link from 'next/link'
 
 export const metadata = {
-  title: 'About Us | MicrosoftUpdates.co.in',
   description: 'Learn about MicrosoftUpdates.co.in — an independent Microsoft news portal covering Windows, Azure, Copilot, Power Platform, and more for the Indian audience.',
   keywords: 'about, microsoftupdates, microsoft news, india, independent news',
   openGraph: {

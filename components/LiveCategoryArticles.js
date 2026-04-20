@@ -16,6 +16,12 @@ function getImageUrl(article) {
   return `/api/og?title=${title}&category=${cat}`
 }
 
+const CATEGORY_LOGOS = {
+  azure: '/cloud.png',
+  fabric: '/Fabric-transparent-logo-1.webp',
+  'power-platform': '/power-platform-2.png',
+}
+
 function makeSlug(title) {
   return String(title || '')
     .toLowerCase()
@@ -43,6 +49,8 @@ export default function LiveCategoryArticles({ articles = [] }) {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
         {articles.map((article, i) => {
           const artSlug = article.slug || makeSlug(article.title)
+          const catKey = article.feedCategory || 'general'
+          const logo = CATEGORY_LOGOS[catKey] || null
           return (
             <a
               key={i}
@@ -57,6 +65,11 @@ export default function LiveCategoryArticles({ articles = [] }) {
                   loading="lazy"
                 />
                 <div className="absolute inset-0 img-overlay" />
+                {logo && (
+                  <div className="absolute bottom-2 right-2">
+                    <img src={logo} alt={catKey} className="h-5 object-contain opacity-85" />
+                  </div>
+                )}
               </div>
               <div className="p-5 flex-1 flex flex-col">
                 <div className="flex items-center gap-2 mb-3">

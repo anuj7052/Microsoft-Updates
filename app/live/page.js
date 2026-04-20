@@ -1,10 +1,9 @@
-import { getUpdatesFromDb, fetchMicrosoftFeeds } from '../../lib/feeds'
+import { getNewsForCategory } from '../../lib/newsData'
 import Link from 'next/link'
 
-export const revalidate = 900
+export const revalidate = 1800
 
 export const metadata = {
-  title: 'Live Microsoft Updates — Real-Time News Feed',
   description: 'Live stream of the latest Microsoft updates from official blogs. Windows, Azure, Copilot, Microsoft 365, Security, Power Platform, Fabric updates every 30 minutes.',
 }
 
@@ -47,14 +46,14 @@ function getImageUrl(article) {
   return `/api/og?title=${title}&category=${cat}`
 }
 
-export default async function LivePage() {
-  let articles = []
-  try {
-    articles = await getUpdatesFromDb(null, 150)
-  } catch {}
-  if (articles.length === 0) {
-    try { articles = await fetchMicrosoftFeeds() } catch {}
-  }
+const CATEGORY_LOGOS = {
+  azure: '/cloud.png',
+  fabric: '/Fabric-transparent-logo-1.webp',
+  'power-platform': '/power-platform-2.png',
+}
+
+export default function LivePage() {
+  const articles = getNewsForCategory(null, 150)
 
   return (
     <main className="max-w-7xl mx-auto px-4 py-10">
@@ -67,7 +66,7 @@ export default async function LivePage() {
           </span>
           <span className="text-xs text-[var(--text-muted)] font-dm">Updated every 30 minutes</span>
         </div>
-        <h1 className="font-syne font-extrabold text-4xl md:text-5xl gradient-text mb-4">Live Microsoft Updates</h1>
+        <h1 className="font-syne font-extrabold text-4xl md:text-5xl gradient-text mb-4">Live Feed</h1>
         <p className="text-[var(--text-secondary)] font-dm max-w-2xl mx-auto">
           Independent coverage of the latest Microsoft announcements across all products. Every article is written and published on our site.
         </p>
@@ -83,6 +82,7 @@ export default async function LivePage() {
           {articles.map((article, i) => {
             const cat = categoryColors[article.feedCategory] || categoryColors.general
             const slug = article.slug || makeSlug(article.title)
+            const logo = CATEGORY_LOGOS[article.feedCategory] || null
 
             return (
               <Link
@@ -99,6 +99,11 @@ export default async function LivePage() {
                     loading="lazy"
                   />
                   <div className="absolute inset-0 img-overlay" />
+                  {logo && (
+                    <div className="absolute bottom-2 right-2">
+                      <img src={logo} alt={article.feedCategory} className="h-5 object-contain opacity-85" />
+                    </div>
+                  )}
                 </div>
 
                 <div className="p-5 flex-1 flex flex-col">
