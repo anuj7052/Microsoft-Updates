@@ -1,5 +1,5 @@
 {
-  "lastFetchedAt": "2026-04-17T08:14:13.710Z",
+  "lastFetchedAt": "2026-04-20T06:25:49.959Z",
   "seenGuids": [
     "https://blogs.windows.com/blog/2026/04/02/part-3-babylon-js-9-0-openpbr-and-additional-engine-updates/",
     "https://blogs.windows.com/blog/2026/04/03/announcing-windows-11-insider-preview-build-26220-8148-beta-channel/",
@@ -15,7 +15,12 @@
     "https://blogs.windows.com/blog/2026/04/10/announcing-windows-11-insider-preview-build-26300-8170-dev-channel/",
     "https://blogs.windows.com/blog/2026/04/10/announcing-windows-11-insider-preview-build-26220-8165-beta-channel/",
     "https://blogs.windows.com/blog/2026/04/15/introducing-the-ultimate-college-bundle-built-for-student-life/",
-    "https://blogs.windows.com/blog/2026/04/16/xbox-gives-pc-gaming-fans-a-first-look-at-metro-2039/"
+    "https://blogs.windows.com/blog/2026/04/16/xbox-gives-pc-gaming-fans-a-first-look-at-metro-2039/",
+    "https://blogs.windows.com/blog/2026/04/17/announcing-windows-11-insider-preview-build-28020-1863-canary-channel/",
+    "https://blogs.windows.com/blog/2026/04/17/announcing-windows-11-insider-preview-build-for-canary-channel-29570-1000/",
+    "https://blogs.windows.com/blog/2026/04/17/releasing-windows-11-builds-26100-8313-and-26200-8313-to-the-release-preview-channel/",
+    "https://blogs.windows.com/blog/2026/04/17/announcing-windows-11-insider-preview-build-26220-8271-beta-channel/",
+    "https://blogs.windows.com/blog/2026/04/17/announcing-windows-11-insider-preview-build-26300-8276-dev-channel/"
   ],
-  "totalArticles": 15
+  "totalArticles": 20
 }
