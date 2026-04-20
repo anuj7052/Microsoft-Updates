@@ -1,95 +1,23 @@
 {
-  "updatedAt": "2026-04-20T15:54:49.897Z",
+  "updatedAt": "2026-04-20T17:15:51.233Z",
   "items": [
     {
-      "title": "Announcing Windows 11 Insider Preview Build 28020.1863 (Canary Channel)",
-      "summary": "Hello Windows Insiders, today we are releasing Windows 11 Insider Preview Build 28020.1863 to the Canary Channel. (KB 5083725) What’s new in Canary Build 28020.1863 Changes and Improvements g The post Announcing Windows ",
-      "date": "2026-04-17T17:07:15.000Z",
-      "category": "windows",
-      "sourceUrl": "https://blogs.windows.com/windows-insider/2026/04/17/announcing-windows-11-insider-preview-build-28020-1863-canary-channel/",
-      "slug": "announcing-windows-11-insider-preview-build-280201863-canary-channel",
-      "image": "/api/og?title=Announcing%20Windows%2011%20Insider%20Preview%20Build%2028020.1863%20(Canary%20Channel)&category=windows"
+      "title": "Cloud Cost Optimization: Principles that still matter",
+      "summary": "Discover how cloud cost optimization adapts in the age of AI, with best practices for managing spend, improving efficiency, and maximizing value. The post Cloud Cost Optimization: Principles that still matter appeared fi",
+      "date": "2026-04-15T16:00:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/cloud-cost-optimization-principles-that-still-matter/",
+      "slug": "cloud-cost-optimization-principles-that-still-matter",
+      "image": "/api/og?title=Cloud%20Cost%20Optimization%3A%20Principles%20that%20still%20matter&category=azure"
     },
     {
-      "title": "Announcing Windows 11 Insider Preview Build for Canary Channel 29570.1000",
-      "summary": "Hello Windows Insiders, today we’re releasing Windows Insider Preview Build 29570.1000 to the Windows 11 Insider Canary Channel on the optional 29500 build series. What’s new in Canary Build 29570.1000 Change The post An",
-      "date": "2026-04-17T17:07:00.000Z",
-      "category": "windows",
-      "sourceUrl": "https://blogs.windows.com/windows-insider/2026/04/17/announcing-windows-11-insider-preview-build-for-canary-channel-29570-1000/",
-      "slug": "announcing-windows-11-insider-preview-build-for-canary-channel-295701000",
-      "image": "/api/og?title=Announcing%20Windows%2011%20Insider%20Preview%20Build%20for%20Canary%20Channel%2029570.1000&category=windows"
-    },
-    {
-      "title": "Releasing Windows 11 Builds 26100.8313 and 26200.8313 to the Release Preview Channel",
-      "summary": "Hello Windows Insiders, today we’re releasing Windows 11 Builds 26100.8313 and 26200.8313 (KB5083631) to Insiders in the Release Preview Channel on Windows 11, versions 24H2 (Build 26100) and 25H2 (Build 26200). This upd",
-      "date": "2026-04-17T17:06:11.000Z",
-      "category": "windows",
-      "sourceUrl": "https://blogs.windows.com/windows-insider/2026/04/17/releasing-windows-11-builds-26100-8313-and-26200-8313-to-the-release-preview-channel/",
-      "slug": "kb5083631-releasing-windows-11-builds-261008313-and-262008313-to-the-release-preview-chann",
-      "image": "/api/og?title=Releasing%20Windows%2011%20Builds%2026100.8313%20and%2026200.8313%20to%20the%20Release%20Preview%20Channel&category=windows"
-    },
-    {
-      "title": "Announcing Windows 11 Insider Preview Build 26220.8271 (Beta Channel)",
-      "summary": "Hello Windows Insiders, today we are releasing Windows 11 Insider Preview Build 26220.8271 (KB 5083728) to the Beta Channel. Changes in Beta Channel builds and updates are documented in two buckets: new features, and imp",
-      "date": "2026-04-17T17:05:13.000Z",
-      "category": "windows",
-      "sourceUrl": "https://blogs.windows.com/windows-insider/2026/04/17/announcing-windows-11-insider-preview-build-26220-8271-beta-channel/",
-      "slug": "announcing-windows-11-insider-preview-build-262208271-beta-channel",
-      "image": "/api/og?title=Announcing%20Windows%2011%20Insider%20Preview%20Build%2026220.8271%20(Beta%20Channel)&category=windows"
-    },
-    {
-      "title": "Announcing Windows 11 Insider Preview Build 26300.8276 (Dev Channel)",
-      "summary": "Hello Windows Insiders, today we are releasing Windows 11 Insider Preview Build 26300.8276 (KB 5083726) to the Dev Channel. Changes in Dev Channel builds and updates are documented in two buckets: new features, and impro",
-      "date": "2026-04-17T17:04:54.000Z",
-      "category": "windows",
-      "sourceUrl": "https://blogs.windows.com/windows-insider/2026/04/17/announcing-windows-11-insider-preview-build-26300-8276-dev-channel/",
-      "slug": "announcing-windows-11-insider-preview-build-263008276-dev-channel",
-      "image": "/api/og?title=Announcing%20Windows%2011%20Insider%20Preview%20Build%2026300.8276%20(Dev%20Channel)&category=windows"
-    },
-    {
-      "title": "Xbox gives PC gaming fans a first look at Metro 2039",
-      "summary": "Fans of the Metro series from 4A Games can check out a recap of a recent broadcast from Xbox First Look on the latest title in that storyline: Metro 2039, due to be released this winter. “Like the previous games in the s",
-      "date": "2026-04-16T19:03:52.000Z",
-      "category": "windows",
-      "sourceUrl": "https://blogs.windows.com/windowsexperience/2026/04/16/xbox-gives-pc-gaming-fans-a-first-look-at-metro-2039/",
-      "slug": "xbox-gives-pc-gaming-fans-a-first-look-at-metro-2039",
-      "image": "/api/og?title=Xbox%20gives%20PC%20gaming%20fans%20a%20first%20look%20at%20Metro%202039&category=windows"
-    },
-    {
-      "title": "Introducing the ultimate college bundle: built for student life",
-      "summary": "College life is full in every sense of the word. Full schedules, full inboxes, full expectations. The pressure to keep up, stay productive and always be “on” is real. Windows is making it even easier to get ready for eve",
-      "date": "2026-04-15T18:00:04.000Z",
-      "category": "windows",
-      "sourceUrl": "https://blogs.windows.com/windowsexperience/2026/04/15/introducing-the-ultimate-college-bundle-built-for-student-life/",
-      "slug": "introducing-the-ultimate-college-bundle-built-for-student-life",
-      "image": "/api/og?title=Introducing%20the%20ultimate%20college%20bundle%3A%20built%20for%20student%20life&category=windows"
-    },
-    {
-      "title": "Announcing Windows 11 Insider Preview Build 28020.1812 (Canary Channel)",
-      "summary": "Hello Windows Insiders, today we are releasing Windows 11 Insider Preview Build 28020.1812 to the Canary Channel. (KB 5083824) What’s new in Canary Build 28020.1812 Changes and Improvements g The post Announcing Windows ",
-      "date": "2026-04-10T19:03:43.000Z",
-      "category": "windows",
-      "sourceUrl": "https://blogs.windows.com/windows-insider/2026/04/10/announcing-windows-11-insider-preview-build-28020-1812-canary-channel/",
-      "slug": "announcing-windows-11-insider-preview-build-280201812-canary-channel",
-      "image": "/api/og?title=Announcing%20Windows%2011%20Insider%20Preview%20Build%2028020.1812%20(Canary%20Channel)&category=windows"
-    },
-    {
-      "title": "Announcing Windows 11 Insider Preview Build for Canary Channel 29565.1000",
-      "summary": "Hello Windows Insiders, today we’re releasing Windows Insider Preview Build 29565.1000 to the Windows 11 Insider Canary Channel on the optional 29500 build series. What’s new in Canary Build 29565.1000 Change The post An",
-      "date": "2026-04-10T19:02:26.000Z",
-      "category": "windows",
-      "sourceUrl": "https://blogs.windows.com/windows-insider/2026/04/10/announcing-windows-11-insider-preview-build-for-canary-channel-29565-1000/",
-      "slug": "announcing-windows-11-insider-preview-build-for-canary-channel-295651000",
-      "image": "/api/og?title=Announcing%20Windows%2011%20Insider%20Preview%20Build%20for%20Canary%20Channel%2029565.1000&category=windows"
-    },
-    {
-      "title": "Announcing Windows 11 Insider Preview Build 26300.8170 (Dev Channel)",
-      "summary": "Hello Windows Insiders, today we are releasing Windows 11 Insider Preview Build 26300.8170 (KB 5083632) to the Dev Channel. Changes in Dev Channel builds and updates are documented in two buckets: new features, and impro",
-      "date": "2026-04-10T19:02:11.000Z",
-      "category": "windows",
-      "sourceUrl": "https://blogs.windows.com/windows-insider/2026/04/10/announcing-windows-11-insider-preview-build-26300-8170-dev-channel/",
-      "slug": "announcing-windows-11-insider-preview-build-263008170-dev-channel",
-      "image": "/api/og?title=Announcing%20Windows%2011%20Insider%20Preview%20Build%2026300.8170%20(Dev%20Channel)&category=windows"
+      "title": "Optimize object storage costs automatically with smart tier—now generally available",
+      "summary": "By continuously optimizing data placement, smart tier ensures your storage costs are aligned with actual usage. The post Optimize object storage costs automatically with smart tier—now generally available appeared first ",
+      "date": "2026-04-14T15:00:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/optimize-object-storage-costs-automatically-with-smart-tier-now-generally-available/",
+      "slug": "optimize-object-storage-costs-automatically-with-smart-tiernow-generally-availab",
+      "image": "/api/og?title=Optimize%20object%20storage%20costs%20automatically%20with%20smart%20tier%E2%80%94now%20generally%20available&category=azure"
     },
     {
       "title": "Microsoft named a Leader in The Forrester Wave™ for Sovereign Cloud Platforms",
@@ -162,24 +90,6 @@
       "sourceUrl": "https://www.microsoft.com/en-us/industry/blog/energy-and-resources/2026/03/24/ai-for-nuclear-energy-powering-an-intelligent-resilient-future/",
       "slug": "ai-for-nuclear-energy-powering-an-intelligent-resilient-future",
       "image": "/api/og?title=AI%20for%20nuclear%20energy%3A%20Powering%20an%20intelligent%2C%20resilient%20future&category=azure"
-    },
-    {
-      "title": "What’s new with Microsoft in open-source and Kubernetes at KubeCon + CloudNativeCon Europe 2026",
-      "summary": "At KubeCon + CloudNativeCon Europe 2026 in Amsterdam, we're making announcements that reflect the goal of bringing the operational maturity of Kubernetes to today's workloads and demands. The post What’s new with Microso",
-      "date": "2026-03-24T07:05:00.000Z",
-      "category": "azure",
-      "sourceUrl": "https://opensource.microsoft.com/blog/2026/03/24/whats-new-with-microsoft-in-open-source-and-kubernetes-at-kubecon-cloudnativecon-europe-2026/",
-      "slug": "whats-new-with-microsoft-in-open-source-and-kubernetes-at-kubecon-cloudnativecon",
-      "image": "/api/og?title=What%E2%80%99s%20new%20with%20Microsoft%20in%20open-source%20and%20Kubernetes%20at%20KubeCon%20%2B%20CloudNativeCon%20Europe%202026&category=azure"
-    },
-    {
-      "title": "Advancing agentic AI with Microsoft databases across a unified data estate",
-      "summary": "Built on a consistent Microsoft SQL foundation from on premises to the cloud, Azure SQL brings AI capabilities directly into your database experience. The post Advancing agentic AI with Microsoft databases across a unifi",
-      "date": "2026-03-18T12:50:00.000Z",
-      "category": "azure",
-      "sourceUrl": "https://www.microsoft.com/en-us/sql-server/blog/2026/03/18/advancing-agentic-ai-with-microsoft-databases-across-a-unified-data-estate/",
-      "slug": "advancing-agentic-ai-with-microsoft-databases-across-a-unified-data-estate",
-      "image": "/api/og?title=Advancing%20agentic%20AI%20with%20Microsoft%20databases%20across%20a%20unified%20data%20estate&category=azure"
     }
   ]
 }
