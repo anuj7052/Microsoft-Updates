@@ -1,5 +1,5 @@
 {
-  "lastFetchedAt": "2026-04-22T15:51:35.992Z",
+  "lastFetchedAt": "2026-04-22T17:11:44.224Z",
   "seenGuids": [
     "https://blogs.windows.com/blog/2026/04/02/part-3-babylon-js-9-0-openpbr-and-additional-engine-updates/",
     "https://blogs.windows.com/blog/2026/04/03/announcing-windows-11-insider-preview-build-26220-8148-beta-channel/",
@@ -21,7 +21,8 @@
     "https://blogs.windows.com/blog/2026/04/17/releasing-windows-11-builds-26100-8313-and-26200-8313-to-the-release-preview-channel/",
     "https://blogs.windows.com/blog/2026/04/17/announcing-windows-11-insider-preview-build-26220-8271-beta-channel/",
     "https://blogs.windows.com/blog/2026/04/17/announcing-windows-11-insider-preview-build-26300-8276-dev-channel/",
-    "https://blogs.windows.com/blog/2026/04/22/windows-365-link-one-year-of-the-simple-secure-purpose-built-cloud-pc-device/"
+    "https://blogs.windows.com/blog/2026/04/22/windows-365-link-one-year-of-the-simple-secure-purpose-built-cloud-pc-device/",
+    "https://blogs.windows.com/blog/2026/04/22/engineering-secure-passkey-sync-in-microsoft-password-manager/"
   ],
-  "totalArticles": 21
+  "totalArticles": 22
 }

@@ -1,6 +1,15 @@
 {
-  "updatedAt": "2026-04-22T15:51:35.991Z",
+  "updatedAt": "2026-04-22T17:11:44.222Z",
   "items": [
+    {
+      "title": "Engineering secure passkey sync in Microsoft Password Manager",
+      "summary": "Passkeys are designed to replace passwords with strong, phishing-resistant credentials that make sign-in quick, easy, and secure. With M The post Engineering secure passkey sync in Microsoft Password Manager appeared fir",
+      "date": "2026-04-22T15:57:22.000Z",
+      "category": "windows",
+      "sourceUrl": "https://blogs.windows.com/msedgedev/2026/04/22/engineering-secure-passkey-sync-in-microsoft-password-manager/",
+      "slug": "engineering-secure-passkey-sync-in-microsoft-password-manager",
+      "image": "/api/og?title=Engineering%20secure%20passkey%20sync%20in%20Microsoft%20Password%20Manager&category=windows"
+    },
     {
       "title": "Windows 365 Link: One year of the simple, secure, purpose-built Cloud PC device",
       "summary": "IT practitioners don’t hand out praise easily. So when a solution architect, a head of workplace design and a modern workplace product manager start saying the same thing about an endpoint—simpler to manage, faster to de",
@@ -99,15 +108,6 @@
       "sourceUrl": "https://blogs.windows.com/windows-insider/2026/04/10/announcing-windows-11-insider-preview-build-28020-1812-canary-channel/",
       "slug": "announcing-windows-11-insider-preview-build-280201812-canary-channel",
       "image": "/api/og?title=Announcing%20Windows%2011%20Insider%20Preview%20Build%2028020.1812%20(Canary%20Channel)&category=windows"
-    },
-    {
-      "title": "Announcing Windows 11 Insider Preview Build for Canary Channel 29565.1000",
-      "summary": "Hello Windows Insiders, today we’re releasing Windows Insider Preview Build 29565.1000 to the Windows 11 Insider Canary Channel on the optional 29500 build series. What’s new in Canary Build 29565.1000 Change The post An",
-      "date": "2026-04-10T19:02:26.000Z",
-      "category": "windows",
-      "sourceUrl": "https://blogs.windows.com/windows-insider/2026/04/10/announcing-windows-11-insider-preview-build-for-canary-channel-29565-1000/",
-      "slug": "announcing-windows-11-insider-preview-build-for-canary-channel-295651000",
-      "image": "/api/og?title=Announcing%20Windows%2011%20Insider%20Preview%20Build%20for%20Canary%20Channel%2029565.1000&category=windows"
     },
     {
       "title": "Microsoft named a Leader in The Forrester Wave™ for Sovereign Cloud Platforms",
