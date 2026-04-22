@@ -1,5 +1,5 @@
 {
-  "lastFetchedAt": "2026-04-22T14:03:17.391Z",
+  "lastFetchedAt": "2026-04-22T15:51:35.992Z",
   "processed": [
     {
       "guid": "https://blogs.windows.com/blog/2026/03/30/announcing-windows-11-insider-preview-build-for-canary-channel-29558-1000/",
@@ -320,6 +320,14 @@
       "category": "windows",
       "riskLevel": "SAFE",
       "savedAt": "2026-04-20T06:25:49.959Z"
+    },
+    {
+      "guid": "https://blogs.windows.com/blog/2026/04/22/windows-365-link-one-year-of-the-simple-secure-purpose-built-cloud-pc-device/",
+      "url": "https://blogs.windows.com/windowsexperience/2026/04/22/windows-365-link-one-year-of-the-simple-secure-purpose-built-cloud-pc-device/",
+      "slug": "windows-365-link-one-year-of-the-simple-secure-purpose-built-cloud-pc-device",
+      "category": "windows",
+      "riskLevel": "SAFE",
+      "savedAt": "2026-04-22T15:51:35.992Z"
     }
   ]
 }

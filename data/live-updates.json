@@ -1,6 +1,15 @@
 {
-  "updatedAt": "2026-04-22T14:03:17.390Z",
+  "updatedAt": "2026-04-22T15:51:35.991Z",
   "items": [
+    {
+      "title": "Windows 365 Link: One year of the simple, secure, purpose-built Cloud PC device",
+      "summary": "IT practitioners don’t hand out praise easily. So when a solution architect, a head of workplace design and a modern workplace product manager start saying the same thing about an endpoint—simpler to manage, faster to de",
+      "date": "2026-04-22T15:00:21.000Z",
+      "category": "windows",
+      "sourceUrl": "https://blogs.windows.com/windowsexperience/2026/04/22/windows-365-link-one-year-of-the-simple-secure-purpose-built-cloud-pc-device/",
+      "slug": "windows-365-link-one-year-of-the-simple-secure-purpose-built-cloud-pc-device",
+      "image": "/api/og?title=Windows%20365%20Link%3A%20One%20year%20of%20the%20simple%2C%20secure%2C%20purpose-built%20Cloud%20PC%20device&category=windows"
+    },
     {
       "title": "Announcing Windows 11 Insider Preview Build 28020.1863 (Canary Channel)",
       "summary": "Hello Windows Insiders, today we are releasing Windows 11 Insider Preview Build 28020.1863 to the Canary Channel. (KB 5083725) What’s new in Canary Build 28020.1863 Changes and Improvements g The post Announcing Windows ",
@@ -99,15 +108,6 @@
       "sourceUrl": "https://blogs.windows.com/windows-insider/2026/04/10/announcing-windows-11-insider-preview-build-for-canary-channel-29565-1000/",
       "slug": "announcing-windows-11-insider-preview-build-for-canary-channel-295651000",
       "image": "/api/og?title=Announcing%20Windows%2011%20Insider%20Preview%20Build%20for%20Canary%20Channel%2029565.1000&category=windows"
-    },
-    {
-      "title": "Announcing Windows 11 Insider Preview Build 26300.8170 (Dev Channel)",
-      "summary": "Hello Windows Insiders, today we are releasing Windows 11 Insider Preview Build 26300.8170 (KB 5083632) to the Dev Channel. Changes in Dev Channel builds and updates are documented in two buckets: new features, and impro",
-      "date": "2026-04-10T19:02:11.000Z",
-      "category": "windows",
-      "sourceUrl": "https://blogs.windows.com/windows-insider/2026/04/10/announcing-windows-11-insider-preview-build-26300-8170-dev-channel/",
-      "slug": "announcing-windows-11-insider-preview-build-263008170-dev-channel",
-      "image": "/api/og?title=Announcing%20Windows%2011%20Insider%20Preview%20Build%2026300.8170%20(Dev%20Channel)&category=windows"
     },
     {
       "title": "Microsoft named a Leader in The Forrester Wave™ for Sovereign Cloud Platforms",
