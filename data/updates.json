@@ -1,5 +1,5 @@
 {
-  "lastFetchedAt": "2026-04-22T18:41:31.570Z",
+  "lastFetchedAt": "2026-04-22T20:11:51.136Z",
   "processed": [
     {
       "guid": "https://blogs.windows.com/blog/2026/03/30/announcing-windows-11-insider-preview-build-for-canary-channel-29558-1000/",
@@ -336,6 +336,14 @@
       "category": "windows",
       "riskLevel": "SAFE",
       "savedAt": "2026-04-22T17:11:44.224Z"
+    },
+    {
+      "guid": "https://blogs.windows.com/blog/2026/04/22/diablo-iv-now-with-more-way-to-customize-builds-and-playstyles/",
+      "url": "https://blogs.windows.com/windowsexperience/2026/04/22/diablo-iv-now-with-more-way-to-customize-builds-and-playstyles/",
+      "slug": "diablo-iv-now-with-more-ways-to-customize-builds-and-playstyles",
+      "category": "windows",
+      "riskLevel": "SAFE",
+      "savedAt": "2026-04-22T20:11:51.136Z"
     }
   ]
 }

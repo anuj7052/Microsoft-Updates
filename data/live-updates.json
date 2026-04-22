@@ -1,6 +1,15 @@
 {
-  "updatedAt": "2026-04-22T18:41:31.569Z",
+  "updatedAt": "2026-04-22T20:11:51.134Z",
   "items": [
+    {
+      "title": "Diablo IV: Now with more ways to customize builds and playstyles",
+      "summary": "In Diablo IV, the Skill Tree system gives players the ability to pick a skill and choose an upgrade to get stronger. Now, that tree has evolved to support more player choices. These new branches don’t just make skills st",
+      "date": "2026-04-22T18:46:38.000Z",
+      "category": "windows",
+      "sourceUrl": "https://blogs.windows.com/windowsexperience/2026/04/22/diablo-iv-now-with-more-way-to-customize-builds-and-playstyles/",
+      "slug": "diablo-iv-now-with-more-ways-to-customize-builds-and-playstyles",
+      "image": "/api/og?title=Diablo%20IV%3A%20Now%20with%20more%20ways%20to%20customize%20builds%20and%20playstyles&category=windows"
+    },
     {
       "title": "Engineering secure passkey sync in Microsoft Password Manager",
       "summary": "Passkeys are designed to replace passwords with strong, phishing-resistant credentials that make sign-in quick, easy, and secure. With M The post Engineering secure passkey sync in Microsoft Password Manager appeared fir",
@@ -99,15 +108,6 @@
       "sourceUrl": "https://azure.microsoft.com/en-us/blog/optimize-object-storage-costs-automatically-with-smart-tier-now-generally-available/",
       "slug": "optimize-object-storage-costs-automatically-with-smart-tiernow-generally-availab",
       "image": "/api/og?title=Optimize%20object%20storage%20costs%20automatically%20with%20smart%20tier%E2%80%94now%20generally%20available&category=azure"
-    },
-    {
-      "title": "Announcing Windows 11 Insider Preview Build 28020.1812 (Canary Channel)",
-      "summary": "Hello Windows Insiders, today we are releasing Windows 11 Insider Preview Build 28020.1812 to the Canary Channel. (KB 5083824) What’s new in Canary Build 28020.1812 Changes and Improvements g The post Announcing Windows ",
-      "date": "2026-04-10T19:03:43.000Z",
-      "category": "windows",
-      "sourceUrl": "https://blogs.windows.com/windows-insider/2026/04/10/announcing-windows-11-insider-preview-build-28020-1812-canary-channel/",
-      "slug": "announcing-windows-11-insider-preview-build-280201812-canary-channel",
-      "image": "/api/og?title=Announcing%20Windows%2011%20Insider%20Preview%20Build%2028020.1812%20(Canary%20Channel)&category=windows"
     },
     {
       "title": "Microsoft named a Leader in The Forrester Wave™ for Sovereign Cloud Platforms",
