@@ -1,6 +1,15 @@
 {
-  "updatedAt": "2026-04-23T14:20:31.138Z",
+  "updatedAt": "2026-04-23T16:18:32.537Z",
   "items": [
+    {
+      "title": "From clay to keyboard and controller: The making of Double Fine’s Kiln",
+      "summary": "At Double Fine Productions, an idea that emerged almost a decade ago during an internal game jam became Kiln, a pottery party brawler. (Say that fast five times!) To better unde The post From clay to keyboard and control",
+      "date": "2026-04-23T15:05:35.000Z",
+      "category": "windows",
+      "sourceUrl": "https://blogs.windows.com/windowsexperience/2026/04/23/from-clay-to-keyboard-and-controller-the-making-of-double-fines-kiln/",
+      "slug": "from-clay-to-keyboard-and-controller-the-making-of-double-fines-kiln",
+      "image": "/api/og?title=From%20clay%20to%20keyboard%20and%20controller%3A%20The%20making%20of%20Double%20Fine%E2%80%99s%20Kiln&category=windows"
+    },
     {
       "title": "Diablo IV: Now with more ways to customize builds and playstyles",
       "summary": "In Diablo IV, the Skill Tree system gives players the ability to pick a skill and choose an upgrade to get stronger. Now, that tree has evolved to support more player choices. These new branches don’t just make skills st",
@@ -90,15 +99,6 @@
       "sourceUrl": "https://blogs.windows.com/windowsexperience/2026/04/16/xbox-gives-pc-gaming-fans-a-first-look-at-metro-2039/",
       "slug": "xbox-gives-pc-gaming-fans-a-first-look-at-metro-2039",
       "image": "/api/og?title=Xbox%20gives%20PC%20gaming%20fans%20a%20first%20look%20at%20Metro%202039&category=windows"
-    },
-    {
-      "title": "Introducing the ultimate college bundle: built for student life",
-      "summary": "College life is full in every sense of the word. Full schedules, full inboxes, full expectations. The pressure to keep up, stay productive and always be “on” is real. Windows is making it even easier to get ready for eve",
-      "date": "2026-04-15T18:00:04.000Z",
-      "category": "windows",
-      "sourceUrl": "https://blogs.windows.com/windowsexperience/2026/04/15/introducing-the-ultimate-college-bundle-built-for-student-life/",
-      "slug": "introducing-the-ultimate-college-bundle-built-for-student-life",
-      "image": "/api/og?title=Introducing%20the%20ultimate%20college%20bundle%3A%20built%20for%20student%20life&category=windows"
     },
     {
       "title": "Cloud Cost Optimization: Principles that still matter",

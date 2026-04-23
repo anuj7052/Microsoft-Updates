@@ -1,5 +1,5 @@
 {
-  "lastFetchedAt": "2026-04-23T14:20:31.138Z",
+  "lastFetchedAt": "2026-04-23T16:18:32.538Z",
   "processed": [
     {
       "guid": "https://blogs.windows.com/blog/2026/03/30/announcing-windows-11-insider-preview-build-for-canary-channel-29558-1000/",
@@ -344,6 +344,14 @@
       "category": "windows",
       "riskLevel": "SAFE",
       "savedAt": "2026-04-22T20:11:51.136Z"
+    },
+    {
+      "guid": "https://blogs.windows.com/blog/2026/04/23/from-clay-to-keyboard-and-controller-the-making-of-double-fines-kiln/",
+      "url": "https://blogs.windows.com/windowsexperience/2026/04/23/from-clay-to-keyboard-and-controller-the-making-of-double-fines-kiln/",
+      "slug": "from-clay-to-keyboard-and-controller-the-making-of-double-fines-kiln",
+      "category": "windows",
+      "riskLevel": "SAFE",
+      "savedAt": "2026-04-23T16:18:32.538Z"
     }
   ]
 }
