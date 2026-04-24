@@ -1,14 +1,23 @@
 {
-  "updatedAt": "2026-04-24T17:08:45.274Z",
+  "updatedAt": "2026-04-24T18:07:27.636Z",
   "items": [
     {
-      "title": "OpenAI’s GPT-5.5 in Microsoft Foundry: Frontier intelligence on an enterprise ready platform",
-      "summary": "OpenAI’s GPT-5.5 will be generally available in Microsoft Foundry, bringing OpenAI’s latest frontier model to Azure and the enterprise teams building agents for real production work. The post OpenAI’s GPT-5.5 in Microsof",
-      "date": "2026-04-23T22:00:00.000Z",
-      "category": "azure",
-      "sourceUrl": "https://azure.microsoft.com/en-us/blog/openais-gpt-5-5-in-microsoft-foundry-frontier-intelligence-on-an-enterprise-ready-platform/",
-      "slug": "openais-gpt-55-in-microsoft-foundry-frontier-intelligence-on-an-enterprise-ready",
-      "image": "/api/og?title=OpenAI%E2%80%99s%20GPT-5.5%20in%20Microsoft%20Foundry%3A%20Frontier%20intelligence%20on%20an%20enterprise%20ready%20platform&category=azure"
+      "title": "Your Windows update experience just got updated",
+      "summary": "Hey Windows Insiders, Today, we’re excited to share some improvements to the Windows Update experience that are now starting to roll out. These improvements are the direct result of your feedback. We are continually read",
+      "date": "2026-04-24T17:30:30.000Z",
+      "category": "windows",
+      "sourceUrl": "https://blogs.windows.com/windows-insider/2026/04/24/your-windows-update-experience-just-got-updated/",
+      "slug": "your-windows-update-experience-just-got-updated",
+      "image": "/api/og?title=Your%20Windows%20update%20experience%20just%20got%20updated&category=windows"
+    },
+    {
+      "title": "We&#8217;re moving to Experimental and Beta! Announcing new builds for 24 April 2026",
+      "summary": "Hello Windows Insiders, Today is the day we’re beginning to move to the new Experimental and Beta channels as announced earlier this month The post We&#8217;re moving to Experimental and Beta! Announcing new builds for 2",
+      "date": "2026-04-24T17:27:24.000Z",
+      "category": "windows",
+      "sourceUrl": "https://blogs.windows.com/windows-insider/2026/04/24/were-moving-to-experimental-and-beta-announcing-new-builds/",
+      "slug": "we8217re-moving-to-experimental-and-beta-announcing-new-builds-for-24-april-2026",
+      "image": "/api/og?title=We%26%238217%3Bre%20moving%20to%20Experimental%20and%20Beta!%20Announcing%20new%20builds%20for%2024%20April%202026&category=windows"
     },
     {
       "title": "From clay to keyboard and controller: The making of Double Fine’s Kiln",
@@ -27,15 +36,6 @@
       "sourceUrl": "https://blogs.windows.com/windowsexperience/2026/04/22/diablo-iv-now-with-more-way-to-customize-builds-and-playstyles/",
       "slug": "diablo-iv-now-with-more-ways-to-customize-builds-and-playstyles",
       "image": "/api/og?title=Diablo%20IV%3A%20Now%20with%20more%20ways%20to%20customize%20builds%20and%20playstyles&category=windows"
-    },
-    {
-      "title": "Microsoft Discovery: Advancing agentic R&#038;D at scale",
-      "summary": "Expanded preview access for Microsoft Discovery brings new enterprise-grade, agentic AI capabilities for research and development teams. The post Microsoft Discovery: Advancing agentic R&D at scale appeared first on Micr",
-      "date": "2026-04-22T16:00:00.000Z",
-      "category": "azure",
-      "sourceUrl": "https://azure.microsoft.com/en-us/blog/microsoft-discovery-advancing-agentic-rd-at-scale/",
-      "slug": "microsoft-discovery-advancing-agentic-r038d-at-scale",
-      "image": "/api/og?title=Microsoft%20Discovery%3A%20Advancing%20agentic%20R%26%23038%3BD%20at%20scale&category=azure"
     },
     {
       "title": "Engineering secure passkey sync in Microsoft Password Manager",
@@ -101,24 +101,6 @@
       "image": "/api/og?title=Announcing%20Windows%2011%20Insider%20Preview%20Build%2026220.8271%20(Beta%20Channel)&category=windows"
     },
     {
-      "title": "Announcing Windows 11 Insider Preview Build 26300.8276 (Dev Channel)",
-      "summary": "Hello Windows Insiders, today we are releasing Windows 11 Insider Preview Build 26300.8276 (KB 5083726) to the Dev Channel. Changes in Dev Channel builds and updates are documented in two buckets: new features, and impro",
-      "date": "2026-04-17T17:04:54.000Z",
-      "category": "windows",
-      "sourceUrl": "https://blogs.windows.com/windows-insider/2026/04/17/announcing-windows-11-insider-preview-build-26300-8276-dev-channel/",
-      "slug": "announcing-windows-11-insider-preview-build-263008276-dev-channel",
-      "image": "/api/og?title=Announcing%20Windows%2011%20Insider%20Preview%20Build%2026300.8276%20(Dev%20Channel)&category=windows"
-    },
-    {
-      "title": "Xbox gives PC gaming fans a first look at Metro 2039",
-      "summary": "Fans of the Metro series from 4A Games can check out a recap of a recent broadcast from Xbox First Look on the latest title in that storyline: Metro 2039, due to be released this winter. “Like the previous games in the s",
-      "date": "2026-04-16T19:03:52.000Z",
-      "category": "windows",
-      "sourceUrl": "https://blogs.windows.com/windowsexperience/2026/04/16/xbox-gives-pc-gaming-fans-a-first-look-at-metro-2039/",
-      "slug": "xbox-gives-pc-gaming-fans-a-first-look-at-metro-2039",
-      "image": "/api/og?title=Xbox%20gives%20PC%20gaming%20fans%20a%20first%20look%20at%20Metro%202039&category=windows"
-    },
-    {
       "title": "Cloud Cost Optimization: Principles that still matter",
       "summary": "Discover how cloud cost optimization adapts in the age of AI, with best practices for managing spend, improving efficiency, and maximizing value. The post Cloud Cost Optimization: Principles that still matter appeared fi",
       "date": "2026-04-15T16:00:00.000Z",
@@ -180,6 +162,24 @@
       "sourceUrl": "https://azure.microsoft.com/en-us/blog/building-sovereign-ai-at-the-edge-microsoft-and-armada-collaborate-to-deliver-azure-local-on-galleon-modular-datacenters/",
       "slug": "building-sovereign-ai-at-the-edge-microsoft-and-armada-collaborate-to-deliver-az",
       "image": "/api/og?title=Building%20sovereign%20AI%20at%20the%20edge%3A%20Microsoft%20and%20Armada%20collaborate%20to%20deliver%20Azure%20Local%20on%20Galleo&category=azure"
+    },
+    {
+      "title": "Navigating digital sovereignty at the frontier of transformation",
+      "summary": "Digital sovereignty has become a practical leadership discipline grounded in risk management, continuity planning, and long-term accountability. The post Navigating digital sovereignty at the frontier of transformation a",
+      "date": "2026-03-30T21:27:39.000Z",
+      "category": "azure",
+      "sourceUrl": "https://www.microsoft.com/en-us/microsoft-cloud/blog/2026/03/25/navigating-digital-sovereignty-at-the-frontier-of-transformation/",
+      "slug": "navigating-digital-sovereignty-at-the-frontier-of-transformation",
+      "image": "/api/og?title=Navigating%20digital%20sovereignty%20at%20the%20frontier%20of%20transformation&category=azure"
+    },
+    {
+      "title": "Microsoft named a Leader in 2026 Gartner® Magic Quadrant™ for Integration Platform as a Service",
+      "summary": "Read why Microsoft was named a Leader for integration services in the 2026 Gartner® Magic Quadrant™ for Integration Platform as a Service. The post Microsoft named a Leader in 2026 Gartner® Magic Quadrant™ for Integratio",
+      "date": "2026-03-30T16:00:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/microsoft-named-a-leader-in-2026-gartner-magic-quadrant-for-integration-platform-as-a-service/",
+      "slug": "microsoft-named-a-leader-in-2026-gartner-magic-quadrant-for-integration-platform",
+      "image": "/api/og?title=Microsoft%20named%20a%20Leader%20in%202026%20Gartner%C2%AE%20Magic%20Quadrant%E2%84%A2%20for%20Integration%20Platform%20as%20a%20Service&category=azure"
     }
   ]
 }

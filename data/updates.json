@@ -1,5 +1,5 @@
 {
-  "lastFetchedAt": "2026-04-24T17:08:45.274Z",
+  "lastFetchedAt": "2026-04-24T18:07:27.638Z",
   "processed": [
     {
       "guid": "https://blogs.windows.com/blog/2026/03/30/announcing-windows-11-insider-preview-build-for-canary-channel-29558-1000/",
@@ -352,6 +352,22 @@
       "category": "windows",
       "riskLevel": "SAFE",
       "savedAt": "2026-04-23T16:18:32.538Z"
+    },
+    {
+      "guid": "https://blogs.windows.com/blog/2026/04/24/your-windows-update-experience-just-got-updated/",
+      "url": "https://blogs.windows.com/windows-insider/2026/04/24/your-windows-update-experience-just-got-updated/",
+      "slug": "your-windows-update-experience-just-got-updated",
+      "category": "windows",
+      "riskLevel": "SAFE",
+      "savedAt": "2026-04-24T18:07:27.637Z"
+    },
+    {
+      "guid": "https://blogs.windows.com/blog/2026/04/24/were-moving-to-experimental-and-beta-announcing-new-builds/",
+      "url": "https://blogs.windows.com/windows-insider/2026/04/24/were-moving-to-experimental-and-beta-announcing-new-builds/",
+      "slug": "we8217re-moving-to-experimental-and-beta-announcing-new-builds-for-24-april-2026",
+      "category": "windows",
+      "riskLevel": "SAFE",
+      "savedAt": "2026-04-24T18:07:27.638Z"
     }
   ]
 }
