@@ -1,6 +1,15 @@
 {
-  "updatedAt": "2026-04-24T12:02:07.030Z",
+  "updatedAt": "2026-04-24T14:14:38.152Z",
   "items": [
+    {
+      "title": "OpenAI’s GPT-5.5 in Microsoft Foundry: Frontier intelligence on an enterprise ready platform",
+      "summary": "OpenAI’s GPT-5.5 will be generally available in Microsoft Foundry, bringing OpenAI’s latest frontier model to Azure and the enterprise teams building agents for real production work. The post OpenAI’s GPT-5.5 in Microsof",
+      "date": "2026-04-23T22:00:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/openais-gpt-5-5-in-microsoft-foundry-frontier-intelligence-on-an-enterprise-ready-platform/",
+      "slug": "openais-gpt-55-in-microsoft-foundry-frontier-intelligence-on-an-enterprise-ready",
+      "image": "/api/og?title=OpenAI%E2%80%99s%20GPT-5.5%20in%20Microsoft%20Foundry%3A%20Frontier%20intelligence%20on%20an%20enterprise%20ready%20platform&category=azure"
+    },
     {
       "title": "From clay to keyboard and controller: The making of Double Fine’s Kiln",
       "summary": "At Double Fine Productions, an idea that emerged almost a decade ago during an internal game jam became Kiln, a pottery party brawler. (Say that fast five times!) To better unde The post From clay to keyboard and control",
@@ -20,6 +29,15 @@
       "image": "/api/og?title=Diablo%20IV%3A%20Now%20with%20more%20ways%20to%20customize%20builds%20and%20playstyles&category=windows"
     },
     {
+      "title": "Microsoft Discovery: Advancing agentic R&#038;D at scale",
+      "summary": "Expanded preview access for Microsoft Discovery brings new enterprise-grade, agentic AI capabilities for research and development teams. The post Microsoft Discovery: Advancing agentic R&D at scale appeared first on Micr",
+      "date": "2026-04-22T16:00:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/microsoft-discovery-advancing-agentic-rd-at-scale/",
+      "slug": "microsoft-discovery-advancing-agentic-r038d-at-scale",
+      "image": "/api/og?title=Microsoft%20Discovery%3A%20Advancing%20agentic%20R%26%23038%3BD%20at%20scale&category=azure"
+    },
+    {
       "title": "Engineering secure passkey sync in Microsoft Password Manager",
       "summary": "Passkeys are designed to replace passwords with strong, phishing-resistant credentials that make sign-in quick, easy, and secure. With M The post Engineering secure passkey sync in Microsoft Password Manager appeared fir",
       "date": "2026-04-22T15:57:22.000Z",
@@ -36,6 +54,15 @@
       "sourceUrl": "https://blogs.windows.com/windowsexperience/2026/04/22/windows-365-link-one-year-of-the-simple-secure-purpose-built-cloud-pc-device/",
       "slug": "windows-365-link-one-year-of-the-simple-secure-purpose-built-cloud-pc-device",
       "image": "/api/og?title=Windows%20365%20Link%3A%20One%20year%20of%20the%20simple%2C%20secure%2C%20purpose-built%20Cloud%20PC%20device&category=windows"
+    },
+    {
+      "title": "Introducing Azure Accelerate for Databases: Modernize your data for AI with experts and investments",
+      "summary": "Azure Accelerate for Databases helps organizations modernize their databases and build AI-ready capabilities. The post Introducing Azure Accelerate for Databases: Modernize your data for AI with experts and investments a",
+      "date": "2026-04-22T00:00:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/introducing-azure-accelerate-for-databases-modernize-your-data-for-ai-with-experts-and-investments/",
+      "slug": "introducing-azure-accelerate-for-databases-modernize-your-data-for-ai-with-exper",
+      "image": "/api/og?title=Introducing%20Azure%20Accelerate%20for%20Databases%3A%20Modernize%20your%20data%20for%20AI%20with%20experts%20and%20investments&category=azure"
     },
     {
       "title": "Announcing Windows 11 Insider Preview Build 28020.1863 (Canary Channel)",
@@ -153,33 +180,6 @@
       "sourceUrl": "https://azure.microsoft.com/en-us/blog/building-sovereign-ai-at-the-edge-microsoft-and-armada-collaborate-to-deliver-azure-local-on-galleon-modular-datacenters/",
       "slug": "building-sovereign-ai-at-the-edge-microsoft-and-armada-collaborate-to-deliver-az",
       "image": "/api/og?title=Building%20sovereign%20AI%20at%20the%20edge%3A%20Microsoft%20and%20Armada%20collaborate%20to%20deliver%20Azure%20Local%20on%20Galleo&category=azure"
-    },
-    {
-      "title": "Navigating digital sovereignty at the frontier of transformation",
-      "summary": "Digital sovereignty has become a practical leadership discipline grounded in risk management, continuity planning, and long-term accountability. The post Navigating digital sovereignty at the frontier of transformation a",
-      "date": "2026-03-30T21:27:39.000Z",
-      "category": "azure",
-      "sourceUrl": "https://www.microsoft.com/en-us/microsoft-cloud/blog/2026/03/25/navigating-digital-sovereignty-at-the-frontier-of-transformation/",
-      "slug": "navigating-digital-sovereignty-at-the-frontier-of-transformation",
-      "image": "/api/og?title=Navigating%20digital%20sovereignty%20at%20the%20frontier%20of%20transformation&category=azure"
-    },
-    {
-      "title": "Microsoft named a Leader in 2026 Gartner® Magic Quadrant™ for Integration Platform as a Service",
-      "summary": "Read why Microsoft was named a Leader for integration services in the 2026 Gartner® Magic Quadrant™ for Integration Platform as a Service. The post Microsoft named a Leader in 2026 Gartner® Magic Quadrant™ for Integratio",
-      "date": "2026-03-30T16:00:00.000Z",
-      "category": "azure",
-      "sourceUrl": "https://azure.microsoft.com/en-us/blog/microsoft-named-a-leader-in-2026-gartner-magic-quadrant-for-integration-platform-as-a-service/",
-      "slug": "microsoft-named-a-leader-in-2026-gartner-magic-quadrant-for-integration-platform",
-      "image": "/api/og?title=Microsoft%20named%20a%20Leader%20in%202026%20Gartner%C2%AE%20Magic%20Quadrant%E2%84%A2%20for%20Integration%20Platform%20as%20a%20Service&category=azure"
-    },
-    {
-      "title": "AI for nuclear energy: Powering an intelligent, resilient future",
-      "summary": "To break the infrastructure bottleneck and shift the industry from ambition to delivery, Microsoft is announcing an AI for nuclear collaboration with NVIDIA, to provide end-to-end tools that streamline permitting, accele",
-      "date": "2026-03-25T15:00:00.000Z",
-      "category": "azure",
-      "sourceUrl": "https://www.microsoft.com/en-us/industry/blog/energy-and-resources/2026/03/24/ai-for-nuclear-energy-powering-an-intelligent-resilient-future/",
-      "slug": "ai-for-nuclear-energy-powering-an-intelligent-resilient-future",
-      "image": "/api/og?title=AI%20for%20nuclear%20energy%3A%20Powering%20an%20intelligent%2C%20resilient%20future&category=azure"
     }
   ]
 }
