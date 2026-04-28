@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-28T00:01:54.450Z",
+  "updatedAt": "2026-04-28T04:23:31.349Z",
   "items": [
     {
       "title": "Your Windows update experience just got updated",
@@ -18,15 +18,6 @@
       "sourceUrl": "https://blogs.windows.com/windows-insider/2026/04/24/were-moving-to-experimental-and-beta-announcing-new-builds/",
       "slug": "we8217re-moving-to-experimental-and-beta-announcing-new-builds-for-24-april-2026",
       "image": "/api/og?title=We%26%238217%3Bre%20moving%20to%20Experimental%20and%20Beta!%20Announcing%20new%20builds%20for%2024%20April%202026&category=windows"
-    },
-    {
-      "title": "OpenAI’s GPT-5.5 in Microsoft Foundry: Frontier intelligence on an enterprise ready platform",
-      "summary": "OpenAI’s GPT-5.5 will be generally available in Microsoft Foundry, bringing OpenAI’s latest frontier model to Azure and the enterprise teams building agents for real production work. The post OpenAI’s GPT-5.5 in Microsof",
-      "date": "2026-04-23T22:00:00.000Z",
-      "category": "azure",
-      "sourceUrl": "https://azure.microsoft.com/en-us/blog/openais-gpt-5-5-in-microsoft-foundry-frontier-intelligence-on-an-enterprise-ready-platform/",
-      "slug": "openais-gpt-55-in-microsoft-foundry-frontier-intelligence-on-an-enterprise-ready",
-      "image": "/api/og?title=OpenAI%E2%80%99s%20GPT-5.5%20in%20Microsoft%20Foundry%3A%20Frontier%20intelligence%20on%20an%20enterprise%20ready%20platform&category=azure"
     },
     {
       "title": "From clay to keyboard and controller: The making of Double Fine’s Kiln",
@@ -180,6 +171,15 @@
       "sourceUrl": "https://azure.microsoft.com/en-us/blog/building-sovereign-ai-at-the-edge-microsoft-and-armada-collaborate-to-deliver-azure-local-on-galleon-modular-datacenters/",
       "slug": "building-sovereign-ai-at-the-edge-microsoft-and-armada-collaborate-to-deliver-az",
       "image": "/api/og?title=Building%20sovereign%20AI%20at%20the%20edge%3A%20Microsoft%20and%20Armada%20collaborate%20to%20deliver%20Azure%20Local%20on%20Galleo&category=azure"
+    },
+    {
+      "title": "Navigating digital sovereignty at the frontier of transformation",
+      "summary": "Digital sovereignty has become a practical leadership discipline grounded in risk management, continuity planning, and long-term accountability. The post Navigating digital sovereignty at the frontier of transformation a",
+      "date": "2026-03-30T21:27:39.000Z",
+      "category": "azure",
+      "sourceUrl": "https://www.microsoft.com/en-us/microsoft-cloud/blog/2026/03/25/navigating-digital-sovereignty-at-the-frontier-of-transformation/",
+      "slug": "navigating-digital-sovereignty-at-the-frontier-of-transformation",
+      "image": "/api/og?title=Navigating%20digital%20sovereignty%20at%20the%20frontier%20of%20transformation&category=azure"
     }
   ]
 }
