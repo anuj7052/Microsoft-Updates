@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-30T12:01:31.514Z",
+  "updatedAt": "2026-04-30T14:35:31.511Z",
   "items": [
     {
       "title": "Microsoft named a Leader in the IDC MarketScape: Worldwide API Management 2026 Vendor Assessment",
@@ -9,6 +9,15 @@
       "sourceUrl": "https://azure.microsoft.com/en-us/blog/microsoft-named-a-leader-in-the-idc-marketscape-worldwide-api-management-2026-vendor-assessment/",
       "slug": "microsoft-named-a-leader-in-the-idc-marketscape-worldwide-api-management-2026-ve",
       "image": "/api/og?title=Microsoft%20named%20a%20Leader%20in%20the%20IDC%20MarketScape%3A%20Worldwide%20API%20Management%202026%20Vendor%20Assessment&category=azure"
+    },
+    {
+      "title": "Microsoft Sovereign Private Cloud scales to thousands of nodes with Azure Local",
+      "summary": "Azure Local scales Microsoft Sovereign Private Cloud, supporting AI and data workloads with full control, compliance, and disconnected operations. The post Microsoft Sovereign Private Cloud scales to thousands of nodes w",
+      "date": "2026-04-27T18:00:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://blogs.microsoft.com/blog/2026/04/27/microsoft-sovereign-private-cloud-scales-to-thousands-of-nodes-with-azure-local/",
+      "slug": "microsoft-sovereign-private-cloud-scales-to-thousands-of-nodes-with-azure-local",
+      "image": "/api/og?title=Microsoft%20Sovereign%20Private%20Cloud%20scales%20to%20thousands%20of%20nodes%20with%20Azure%20Local&category=azure"
     },
     {
       "title": "Your Windows update experience just got updated",
@@ -171,15 +180,6 @@
       "sourceUrl": "https://azure.microsoft.com/en-us/blog/cloud-cost-optimization-how-to-maximize-roi-from-ai-manage-costs-and-unlock-real-business-value/",
       "slug": "cloud-cost-optimization-how-to-maximize-roi-from-ai-manage-costs-and-unlock-real",
       "image": "/api/og?title=Cloud%20Cost%20Optimization%3A%20How%20to%20maximize%20ROI%20from%20AI%2C%20manage%20costs%2C%20and%20unlock%20real%20business%20value&category=azure"
-    },
-    {
-      "title": "Azure IaaS: Keep critical applications running with built-in resiliency at scale",
-      "summary": "Azure IaaS provides foundational capabilities across compute, storage, and networking to help organizations stay resilient. The post Azure IaaS: Keep critical applications running with built-in resiliency at scale appear",
-      "date": "2026-04-01T16:00:00.000Z",
-      "category": "azure",
-      "sourceUrl": "https://azure.microsoft.com/en-us/blog/azure-iaas-keep-critical-applications-running-with-built-in-resiliency-at-scale/",
-      "slug": "azure-iaas-keep-critical-applications-running-with-built-in-resiliency-at-scale",
-      "image": "/api/og?title=Azure%20IaaS%3A%20Keep%20critical%20applications%20running%20with%20built-in%20resiliency%20at%20scale&category=azure"
     }
   ]
 }
