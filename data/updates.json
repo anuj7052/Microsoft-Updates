@@ -1,5 +1,5 @@
 {
-  "lastFetchedAt": "2026-04-30T17:52:20.666Z",
+  "lastFetchedAt": "2026-04-30T19:44:57.150Z",
   "processed": [
     {
       "guid": "https://blogs.windows.com/blog/2026/03/30/announcing-windows-11-insider-preview-build-for-canary-channel-29558-1000/",
@@ -368,6 +368,14 @@
       "category": "windows",
       "riskLevel": "SAFE",
       "savedAt": "2026-04-24T18:07:27.638Z"
+    },
+    {
+      "guid": "https://blogs.windows.com/blog/2026/04/30/windows-11-pc-gamers-xbox-mode-rolls-out-and-rog-xbox-ally-updates-include-auto-sr-preview/",
+      "url": "https://blogs.windows.com/windowsexperience/2026/04/30/windows-11-pc-gamers-xbox-mode-rolls-out-and-rog-xbox-ally-updates-include-auto-sr-preview/",
+      "slug": "windows-11-pc-gamers-xbox-mode-rolls-out-and-rog-xbox-ally-updates-include-auto",
+      "category": "windows",
+      "riskLevel": "SAFE",
+      "savedAt": "2026-04-30T19:44:57.150Z"
     }
   ]
 }

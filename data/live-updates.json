@@ -1,6 +1,15 @@
 {
-  "updatedAt": "2026-04-30T17:52:20.665Z",
+  "updatedAt": "2026-04-30T19:44:57.149Z",
   "items": [
+    {
+      "title": "Windows 11 PC gamers: Xbox mode rolls out and ROG Xbox Ally updates include Auto SR preview",
+      "summary": "Xbox mode will begin rolling out in select markets to Windows 11 PCs, including laptops, desktops and tablets, bringing a console-inspired Xbox experience to more players than ever. Xbox mode is designed for the moments ",
+      "date": "2026-04-30T19:09:46.000Z",
+      "category": "windows",
+      "sourceUrl": "https://blogs.windows.com/windowsexperience/2026/04/30/windows-11-pc-gamers-xbox-mode-rolls-out-and-rog-xbox-ally-updates-include-auto-sr-preview/",
+      "slug": "windows-11-pc-gamers-xbox-mode-rolls-out-and-rog-xbox-ally-updates-include-auto",
+      "image": "/api/og?title=Windows%2011%20PC%20gamers%3A%20Xbox%20mode%20rolls%20out%20and%20ROG%20Xbox%20Ally%20updates%20include%20Auto%20SR%20preview&category=windows"
+    },
     {
       "title": "Microsoft named a Leader in the IDC MarketScape: Worldwide API Management 2026 Vendor Assessment",
       "summary": "Azure API Management provides a single, Azure-native platform to govern everything from traditional APIs to AI models, tools, and agents. The post Microsoft named a Leader in the IDC MarketScape: Worldwide API Management",
@@ -126,15 +135,6 @@
       "sourceUrl": "https://blogs.windows.com/windows-insider/2026/04/17/releasing-windows-11-builds-26100-8313-and-26200-8313-to-the-release-preview-channel/",
       "slug": "kb5083631-releasing-windows-11-builds-261008313-and-262008313-to-the-release-preview-chann",
       "image": "/api/og?title=Releasing%20Windows%2011%20Builds%2026100.8313%20and%2026200.8313%20to%20the%20Release%20Preview%20Channel&category=windows"
-    },
-    {
-      "title": "Announcing Windows 11 Insider Preview Build 26220.8271 (Beta Channel)",
-      "summary": "Hello Windows Insiders, today we are releasing Windows 11 Insider Preview Build 26220.8271 (KB 5083728) to the Beta Channel. Changes in Beta Channel builds and updates are documented in two buckets: new features, and imp",
-      "date": "2026-04-17T17:05:13.000Z",
-      "category": "windows",
-      "sourceUrl": "https://blogs.windows.com/windows-insider/2026/04/17/announcing-windows-11-insider-preview-build-26220-8271-beta-channel/",
-      "slug": "announcing-windows-11-insider-preview-build-262208271-beta-channel",
-      "image": "/api/og?title=Announcing%20Windows%2011%20Insider%20Preview%20Build%2026220.8271%20(Beta%20Channel)&category=windows"
     },
     {
       "title": "Cloud Cost Optimization: Principles that still matter",
