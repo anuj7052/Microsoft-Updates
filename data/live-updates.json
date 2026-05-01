@@ -1,6 +1,15 @@
 {
-  "updatedAt": "2026-05-01T18:41:07.709Z",
+  "updatedAt": "2026-05-01T20:09:42.061Z",
   "items": [
+    {
+      "title": "Microsoft Flight Simulator 2024 releases largest sim update yet",
+      "summary": "Sim Update 5 for Microsoft Flight Simulator 2024 is now available, with significant improvements for every aspiring pilot player. One of the biggest changes is that now all career modes are fully unlocked. Heavy aircraft",
+      "date": "2026-05-01T18:35:59.000Z",
+      "category": "windows",
+      "sourceUrl": "https://blogs.windows.com/windowsexperience/2026/05/01/microsoft-flight-simulator-2024-releases-largest-sim-update-yet/",
+      "slug": "microsoft-flight-simulator-2024-releases-largest-sim-update-yet",
+      "image": "/api/og?title=Microsoft%20Flight%20Simulator%202024%20releases%20largest%20sim%20update%20yet&category=windows"
+    },
     {
       "title": "Windows quality update: Progress we&#8217;ve made since March",
       "summary": "Hello Windows Insiders I’ve now spent the past two months in this expanded role leading the Windows Insider Program. Two themes hav The post Windows quality update: Progress we&#8217;ve made since March appeared first on",
@@ -126,15 +135,6 @@
       "sourceUrl": "https://azure.microsoft.com/en-us/blog/introducing-azure-accelerate-for-databases-modernize-your-data-for-ai-with-experts-and-investments/",
       "slug": "introducing-azure-accelerate-for-databases-modernize-your-data-for-ai-with-exper",
       "image": "/api/og?title=Introducing%20Azure%20Accelerate%20for%20Databases%3A%20Modernize%20your%20data%20for%20AI%20with%20experts%20and%20investments&category=azure"
-    },
-    {
-      "title": "Announcing Windows 11 Insider Preview Build 28020.1863 (Canary Channel)",
-      "summary": "Hello Windows Insiders, today we are releasing Windows 11 Insider Preview Build 28020.1863 to the Canary Channel. (KB 5083725) What’s new in Canary Build 28020.1863 Changes and Improvements g The post Announcing Windows ",
-      "date": "2026-04-17T17:07:15.000Z",
-      "category": "windows",
-      "sourceUrl": "https://blogs.windows.com/windows-insider/2026/04/17/announcing-windows-11-insider-preview-build-28020-1863-canary-channel/",
-      "slug": "announcing-windows-11-insider-preview-build-280201863-canary-channel",
-      "image": "/api/og?title=Announcing%20Windows%2011%20Insider%20Preview%20Build%2028020.1863%20(Canary%20Channel)&category=windows"
     },
     {
       "title": "Cloud Cost Optimization: Principles that still matter",
