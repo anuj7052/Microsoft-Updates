@@ -1,5 +1,5 @@
 {
-  "lastFetchedAt": "2026-05-01T17:07:15.067Z",
+  "lastFetchedAt": "2026-05-01T18:41:07.711Z",
   "seenGuids": [
     "https://blogs.windows.com/blog/2026/04/02/part-3-babylon-js-9-0-openpbr-and-additional-engine-updates/",
     "https://blogs.windows.com/blog/2026/04/03/announcing-windows-11-insider-preview-build-26220-8148-beta-channel/",
@@ -27,7 +27,9 @@
     "https://blogs.windows.com/blog/2026/04/23/from-clay-to-keyboard-and-controller-the-making-of-double-fines-kiln/",
     "https://blogs.windows.com/blog/2026/04/24/your-windows-update-experience-just-got-updated/",
     "https://blogs.windows.com/blog/2026/04/24/were-moving-to-experimental-and-beta-announcing-new-builds/",
-    "https://blogs.windows.com/blog/2026/04/30/windows-11-pc-gamers-xbox-mode-rolls-out-and-rog-xbox-ally-updates-include-auto-sr-preview/"
+    "https://blogs.windows.com/blog/2026/04/30/windows-11-pc-gamers-xbox-mode-rolls-out-and-rog-xbox-ally-updates-include-auto-sr-preview/",
+    "https://blogs.windows.com/blog/2026/05/01/windows-quality-update-progress-weve-made-since-march/",
+    "https://blogs.windows.com/blog/2026/05/01/announcing-new-builds-for-1-may-2026-and-extending-iso-support/"
   ],
-  "totalArticles": 27
+  "totalArticles": 29
 }
