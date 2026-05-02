@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-02T03:38:56.220Z",
+  "updatedAt": "2026-05-02T06:16:55.510Z",
   "items": [
     {
       "title": "Microsoft Flight Simulator 2024 releases largest sim update yet",
@@ -36,15 +36,6 @@
       "sourceUrl": "https://blogs.windows.com/windowsexperience/2026/04/30/windows-11-pc-gamers-xbox-mode-rolls-out-and-rog-xbox-ally-updates-include-auto-sr-preview/",
       "slug": "windows-11-pc-gamers-xbox-mode-rolls-out-and-rog-xbox-ally-updates-include-auto",
       "image": "/api/og?title=Windows%2011%20PC%20gamers%3A%20Xbox%20mode%20rolls%20out%20and%20ROG%20Xbox%20Ally%20updates%20include%20Auto%20SR%20preview&category=windows"
-    },
-    {
-      "title": "Enforcing trust and transparency: Open-sourcing the Azure Integrated HSM",
-      "summary": "As cloud workloads become more agentic and AI systems handle increasingly sensitive data, trust must be engineered directly into infrastructure. Azure Integrated HSM brings hardware‑enforced key protection into Azure, ex",
-      "date": "2026-04-30T18:00:00.000Z",
-      "category": "azure",
-      "sourceUrl": "https://azure.microsoft.com/en-us/blog/enforcing-trust-and-transparency-open-sourcing-the-azure-integrated-hsm/",
-      "slug": "enforcing-trust-and-transparency-open-sourcing-the-azure-integrated-hsm",
-      "image": "/api/og?title=Enforcing%20trust%20and%20transparency%3A%20Open-sourcing%20the%20Azure%20Integrated%20HSM&category=azure"
     },
     {
       "title": "Microsoft named a Leader in the IDC MarketScape: Worldwide API Management 2026 Vendor Assessment",
@@ -180,6 +171,15 @@
       "sourceUrl": "https://opensource.microsoft.com/blog/2026/04/09/how-drasi-used-github-copilot-to-find-documentation-bugs/",
       "slug": "how-drasi-used-github-copilot-to-find-documentation-bugs",
       "image": "/api/og?title=How%20Drasi%20used%20GitHub%20Copilot%20to%20find%20documentation%20bugs&category=azure"
+    },
+    {
+      "title": "Cloud Cost Optimization: How to maximize ROI from AI, manage costs, and unlock real business value",
+      "summary": "Get practical strategies and best practices to help you plan, design, and manage AI investments for sustainable value and efficiency. The post Cloud Cost Optimization: How to maximize ROI from AI, manage costs, and unloc",
+      "date": "2026-04-08T16:00:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/cloud-cost-optimization-how-to-maximize-roi-from-ai-manage-costs-and-unlock-real-business-value/",
+      "slug": "cloud-cost-optimization-how-to-maximize-roi-from-ai-manage-costs-and-unlock-real",
+      "image": "/api/og?title=Cloud%20Cost%20Optimization%3A%20How%20to%20maximize%20ROI%20from%20AI%2C%20manage%20costs%2C%20and%20unlock%20real%20business%20value&category=azure"
     }
   ]
 }
