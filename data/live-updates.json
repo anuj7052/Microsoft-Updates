@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-03T23:56:54.787Z",
+  "updatedAt": "2026-05-04T04:01:14.110Z",
   "items": [
     {
       "title": "Microsoft Flight Simulator 2024 releases largest sim update yet",
@@ -38,33 +38,6 @@
       "image": "/api/og?title=Windows%2011%20PC%20gamers%3A%20Xbox%20mode%20rolls%20out%20and%20ROG%20Xbox%20Ally%20updates%20include%20Auto%20SR%20preview&category=windows"
     },
     {
-      "title": "Enforcing trust and transparency: Open-sourcing the Azure Integrated HSM",
-      "summary": "As cloud workloads become more agentic and AI systems handle increasingly sensitive data, trust must be engineered directly into infrastructure. Azure Integrated HSM brings hardware‑enforced key protection into Azure, ex",
-      "date": "2026-04-30T18:00:00.000Z",
-      "category": "azure",
-      "sourceUrl": "https://azure.microsoft.com/en-us/blog/enforcing-trust-and-transparency-open-sourcing-the-azure-integrated-hsm/",
-      "slug": "enforcing-trust-and-transparency-open-sourcing-the-azure-integrated-hsm",
-      "image": "/api/og?title=Enforcing%20trust%20and%20transparency%3A%20Open-sourcing%20the%20Azure%20Integrated%20HSM&category=azure"
-    },
-    {
-      "title": "Microsoft named a Leader in the IDC MarketScape: Worldwide API Management 2026 Vendor Assessment",
-      "summary": "Azure API Management provides a single, Azure-native platform to govern everything from traditional APIs to AI models, tools, and agents. The post Microsoft named a Leader in the IDC MarketScape: Worldwide API Management",
-      "date": "2026-04-28T16:00:00.000Z",
-      "category": "azure",
-      "sourceUrl": "https://azure.microsoft.com/en-us/blog/microsoft-named-a-leader-in-the-idc-marketscape-worldwide-api-management-2026-vendor-assessment/",
-      "slug": "microsoft-named-a-leader-in-the-idc-marketscape-worldwide-api-management-2026-ve",
-      "image": "/api/og?title=Microsoft%20named%20a%20Leader%20in%20the%20IDC%20MarketScape%3A%20Worldwide%20API%20Management%202026%20Vendor%20Assessment&category=azure"
-    },
-    {
-      "title": "Microsoft Sovereign Private Cloud scales to thousands of nodes with Azure Local",
-      "summary": "Azure Local scales Microsoft Sovereign Private Cloud, supporting AI and data workloads with full control, compliance, and disconnected operations. The post Microsoft Sovereign Private Cloud scales to thousands of nodes w",
-      "date": "2026-04-27T18:00:00.000Z",
-      "category": "azure",
-      "sourceUrl": "https://blogs.microsoft.com/blog/2026/04/27/microsoft-sovereign-private-cloud-scales-to-thousands-of-nodes-with-azure-local/",
-      "slug": "microsoft-sovereign-private-cloud-scales-to-thousands-of-nodes-with-azure-local",
-      "image": "/api/og?title=Microsoft%20Sovereign%20Private%20Cloud%20scales%20to%20thousands%20of%20nodes%20with%20Azure%20Local&category=azure"
-    },
-    {
       "title": "Your Windows update experience just got updated",
       "summary": "Hey Windows Insiders, Today, we’re excited to share some improvements to the Windows Update experience that are now starting to roll out. These improvements are the direct result of your feedback. We are continually read",
       "date": "2026-04-24T17:30:30.000Z",
@@ -81,15 +54,6 @@
       "sourceUrl": "https://blogs.windows.com/windows-insider/2026/04/24/were-moving-to-experimental-and-beta-announcing-new-builds/",
       "slug": "we8217re-moving-to-experimental-and-beta-announcing-new-builds-for-24-april-2026",
       "image": "/api/og?title=We%26%238217%3Bre%20moving%20to%20Experimental%20and%20Beta!%20Announcing%20new%20builds%20for%2024%20April%202026&category=windows"
-    },
-    {
-      "title": "OpenAI’s GPT-5.5 in Microsoft Foundry: Frontier intelligence on an enterprise ready platform",
-      "summary": "OpenAI’s GPT-5.5 will be generally available in Microsoft Foundry, bringing OpenAI’s latest frontier model to Azure and the enterprise teams building agents for real production work. The post OpenAI’s GPT-5.5 in Microsof",
-      "date": "2026-04-23T22:00:00.000Z",
-      "category": "azure",
-      "sourceUrl": "https://azure.microsoft.com/en-us/blog/openais-gpt-5-5-in-microsoft-foundry-frontier-intelligence-on-an-enterprise-ready-platform/",
-      "slug": "openais-gpt-55-in-microsoft-foundry-frontier-intelligence-on-an-enterprise-ready",
-      "image": "/api/og?title=OpenAI%E2%80%99s%20GPT-5.5%20in%20Microsoft%20Foundry%3A%20Frontier%20intelligence%20on%20an%20enterprise%20ready%20platform&category=azure"
     },
     {
       "title": "From clay to keyboard and controller: The making of Double Fine’s Kiln",
@@ -180,6 +144,42 @@
       "sourceUrl": "https://opensource.microsoft.com/blog/2026/04/09/how-drasi-used-github-copilot-to-find-documentation-bugs/",
       "slug": "how-drasi-used-github-copilot-to-find-documentation-bugs",
       "image": "/api/og?title=How%20Drasi%20used%20GitHub%20Copilot%20to%20find%20documentation%20bugs&category=azure"
+    },
+    {
+      "title": "Cloud Cost Optimization: How to maximize ROI from AI, manage costs, and unlock real business value",
+      "summary": "Get practical strategies and best practices to help you plan, design, and manage AI investments for sustainable value and efficiency. The post Cloud Cost Optimization: How to maximize ROI from AI, manage costs, and unloc",
+      "date": "2026-04-08T16:00:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/cloud-cost-optimization-how-to-maximize-roi-from-ai-manage-costs-and-unlock-real-business-value/",
+      "slug": "cloud-cost-optimization-how-to-maximize-roi-from-ai-manage-costs-and-unlock-real",
+      "image": "/api/og?title=Cloud%20Cost%20Optimization%3A%20How%20to%20maximize%20ROI%20from%20AI%2C%20manage%20costs%2C%20and%20unlock%20real%20business%20value&category=azure"
+    },
+    {
+      "title": "Azure IaaS: Keep critical applications running with built-in resiliency at scale",
+      "summary": "Azure IaaS provides foundational capabilities across compute, storage, and networking to help organizations stay resilient. The post Azure IaaS: Keep critical applications running with built-in resiliency at scale appear",
+      "date": "2026-04-01T16:00:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/azure-iaas-keep-critical-applications-running-with-built-in-resiliency-at-scale/",
+      "slug": "azure-iaas-keep-critical-applications-running-with-built-in-resiliency-at-scale",
+      "image": "/api/og?title=Azure%20IaaS%3A%20Keep%20critical%20applications%20running%20with%20built-in%20resiliency%20at%20scale&category=azure"
+    },
+    {
+      "title": "Building sovereign AI at the edge: Microsoft and Armada collaborate to deliver Azure Local on Galleon modular datacenters",
+      "summary": "Explore how Microsoft and Armada bring sovereign AI to the edge with Azure Local, enabling secure, resilient workloads in disconnected and regulated environments. The post Building sovereign AI at the edge: Microsoft and",
+      "date": "2026-03-31T16:00:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/building-sovereign-ai-at-the-edge-microsoft-and-armada-collaborate-to-deliver-azure-local-on-galleon-modular-datacenters/",
+      "slug": "building-sovereign-ai-at-the-edge-microsoft-and-armada-collaborate-to-deliver-az",
+      "image": "/api/og?title=Building%20sovereign%20AI%20at%20the%20edge%3A%20Microsoft%20and%20Armada%20collaborate%20to%20deliver%20Azure%20Local%20on%20Galleo&category=azure"
+    },
+    {
+      "title": "Navigating digital sovereignty at the frontier of transformation",
+      "summary": "Digital sovereignty has become a practical leadership discipline grounded in risk management, continuity planning, and long-term accountability. The post Navigating digital sovereignty at the frontier of transformation a",
+      "date": "2026-03-30T21:27:39.000Z",
+      "category": "azure",
+      "sourceUrl": "https://www.microsoft.com/en-us/microsoft-cloud/blog/2026/03/25/navigating-digital-sovereignty-at-the-frontier-of-transformation/",
+      "slug": "navigating-digital-sovereignty-at-the-frontier-of-transformation",
+      "image": "/api/og?title=Navigating%20digital%20sovereignty%20at%20the%20frontier%20of%20transformation&category=azure"
     }
   ]
 }
