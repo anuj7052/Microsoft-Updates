@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-07T19:50:16.768Z",
+  "updatedAt": "2026-05-07T21:11:35.602Z",
   "items": [
     {
       "title": "An inside look at Stranger Than Heaven reveals locations and Snoop Dogg’s role",
@@ -27,6 +27,15 @@
       "sourceUrl": "https://blogs.windows.com/windowsexperience/2026/05/06/with-latest-world-update-microsoft-flight-simulator-shines-light-on-aerial-firefighting/",
       "slug": "with-latest-world-update-microsoft-flight-simulator-shines-light-on-aerial-firef",
       "image": "/api/og?title=With%20latest%20world%20update%2C%20Microsoft%20Flight%20Simulator%20shines%20light%20on%20aerial%20firefighting&category=windows"
+    },
+    {
+      "title": "Scaling cloud and AI: Microsoft Azure&#8217;s commitment to Europe&#8217;s digital future",
+      "summary": "As demand for cloud and AI grows, Microsoft is expanding Azure across Europe to deliver scalable, resilient infrastructure that supports innovation, compliance, and performance. The post Scaling cloud and AI: Microsoft A",
+      "date": "2026-05-06T14:00:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/scaling-cloud-and-ai-microsoft-azures-commitment-to-europes-digital-future/",
+      "slug": "scaling-cloud-and-ai-microsoft-azure8217s-commitment-to-europe8217s-digital-futu",
+      "image": "/api/og?title=Scaling%20cloud%20and%20AI%3A%20Microsoft%20Azure%26%238217%3Bs%20commitment%20to%20Europe%26%238217%3Bs%20digital%20future&category=azure"
     },
     {
       "title": "Azure IaaS: Defense in depth built on secure-by-design principles",
@@ -171,15 +180,6 @@
       "sourceUrl": "https://azure.microsoft.com/en-us/blog/optimize-object-storage-costs-automatically-with-smart-tier-now-generally-available/",
       "slug": "optimize-object-storage-costs-automatically-with-smart-tiernow-generally-availab",
       "image": "/api/og?title=Optimize%20object%20storage%20costs%20automatically%20with%20smart%20tier%E2%80%94now%20generally%20available&category=azure"
-    },
-    {
-      "title": "Microsoft named a Leader in The Forrester Wave™ for Sovereign Cloud Platforms",
-      "summary": "Microsoft is named a Leader in The Forrester Wave™ for Sovereign Cloud Platforms, recognizing Microsoft Sovereign Cloud leadership in evolving sovereignty needs. The post Microsoft named a Leader in The Forrester Wave™ f",
-      "date": "2026-04-09T19:00:00.000Z",
-      "category": "azure",
-      "sourceUrl": "https://azure.microsoft.com/en-us/blog/microsoft-named-a-leader-in-the-forrester-wave-for-sovereign-cloud-platforms/",
-      "slug": "microsoft-named-a-leader-in-the-forrester-wave-for-sovereign-cloud-platforms",
-      "image": "/api/og?title=Microsoft%20named%20a%20Leader%20in%20The%20Forrester%20Wave%E2%84%A2%20for%20Sovereign%20Cloud%20Platforms&category=azure"
     }
   ]
 }
