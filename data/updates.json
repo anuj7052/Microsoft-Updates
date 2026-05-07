@@ -1,5 +1,5 @@
 {
-  "lastFetchedAt": "2026-05-07T15:52:26.773Z",
+  "lastFetchedAt": "2026-05-07T17:55:38.409Z",
   "processed": [
     {
       "guid": "https://blogs.windows.com/blog/2026/03/30/announcing-windows-11-insider-preview-build-for-canary-channel-29558-1000/",
@@ -400,6 +400,22 @@
       "category": "windows",
       "riskLevel": "SAFE",
       "savedAt": "2026-05-06T17:06:10.079Z"
+    },
+    {
+      "guid": "https://blogs.windows.com/blog/2026/05/07/an-inside-look-at-stranger-than-heaven-reveals-locations-and-snoop-doggs-role/",
+      "url": "https://blogs.windows.com/windowsexperience/2026/05/07/an-inside-look-at-stranger-than-heaven-reveals-locations-and-snoop-doggs-role/",
+      "slug": "an-inside-look-at-stranger-than-heaven-reveals-locations-and-snoop-doggs-role",
+      "category": "windows",
+      "riskLevel": "SAFE",
+      "savedAt": "2026-05-07T17:55:38.408Z"
+    },
+    {
+      "guid": "https://blogs.windows.com/blog/2026/05/07/publish-to-microsoft-store-as-a-company-now-with-free-registration-and-faster-onboarding/",
+      "url": "https://blogs.windows.com/windowsdeveloper/2026/05/07/publish-to-microsoft-store-as-a-company-now-with-free-registration-and-faster-onboarding/",
+      "slug": "publish-to-microsoft-store-as-a-companynow-with-free-registration-and-faster-onb",
+      "category": "windows",
+      "riskLevel": "SAFE",
+      "savedAt": "2026-05-07T17:55:38.409Z"
     }
   ]
 }

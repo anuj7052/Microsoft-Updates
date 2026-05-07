@@ -1,6 +1,24 @@
 {
-  "updatedAt": "2026-05-07T15:52:26.773Z",
+  "updatedAt": "2026-05-07T17:55:38.407Z",
   "items": [
+    {
+      "title": "An inside look at Stranger Than Heaven reveals locations and Snoop Dogg’s role",
+      "summary": "“Xbox Presents: A Special Look at Stranger Than Heaven” recently wrapped. The entire show offered an inside look at the new project from RGG Studio, which arrives this winter. During the 30-minute broadcast, several mind",
+      "date": "2026-05-07T16:32:17.000Z",
+      "category": "windows",
+      "sourceUrl": "https://blogs.windows.com/windowsexperience/2026/05/07/an-inside-look-at-stranger-than-heaven-reveals-locations-and-snoop-doggs-role/",
+      "slug": "an-inside-look-at-stranger-than-heaven-reveals-locations-and-snoop-doggs-role",
+      "image": "/api/og?title=An%20inside%20look%20at%20Stranger%20Than%20Heaven%20reveals%20locations%20and%20Snoop%20Dogg%E2%80%99s%20role&category=windows"
+    },
+    {
+      "title": "Publish to Microsoft Store as a company—now with free registration and faster onboarding",
+      "summary": "We’re seeing growing demand from companies that want to reach Windows users across both consumer and enterprise devices, and we’ve heard consistent feedback that getting started should be simpler. Today, we’re addressing",
+      "date": "2026-05-07T16:00:08.000Z",
+      "category": "windows",
+      "sourceUrl": "https://blogs.windows.com/windowsdeveloper/2026/05/07/publish-to-microsoft-store-as-a-company-now-with-free-registration-and-faster-onboarding/",
+      "slug": "publish-to-microsoft-store-as-a-companynow-with-free-registration-and-faster-onb",
+      "image": "/api/og?title=Publish%20to%20Microsoft%20Store%20as%20a%20company%E2%80%94now%20with%20free%20registration%20and%20faster%20onboarding&category=windows"
+    },
     {
       "title": "With latest world update, Microsoft Flight Simulator shines light on aerial firefighting",
       "summary": "World Update 21: Australia of Microsoft Flight Simulator 2024 includes a collaboration with the New South Wales Rural Fire Service – widely acknowledged as the largest volunteer fire service in the world. Comprised The p",
@@ -9,6 +27,15 @@
       "sourceUrl": "https://blogs.windows.com/windowsexperience/2026/05/06/with-latest-world-update-microsoft-flight-simulator-shines-light-on-aerial-firefighting/",
       "slug": "with-latest-world-update-microsoft-flight-simulator-shines-light-on-aerial-firef",
       "image": "/api/og?title=With%20latest%20world%20update%2C%20Microsoft%20Flight%20Simulator%20shines%20light%20on%20aerial%20firefighting&category=windows"
+    },
+    {
+      "title": "Scaling cloud and AI: Microsoft Azure&#8217;s commitment to Europe&#8217;s digital future",
+      "summary": "As demand for cloud and AI grows, Microsoft is expanding Azure across Europe to deliver scalable, resilient infrastructure that supports innovation, compliance, and performance. The post Scaling cloud and AI: Microsoft A",
+      "date": "2026-05-06T14:00:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/scaling-cloud-and-ai-microsoft-azures-commitment-to-europes-digital-future/",
+      "slug": "scaling-cloud-and-ai-microsoft-azure8217s-commitment-to-europe8217s-digital-futu",
+      "image": "/api/og?title=Scaling%20cloud%20and%20AI%3A%20Microsoft%20Azure%26%238217%3Bs%20commitment%20to%20Europe%26%238217%3Bs%20digital%20future&category=azure"
     },
     {
       "title": "Azure IaaS: Defense in depth built on secure-by-design principles",
@@ -119,15 +146,6 @@
       "image": "/api/og?title=From%20clay%20to%20keyboard%20and%20controller%3A%20The%20making%20of%20Double%20Fine%E2%80%99s%20Kiln&category=windows"
     },
     {
-      "title": "Diablo IV: Now with more ways to customize builds and playstyles",
-      "summary": "In Diablo IV, the Skill Tree system gives players the ability to pick a skill and choose an upgrade to get stronger. Now, that tree has evolved to support more player choices. These new branches don’t just make skills st",
-      "date": "2026-04-22T18:46:38.000Z",
-      "category": "windows",
-      "sourceUrl": "https://blogs.windows.com/windowsexperience/2026/04/22/diablo-iv-now-with-more-way-to-customize-builds-and-playstyles/",
-      "slug": "diablo-iv-now-with-more-ways-to-customize-builds-and-playstyles",
-      "image": "/api/og?title=Diablo%20IV%3A%20Now%20with%20more%20ways%20to%20customize%20builds%20and%20playstyles&category=windows"
-    },
-    {
       "title": "Microsoft Discovery: Advancing agentic R&#038;D at scale",
       "summary": "Expanded preview access for Microsoft Discovery brings new enterprise-grade, agentic AI capabilities for research and development teams. The post Microsoft Discovery: Advancing agentic R&D at scale appeared first on Micr",
       "date": "2026-04-22T16:00:00.000Z",
@@ -135,15 +153,6 @@
       "sourceUrl": "https://azure.microsoft.com/en-us/blog/microsoft-discovery-advancing-agentic-rd-at-scale/",
       "slug": "microsoft-discovery-advancing-agentic-r038d-at-scale",
       "image": "/api/og?title=Microsoft%20Discovery%3A%20Advancing%20agentic%20R%26%23038%3BD%20at%20scale&category=azure"
-    },
-    {
-      "title": "Engineering secure passkey sync in Microsoft Password Manager",
-      "summary": "Passkeys are designed to replace passwords with strong, phishing-resistant credentials that make sign-in quick, easy, and secure. With M The post Engineering secure passkey sync in Microsoft Password Manager appeared fir",
-      "date": "2026-04-22T15:57:22.000Z",
-      "category": "windows",
-      "sourceUrl": "https://blogs.windows.com/msedgedev/2026/04/22/engineering-secure-passkey-sync-in-microsoft-password-manager/",
-      "slug": "engineering-secure-passkey-sync-in-microsoft-password-manager",
-      "image": "/api/og?title=Engineering%20secure%20passkey%20sync%20in%20Microsoft%20Password%20Manager&category=windows"
     },
     {
       "title": "Introducing Azure Accelerate for Databases: Modernize your data for AI with experts and investments",
@@ -171,15 +180,6 @@
       "sourceUrl": "https://azure.microsoft.com/en-us/blog/optimize-object-storage-costs-automatically-with-smart-tier-now-generally-available/",
       "slug": "optimize-object-storage-costs-automatically-with-smart-tiernow-generally-availab",
       "image": "/api/og?title=Optimize%20object%20storage%20costs%20automatically%20with%20smart%20tier%E2%80%94now%20generally%20available&category=azure"
-    },
-    {
-      "title": "Microsoft named a Leader in The Forrester Wave™ for Sovereign Cloud Platforms",
-      "summary": "Microsoft is named a Leader in The Forrester Wave™ for Sovereign Cloud Platforms, recognizing Microsoft Sovereign Cloud leadership in evolving sovereignty needs. The post Microsoft named a Leader in The Forrester Wave™ f",
-      "date": "2026-04-09T19:00:00.000Z",
-      "category": "azure",
-      "sourceUrl": "https://azure.microsoft.com/en-us/blog/microsoft-named-a-leader-in-the-forrester-wave-for-sovereign-cloud-platforms/",
-      "slug": "microsoft-named-a-leader-in-the-forrester-wave-for-sovereign-cloud-platforms",
-      "image": "/api/og?title=Microsoft%20named%20a%20Leader%20in%20The%20Forrester%20Wave%E2%84%A2%20for%20Sovereign%20Cloud%20Platforms&category=azure"
     }
   ]
 }
