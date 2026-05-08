@@ -1,6 +1,15 @@
 {
-  "updatedAt": "2026-05-08T17:42:00.076Z",
+  "updatedAt": "2026-05-08T19:40:55.777Z",
   "items": [
+    {
+      "title": "Announcing new builds for 8 May 2026",
+      "summary": "Hello Windows Insiders, We continue to expand the rollout of the new WIP changes to those channels already announced. We have not yet begun moving Insiders in Canary 29500 Series Channel or The post Announcing new builds",
+      "date": "2026-05-08T19:13:21.000Z",
+      "category": "windows",
+      "sourceUrl": "https://blogs.windows.com/windows-insider/2026/05/08/announcing-new-builds-for-8-may-2026/",
+      "slug": "announcing-new-builds-for-8-may-2026",
+      "image": "/api/og?title=Announcing%20new%20builds%20for%208%20May%202026&category=windows"
+    },
     {
       "title": "An inside look at Stranger Than Heaven reveals locations and Snoop Dogg’s role",
       "summary": "“Xbox Presents: A Special Look at Stranger Than Heaven” recently wrapped. The entire show offered an inside look at the new project from RGG Studio, which arrives this winter. During the 30-minute broadcast, several mind",
@@ -135,15 +144,6 @@
       "sourceUrl": "https://azure.microsoft.com/en-us/blog/openais-gpt-5-5-in-microsoft-foundry-frontier-intelligence-on-an-enterprise-ready-platform/",
       "slug": "openais-gpt-55-in-microsoft-foundry-frontier-intelligence-on-an-enterprise-ready",
       "image": "/api/og?title=OpenAI%E2%80%99s%20GPT-5.5%20in%20Microsoft%20Foundry%3A%20Frontier%20intelligence%20on%20an%20enterprise%20ready%20platform&category=azure"
-    },
-    {
-      "title": "From clay to keyboard and controller: The making of Double Fine’s Kiln",
-      "summary": "At Double Fine Productions, an idea that emerged almost a decade ago during an internal game jam became Kiln, a pottery party brawler. (Say that fast five times!) To better unde The post From clay to keyboard and control",
-      "date": "2026-04-23T15:05:35.000Z",
-      "category": "windows",
-      "sourceUrl": "https://blogs.windows.com/windowsexperience/2026/04/23/from-clay-to-keyboard-and-controller-the-making-of-double-fines-kiln/",
-      "slug": "from-clay-to-keyboard-and-controller-the-making-of-double-fines-kiln",
-      "image": "/api/og?title=From%20clay%20to%20keyboard%20and%20controller%3A%20The%20making%20of%20Double%20Fine%E2%80%99s%20Kiln&category=windows"
     },
     {
       "title": "Microsoft Discovery: Advancing agentic R&#038;D at scale",
