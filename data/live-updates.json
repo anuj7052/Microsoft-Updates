@@ -1,6 +1,15 @@
 {
-  "updatedAt": "2026-05-11T16:09:09.239Z",
+  "updatedAt": "2026-05-11T18:19:32.240Z",
   "items": [
+    {
+      "title": "Xbox and Discord partnership bringing more benefits to players",
+      "summary": "Xbox and Discord are teaming up again to make Game Pass more flexible for players, bringing new benefits to both communities. Discord Nitro now includes a starter edition of Xbox Game Pass where available, giving eligibl",
+      "date": "2026-05-11T16:37:25.000Z",
+      "category": "windows",
+      "sourceUrl": "https://blogs.windows.com/windowsexperience/2026/05/11/xbox-and-discord-partnership-bringing-more-benefits-to-players/",
+      "slug": "xbox-and-discord-partnership-bringing-more-benefits-to-players",
+      "image": "/api/og?title=Xbox%20and%20Discord%20partnership%20bringing%20more%20benefits%20to%20players&category=windows"
+    },
     {
       "title": "Announcing new builds for 8 May 2026",
       "summary": "Hello Windows Insiders, We continue to expand the rollout of the new WIP changes to those channels already announced. We have not yet begun moving Insiders in Canary 29500 Series Channel or The post Announcing new builds",
@@ -126,15 +135,6 @@
       "sourceUrl": "https://blogs.windows.com/windows-insider/2026/04/24/your-windows-update-experience-just-got-updated/",
       "slug": "your-windows-update-experience-just-got-updated",
       "image": "/api/og?title=Your%20Windows%20update%20experience%20just%20got%20updated&category=windows"
-    },
-    {
-      "title": "We&#8217;re moving to Experimental and Beta! Announcing new builds for 24 April 2026",
-      "summary": "Hello Windows Insiders, Today is the day we’re beginning to move to the new Experimental and Beta channels as announced earlier this month The post We&#8217;re moving to Experimental and Beta! Announcing new builds for 2",
-      "date": "2026-04-24T17:27:24.000Z",
-      "category": "windows",
-      "sourceUrl": "https://blogs.windows.com/windows-insider/2026/04/24/were-moving-to-experimental-and-beta-announcing-new-builds/",
-      "slug": "we8217re-moving-to-experimental-and-beta-announcing-new-builds-for-24-april-2026",
-      "image": "/api/og?title=We%26%238217%3Bre%20moving%20to%20Experimental%20and%20Beta!%20Announcing%20new%20builds%20for%2024%20April%202026&category=windows"
     },
     {
       "title": "OpenAI’s GPT-5.5 in Microsoft Foundry: Frontier intelligence on an enterprise ready platform",
