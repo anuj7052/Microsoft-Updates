@@ -1,6 +1,15 @@
 {
-  "updatedAt": "2026-05-12T20:16:43.989Z",
+  "updatedAt": "2026-05-12T21:51:34.737Z",
   "items": [
+    {
+      "title": "Red Hat Summit 2026: Platform modernization and AI on Microsoft Azure Red Hat OpenShift",
+      "summary": "Microsoft and Red Hat show how Azure Red Hat OpenShift powers modernization and production AI with secure, scalable enterprise governance. The post Red Hat Summit 2026: Platform modernization and AI on Microsoft Azure Re",
+      "date": "2026-05-11T19:00:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/red-hat-summit-2026-platform-modernization-and-ai-on-azure-microsoft-red-hat-openshift/",
+      "slug": "red-hat-summit-2026-platform-modernization-and-ai-on-microsoft-azure-red-hat-ope",
+      "image": "/api/og?title=Red%20Hat%20Summit%202026%3A%20Platform%20modernization%20and%20AI%20on%20Microsoft%20Azure%20Red%20Hat%20OpenShift&category=azure"
+    },
     {
       "title": "Xbox and Discord partnership bringing more benefits to players",
       "summary": "Xbox and Discord are teaming up again to make Game Pass more flexible for players, bringing new benefits to both communities. Discord Nitro now includes a starter edition of Xbox Game Pass where available, giving eligibl",
@@ -9,6 +18,15 @@
       "sourceUrl": "https://blogs.windows.com/windowsexperience/2026/05/11/xbox-and-discord-partnership-bringing-more-benefits-to-players/",
       "slug": "xbox-and-discord-partnership-bringing-more-benefits-to-players",
       "image": "/api/og?title=Xbox%20and%20Discord%20partnership%20bringing%20more%20benefits%20to%20players&category=windows"
+    },
+    {
+      "title": "Build AI apps with Azure Cosmos DB: Key trends from Cosmos Conf 2026",
+      "summary": "AI is reshaping application development. Explore key trends from Cosmos DB Conf 2026 and how teams are building scalable, AI-native applications with Azure Cosmos DB. The post Build AI apps with Azure Cosmos DB: Key tren",
+      "date": "2026-05-11T16:00:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/build-ai-apps-with-azure-cosmos-db-key-trends-from-cosmos-conf-2026/",
+      "slug": "build-ai-apps-with-azure-cosmos-db-key-trends-from-cosmos-conf-2026",
+      "image": "/api/og?title=Build%20AI%20apps%20with%20Azure%20Cosmos%20DB%3A%20Key%20trends%20from%20Cosmos%20Conf%202026&category=azure"
     },
     {
       "title": "Announcing new builds for 8 May 2026",
@@ -162,24 +180,6 @@
       "sourceUrl": "https://azure.microsoft.com/en-us/blog/introducing-azure-accelerate-for-databases-modernize-your-data-for-ai-with-experts-and-investments/",
       "slug": "introducing-azure-accelerate-for-databases-modernize-your-data-for-ai-with-exper",
       "image": "/api/og?title=Introducing%20Azure%20Accelerate%20for%20Databases%3A%20Modernize%20your%20data%20for%20AI%20with%20experts%20and%20investments&category=azure"
-    },
-    {
-      "title": "Cloud Cost Optimization: Principles that still matter",
-      "summary": "Discover how cloud cost optimization adapts in the age of AI, with best practices for managing spend, improving efficiency, and maximizing value. The post Cloud Cost Optimization: Principles that still matter appeared fi",
-      "date": "2026-04-15T16:00:00.000Z",
-      "category": "azure",
-      "sourceUrl": "https://azure.microsoft.com/en-us/blog/cloud-cost-optimization-principles-that-still-matter/",
-      "slug": "cloud-cost-optimization-principles-that-still-matter",
-      "image": "/api/og?title=Cloud%20Cost%20Optimization%3A%20Principles%20that%20still%20matter&category=azure"
-    },
-    {
-      "title": "Optimize object storage costs automatically with smart tier—now generally available",
-      "summary": "By continuously optimizing data placement, smart tier ensures your storage costs are aligned with actual usage. The post Optimize object storage costs automatically with smart tier—now generally available appeared first ",
-      "date": "2026-04-14T15:00:00.000Z",
-      "category": "azure",
-      "sourceUrl": "https://azure.microsoft.com/en-us/blog/optimize-object-storage-costs-automatically-with-smart-tier-now-generally-available/",
-      "slug": "optimize-object-storage-costs-automatically-with-smart-tiernow-generally-availab",
-      "image": "/api/og?title=Optimize%20object%20storage%20costs%20automatically%20with%20smart%20tier%E2%80%94now%20generally%20available&category=azure"
     }
   ]
 }
