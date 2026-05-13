@@ -1,15 +1,6 @@
 {
-  "updatedAt": "2026-05-13T18:26:03.917Z",
+  "updatedAt": "2026-05-13T20:20:08.802Z",
   "items": [
-    {
-      "title": "From commit to cloud: Powering what’s next for PostgreSQL",
-      "summary": "PostgreSQL has become foundational to how modern applications are built. It powers everything from early‑stage startups to some of the most demanding production systems in the world. Its longevity isn’t accidental, it’s ",
-      "date": "2026-05-13T16:00:00.000Z",
-      "category": "azure",
-      "sourceUrl": "https://azure.microsoft.com/en-us/blog/from-commit-to-cloud-powering-whats-next-for-postgresql/",
-      "slug": "from-commit-to-cloud-powering-whats-next-for-postgresql",
-      "image": "/api/og?title=From%20commit%20to%20cloud%3A%20Powering%20what%E2%80%99s%20next%20for%20PostgreSQL&category=azure"
-    },
     {
       "title": "New updates to Edge across desktop and mobile",
       "summary": "Edge just made it easier to go from first tab to final plan, wherever you go. Your favorite Copilot experiences, plus new ones, are now available directly in Edge on desktop and, for the first time, in the Edge mobile ap",
@@ -20,24 +11,6 @@
       "image": "/api/og?title=New%20updates%20to%20Edge%20across%20desktop%20and%20mobile&category=windows"
     },
     {
-      "title": "Advancing enterprise AI: New SAP on Azure announcements from SAP Sapphire 2026",
-      "summary": "Together, Microsoft and SAP are helping enterprises transform operations, decision-making, and innovation at scale on Azure. The post Advancing enterprise AI: New SAP on Azure announcements from SAP Sapphire 2026 appeare",
-      "date": "2026-05-12T18:00:00.000Z",
-      "category": "azure",
-      "sourceUrl": "https://azure.microsoft.com/en-us/blog/advancing-enterprise-ai-new-sap-on-azure-announcements-from-sap-sapphire-2026/",
-      "slug": "advancing-enterprise-ai-new-sap-on-azure-announcements-from-sap-sapphire-2026",
-      "image": "/api/og?title=Advancing%20enterprise%20AI%3A%20New%20SAP%20on%20Azure%20announcements%20from%20SAP%20Sapphire%202026&category=azure"
-    },
-    {
-      "title": "Red Hat Summit 2026: Platform modernization and AI on Microsoft Azure Red Hat OpenShift",
-      "summary": "Microsoft and Red Hat show how Azure Red Hat OpenShift powers modernization and production AI with secure, scalable enterprise governance. The post Red Hat Summit 2026: Platform modernization and AI on Microsoft Azure Re",
-      "date": "2026-05-11T19:00:00.000Z",
-      "category": "azure",
-      "sourceUrl": "https://azure.microsoft.com/en-us/blog/red-hat-summit-2026-platform-modernization-and-ai-on-azure-microsoft-red-hat-openshift/",
-      "slug": "red-hat-summit-2026-platform-modernization-and-ai-on-microsoft-azure-red-hat-ope",
-      "image": "/api/og?title=Red%20Hat%20Summit%202026%3A%20Platform%20modernization%20and%20AI%20on%20Microsoft%20Azure%20Red%20Hat%20OpenShift&category=azure"
-    },
-    {
       "title": "Xbox and Discord partnership bringing more benefits to players",
       "summary": "Xbox and Discord are teaming up again to make Game Pass more flexible for players, bringing new benefits to both communities. Discord Nitro now includes a starter edition of Xbox Game Pass where available, giving eligibl",
       "date": "2026-05-11T16:37:25.000Z",
@@ -45,15 +18,6 @@
       "sourceUrl": "https://blogs.windows.com/windowsexperience/2026/05/11/xbox-and-discord-partnership-bringing-more-benefits-to-players/",
       "slug": "xbox-and-discord-partnership-bringing-more-benefits-to-players",
       "image": "/api/og?title=Xbox%20and%20Discord%20partnership%20bringing%20more%20benefits%20to%20players&category=windows"
-    },
-    {
-      "title": "Build AI apps with Azure Cosmos DB: Key trends from Cosmos Conf 2026",
-      "summary": "AI is reshaping application development. Explore key trends from Cosmos DB Conf 2026 and how teams are building scalable, AI-native applications with Azure Cosmos DB. The post Build AI apps with Azure Cosmos DB: Key tren",
-      "date": "2026-05-11T16:00:00.000Z",
-      "category": "azure",
-      "sourceUrl": "https://azure.microsoft.com/en-us/blog/build-ai-apps-with-azure-cosmos-db-key-trends-from-cosmos-conf-2026/",
-      "slug": "build-ai-apps-with-azure-cosmos-db-key-trends-from-cosmos-conf-2026",
-      "image": "/api/og?title=Build%20AI%20apps%20with%20Azure%20Cosmos%20DB%3A%20Key%20trends%20from%20Cosmos%20Conf%202026&category=azure"
     },
     {
       "title": "Announcing new builds for 8 May 2026",
@@ -180,6 +144,42 @@
       "sourceUrl": "https://azure.microsoft.com/en-us/blog/openais-gpt-5-5-in-microsoft-foundry-frontier-intelligence-on-an-enterprise-ready-platform/",
       "slug": "openais-gpt-55-in-microsoft-foundry-frontier-intelligence-on-an-enterprise-ready",
       "image": "/api/og?title=OpenAI%E2%80%99s%20GPT-5.5%20in%20Microsoft%20Foundry%3A%20Frontier%20intelligence%20on%20an%20enterprise%20ready%20platform&category=azure"
+    },
+    {
+      "title": "Microsoft Discovery: Advancing agentic R&#038;D at scale",
+      "summary": "Expanded preview access for Microsoft Discovery brings new enterprise-grade, agentic AI capabilities for research and development teams. The post Microsoft Discovery: Advancing agentic R&D at scale appeared first on Micr",
+      "date": "2026-04-22T16:00:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/microsoft-discovery-advancing-agentic-rd-at-scale/",
+      "slug": "microsoft-discovery-advancing-agentic-r038d-at-scale",
+      "image": "/api/og?title=Microsoft%20Discovery%3A%20Advancing%20agentic%20R%26%23038%3BD%20at%20scale&category=azure"
+    },
+    {
+      "title": "Introducing Azure Accelerate for Databases: Modernize your data for AI with experts and investments",
+      "summary": "Azure Accelerate for Databases helps organizations modernize their databases and build AI-ready capabilities. The post Introducing Azure Accelerate for Databases: Modernize your data for AI with experts and investments a",
+      "date": "2026-04-22T00:00:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/introducing-azure-accelerate-for-databases-modernize-your-data-for-ai-with-experts-and-investments/",
+      "slug": "introducing-azure-accelerate-for-databases-modernize-your-data-for-ai-with-exper",
+      "image": "/api/og?title=Introducing%20Azure%20Accelerate%20for%20Databases%3A%20Modernize%20your%20data%20for%20AI%20with%20experts%20and%20investments&category=azure"
+    },
+    {
+      "title": "Cloud Cost Optimization: Principles that still matter",
+      "summary": "Discover how cloud cost optimization adapts in the age of AI, with best practices for managing spend, improving efficiency, and maximizing value. The post Cloud Cost Optimization: Principles that still matter appeared fi",
+      "date": "2026-04-15T16:00:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/cloud-cost-optimization-principles-that-still-matter/",
+      "slug": "cloud-cost-optimization-principles-that-still-matter",
+      "image": "/api/og?title=Cloud%20Cost%20Optimization%3A%20Principles%20that%20still%20matter&category=azure"
+    },
+    {
+      "title": "Optimize object storage costs automatically with smart tier—now generally available",
+      "summary": "By continuously optimizing data placement, smart tier ensures your storage costs are aligned with actual usage. The post Optimize object storage costs automatically with smart tier—now generally available appeared first ",
+      "date": "2026-04-14T15:00:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/optimize-object-storage-costs-automatically-with-smart-tier-now-generally-available/",
+      "slug": "optimize-object-storage-costs-automatically-with-smart-tiernow-generally-availab",
+      "image": "/api/og?title=Optimize%20object%20storage%20costs%20automatically%20with%20smart%20tier%E2%80%94now%20generally%20available&category=azure"
     }
   ]
 }
