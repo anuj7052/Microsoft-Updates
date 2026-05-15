@@ -1,6 +1,24 @@
 {
-  "updatedAt": "2026-05-15T18:08:00.555Z",
+  "updatedAt": "2026-05-15T20:04:37.784Z",
   "items": [
+    {
+      "title": "Improving Windows quality: Making Taskbar and Start more personal",
+      "summary": "In our commitment to Windows quality, we outlined our plans to deliver improvements in performance, reliability, and craft. We are also committed to The post Improving Windows quality: Making Taskbar and Start more perso",
+      "date": "2026-05-15T19:50:39.000Z",
+      "category": "windows",
+      "sourceUrl": "https://blogs.windows.com/windows-insider/2026/05/15/improving-windows-quality-making-taskbar-and-start-more-personal/",
+      "slug": "improving-windows-quality-making-taskbar-and-start-more-personal",
+      "image": "/api/og?title=Improving%20Windows%20quality%3A%20Making%20Taskbar%20and%20Start%20more%20personal&category=windows"
+    },
+    {
+      "title": "Announcing new builds for 15 May 2026",
+      "summary": "Hello Windows Insiders, Today we will be expanding the rollout of the new Windows Insider Program changes to devices in the Beta Channel, which will be moved to the new Beta experience. Please see the announce The post A",
+      "date": "2026-05-15T19:50:25.000Z",
+      "category": "windows",
+      "sourceUrl": "https://blogs.windows.com/windows-insider/2026/05/15/announcing-new-builds-for-15-may-2026/",
+      "slug": "announcing-new-builds-for-15-may-2026",
+      "image": "/api/og?title=Announcing%20new%20builds%20for%2015%20May%202026&category=windows"
+    },
     {
       "title": "Announcing new Release Preview builds for 14 May 2026",
       "summary": "Hello Windows Insiders, Today we're releasing new builds for Release Preview across our supported versions of Windows 11. Please see the build numbers and links to the release notes below: Windows 11 version 24H2/25H2: T",
@@ -126,24 +144,6 @@
       "sourceUrl": "https://azure.microsoft.com/en-us/blog/azure-iaas-defense-in-depth-built-on-secure-by-design-principles/",
       "slug": "azure-iaas-defense-in-depth-built-on-secure-by-design-principles",
       "image": "/api/og?title=Azure%20IaaS%3A%20Defense%20in%20depth%20built%20on%20secure-by-design%20principles&category=azure"
-    },
-    {
-      "title": "Microsoft Flight Simulator 2024 releases largest sim update yet",
-      "summary": "Sim Update 5 for Microsoft Flight Simulator 2024 is now available, with significant improvements for every aspiring pilot player. One of the biggest changes is that now all career modes are fully unlocked. Heavy aircraft",
-      "date": "2026-05-01T18:35:59.000Z",
-      "category": "windows",
-      "sourceUrl": "https://blogs.windows.com/windowsexperience/2026/05/01/microsoft-flight-simulator-2024-releases-largest-sim-update-yet/",
-      "slug": "microsoft-flight-simulator-2024-releases-largest-sim-update-yet",
-      "image": "/api/og?title=Microsoft%20Flight%20Simulator%202024%20releases%20largest%20sim%20update%20yet&category=windows"
-    },
-    {
-      "title": "Windows quality update: Progress we&#8217;ve made since March",
-      "summary": "Hello Windows Insiders I’ve now spent the past two months in this expanded role leading the Windows Insider Program. Two themes hav The post Windows quality update: Progress we&#8217;ve made since March appeared first on",
-      "date": "2026-05-01T17:40:07.000Z",
-      "category": "windows",
-      "sourceUrl": "https://blogs.windows.com/windows-insider/2026/05/01/windows-quality-update-progress-weve-made-since-march/",
-      "slug": "windows-quality-update-progress-we8217ve-made-since-march",
-      "image": "/api/og?title=Windows%20quality%20update%3A%20Progress%20we%26%238217%3Bve%20made%20since%20March&category=windows"
     },
     {
       "title": "Enforcing trust and transparency: Open-sourcing the Azure Integrated HSM",
