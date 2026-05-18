@@ -1,6 +1,15 @@
 {
-  "updatedAt": "2026-05-18T18:56:38.486Z",
+  "updatedAt": "2026-05-18T20:41:03.742Z",
   "items": [
+    {
+      "title": "XBOX Player Voice: A simpler way to share feedback",
+      "summary": "XBOX Player Voice is a new place for the gaming community to share and track their feedback and get a clearer sense of how that input is shaping XBOX’s future. Teams will review and organize the feedback and, in some cas",
+      "date": "2026-05-18T19:20:55.000Z",
+      "category": "windows",
+      "sourceUrl": "https://blogs.windows.com/windowsexperience/2026/05/18/xbox-player-voice-a-simpler-way-to-share-feedback/",
+      "slug": "xbox-player-voice-a-simpler-way-to-share-feedback",
+      "image": "/api/og?title=XBOX%20Player%20Voice%3A%20A%20simpler%20way%20to%20share%20feedback&category=windows"
+    },
     {
       "title": "Improving Windows quality: Making Taskbar and Start more personal",
       "summary": "In our commitment to Windows quality, we outlined our plans to deliver improvements in performance, reliability, and craft. We are also committed to The post Improving Windows quality: Making Taskbar and Start more perso",
@@ -117,15 +126,6 @@
       "sourceUrl": "https://blogs.windows.com/windowsdeveloper/2026/05/07/publish-to-microsoft-store-as-a-company-now-with-free-registration-and-faster-onboarding/",
       "slug": "publish-to-microsoft-store-as-a-companynow-with-free-registration-and-faster-onb",
       "image": "/api/og?title=Publish%20to%20Microsoft%20Store%20as%20a%20company%E2%80%94now%20with%20free%20registration%20and%20faster%20onboarding&category=windows"
-    },
-    {
-      "title": "With latest world update, Microsoft Flight Simulator shines light on aerial firefighting",
-      "summary": "World Update 21: Australia of Microsoft Flight Simulator 2024 includes a collaboration with the New South Wales Rural Fire Service – widely acknowledged as the largest volunteer fire service in the world. Comprised The p",
-      "date": "2026-05-06T15:22:41.000Z",
-      "category": "windows",
-      "sourceUrl": "https://blogs.windows.com/windowsexperience/2026/05/06/with-latest-world-update-microsoft-flight-simulator-shines-light-on-aerial-firefighting/",
-      "slug": "with-latest-world-update-microsoft-flight-simulator-shines-light-on-aerial-firef",
-      "image": "/api/og?title=With%20latest%20world%20update%2C%20Microsoft%20Flight%20Simulator%20shines%20light%20on%20aerial%20firefighting&category=windows"
     },
     {
       "title": "Scaling cloud and AI: Microsoft Azure&#8217;s commitment to Europe&#8217;s digital future",
