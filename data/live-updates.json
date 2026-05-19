@@ -1,6 +1,15 @@
 {
-  "updatedAt": "2026-05-19T11:40:40.805Z",
+  "updatedAt": "2026-05-19T15:42:56.920Z",
   "items": [
+    {
+      "title": "Introducing new Surface devices built for business and AI acceleration",
+      "summary": "Every IT leader and partner we work with is navigating the same challenges: AI is changing the demands of how teams work, security threats are growing more sophisticated and agents are changing investment decisions for t",
+      "date": "2026-05-19T13:00:07.000Z",
+      "category": "windows",
+      "sourceUrl": "https://blogs.windows.com/devices/2026/05/19/introducing-new-surface-devices-built-for-business-and-ai-acceleration/",
+      "slug": "introducing-new-surface-devices-built-for-business-and-ai-acceleration",
+      "image": "/api/og?title=Introducing%20new%20Surface%20devices%20built%20for%20business%20and%20AI%20acceleration&category=windows"
+    },
     {
       "title": "XBOX Player Voice: A simpler way to share feedback",
       "summary": "XBOX Player Voice is a new place for the gaming community to share and track their feedback and get a clearer sense of how that input is shaping XBOX’s future. Teams will review and organize the feedback and, in some cas",
@@ -117,15 +126,6 @@
       "sourceUrl": "https://blogs.windows.com/windowsexperience/2026/05/07/an-inside-look-at-stranger-than-heaven-reveals-locations-and-snoop-doggs-role/",
       "slug": "an-inside-look-at-stranger-than-heaven-reveals-locations-and-snoop-doggs-role",
       "image": "/api/og?title=An%20inside%20look%20at%20Stranger%20Than%20Heaven%20reveals%20locations%20and%20Snoop%20Dogg%E2%80%99s%20role&category=windows"
-    },
-    {
-      "title": "Publish to Microsoft Store as a company—now with free registration and faster onboarding",
-      "summary": "We’re seeing growing demand from companies that want to reach Windows users across both consumer and enterprise devices, and we’ve heard consistent feedback that getting started should be simpler. Today, we’re addressing",
-      "date": "2026-05-07T16:00:08.000Z",
-      "category": "windows",
-      "sourceUrl": "https://blogs.windows.com/windowsdeveloper/2026/05/07/publish-to-microsoft-store-as-a-company-now-with-free-registration-and-faster-onboarding/",
-      "slug": "publish-to-microsoft-store-as-a-companynow-with-free-registration-and-faster-onb",
-      "image": "/api/og?title=Publish%20to%20Microsoft%20Store%20as%20a%20company%E2%80%94now%20with%20free%20registration%20and%20faster%20onboarding&category=windows"
     },
     {
       "title": "Scaling cloud and AI: Microsoft Azure&#8217;s commitment to Europe&#8217;s digital future",

@@ -1,5 +1,5 @@
 {
-  "lastFetchedAt": "2026-05-19T11:40:40.806Z",
+  "lastFetchedAt": "2026-05-19T15:42:56.922Z",
   "processed": [
     {
       "guid": "https://blogs.windows.com/blog/2026/03/30/announcing-windows-11-insider-preview-build-for-canary-channel-29558-1000/",
@@ -480,6 +480,14 @@
       "category": "windows",
       "riskLevel": "SAFE",
       "savedAt": "2026-05-18T20:41:03.743Z"
+    },
+    {
+      "guid": "https://blogs.windows.com/blog/2026/05/19/introducing-new-surface-devices-built-for-business-and-ai-acceleration/",
+      "url": "https://blogs.windows.com/devices/2026/05/19/introducing-new-surface-devices-built-for-business-and-ai-acceleration/",
+      "slug": "introducing-new-surface-devices-built-for-business-and-ai-acceleration",
+      "category": "windows",
+      "riskLevel": "SAFE",
+      "savedAt": "2026-05-19T15:42:56.922Z"
     }
   ]
 }
