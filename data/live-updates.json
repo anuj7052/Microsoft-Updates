@@ -1,6 +1,15 @@
 {
-  "updatedAt": "2026-05-20T06:16:46.642Z",
+  "updatedAt": "2026-05-20T10:01:31.401Z",
   "items": [
+    {
+      "title": "Azure Files Entra-Only identities: Advancing cloud-native identity and security",
+      "summary": "We are excited to announce the general availability (GA) of Entra-Only identities for Azure Files SMB. With native Microsoft Entra ID authentication, organizations can now grant secure, identity-based access to SMB file ",
+      "date": "2026-05-19T19:00:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/azure-files-entra-only-identities-advancing-cloud-native-identity-and-security/",
+      "slug": "azure-files-entra-only-identities-advancing-cloud-native-identity-and-security",
+      "image": "/api/og?title=Azure%20Files%20Entra-Only%20identities%3A%20Advancing%20cloud-native%20identity%20and%20security&category=azure"
+    },
     {
       "title": "Introducing new Surface devices built for business and AI acceleration",
       "summary": "Every IT leader and partner we work with is navigating the same challenges: AI is changing the demands of how teams work, security threats are growing more sophisticated and agents are changing investment decisions for t",
@@ -171,15 +180,6 @@
       "sourceUrl": "https://blogs.microsoft.com/blog/2026/04/27/microsoft-sovereign-private-cloud-scales-to-thousands-of-nodes-with-azure-local/",
       "slug": "microsoft-sovereign-private-cloud-scales-to-thousands-of-nodes-with-azure-local",
       "image": "/api/og?title=Microsoft%20Sovereign%20Private%20Cloud%20scales%20to%20thousands%20of%20nodes%20with%20Azure%20Local&category=azure"
-    },
-    {
-      "title": "OpenAI’s GPT-5.5 in Microsoft Foundry: Frontier intelligence on an enterprise ready platform",
-      "summary": "OpenAI’s GPT-5.5 will be generally available in Microsoft Foundry, bringing OpenAI’s latest frontier model to Azure and the enterprise teams building agents for real production work. The post OpenAI’s GPT-5.5 in Microsof",
-      "date": "2026-04-23T22:00:00.000Z",
-      "category": "azure",
-      "sourceUrl": "https://azure.microsoft.com/en-us/blog/openais-gpt-5-5-in-microsoft-foundry-frontier-intelligence-on-an-enterprise-ready-platform/",
-      "slug": "openais-gpt-55-in-microsoft-foundry-frontier-intelligence-on-an-enterprise-ready",
-      "image": "/api/og?title=OpenAI%E2%80%99s%20GPT-5.5%20in%20Microsoft%20Foundry%3A%20Frontier%20intelligence%20on%20an%20enterprise%20ready%20platform&category=azure"
     }
   ]
 }
