@@ -1,6 +1,15 @@
 {
-  "updatedAt": "2026-05-20T13:19:54.358Z",
+  "updatedAt": "2026-05-20T16:37:18.778Z",
   "items": [
+    {
+      "title": "New in Edge for Business: AI for work, safe from day one",
+      "summary": "TL;DR: Edge for Business adds agentic browsing in limited preview, a Copilot-inspired new tab page, and mobile availability for multi-tab reasoning and YouTube summarization. These experiences are built on a secure enter",
+      "date": "2026-05-20T16:00:11.000Z",
+      "category": "windows",
+      "sourceUrl": "https://blogs.windows.com/msedgedev/2026/05/20/new-in-edge-for-business-ai-for-work-safe-from-day-one/",
+      "slug": "new-in-edge-for-business-ai-for-work-safe-from-day-one",
+      "image": "/api/og?title=New%20in%20Edge%20for%20Business%3A%20AI%20for%20work%2C%20safe%20from%20day%20one&category=windows"
+    },
     {
       "title": "Introducing new Surface devices built for business and AI acceleration",
       "summary": "Every IT leader and partner we work with is navigating the same challenges: AI is changing the demands of how teams work, security threats are growing more sophisticated and agents are changing investment decisions for t",
@@ -117,15 +126,6 @@
       "sourceUrl": "https://blogs.windows.com/windows-insider/2026/05/08/announcing-new-builds-for-8-may-2026/",
       "slug": "announcing-new-builds-for-8-may-2026",
       "image": "/api/og?title=Announcing%20new%20builds%20for%208%20May%202026&category=windows"
-    },
-    {
-      "title": "An inside look at Stranger Than Heaven reveals locations and Snoop Dogg’s role",
-      "summary": "“Xbox Presents: A Special Look at Stranger Than Heaven” recently wrapped. The entire show offered an inside look at the new project from RGG Studio, which arrives this winter. During the 30-minute broadcast, several mind",
-      "date": "2026-05-07T16:32:17.000Z",
-      "category": "windows",
-      "sourceUrl": "https://blogs.windows.com/windowsexperience/2026/05/07/an-inside-look-at-stranger-than-heaven-reveals-locations-and-snoop-doggs-role/",
-      "slug": "an-inside-look-at-stranger-than-heaven-reveals-locations-and-snoop-doggs-role",
-      "image": "/api/og?title=An%20inside%20look%20at%20Stranger%20Than%20Heaven%20reveals%20locations%20and%20Snoop%20Dogg%E2%80%99s%20role&category=windows"
     },
     {
       "title": "Scaling cloud and AI: Microsoft Azure&#8217;s commitment to Europe&#8217;s digital future",

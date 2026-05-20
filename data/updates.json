@@ -1,5 +1,5 @@
 {
-  "lastFetchedAt": "2026-05-20T13:19:54.359Z",
+  "lastFetchedAt": "2026-05-20T16:37:18.779Z",
   "processed": [
     {
       "guid": "https://blogs.windows.com/blog/2026/03/30/announcing-windows-11-insider-preview-build-for-canary-channel-29558-1000/",
@@ -488,6 +488,14 @@
       "category": "windows",
       "riskLevel": "SAFE",
       "savedAt": "2026-05-19T15:42:56.922Z"
+    },
+    {
+      "guid": "https://blogs.windows.com/blog/2026/05/20/new-in-edge-for-business-ai-for-work-safe-from-day-one/",
+      "url": "https://blogs.windows.com/msedgedev/2026/05/20/new-in-edge-for-business-ai-for-work-safe-from-day-one/",
+      "slug": "new-in-edge-for-business-ai-for-work-safe-from-day-one",
+      "category": "windows",
+      "riskLevel": "SAFE",
+      "savedAt": "2026-05-20T16:37:18.779Z"
     }
   ]
 }
