@@ -1,6 +1,15 @@
 {
-  "updatedAt": "2026-05-22T16:31:53.098Z",
+  "updatedAt": "2026-05-22T18:58:12.631Z",
   "items": [
+    {
+      "title": "Announcing new builds for 22 May 2026",
+      "summary": "Hello Windows Insiders, Today, we continue to expand the rollout of the new Windows Insider Program changes to devices in channels already announced. As a reminder, we have not yet begun moving devices in the Canary 2950",
+      "date": "2026-05-22T17:10:30.000Z",
+      "category": "windows",
+      "sourceUrl": "https://blogs.windows.com/windows-insider/2026/05/22/announcing-new-builds-for-22-may-2026/",
+      "slug": "announcing-new-builds-for-22-may-2026",
+      "image": "/api/og?title=Announcing%20new%20builds%20for%2022%20May%202026&category=windows"
+    },
     {
       "title": "New in Edge for Business: AI for work, safe from day one",
       "summary": "TL;DR: Edge for Business adds agentic browsing in limited preview, a Copilot-inspired new tab page, and mobile availability for multi-tab reasoning and YouTube summarization. These experiences are built on a secure enter",
@@ -135,15 +144,6 @@
       "sourceUrl": "https://azure.microsoft.com/en-us/blog/build-ai-apps-with-azure-cosmos-db-key-trends-from-cosmos-conf-2026/",
       "slug": "build-ai-apps-with-azure-cosmos-db-key-trends-from-cosmos-conf-2026",
       "image": "/api/og?title=Build%20AI%20apps%20with%20Azure%20Cosmos%20DB%3A%20Key%20trends%20from%20Cosmos%20Conf%202026&category=azure"
-    },
-    {
-      "title": "Announcing new builds for 8 May 2026",
-      "summary": "Hello Windows Insiders, We continue to expand the rollout of the new WIP changes to those channels already announced. We have not yet begun moving Insiders in Canary 29500 Series Channel or The post Announcing new builds",
-      "date": "2026-05-08T19:13:21.000Z",
-      "category": "windows",
-      "sourceUrl": "https://blogs.windows.com/windows-insider/2026/05/08/announcing-new-builds-for-8-may-2026/",
-      "slug": "announcing-new-builds-for-8-may-2026",
-      "image": "/api/og?title=Announcing%20new%20builds%20for%208%20May%202026&category=windows"
     },
     {
       "title": "Scaling cloud and AI: Microsoft Azure&#8217;s commitment to Europe&#8217;s digital future",
