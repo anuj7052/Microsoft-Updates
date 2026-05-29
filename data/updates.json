@@ -1,5 +1,5 @@
 {
-  "lastFetchedAt": "2026-05-29T16:02:48.119Z",
+  "lastFetchedAt": "2026-05-29T19:12:15.857Z",
   "processed": [
     {
       "guid": "https://blogs.windows.com/blog/2026/03/30/announcing-windows-11-insider-preview-build-for-canary-channel-29558-1000/",
@@ -504,6 +504,22 @@
       "category": "windows",
       "riskLevel": "SAFE",
       "savedAt": "2026-05-22T18:58:12.632Z"
+    },
+    {
+      "guid": "https://blogs.windows.com/blog/2026/05/29/windows-quality-update-may/",
+      "url": "https://blogs.windows.com/windows-insider/2026/05/29/windows-quality-update-may/",
+      "slug": "windows-quality-update-may",
+      "category": "windows",
+      "riskLevel": "SAFE",
+      "savedAt": "2026-05-29T19:12:15.856Z"
+    },
+    {
+      "guid": "https://blogs.windows.com/blog/2026/05/29/announcing-new-builds-for-29-may-2026/",
+      "url": "https://blogs.windows.com/windows-insider/2026/05/29/announcing-new-builds-for-29-may-2026/",
+      "slug": "announcing-new-builds-for-29-may-2026",
+      "category": "windows",
+      "riskLevel": "SAFE",
+      "savedAt": "2026-05-29T19:12:15.857Z"
     }
   ]
 }
