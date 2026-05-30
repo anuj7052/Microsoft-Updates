@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-30T00:15:32.005Z",
+  "updatedAt": "2026-05-30T04:36:13.834Z",
   "items": [
     {
       "title": "Windows quality update: May",
@@ -29,6 +29,24 @@
       "image": "/api/og?title=Announcing%20new%20builds%20for%2022%20May%202026&category=windows"
     },
     {
+      "title": "Powering multi-cluster workloads with seamless cross‑cluster networking for Azure Kubernetes Fleet Manager",
+      "summary": "With Cilium-based cross-cluster networking, we are delivering a managed, high-performance network that can span your entire fleet. The post Powering multi-cluster workloads with seamless cross‑cluster networking for Azur",
+      "date": "2026-05-22T17:00:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/powering-multi-cluster-workloads-with-seamless-cross-cluster-networking-for-azure-kubernetes-fleet-manager/",
+      "slug": "powering-multi-cluster-workloads-with-seamless-crosscluster-networking-for-azure",
+      "image": "/api/og?title=Powering%20multi-cluster%20workloads%20with%20seamless%20cross%E2%80%91cluster%20networking%20for%20Azure%20Kubernetes%20Fleet%20M&category=azure"
+    },
+    {
+      "title": "Azure NetApp Files for EDA workloads: From revolution to breakthrough at scale",
+      "summary": "Azure NetApp Files is redefining what’s possible for EDA in the cloud—delivering scalable, high-performance storage that supports massive concurrency, low latency, and consistent production performance. With independent ",
+      "date": "2026-05-22T15:00:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/azure-netapp-files-for-eda-workloads-from-revolution-to-breakthrough-at-scale/",
+      "slug": "azure-netapp-files-for-eda-workloads-from-revolution-to-breakthrough-at-scale",
+      "image": "/api/og?title=Azure%20NetApp%20Files%20for%20EDA%20workloads%3A%20From%20revolution%20to%20breakthrough%20at%20scale&category=azure"
+    },
+    {
       "title": "New in Edge for Business: AI for work, safe from day one",
       "summary": "TL;DR: Edge for Business adds agentic browsing in limited preview, a Copilot-inspired new tab page, and mobile availability for multi-tab reasoning and YouTube summarization. These experiences are built on a secure enter",
       "date": "2026-05-20T16:00:11.000Z",
@@ -36,6 +54,24 @@
       "sourceUrl": "https://blogs.windows.com/msedgedev/2026/05/20/new-in-edge-for-business-ai-for-work-safe-from-day-one/",
       "slug": "new-in-edge-for-business-ai-for-work-safe-from-day-one",
       "image": "/api/og?title=New%20in%20Edge%20for%20Business%3A%20AI%20for%20work%2C%20safe%20from%20day%20one&category=windows"
+    },
+    {
+      "title": "Azure IaaS: Deploy high-performance workloads with a system-level approach",
+      "summary": "Performance in the cloud is no longer defined by individual resources—it’s shaped by how compute, storage, and networking work together. Azure IaaS takes a system-level approach to help organizations achieve consistent, ",
+      "date": "2026-05-20T16:00:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/azure-iaas-deploy-high-performance-workloads-with-a-system-level-approach/",
+      "slug": "azure-iaas-deploy-high-performance-workloads-with-a-system-level-approach",
+      "image": "/api/og?title=Azure%20IaaS%3A%20Deploy%20high-performance%20workloads%20with%20a%20system-level%20approach&category=azure"
+    },
+    {
+      "title": "Azure Files Entra-Only identities: Advancing cloud-native identity and security",
+      "summary": "We are excited to announce the general availability (GA) of Entra-Only identities for Azure Files SMB. With native Microsoft Entra ID authentication, organizations can now grant secure, identity-based access to SMB file ",
+      "date": "2026-05-19T19:00:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/azure-files-entra-only-identities-advancing-cloud-native-identity-and-security/",
+      "slug": "azure-files-entra-only-identities-advancing-cloud-native-identity-and-security",
+      "image": "/api/og?title=Azure%20Files%20Entra-Only%20identities%3A%20Advancing%20cloud-native%20identity%20and%20security&category=azure"
     },
     {
       "title": "Introducing new Surface devices built for business and AI acceleration",
@@ -90,6 +126,60 @@
       "sourceUrl": "https://blogs.windows.com/windowsexperience/2026/05/14/raising-the-bar-together-introducing-the-driver-quality-initiative-at-winhec-2026/",
       "slug": "raising-the-bar-together-introducing-the-driver-quality-initiative-at-winhec-202",
       "image": "/api/og?title=Raising%20the%20bar%20together.%20Introducing%20the%20Driver%20Quality%20Initiative%20at%20WinHEC%202026&category=windows"
+    },
+    {
+      "title": "From commit to cloud: Powering what’s next for PostgreSQL",
+      "summary": "PostgreSQL has become foundational to how modern applications are built. It powers everything from early‑stage startups to some of the most demanding production systems in the world. Its longevity isn’t accidental, it’s ",
+      "date": "2026-05-13T16:00:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/from-commit-to-cloud-powering-whats-next-for-postgresql/",
+      "slug": "from-commit-to-cloud-powering-whats-next-for-postgresql",
+      "image": "/api/og?title=From%20commit%20to%20cloud%3A%20Powering%20what%E2%80%99s%20next%20for%20PostgreSQL&category=azure"
+    },
+    {
+      "title": "Advancing enterprise AI: New SAP on Azure announcements from SAP Sapphire 2026",
+      "summary": "Together, Microsoft and SAP are helping enterprises transform operations, decision-making, and innovation at scale on Azure. The post Advancing enterprise AI: New SAP on Azure announcements from SAP Sapphire 2026 appeare",
+      "date": "2026-05-12T18:00:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/advancing-enterprise-ai-new-sap-on-azure-announcements-from-sap-sapphire-2026/",
+      "slug": "advancing-enterprise-ai-new-sap-on-azure-announcements-from-sap-sapphire-2026",
+      "image": "/api/og?title=Advancing%20enterprise%20AI%3A%20New%20SAP%20on%20Azure%20announcements%20from%20SAP%20Sapphire%202026&category=azure"
+    },
+    {
+      "title": "Red Hat Summit 2026: Platform modernization and AI on Microsoft Azure Red Hat OpenShift",
+      "summary": "Microsoft and Red Hat show how Azure Red Hat OpenShift powers modernization and production AI with secure, scalable enterprise governance. The post Red Hat Summit 2026: Platform modernization and AI on Microsoft Azure Re",
+      "date": "2026-05-11T19:00:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/red-hat-summit-2026-platform-modernization-and-ai-on-azure-microsoft-red-hat-openshift/",
+      "slug": "red-hat-summit-2026-platform-modernization-and-ai-on-microsoft-azure-red-hat-ope",
+      "image": "/api/og?title=Red%20Hat%20Summit%202026%3A%20Platform%20modernization%20and%20AI%20on%20Microsoft%20Azure%20Red%20Hat%20OpenShift&category=azure"
+    },
+    {
+      "title": "Build AI apps with Azure Cosmos DB: Key trends from Cosmos Conf 2026",
+      "summary": "AI is reshaping application development. Explore key trends from Cosmos DB Conf 2026 and how teams are building scalable, AI-native applications with Azure Cosmos DB. The post Build AI apps with Azure Cosmos DB: Key tren",
+      "date": "2026-05-11T16:00:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/build-ai-apps-with-azure-cosmos-db-key-trends-from-cosmos-conf-2026/",
+      "slug": "build-ai-apps-with-azure-cosmos-db-key-trends-from-cosmos-conf-2026",
+      "image": "/api/og?title=Build%20AI%20apps%20with%20Azure%20Cosmos%20DB%3A%20Key%20trends%20from%20Cosmos%20Conf%202026&category=azure"
+    },
+    {
+      "title": "Scaling cloud and AI: Microsoft Azure&#8217;s commitment to Europe&#8217;s digital future",
+      "summary": "As demand for cloud and AI grows, Microsoft is expanding Azure across Europe to deliver scalable, resilient infrastructure that supports innovation, compliance, and performance. The post Scaling cloud and AI: Microsoft A",
+      "date": "2026-05-06T14:00:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/scaling-cloud-and-ai-microsoft-azures-commitment-to-europes-digital-future/",
+      "slug": "scaling-cloud-and-ai-microsoft-azure8217s-commitment-to-europe8217s-digital-futu",
+      "image": "/api/og?title=Scaling%20cloud%20and%20AI%3A%20Microsoft%20Azure%26%238217%3Bs%20commitment%20to%20Europe%26%238217%3Bs%20digital%20future&category=azure"
+    },
+    {
+      "title": "Azure IaaS: Defense in depth built on secure-by-design principles",
+      "summary": "Security for cloud infrastructure is no longer defined by a single control, product, or boundary. Modern threats target identity, software supply chains, control planes, networks, and data simultaneously. The post Azure ",
+      "date": "2026-05-04T16:00:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/azure-iaas-defense-in-depth-built-on-secure-by-design-principles/",
+      "slug": "azure-iaas-defense-in-depth-built-on-secure-by-design-principles",
+      "image": "/api/og?title=Azure%20IaaS%3A%20Defense%20in%20depth%20built%20on%20secure-by-design%20principles&category=azure"
     }
   ]
 }
