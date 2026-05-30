@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-30T19:50:27.270Z",
+  "updatedAt": "2026-05-30T21:10:04.625Z",
   "items": [
     {
       "title": "Windows quality update: May",
@@ -18,15 +18,6 @@
       "sourceUrl": "https://blogs.windows.com/windows-insider/2026/05/29/announcing-new-builds-for-29-may-2026/",
       "slug": "announcing-new-builds-for-29-may-2026",
       "image": "/api/og?title=Announcing%20new%20builds%20for%2029%20May%202026&category=windows"
-    },
-    {
-      "title": "Claude Opus 4.8 is now available in Microsoft Foundry",
-      "summary": "Claude Opus 4.8 is now available in Microsoft Foundry, giving developers and enterprises access to Anthropic’s most capable Opus model for coding, agentic tasks, and professional work. The post Claude Opus 4.8 is now ava",
-      "date": "2026-05-29T14:46:32.000Z",
-      "category": "azure",
-      "sourceUrl": "https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/claude-opus-4-8-is-now-available-in-microsoft-foundry/4523367",
-      "slug": "claude-opus-48-is-now-available-in-microsoft-foundry",
-      "image": "/api/og?title=Claude%20Opus%204.8%20is%20now%20available%20in%20Microsoft%20Foundry&category=azure"
     },
     {
       "title": "Announcing new builds for 22 May 2026",
@@ -180,6 +171,15 @@
       "sourceUrl": "https://azure.microsoft.com/en-us/blog/scaling-cloud-and-ai-microsoft-azures-commitment-to-europes-digital-future/",
       "slug": "scaling-cloud-and-ai-microsoft-azure8217s-commitment-to-europe8217s-digital-futu",
       "image": "/api/og?title=Scaling%20cloud%20and%20AI%3A%20Microsoft%20Azure%26%238217%3Bs%20commitment%20to%20Europe%26%238217%3Bs%20digital%20future&category=azure"
+    },
+    {
+      "title": "Azure IaaS: Defense in depth built on secure-by-design principles",
+      "summary": "Security for cloud infrastructure is no longer defined by a single control, product, or boundary. Modern threats target identity, software supply chains, control planes, networks, and data simultaneously. The post Azure ",
+      "date": "2026-05-04T16:00:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/azure-iaas-defense-in-depth-built-on-secure-by-design-principles/",
+      "slug": "azure-iaas-defense-in-depth-built-on-secure-by-design-principles",
+      "image": "/api/og?title=Azure%20IaaS%3A%20Defense%20in%20depth%20built%20on%20secure-by-design%20principles&category=azure"
     }
   ]
 }
