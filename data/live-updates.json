@@ -1,6 +1,24 @@
 {
-  "updatedAt": "2026-06-01T01:41:13.308Z",
+  "updatedAt": "2026-06-01T07:10:30.657Z",
   "items": [
+    {
+      "title": "Introducing Surface Laptop Ultra: Made for world makers",
+      "summary": "The world is full of makers. Only a few make the world. Surface Laptop Ultra is for them. For those building the systems, the breakthroughs and the infrastructure the world runs on and gets changed by. The ones who see l",
+      "date": "2026-06-01T04:31:53.000Z",
+      "category": "windows",
+      "sourceUrl": "https://blogs.windows.com/devices/2026/05/31/introducing-surface-laptop-ultra-made-for-world-makers/",
+      "slug": "introducing-surface-laptop-ultra-made-for-world-makers",
+      "image": "/api/og?title=Introducing%20Surface%20Laptop%20Ultra%3A%20Made%20for%20world%20makers&category=windows"
+    },
+    {
+      "title": "Introducing a powerful new chapter for Windows PCs, accelerated by NVIDIA RTX Spark",
+      "summary": "Today at NVIDIA GTC, Microsoft and NVIDIA announced the world’s most powerful and efficient thin-and-light Windows PCs ever. Accelerated by NVIDIA RTX Spark The post Introducing a powerful new chapter for Windows PCs, ac",
+      "date": "2026-06-01T04:31:48.000Z",
+      "category": "windows",
+      "sourceUrl": "https://blogs.windows.com/windowsexperience/2026/05/31/introducing-a-powerful-new-chapter-for-windows-pcs-accelerated-by-nvidia-rtx-spark/",
+      "slug": "introducing-a-powerful-new-chapter-for-windows-pcs-accelerated-by-nvidia-rtx-spa",
+      "image": "/api/og?title=Introducing%20a%20powerful%20new%20chapter%20for%20Windows%20PCs%2C%20accelerated%20by%20NVIDIA%20RTX%20Spark&category=windows"
+    },
     {
       "title": "Windows quality update: May",
       "summary": "Hey Windows Insiders, One of the best parts of the work is hearing directly from the people using Windows every day. I was recently in Hyderabad and Taipei meeting with local Windows Insiders, and those conversations gav",
@@ -117,24 +135,6 @@
       "sourceUrl": "https://blogs.windows.com/windows-insider/2026/05/15/announcing-new-builds-for-15-may-2026/",
       "slug": "announcing-new-builds-for-15-may-2026",
       "image": "/api/og?title=Announcing%20new%20builds%20for%2015%20May%202026&category=windows"
-    },
-    {
-      "title": "Announcing new Release Preview builds for 14 May 2026",
-      "summary": "[19 May 2026: Updated build numbers for new releases containing bug fixes - see release notes for details] Hello Windows Insiders, Today we're releasing new builds for Release Preview across our supported versions of Win",
-      "date": "2026-05-14T17:05:26.000Z",
-      "category": "windows",
-      "sourceUrl": "https://blogs.windows.com/windows-insider/2026/05/14/announcing-new-release-preview-builds-for-14-may-2026/",
-      "slug": "announcing-new-release-preview-builds-for-14-may-2026",
-      "image": "/api/og?title=Announcing%20new%20Release%20Preview%20builds%20for%2014%20May%202026&category=windows"
-    },
-    {
-      "title": "Raising the bar together. Introducing the Driver Quality Initiative at WinHEC 2026",
-      "summary": "There are moments in this industry when you can feel the ecosystem lean in. This week in Taipei was one of them. For two days at WinHEC 2026 (Windows Hardware Engineering Conference) — Microsoft’s first WinHEC since 2018",
-      "date": "2026-05-14T10:00:43.000Z",
-      "category": "windows",
-      "sourceUrl": "https://blogs.windows.com/windowsexperience/2026/05/14/raising-the-bar-together-introducing-the-driver-quality-initiative-at-winhec-2026/",
-      "slug": "raising-the-bar-together-introducing-the-driver-quality-initiative-at-winhec-202",
-      "image": "/api/og?title=Raising%20the%20bar%20together.%20Introducing%20the%20Driver%20Quality%20Initiative%20at%20WinHEC%202026&category=windows"
     },
     {
       "title": "From commit to cloud: Powering what’s next for PostgreSQL",
