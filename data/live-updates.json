@@ -1,6 +1,15 @@
 {
-  "updatedAt": "2026-06-01T13:14:15.499Z",
+  "updatedAt": "2026-06-01T19:10:45.563Z",
   "items": [
+    {
+      "title": "Tune into XBOX Games Showcase June 7",
+      "summary": "On June 7, the annual XBOX Games Showcase returns, offering a look at what’s next from XBOX and its partners. This year marks 25 years of XBOX, and this Showcase is poised to be a true celebration, offering world premier",
+      "date": "2026-06-01T16:52:45.000Z",
+      "category": "windows",
+      "sourceUrl": "https://blogs.windows.com/windowsexperience/2026/06/01/tune-into-xbox-games-showcase-june-7/",
+      "slug": "tune-into-xbox-games-showcase-june-7",
+      "image": "/api/og?title=Tune%20into%20XBOX%20Games%20Showcase%20June%207&category=windows"
+    },
     {
       "title": "Introducing Surface Laptop Ultra: Made for world makers",
       "summary": "The world is full of makers. Only a few make the world. Surface Laptop Ultra is for them. For those building the systems, the breakthroughs and the infrastructure the world runs on and gets changed by. The ones who see l",
@@ -126,15 +135,6 @@
       "sourceUrl": "https://blogs.windows.com/windows-insider/2026/05/15/improving-windows-quality-making-taskbar-and-start-more-personal/",
       "slug": "improving-windows-quality-making-taskbar-and-start-more-personal",
       "image": "/api/og?title=Improving%20Windows%20quality%3A%20Making%20Taskbar%20and%20Start%20more%20personal&category=windows"
-    },
-    {
-      "title": "Announcing new builds for 15 May 2026",
-      "summary": "Hello Windows Insiders, Today we will be expanding the rollout of the new Windows Insider Program changes to devices in the Beta Channel, which will be moved to the new Beta experience. Please see the announce The post A",
-      "date": "2026-05-15T19:50:25.000Z",
-      "category": "windows",
-      "sourceUrl": "https://blogs.windows.com/windows-insider/2026/05/15/announcing-new-builds-for-15-may-2026/",
-      "slug": "announcing-new-builds-for-15-may-2026",
-      "image": "/api/og?title=Announcing%20new%20builds%20for%2015%20May%202026&category=windows"
     },
     {
       "title": "From commit to cloud: Powering what’s next for PostgreSQL",
