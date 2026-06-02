@@ -1,5 +1,5 @@
 {
-  "lastFetchedAt": "2026-06-02T12:57:56.676Z",
+  "lastFetchedAt": "2026-06-02T17:47:58.061Z",
   "processed": [
     {
       "guid": "https://blogs.windows.com/blog/2026/03/30/announcing-windows-11-insider-preview-build-for-canary-channel-29558-1000/",
@@ -544,6 +544,38 @@
       "category": "windows",
       "riskLevel": "SAFE",
       "savedAt": "2026-06-01T19:10:45.564Z"
+    },
+    {
+      "guid": "https://blogs.windows.com/blog/2026/06/02/building-the-next-generation-of-devices-for-developers-surface-rtx-spark-dev-box/",
+      "url": "https://blogs.windows.com/devices/2026/06/02/building-the-next-generation-of-devices-for-developers-surface-rtx-spark-dev-box/",
+      "slug": "building-the-next-generation-of-devices-for-developers-surface-rtx-spark-dev-box",
+      "category": "windows",
+      "riskLevel": "SAFE",
+      "savedAt": "2026-06-02T17:47:58.061Z"
+    },
+    {
+      "guid": "https://blogs.windows.com/blog/2026/06/02/windows-platform-security-for-ai-agents/",
+      "url": "https://blogs.windows.com/windowsdeveloper/2026/06/02/windows-platform-security-for-ai-agents/",
+      "slug": "windows-platform-security-for-ai-agents",
+      "category": "windows",
+      "riskLevel": "SAFE",
+      "savedAt": "2026-06-02T17:47:58.061Z"
+    },
+    {
+      "guid": "https://blogs.windows.com/blog/2026/06/02/build-2026-furthering-windows-as-the-trusted-platform-for-development/",
+      "url": "https://blogs.windows.com/windowsdeveloper/2026/06/02/build-2026-furthering-windows-as-the-trusted-platform-for-development/",
+      "slug": "build-2026-furthering-windows-as-the-trusted-platform-for-development",
+      "category": "windows",
+      "riskLevel": "SAFE",
+      "savedAt": "2026-06-02T17:47:58.061Z"
+    },
+    {
+      "guid": "https://blogs.windows.com/blog/2026/06/02/expanding-on-device-ai-in-microsoft-edge-new-models-and-apis-for-the-web/",
+      "url": "https://blogs.windows.com/msedgedev/2026/06/02/expanding-on-device-ai-in-microsoft-edge-new-models-and-apis-for-the-web/",
+      "slug": "expanding-ondevice-ai-in-microsoft-edge-new-models-and-apis-for-the-web",
+      "category": "windows",
+      "riskLevel": "SAFE",
+      "savedAt": "2026-06-02T17:47:58.061Z"
     }
   ]
 }
