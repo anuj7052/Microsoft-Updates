@@ -1,6 +1,15 @@
 {
-  "updatedAt": "2026-06-08T14:35:56.615Z",
+  "updatedAt": "2026-06-08T18:05:05.966Z",
   "items": [
+    {
+      "title": "XBOX Games Showcase 2026 recap",
+      "summary": "If you weren’t able to catch the XBOX Games Showcase 2026 over the weekend, our colleagues over at XBOX Wire have you covered, with a recap of all the major news on titles, hardware and accessories – such as the XBOX Ser",
+      "date": "2026-06-08T16:33:16.000Z",
+      "category": "windows",
+      "sourceUrl": "https://blogs.windows.com/windowsexperience/2026/06/08/xbox-games-showcase-2026-recap/",
+      "slug": "xbox-games-showcase-2026-recap",
+      "image": "/api/og?title=XBOX%20Games%20Showcase%202026%20recap&category=windows"
+    },
     {
       "title": "AI alone won’t change your business. The system running it will.",
       "summary": "We are building a comprehensive agent platform: one that supports many models, is open, and gives you flexibility at every layer of the stack. The post AI alone won’t change your business. The system running it will. app",
@@ -144,15 +153,6 @@
       "sourceUrl": "https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/claude-opus-4-8-is-now-available-in-microsoft-foundry/4523367",
       "slug": "claude-opus-48-is-now-available-in-microsoft-foundry",
       "image": "/api/og?title=Claude%20Opus%204.8%20is%20now%20available%20in%20Microsoft%20Foundry&category=azure"
-    },
-    {
-      "title": "Announcing new builds for 22 May 2026",
-      "summary": "Hello Windows Insiders, Today, we continue to expand the rollout of the new Windows Insider Program changes to devices in channels already announced. As a reminder, we have not yet begun moving devices in the Canary 2950",
-      "date": "2026-05-22T17:10:30.000Z",
-      "category": "windows",
-      "sourceUrl": "https://blogs.windows.com/windows-insider/2026/05/22/announcing-new-builds-for-22-may-2026/",
-      "slug": "announcing-new-builds-for-22-may-2026",
-      "image": "/api/og?title=Announcing%20new%20builds%20for%2022%20May%202026&category=windows"
     },
     {
       "title": "Powering multi-cluster workloads with seamless cross‑cluster networking for Azure Kubernetes Fleet Manager",
