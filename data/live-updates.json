@@ -1,6 +1,15 @@
 {
-  "updatedAt": "2026-06-08T20:40:55.489Z",
+  "updatedAt": "2026-06-08T22:43:17.540Z",
   "items": [
+    {
+      "title": "Announcing new builds 8 June 2026",
+      "summary": "Hello Windows Insiders, Announcing several new builds today across Beta and Experimental, including a new build train for 26H1! The post Announcing new builds 8 June 2026 appeared first on Windows Blog.",
+      "date": "2026-06-08T21:15:32.000Z",
+      "category": "windows",
+      "sourceUrl": "https://blogs.windows.com/windows-insider/2026/06/08/announcing-new-builds-8-june-2026-2/",
+      "slug": "announcing-new-builds-8-june-2026",
+      "image": "/api/og?title=Announcing%20new%20builds%208%20June%202026&category=windows"
+    },
     {
       "title": "XBOX Games Showcase 2026 recap",
       "summary": "If you weren’t able to catch the XBOX Games Showcase 2026 over the weekend, our colleagues over at XBOX Wire have you covered, with a recap of all the major news on titles, hardware and accessories – such as the XBOX Ser",
@@ -135,15 +144,6 @@
       "sourceUrl": "https://blogs.windows.com/windows-insider/2026/05/29/windows-quality-update-may/",
       "slug": "windows-quality-update-may",
       "image": "/api/og?title=Windows%20quality%20update%3A%20May&category=windows"
-    },
-    {
-      "title": "Announcing new builds for 29 May 2026",
-      "summary": "Hello Windows Insiders, This week we continue to expand the rollout of the new Windows Insider Program changes to devices in channels already announced. New builds this week Today we are releasing new Windows 11 Insider ",
-      "date": "2026-05-29T17:05:27.000Z",
-      "category": "windows",
-      "sourceUrl": "https://blogs.windows.com/windows-insider/2026/05/29/announcing-new-builds-for-29-may-2026/",
-      "slug": "announcing-new-builds-for-29-may-2026",
-      "image": "/api/og?title=Announcing%20new%20builds%20for%2029%20May%202026&category=windows"
     },
     {
       "title": "Claude Opus 4.8 is now available in Microsoft Foundry",
