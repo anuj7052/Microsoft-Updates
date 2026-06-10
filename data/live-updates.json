@@ -1,6 +1,15 @@
 {
-  "updatedAt": "2026-06-10T12:44:49.963Z",
+  "updatedAt": "2026-06-10T16:41:19.564Z",
   "items": [
+    {
+      "title": "Computex 2026: Empowering a billion users with Windows across the ecosystem",
+      "summary": "Computex has always been one of the most important moments of the year for the PC industry — a stage where our partners come together to show what is next for hardware, silicon and the experiences they unlock. This year ",
+      "date": "2026-06-10T16:21:19.000Z",
+      "category": "windows",
+      "sourceUrl": "https://blogs.windows.com/devices/2026/06/10/computex-2026-empowering-a-billion-users-with-windows-across-the-ecosystem/",
+      "slug": "computex-2026-empowering-a-billion-users-with-windows-across-the-ecosystem",
+      "image": "/api/og?title=Computex%202026%3A%20Empowering%20a%20billion%20users%20with%20Windows%20across%20the%20ecosystem&category=windows"
+    },
     {
       "title": "Claude Fable 5 available today in Microsoft Foundry: Powering the next era of autonomous agents",
       "summary": "Claude Fable 5, Anthropic’s latest Frontier model, available today in Microsoft Foundry, powering agents in GitHub Copilot and Foundry Agent Service. The post Claude Fable 5 available today in Microsoft Foundry: Powering",
@@ -144,15 +153,6 @@
       "sourceUrl": "https://blogs.windows.com/windowsexperience/2026/05/31/introducing-a-powerful-new-chapter-for-windows-pcs-accelerated-by-nvidia-rtx-spark/",
       "slug": "introducing-a-powerful-new-chapter-for-windows-pcs-accelerated-by-nvidia-rtx-spa",
       "image": "/api/og?title=Introducing%20a%20powerful%20new%20chapter%20for%20Windows%20PCs%2C%20accelerated%20by%20NVIDIA%20RTX%20Spark&category=windows"
-    },
-    {
-      "title": "Windows quality update: May",
-      "summary": "Hey Windows Insiders, One of the best parts of the work is hearing directly from the people using Windows every day. I was recently in Hyderabad and Taipei meeting with local Windows Insiders, and those conversations gav",
-      "date": "2026-05-29T17:32:03.000Z",
-      "category": "windows",
-      "sourceUrl": "https://blogs.windows.com/windows-insider/2026/05/29/windows-quality-update-may/",
-      "slug": "windows-quality-update-may",
-      "image": "/api/og?title=Windows%20quality%20update%3A%20May&category=windows"
     },
     {
       "title": "Claude Opus 4.8 is now available in Microsoft Foundry",

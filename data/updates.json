@@ -1,5 +1,5 @@
 {
-  "lastFetchedAt": "2026-06-10T12:44:49.963Z",
+  "lastFetchedAt": "2026-06-10T16:41:19.566Z",
   "processed": [
     {
       "guid": "https://blogs.windows.com/blog/2026/03/30/announcing-windows-11-insider-preview-build-for-canary-channel-29558-1000/",
@@ -592,6 +592,14 @@
       "category": "windows",
       "riskLevel": "SAFE",
       "savedAt": "2026-06-08T22:43:17.541Z"
+    },
+    {
+      "guid": "https://blogs.windows.com/blog/2026/06/10/computex-2026-empowering-a-billion-users-with-windows-across-the-ecosystem/",
+      "url": "https://blogs.windows.com/devices/2026/06/10/computex-2026-empowering-a-billion-users-with-windows-across-the-ecosystem/",
+      "slug": "computex-2026-empowering-a-billion-users-with-windows-across-the-ecosystem",
+      "category": "windows",
+      "riskLevel": "SAFE",
+      "savedAt": "2026-06-10T16:41:19.566Z"
     }
   ]
 }
