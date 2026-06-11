@@ -1,6 +1,15 @@
 {
-  "updatedAt": "2026-06-11T13:03:31.227Z",
+  "updatedAt": "2026-06-11T17:07:52.710Z",
   "items": [
+    {
+      "title": "Faster updates, enterprise-friendly schedule: the new Microsoft Edge release cycle",
+      "summary": "Microsoft Edge is moving to a two-week release cycle, bringing new features and improvements to users and organizations faster than ever. This is great news for teams that thrive on innovation: instead of waiting a full ",
+      "date": "2026-06-11T16:01:16.000Z",
+      "category": "windows",
+      "sourceUrl": "https://blogs.windows.com/msedgedev/2026/06/11/faster-updates-enterprise-friendly-schedule-the-new-microsoft-edge-release-cycle/",
+      "slug": "faster-updates-enterprise-friendly-schedule-the-new-microsoft-edge-release-cycle",
+      "image": "/api/og?title=Faster%20updates%2C%20enterprise-friendly%20schedule%3A%20the%20new%20Microsoft%20Edge%20release%20cycle&category=windows"
+    },
     {
       "title": "Computex 2026: Empowering a billion users with Windows across the ecosystem",
       "summary": "Computex has always been one of the most important moments of the year for the PC industry — a stage where our partners come together to show what is next for hardware, silicon and the experiences they unlock. This year ",
@@ -11,8 +20,17 @@
       "image": "/api/og?title=Computex%202026%3A%20Empowering%20a%20billion%20users%20with%20Windows%20across%20the%20ecosystem&category=windows"
     },
     {
+      "title": "Claude Fable 5 available today in Microsoft Foundry: Powering the next era of autonomous agents",
+      "summary": "Claude Fable 5, Anthropic’s latest Frontier model, available today in Microsoft Foundry, powering agents in GitHub Copilot and Foundry Agent Service. The post Claude Fable 5 available today in Microsoft Foundry: Powering",
+      "date": "2026-06-09T17:00:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/claude-fable-5-is-now-available-in-microsoft-foundry-powering-the-next-era-of-autonomous-agents/",
+      "slug": "claude-fable-5-available-today-in-microsoft-foundry-powering-the-next-era-of-aut",
+      "image": "/api/og?title=Claude%20Fable%205%20available%20today%20in%20Microsoft%20Foundry%3A%20Powering%20the%20next%20era%20of%20autonomous%20agents&category=azure"
+    },
+    {
       "title": "Announcing new builds 8 June 2026",
-      "summary": "Hello Windows Insiders, Announcing several new builds today across Beta and Experimental, including a new build train for 26H1! The post Announcing new builds 8 June 2026 appeared first on Windows Blog.",
+      "summary": "[Update 6/11/2026: Release notes have now been published to Windows Insider release notes - Windows Insider Program &#124; Microsoft Learn.] The post Announcing new builds 8 June 2026 appeared first on Windows Blog.",
       "date": "2026-06-08T21:15:32.000Z",
       "category": "windows",
       "sourceUrl": "https://blogs.windows.com/windows-insider/2026/06/08/announcing-new-builds-8-june-2026-2/",
@@ -137,15 +155,6 @@
       "image": "/api/og?title=Introducing%20Surface%20Laptop%20Ultra%3A%20Made%20for%20world%20makers&category=windows"
     },
     {
-      "title": "Introducing a powerful new chapter for Windows PCs, accelerated by NVIDIA RTX Spark",
-      "summary": "Today at NVIDIA GTC, Microsoft and NVIDIA announced the world’s most powerful and efficient thin-and-light Windows PCs ever. Accelerated by NVIDIA RTX Spark The post Introducing a powerful new chapter for Windows PCs, ac",
-      "date": "2026-06-01T04:31:48.000Z",
-      "category": "windows",
-      "sourceUrl": "https://blogs.windows.com/windowsexperience/2026/05/31/introducing-a-powerful-new-chapter-for-windows-pcs-accelerated-by-nvidia-rtx-spark/",
-      "slug": "introducing-a-powerful-new-chapter-for-windows-pcs-accelerated-by-nvidia-rtx-spa",
-      "image": "/api/og?title=Introducing%20a%20powerful%20new%20chapter%20for%20Windows%20PCs%2C%20accelerated%20by%20NVIDIA%20RTX%20Spark&category=windows"
-    },
-    {
       "title": "Claude Opus 4.8 is now available in Microsoft Foundry",
       "summary": "Claude Opus 4.8 is now available in Microsoft Foundry, giving developers and enterprises access to Anthropic’s most capable Opus model for coding, agentic tasks, and professional work. The post Claude Opus 4.8 is now ava",
       "date": "2026-05-29T14:46:32.000Z",
@@ -171,15 +180,6 @@
       "sourceUrl": "https://azure.microsoft.com/en-us/blog/azure-netapp-files-for-eda-workloads-from-revolution-to-breakthrough-at-scale/",
       "slug": "azure-netapp-files-for-eda-workloads-from-revolution-to-breakthrough-at-scale",
       "image": "/api/og?title=Azure%20NetApp%20Files%20for%20EDA%20workloads%3A%20From%20revolution%20to%20breakthrough%20at%20scale&category=azure"
-    },
-    {
-      "title": "Azure IaaS: Deploy high-performance workloads with a system-level approach",
-      "summary": "Performance in the cloud is no longer defined by individual resources—it’s shaped by how compute, storage, and networking work together. Azure IaaS takes a system-level approach to help organizations achieve consistent, ",
-      "date": "2026-05-20T16:00:00.000Z",
-      "category": "azure",
-      "sourceUrl": "https://azure.microsoft.com/en-us/blog/azure-iaas-deploy-high-performance-workloads-with-a-system-level-approach/",
-      "slug": "azure-iaas-deploy-high-performance-workloads-with-a-system-level-approach",
-      "image": "/api/og?title=Azure%20IaaS%3A%20Deploy%20high-performance%20workloads%20with%20a%20system-level%20approach&category=azure"
     }
   ]
 }

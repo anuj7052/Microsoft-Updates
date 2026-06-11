@@ -1,5 +1,5 @@
 {
-  "lastFetchedAt": "2026-06-11T13:03:31.227Z",
+  "lastFetchedAt": "2026-06-11T17:07:52.711Z",
   "processed": [
     {
       "guid": "https://blogs.windows.com/blog/2026/03/30/announcing-windows-11-insider-preview-build-for-canary-channel-29558-1000/",
@@ -600,6 +600,14 @@
       "category": "windows",
       "riskLevel": "SAFE",
       "savedAt": "2026-06-10T16:41:19.566Z"
+    },
+    {
+      "guid": "https://blogs.windows.com/blog/2026/06/11/faster-updates-enterprise-friendly-schedule-the-new-microsoft-edge-release-cycle/",
+      "url": "https://blogs.windows.com/msedgedev/2026/06/11/faster-updates-enterprise-friendly-schedule-the-new-microsoft-edge-release-cycle/",
+      "slug": "faster-updates-enterprise-friendly-schedule-the-new-microsoft-edge-release-cycle",
+      "category": "windows",
+      "riskLevel": "SAFE",
+      "savedAt": "2026-06-11T17:07:52.711Z"
     }
   ]
 }
