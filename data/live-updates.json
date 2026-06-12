@@ -1,6 +1,15 @@
 {
-  "updatedAt": "2026-06-12T16:51:18.108Z",
+  "updatedAt": "2026-06-12T19:14:43.563Z",
   "items": [
+    {
+      "title": "Announcing new builds for 12 June 2026",
+      "summary": "Hello Windows Insiders, We have a number of releases today with new builds across Beta, Experimental and Release Preview. Release notes for inbox Windows 11 apps Windows 11 inbox apps are now getting their own release no",
+      "date": "2026-06-12T17:05:12.000Z",
+      "category": "windows",
+      "sourceUrl": "https://blogs.windows.com/windows-insider/2026/06/12/announcing-new-builds-for-12-june-2026/",
+      "slug": "announcing-new-builds-for-12-june-2026",
+      "image": "/api/og?title=Announcing%20new%20builds%20for%2012%20June%202026&category=windows"
+    },
     {
       "title": "Faster updates, enterprise-friendly schedule: the new Microsoft Edge release cycle",
       "summary": "Microsoft Edge is moving to a two-week release cycle, bringing new features and improvements to users and organizations faster than ever. This is great news for teams that thrive on innovation: instead of waiting a full ",
@@ -144,15 +153,6 @@
       "sourceUrl": "https://blogs.windows.com/windowsexperience/2026/06/01/tune-into-xbox-games-showcase-june-7/",
       "slug": "tune-into-xbox-games-showcase-june-7",
       "image": "/api/og?title=Tune%20into%20XBOX%20Games%20Showcase%20June%207&category=windows"
-    },
-    {
-      "title": "Introducing Surface Laptop Ultra: Made for world makers",
-      "summary": "The world is full of makers. Only a few make the world. Surface Laptop Ultra is for them. For those building the systems, the breakthroughs and the infrastructure the world runs on and gets changed by. The ones who see l",
-      "date": "2026-06-01T04:31:53.000Z",
-      "category": "windows",
-      "sourceUrl": "https://blogs.windows.com/devices/2026/05/31/introducing-surface-laptop-ultra-made-for-world-makers/",
-      "slug": "introducing-surface-laptop-ultra-made-for-world-makers",
-      "image": "/api/og?title=Introducing%20Surface%20Laptop%20Ultra%3A%20Made%20for%20world%20makers&category=windows"
     },
     {
       "title": "Claude Opus 4.8 is now available in Microsoft Foundry",
