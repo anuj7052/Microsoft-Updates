@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-12T05:17:34.339Z",
+  "updatedAt": "2026-06-12T09:45:24.344Z",
   "items": [
     {
       "title": "Faster updates, enterprise-friendly schedule: the new Microsoft Edge release cycle",
@@ -24,7 +24,7 @@
       "summary": "Claude Fable 5, Anthropic’s latest Frontier model, available today in Microsoft Foundry, powering agents in GitHub Copilot and Foundry Agent Service. The post Claude Fable 5 available today in Microsoft Foundry: Powering",
       "date": "2026-06-09T17:00:00.000Z",
       "category": "azure",
-      "sourceUrl": "https://azure.microsoft.com/en-us/blog/claude-fable-5-available-today-in-microsoft-foundry-powering-the-next-era-of-autonomous-agents/",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/claude-fable-5-is-now-available-in-microsoft-foundry-powering-the-next-era-of-autonomous-agents/",
       "slug": "claude-fable-5-available-today-in-microsoft-foundry-powering-the-next-era-of-aut",
       "image": "/api/og?title=Claude%20Fable%205%20available%20today%20in%20Microsoft%20Foundry%3A%20Powering%20the%20next%20era%20of%20autonomous%20agents&category=azure"
     },
