@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-14T23:18:33.134Z",
+  "updatedAt": "2026-06-15T02:02:05.889Z",
   "items": [
     {
       "title": "Announcing new builds for 12 June 2026",
@@ -9,6 +9,15 @@
       "sourceUrl": "https://blogs.windows.com/windows-insider/2026/06/12/announcing-new-builds-for-12-june-2026/",
       "slug": "announcing-new-builds-for-12-june-2026",
       "image": "/api/og?title=Announcing%20new%20builds%20for%2012%20June%202026&category=windows"
+    },
+    {
+      "title": "3 things leaders need to know from Microsoft Build 2026",
+      "summary": "At Microsoft Build 2026, AI moved from experimentation to execution—shifting from isolated tools to connected systems grounded in business data. Organizations that win will embed AI across workflows, scale it effectively",
+      "date": "2026-06-11T19:00:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/3-things-leaders-need-to-know-from-microsoft-build-2026/",
+      "slug": "3-things-leaders-need-to-know-from-microsoft-build-2026",
+      "image": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/408385-AzureBuild"
     },
     {
       "title": "Faster updates, enterprise-friendly schedule: the new Microsoft Edge release cycle",
@@ -33,7 +42,7 @@
       "summary": "Claude Fable 5, Anthropic’s latest Frontier model, available today in Microsoft Foundry, powering agents in GitHub Copilot and Foundry Agent Service. The post Claude Fable 5 available today in Microsoft Foundry: Powering",
       "date": "2026-06-09T17:00:00.000Z",
       "category": "azure",
-      "sourceUrl": "https://azure.microsoft.com/en-us/blog/claude-fable-5-available-today-in-microsoft-foundry-powering-the-next-era-of-autonomous-agents/",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/claude-fable-5-is-now-available-in-microsoft-foundry-powering-the-next-era-of-autonomous-agents/",
       "slug": "claude-fable-5-available-today-in-microsoft-foundry-powering-the-next-era-of-aut",
       "image": "/api/og?title=Claude%20Fable%205%20available%20today%20in%20Microsoft%20Foundry%3A%20Powering%20the%20next%20era%20of%20autonomous%20agents&category=azure"
     },
@@ -171,15 +180,6 @@
       "sourceUrl": "https://azure.microsoft.com/en-us/blog/powering-multi-cluster-workloads-with-seamless-cross-cluster-networking-for-azure-kubernetes-fleet-manager/",
       "slug": "powering-multi-cluster-workloads-with-seamless-crosscluster-networking-for-azure",
       "image": "/api/og?title=Powering%20multi-cluster%20workloads%20with%20seamless%20cross%E2%80%91cluster%20networking%20for%20Azure%20Kubernetes%20Fleet%20M&category=azure"
-    },
-    {
-      "title": "Azure NetApp Files for EDA workloads: From revolution to breakthrough at scale",
-      "summary": "Azure NetApp Files is redefining what’s possible for EDA in the cloud—delivering scalable, high-performance storage that supports massive concurrency, low latency, and consistent production performance. With independent ",
-      "date": "2026-05-22T15:00:00.000Z",
-      "category": "azure",
-      "sourceUrl": "https://azure.microsoft.com/en-us/blog/azure-netapp-files-for-eda-workloads-from-revolution-to-breakthrough-at-scale/",
-      "slug": "azure-netapp-files-for-eda-workloads-from-revolution-to-breakthrough-at-scale",
-      "image": "/api/og?title=Azure%20NetApp%20Files%20for%20EDA%20workloads%3A%20From%20revolution%20to%20breakthrough%20at%20scale&category=azure"
     }
   ]
 }
