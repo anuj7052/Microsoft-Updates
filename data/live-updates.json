@@ -1,6 +1,15 @@
 {
-  "updatedAt": "2026-06-16T11:54:10.813Z",
+  "updatedAt": "2026-06-16T17:14:38.918Z",
   "items": [
+    {
+      "title": "Introducing the next Surface Pro and Surface Laptop, built for performance and flexibility",
+      "summary": "For more than 13 years, Surface has been shaped by the people who use it. Architects sketch buildings, developers train models, students build startups and field engineers solve problems that rarely make headlines. We di",
+      "date": "2026-06-16T13:00:07.000Z",
+      "category": "windows",
+      "sourceUrl": "https://blogs.windows.com/devices/2026/06/16/introducing-the-next-surface-pro-and-surface-laptop-built-for-performance-and-flexibility/",
+      "slug": "introducing-the-next-surface-pro-and-surface-laptop-built-for-performance-and-fl",
+      "image": "/api/og?title=Introducing%20the%20next%20Surface%20Pro%20and%20Surface%20Laptop%2C%20built%20for%20performance%20and%20flexibility&category=windows"
+    },
     {
       "title": "Announcing new builds for 12 June 2026",
       "summary": "Hello Windows Insiders, We have a number of releases today with new builds across Beta, Experimental and Release Preview. Release notes for inbox Windows 11 apps Windows 11 inbox apps are now getting their own release no",
@@ -153,15 +162,6 @@
       "sourceUrl": "https://devblogs.microsoft.com/foundry/build-2026-foundry-models/",
       "slug": "a-developers-guide-to-managing-models-cost-and-quality-in-microsoft-foundry",
       "image": "/api/og?title=A%20Developer%E2%80%99s%20Guide%20to%20Managing%20Models%2C%20Cost%20and%20Quality%20in%20Microsoft%20Foundry&category=azure"
-    },
-    {
-      "title": "Tune into XBOX Games Showcase June 7",
-      "summary": "On June 7, the annual XBOX Games Showcase returns, offering a look at what’s next from XBOX and its partners. This year marks 25 years of XBOX, and this Showcase is poised to be a true celebration, offering world premier",
-      "date": "2026-06-01T16:52:45.000Z",
-      "category": "windows",
-      "sourceUrl": "https://blogs.windows.com/windowsexperience/2026/06/01/tune-into-xbox-games-showcase-june-7/",
-      "slug": "tune-into-xbox-games-showcase-june-7",
-      "image": "/api/og?title=Tune%20into%20XBOX%20Games%20Showcase%20June%207&category=windows"
     },
     {
       "title": "Claude Opus 4.8 is now available in Microsoft Foundry",
