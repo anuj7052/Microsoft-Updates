@@ -1,6 +1,15 @@
 {
-  "updatedAt": "2026-06-17T23:59:10.028Z",
+  "updatedAt": "2026-06-18T04:56:37.640Z",
   "items": [
+    {
+      "title": "Modernize your data with Azure Storage: Plan and migrate with confidence",
+      "summary": "Enterprise storage migrations are rarely just about copying data. They are about protecting business continuity, maintaining performance, managing cost, and giving teams confidence when terabytes or petabytes of data sit",
+      "date": "2026-06-16T16:00:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/modernize-your-data-with-azure-storage-plan-and-migrate-with-confidence/",
+      "slug": "modernize-your-data-with-azure-storage-plan-and-migrate-with-confidence",
+      "image": "/api/og?title=Modernize%20your%20data%20with%20Azure%20Storage%3A%20Plan%20and%20migrate%20with%20confidence&category=azure"
+    },
     {
       "title": "Introducing the next Surface Pro and Surface Laptop, built for performance and flexibility",
       "summary": "For more than 13 years, Surface has been shaped by the people who use it. Architects sketch buildings, developers train models, students build startups and field engineers solve problems that rarely make headlines. We di",
@@ -171,15 +180,6 @@
       "sourceUrl": "https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/claude-opus-4-8-is-now-available-in-microsoft-foundry/4523367",
       "slug": "claude-opus-48-is-now-available-in-microsoft-foundry",
       "image": "/api/og?title=Claude%20Opus%204.8%20is%20now%20available%20in%20Microsoft%20Foundry&category=azure"
-    },
-    {
-      "title": "Powering multi-cluster workloads with seamless cross‑cluster networking for Azure Kubernetes Fleet Manager",
-      "summary": "With Cilium-based cross-cluster networking, we are delivering a managed, high-performance network that can span your entire fleet. The post Powering multi-cluster workloads with seamless cross‑cluster networking for Azur",
-      "date": "2026-05-22T17:00:00.000Z",
-      "category": "azure",
-      "sourceUrl": "https://azure.microsoft.com/en-us/blog/powering-multi-cluster-workloads-with-seamless-cross-cluster-networking-for-azure-kubernetes-fleet-manager/",
-      "slug": "powering-multi-cluster-workloads-with-seamless-crosscluster-networking-for-azure",
-      "image": "/api/og?title=Powering%20multi-cluster%20workloads%20with%20seamless%20cross%E2%80%91cluster%20networking%20for%20Azure%20Kubernetes%20Fleet%20M&category=azure"
     }
   ]
 }
