@@ -1,6 +1,15 @@
 {
-  "updatedAt": "2026-06-19T16:59:55.990Z",
+  "updatedAt": "2026-06-19T19:06:27.332Z",
   "items": [
+    {
+      "title": "Announcing new builds for 19 June 2026, version 26H2 for Experimental",
+      "summary": "Hello Windows Insiders, We have new releases today with builds across Beta and Experimental, including Windows 11, version 26H2 for Experimental. Windows 11, version 26H2 Windows 11, version 26H2 represents our yearly se",
+      "date": "2026-06-19T17:07:42.000Z",
+      "category": "windows",
+      "sourceUrl": "https://blogs.windows.com/windows-insider/2026/06/19/announcing-new-builds-for-19-june-2026-26h2-for-experimental/",
+      "slug": "announcing-new-builds-for-19-june-2026-version-26h2-for-experimental",
+      "image": "/api/og?title=Announcing%20new%20builds%20for%2019%20June%202026%2C%20version%2026H2%20for%20Experimental&category=windows"
+    },
     {
       "title": "Modernize your data with Azure Storage: Plan and migrate with confidence",
       "summary": "Enterprise storage migrations are rarely just about copying data. They are about protecting business continuity, maintaining performance, managing cost, and giving teams confidence when terabytes or petabytes of data sit",
@@ -144,15 +153,6 @@
       "sourceUrl": "https://azure.microsoft.com/en-us/blog/new-azure-cobalt-200-vms-deliver-50-performance-improvement-fully-optimized-for-modern-agentic-ai-workloads/",
       "slug": "new-azure-cobalt-200-vms-deliver-50-performance-improvement-fully-optimized-for",
       "image": "/api/og?title=New%20Azure%20Cobalt%20200%20VMs%20deliver%2050%25%20performance%20improvement%2C%20fully%20optimized%20for%20modern%20agentic%20AI%20&category=azure"
-    },
-    {
-      "title": "Expanding on‑device AI in Microsoft Edge: New models and APIs for the web",
-      "summary": "At Build 2025, we introduced the Prompt and Writing Assistance APIs in Microsoft Edge with the Phi-4-mini language model. Since then, we' The post Expanding on‑device AI in Microsoft Edge: New models and APIs for the web",
-      "date": "2026-06-02T16:28:06.000Z",
-      "category": "windows",
-      "sourceUrl": "https://blogs.windows.com/msedgedev/2026/06/02/expanding-on-device-ai-in-microsoft-edge-new-models-and-apis-for-the-web/",
-      "slug": "expanding-ondevice-ai-in-microsoft-edge-new-models-and-apis-for-the-web",
-      "image": "/api/og?title=Expanding%20on%E2%80%91device%20AI%20in%20Microsoft%20Edge%3A%20New%20models%20and%20APIs%20for%20the%20web&category=windows"
     },
     {
       "title": "Foundry IQ: Build smarter agents faster with unified knowledge and serverless retrieval",
