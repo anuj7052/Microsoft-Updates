@@ -1,5 +1,5 @@
 {
-  "lastFetchedAt": "2026-06-23T15:18:42.887Z",
+  "lastFetchedAt": "2026-06-23T17:27:39.009Z",
   "processed": [
     {
       "guid": "https://blogs.windows.com/blog/2026/03/30/announcing-windows-11-insider-preview-build-for-canary-channel-29558-1000/",
@@ -632,6 +632,14 @@
       "category": "windows",
       "riskLevel": "SAFE",
       "savedAt": "2026-06-19T19:06:27.334Z"
+    },
+    {
+      "guid": "https://azure.microsoft.com/en-us/blog/?p=52258",
+      "url": "https://azure.microsoft.com/en-us/blog/from-insight-to-action-the-next-phase-of-agentic-cloud-operations/",
+      "slug": "from-insight-to-action-the-next-phase-of-agentic-cloud-operations",
+      "category": "azure",
+      "riskLevel": "SAFE",
+      "savedAt": "2026-06-23T17:27:39.009Z"
     }
   ]
 }

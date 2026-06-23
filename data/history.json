@@ -1,5 +1,5 @@
 {
-  "lastFetchedAt": "2026-06-23T15:18:42.887Z",
+  "lastFetchedAt": "2026-06-23T17:27:39.009Z",
   "seenGuids": [
     "https://blogs.windows.com/blog/2026/04/02/part-3-babylon-js-9-0-openpbr-and-additional-engine-updates/",
     "https://blogs.windows.com/blog/2026/04/03/announcing-windows-11-insider-preview-build-26220-8148-beta-channel/",
@@ -59,7 +59,8 @@
     "https://blogs.windows.com/blog/2026/06/11/faster-updates-enterprise-friendly-schedule-the-new-microsoft-edge-release-cycle/",
     "https://blogs.windows.com/blog/2026/06/12/announcing-new-builds-for-12-june-2026/",
     "https://blogs.windows.com/blog/2026/06/16/introducing-the-next-surface-pro-and-surface-laptop-built-for-performance-and-flexibility/",
-    "https://blogs.windows.com/blog/2026/06/19/announcing-new-builds-for-19-june-2026-26h2-for-experimental/"
+    "https://blogs.windows.com/blog/2026/06/19/announcing-new-builds-for-19-june-2026-26h2-for-experimental/",
+    "https://azure.microsoft.com/en-us/blog/?p=52258"
   ],
-  "totalArticles": 59
+  "totalArticles": 60
 }
