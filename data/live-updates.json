@@ -1,6 +1,15 @@
 {
-  "updatedAt": "2026-06-24T18:19:41.425Z",
+  "updatedAt": "2026-06-24T20:19:41.169Z",
   "items": [
+    {
+      "title": "Age of Empires Mobile: PC Edition now available",
+      "summary": "Great news for players of Age of Empires Mobile! The game is now available on Steam and the Microsoft Store for PCs. Players who’ve started on mobile can continue to play between their phone, tablet and/or PC without los",
+      "date": "2026-06-24T18:35:40.000Z",
+      "category": "windows",
+      "sourceUrl": "https://blogs.windows.com/windowsexperience/2026/06/24/age-of-empires-mobile-pc-edition-now-available/",
+      "slug": "age-of-empires-mobile-pc-edition-now-available",
+      "image": "/api/og?title=Age%20of%20Empires%20Mobile%3A%20PC%20Edition%20now%20available&category=windows"
+    },
     {
       "title": "From insight to action: The next phase of agentic cloud operations",
       "summary": "What if your cloud environment could help you move from insight to action in real time, with systems already working through the next set of decisions? The post From insight to action: The next phase of agentic cloud ope",
@@ -144,15 +153,6 @@
       "sourceUrl": "https://blogs.windows.com/windowsdeveloper/2026/06/02/windows-platform-security-for-ai-agents/",
       "slug": "windows-platform-security-for-ai-agents",
       "image": "/api/og?title=Windows%20platform%20security%20for%20AI%20agents&category=windows"
-    },
-    {
-      "title": "Build 2026: Furthering Windows as the trusted platform for development",
-      "summary": "Build is one of our favorite moments each year - a chance to connect with the global developer community and share what we’ve been building. Over the past year, we have connected with many developers pushing the boundari",
-      "date": "2026-06-02T16:31:36.000Z",
-      "category": "windows",
-      "sourceUrl": "https://blogs.windows.com/windowsdeveloper/2026/06/02/build-2026-furthering-windows-as-the-trusted-platform-for-development/",
-      "slug": "build-2026-furthering-windows-as-the-trusted-platform-for-development",
-      "image": "/api/og?title=Build%202026%3A%20Furthering%20Windows%20as%20the%20trusted%20platform%20for%20development&category=windows"
     },
     {
       "title": "New Azure Cobalt 200 VMs deliver 50% performance improvement, fully optimized for modern agentic AI workloads",

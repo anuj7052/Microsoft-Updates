@@ -1,5 +1,5 @@
 {
-  "lastFetchedAt": "2026-06-24T18:19:41.426Z",
+  "lastFetchedAt": "2026-06-24T20:19:41.170Z",
   "processed": [
     {
       "guid": "https://blogs.windows.com/blog/2026/03/30/announcing-windows-11-insider-preview-build-for-canary-channel-29558-1000/",
@@ -640,6 +640,14 @@
       "category": "azure",
       "riskLevel": "SAFE",
       "savedAt": "2026-06-23T17:27:39.009Z"
+    },
+    {
+      "guid": "https://blogs.windows.com/blog/2026/06/24/age-of-empires-mobile-pc-edition-now-available/",
+      "url": "https://blogs.windows.com/windowsexperience/2026/06/24/age-of-empires-mobile-pc-edition-now-available/",
+      "slug": "age-of-empires-mobile-pc-edition-now-available",
+      "category": "windows",
+      "riskLevel": "SAFE",
+      "savedAt": "2026-06-24T20:19:41.170Z"
     }
   ]
 }
