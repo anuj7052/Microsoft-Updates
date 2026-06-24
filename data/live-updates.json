@@ -1,6 +1,15 @@
 {
-  "updatedAt": "2026-06-24T04:48:12.133Z",
+  "updatedAt": "2026-06-24T08:29:14.134Z",
   "items": [
+    {
+      "title": "From insight to action: The next phase of agentic cloud operations",
+      "summary": "What if your cloud environment could help you move from insight to action in real time, with systems already working through the next set of decisions? The post From insight to action: The next phase of agentic cloud ope",
+      "date": "2026-06-23T15:45:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/from-insight-to-action-the-next-phase-of-agentic-cloud-operations/",
+      "slug": "from-insight-to-action-the-next-phase-of-agentic-cloud-operations",
+      "image": "/api/og?title=From%20insight%20to%20action%3A%20The%20next%20phase%20of%20agentic%20cloud%20operations&category=azure"
+    },
     {
       "title": "Announcing new builds for 19 June 2026, version 26H2 for Experimental",
       "summary": "Hello Windows Insiders, We have new releases today with builds across Beta and Experimental, including Windows 11, version 26H2 for Experimental. Windows 11, version 26H2 Windows 11, version 26H2 represents our yearly se",
@@ -171,15 +180,6 @@
       "sourceUrl": "https://devblogs.microsoft.com/foundry/build-2026-foundry-models/",
       "slug": "a-developers-guide-to-managing-models-cost-and-quality-in-microsoft-foundry",
       "image": "/api/og?title=A%20Developer%E2%80%99s%20Guide%20to%20Managing%20Models%2C%20Cost%20and%20Quality%20in%20Microsoft%20Foundry&category=azure"
-    },
-    {
-      "title": "Claude Opus 4.8 is now available in Microsoft Foundry",
-      "summary": "Claude Opus 4.8 is now available in Microsoft Foundry, giving developers and enterprises access to Anthropic’s most capable Opus model for coding, agentic tasks, and professional work. The post Claude Opus 4.8 is now ava",
-      "date": "2026-05-29T14:46:32.000Z",
-      "category": "azure",
-      "sourceUrl": "https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/claude-opus-4-8-is-now-available-in-microsoft-foundry/4523367",
-      "slug": "claude-opus-48-is-now-available-in-microsoft-foundry",
-      "image": "/api/og?title=Claude%20Opus%204.8%20is%20now%20available%20in%20Microsoft%20Foundry&category=azure"
     }
   ]
 }
