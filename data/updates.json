@@ -1,5 +1,5 @@
 {
-  "lastFetchedAt": "2026-06-26T16:23:12.444Z",
+  "lastFetchedAt": "2026-06-26T18:12:03.554Z",
   "processed": [
     {
       "guid": "https://blogs.windows.com/blog/2026/03/30/announcing-windows-11-insider-preview-build-for-canary-channel-29558-1000/",
@@ -648,6 +648,14 @@
       "category": "windows",
       "riskLevel": "SAFE",
       "savedAt": "2026-06-24T20:19:41.170Z"
+    },
+    {
+      "guid": "https://blogs.windows.com/blog/2026/06/26/announcing-new-builds-for-26-june-2026-retail-launch-of-new-wip-improvements/",
+      "url": "https://blogs.windows.com/windows-insider/2026/06/26/announcing-new-builds-for-26-june-2026-retail-launch-of-new-wip-improvements/",
+      "slug": "announcing-new-builds-for-26-june-2026-retail-launch-of-new-wip-improvements",
+      "category": "windows",
+      "riskLevel": "SAFE",
+      "savedAt": "2026-06-26T18:12:03.554Z"
     }
   ]
 }

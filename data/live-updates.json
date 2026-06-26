@@ -1,6 +1,15 @@
 {
-  "updatedAt": "2026-06-26T16:23:12.444Z",
+  "updatedAt": "2026-06-26T18:12:03.552Z",
   "items": [
+    {
+      "title": "Announcing new builds for 26 June 2026, retail launch of new WIP improvements",
+      "summary": "Hello Windows Insiders, We have new releases today with builds across Beta and Experimental, and are excited to begin rolling out the new Windows Insider experience to retail Windows 11 builds this week! New Windows Insi",
+      "date": "2026-06-26T17:00:19.000Z",
+      "category": "windows",
+      "sourceUrl": "https://blogs.windows.com/windows-insider/2026/06/26/announcing-new-builds-for-26-june-2026-retail-launch-of-new-wip-improvements/",
+      "slug": "announcing-new-builds-for-26-june-2026-retail-launch-of-new-wip-improvements",
+      "image": "/api/og?title=Announcing%20new%20builds%20for%2026%20June%202026%2C%20retail%20launch%20of%20new%20WIP%20improvements&category=windows"
+    },
     {
       "title": "Age of Empires Mobile: PC Edition now available",
       "summary": "Great news for players of Age of Empires Mobile! The game is now available on Steam and the Microsoft Store for PCs. Players who’ve started on mobile can continue to play between their phone, tablet and/or PC without los",
@@ -144,15 +153,6 @@
       "sourceUrl": "https://blogs.windows.com/devices/2026/06/02/building-the-next-generation-of-devices-for-developers-surface-rtx-spark-dev-box/",
       "slug": "building-the-next-generation-of-devices-for-developers-surface-rtx-spark-dev-box",
       "image": "/api/og?title=Building%20the%20next%20generation%20of%20devices%20for%20developers%3A%20Surface%20RTX%20Spark%20Dev%20Box&category=windows"
-    },
-    {
-      "title": "Windows platform security for AI agents",
-      "summary": "Making Windows the trustworthy OS for agents AI agents are no longer just answering questions, they are taking actions across systems with increasing autonomy. As they become persistent participants in how software runs,",
-      "date": "2026-06-02T16:31:41.000Z",
-      "category": "windows",
-      "sourceUrl": "https://blogs.windows.com/windowsdeveloper/2026/06/02/windows-platform-security-for-ai-agents/",
-      "slug": "windows-platform-security-for-ai-agents",
-      "image": "/api/og?title=Windows%20platform%20security%20for%20AI%20agents&category=windows"
     },
     {
       "title": "New Azure Cobalt 200 VMs deliver 50% performance improvement, fully optimized for modern agentic AI workloads",
