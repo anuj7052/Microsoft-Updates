@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-29T05:15:04.408Z",
+  "updatedAt": "2026-06-29T10:10:39.341Z",
   "items": [
     {
       "title": "Announcing new builds for 26 June 2026, retail launch of new WIP improvements",
@@ -9,6 +9,15 @@
       "sourceUrl": "https://blogs.windows.com/windows-insider/2026/06/26/announcing-new-builds-for-26-june-2026-retail-launch-of-new-wip-improvements/",
       "slug": "announcing-new-builds-for-26-june-2026-retail-launch-of-new-wip-improvements",
       "image": "/api/og?title=Announcing%20new%20builds%20for%2026%20June%202026%2C%20retail%20launch%20of%20new%20WIP%20improvements&category=windows"
+    },
+    {
+      "title": "The performance dividend: Optimizing PostgreSQL on Azure directly in Visual Studio Code",
+      "summary": "Poor database performance is never just a database problem. In enterprise teams, it shows up as missed SLAs, delayed releases, frustrated development teams, and rising operational risk. The performance problem compounds ",
+      "date": "2026-06-26T17:00:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/the-performance-dividend-optimizing-postgresql-on-azure-directly-in-visual-studio-code/",
+      "slug": "the-performance-dividend-optimizing-postgresql-on-azure-directly-in-visual-studi",
+      "image": "/api/og?title=The%20performance%20dividend%3A%20Optimizing%20PostgreSQL%20on%20Azure%20directly%20in%20Visual%20Studio%20Code&category=azure"
     },
     {
       "title": "Age of Empires Mobile: PC Edition now available",
@@ -171,15 +180,6 @@
       "sourceUrl": "https://devblogs.microsoft.com/foundry/build-smarter-agents-faster-with-foundry-iq/",
       "slug": "foundry-iq-build-smarter-agents-faster-with-unified-knowledge-and-serverless-ret",
       "image": "/api/og?title=Foundry%20IQ%3A%20Build%20smarter%20agents%20faster%20with%20unified%20knowledge%20and%20serverless%20retrieval&category=azure"
-    },
-    {
-      "title": "A Developer’s Guide to Managing Models, Cost and Quality in Microsoft Foundry",
-      "summary": "Microsoft Foundry helps teams move beyond model access to operate AI at scale—selecting, evaluating, optimizing, and governing models across the full lifecycle. The post A Developer’s Guide to Managing Models, Cost and Q",
-      "date": "2026-06-02T16:00:00.000Z",
-      "category": "azure",
-      "sourceUrl": "https://devblogs.microsoft.com/foundry/build-2026-foundry-models/",
-      "slug": "a-developers-guide-to-managing-models-cost-and-quality-in-microsoft-foundry",
-      "image": "/api/og?title=A%20Developer%E2%80%99s%20Guide%20to%20Managing%20Models%2C%20Cost%20and%20Quality%20in%20Microsoft%20Foundry&category=azure"
     }
   ]
 }
