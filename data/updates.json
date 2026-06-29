@@ -1,5 +1,5 @@
 {
-  "lastFetchedAt": "2026-06-29T14:35:30.441Z",
+  "lastFetchedAt": "2026-06-29T17:44:33.956Z",
   "processed": [
     {
       "guid": "https://blogs.windows.com/blog/2026/03/30/announcing-windows-11-insider-preview-build-for-canary-channel-29558-1000/",
@@ -656,6 +656,14 @@
       "category": "windows",
       "riskLevel": "SAFE",
       "savedAt": "2026-06-26T18:12:03.554Z"
+    },
+    {
+      "guid": "https://blogs.windows.com/blog/2026/06/29/elder-scrolls-online-introduces-new-in-game-event-high-seas-of-tamriel/",
+      "url": "https://blogs.windows.com/windowsexperience/2026/06/29/elder-scrolls-online-introduces-new-in-game-event-high-seas-of-tamriel/",
+      "slug": "elder-scrolls-online-introduces-new-in-game-event-high-seas-of-tamriel",
+      "category": "windows",
+      "riskLevel": "SAFE",
+      "savedAt": "2026-06-29T17:44:33.956Z"
     }
   ]
 }
