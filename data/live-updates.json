@@ -1,15 +1,6 @@
 {
-  "updatedAt": "2026-07-04T09:38:39.994Z",
+  "updatedAt": "2026-07-04T11:40:05.209Z",
   "items": [
-    {
-      "title": "Azure IaaS: How to design, build, and optimize cloud infrastructure for long-term cost optimization efficiency",
-      "summary": "As organizations modernize infrastructure, migrate mission-critical workloads, build cloud-native applications, and scale AI—cost efficiency remains a foundational principle of cloud architectures. The post Azure IaaS: H",
-      "date": "2026-06-30T16:00:00.000Z",
-      "category": "azure",
-      "sourceUrl": "https://azure.microsoft.com/en-us/blog/azure-iaas-how-to-design-build-and-optimize-cloud-infrastructure-for-long-term-cost-optimization-efficiency/",
-      "slug": "azure-iaas-how-to-design-build-and-optimize-cloud-infrastructure-for-long-term-c",
-      "image": "/api/og?title=Azure%20IaaS%3A%20How%20to%20design%2C%20build%2C%20and%20optimize%20cloud%20infrastructure%20for%20long-term%20cost%20optimization%20&category=azure"
-    },
     {
       "title": "Elder Scrolls Online introduces new in-game event: High Seas of Tamriel",
       "summary": "Fans of PC favorite Elder Scrolls Online can look forward to a new in-game event: the High Seas of Tamriel, which XBOX Wire’s Mike Nelson f The post Elder Scrolls Online introduces new in-game event: High Seas of Tamriel",
@@ -180,6 +171,15 @@
       "sourceUrl": "https://blogs.microsoft.com/blog/2026/06/02/ai-alone-wont-change-your-business-the-system-running-it-will/",
       "slug": "ai-alone-wont-change-your-business-the-system-running-it-will",
       "image": "/api/og?title=AI%20alone%20won%E2%80%99t%20change%20your%20business.%20The%20system%20running%20it%20will.&category=azure"
+    },
+    {
+      "title": "Announcing Microsoft Discovery general availability and Microsoft Discovery app preview",
+      "summary": "At Microsoft Build, we are announcing that Microsoft Discovery is now generally available for all organizations, providing a comprehensive platform for building and governing agentic AI workflows. The post Announcing Mic",
+      "date": "2026-06-02T18:15:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/announcing-microsoft-discovery-general-availability-and-microsoft-discovery-app-preview/",
+      "slug": "announcing-microsoft-discovery-general-availability-and-microsoft-discovery-app",
+      "image": "/api/og?title=Announcing%20Microsoft%20Discovery%20general%20availability%20and%20Microsoft%20Discovery%20app%20preview&category=azure"
     }
   ]
 }
