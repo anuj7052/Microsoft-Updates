@@ -1,15 +1,6 @@
 {
-  "updatedAt": "2026-07-06T17:48:40.975Z",
+  "updatedAt": "2026-07-06T20:08:37.914Z",
   "items": [
-    {
-      "title": "Meet Brain: The AI system behind Azure reliability",
-      "summary": "Learn how Microsoft is building a digital twin of Azure Service Health and why it changes how hyperscale operates. The post Meet Brain: The AI system behind Azure reliability appeared first on Microsoft Azure Blog.",
-      "date": "2026-07-02T16:00:00.000Z",
-      "category": "azure",
-      "sourceUrl": "https://azure.microsoft.com/en-us/blog/meet-brain-the-ai-system-behind-azure-reliability/",
-      "slug": "meet-brain-the-ai-system-behind-azure-reliability",
-      "image": "/api/og?title=Meet%20Brain%3A%20The%20AI%20system%20behind%20Azure%20reliability&category=azure"
-    },
     {
       "title": "Proving application resilience on Azure with Chaos Studio",
       "summary": "Azure Chaos Studio helps organizations validate application resilience by simulating outages, failovers, network disruptions, and infrastructure failures before they impact production. The post Proving application resili",
@@ -162,6 +153,15 @@
       "sourceUrl": "https://blogs.windows.com/devices/2026/06/10/computex-2026-empowering-a-billion-users-with-windows-across-the-ecosystem/",
       "slug": "computex-2026-empowering-a-billion-users-with-windows-across-the-ecosystem",
       "image": "/api/og?title=Computex%202026%3A%20Empowering%20a%20billion%20users%20with%20Windows%20across%20the%20ecosystem&category=windows"
+    },
+    {
+      "title": "Claude Fable 5 available today in Microsoft Foundry: Powering the next era of autonomous agents",
+      "summary": "Claude Fable 5, Anthropic’s latest Frontier model, available today in Microsoft Foundry, powering agents in GitHub Copilot and Foundry Agent Service. The post Claude Fable 5 available today in Microsoft Foundry: Powering",
+      "date": "2026-06-09T17:00:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/claude-fable-5-is-now-available-in-microsoft-foundry-powering-the-next-era-of-autonomous-agents/",
+      "slug": "claude-fable-5-available-today-in-microsoft-foundry-powering-the-next-era-of-aut",
+      "image": "/api/og?title=Claude%20Fable%205%20available%20today%20in%20Microsoft%20Foundry%3A%20Powering%20the%20next%20era%20of%20autonomous%20agents&category=azure"
     },
     {
       "title": "Announcing new builds 8 June 2026",
