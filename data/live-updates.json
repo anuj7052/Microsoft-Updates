@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-07T21:56:55.293Z",
+  "updatedAt": "2026-07-07T23:09:57.197Z",
   "items": [
     {
       "title": "New in Edge for developers – Style layout gaps, improve keyboard accessibility and migrate your PWA to a new origin",
@@ -20,6 +20,33 @@
       "image": "/api/og?title=Announcing%20new%20builds%20for%20July%206%202026&category=windows"
     },
     {
+      "title": "Meet Brain: The AI system behind Azure reliability",
+      "summary": "Learn how Microsoft is building a digital twin of Azure Service Health and why it changes how hyperscale operates. The post Meet Brain: The AI system behind Azure reliability appeared first on Microsoft Azure Blog.",
+      "date": "2026-07-02T16:00:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/meet-brain-the-ai-system-behind-azure-reliability/",
+      "slug": "meet-brain-the-ai-system-behind-azure-reliability",
+      "image": "/api/og?title=Meet%20Brain%3A%20The%20AI%20system%20behind%20Azure%20reliability&category=azure"
+    },
+    {
+      "title": "Proving application resilience on Azure with Chaos Studio",
+      "summary": "Azure Chaos Studio helps organizations validate application resilience by simulating outages, failovers, network disruptions, and infrastructure failures before they impact production. The post Proving application resili",
+      "date": "2026-07-01T16:00:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/proving-application-resilience-on-azure-with-chaos-studio/",
+      "slug": "proving-application-resilience-on-azure-with-chaos-studio",
+      "image": "/api/og?title=Proving%20application%20resilience%20on%20Azure%20with%20Chaos%20Studio&category=azure"
+    },
+    {
+      "title": "Azure IaaS: How to design, build, and optimize cloud infrastructure for long-term cost efficiency",
+      "summary": "As organizations modernize infrastructure, migrate mission-critical workloads, build cloud-native applications, and scale AI—cost efficiency remains a foundational principle of cloud architectures. The post Azure IaaS: H",
+      "date": "2026-06-30T16:00:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/azure-iaas-how-to-design-build-and-optimize-cloud-infrastructure-for-long-term-cost-optimization-efficiency/",
+      "slug": "azure-iaas-how-to-design-build-and-optimize-cloud-infrastructure-for-long-term-c",
+      "image": "/api/og?title=Azure%20IaaS%3A%20How%20to%20design%2C%20build%2C%20and%20optimize%20cloud%20infrastructure%20for%20long-term%20cost%20efficiency&category=azure"
+    },
+    {
       "title": "Elder Scrolls Online introduces new in-game event: High Seas of Tamriel",
       "summary": "Fans of PC favorite Elder Scrolls Online can look forward to a new in-game event: the High Seas of Tamriel, which XBOX Wire’s Mike Nelson f The post Elder Scrolls Online introduces new in-game event: High Seas of Tamriel",
       "date": "2026-06-29T17:00:31.000Z",
@@ -35,7 +62,7 @@
       "category": "azure",
       "sourceUrl": "https://azure.microsoft.com/en-us/blog/claude-in-microsoft-foundry-is-now-generally-available/",
       "slug": "claude-in-microsoft-foundry-is-now-generally-available",
-      "image": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/4234700-AI-Skills-Studio"
+      "image": "/api/og?title=Claude%20in%20Microsoft%20Foundry%20is%20now%20generally%20available&category=azure"
     },
     {
       "title": "The 2026 Agent Confidence Index: Where 300 builders see real momentum",
@@ -153,33 +180,6 @@
       "sourceUrl": "https://blogs.windows.com/devices/2026/06/10/computex-2026-empowering-a-billion-users-with-windows-across-the-ecosystem/",
       "slug": "computex-2026-empowering-a-billion-users-with-windows-across-the-ecosystem",
       "image": "/api/og?title=Computex%202026%3A%20Empowering%20a%20billion%20users%20with%20Windows%20across%20the%20ecosystem&category=windows"
-    },
-    {
-      "title": "Claude Fable 5 available today in Microsoft Foundry: Powering the next era of autonomous agents",
-      "summary": "Claude Fable 5, Anthropic’s latest Frontier model, available today in Microsoft Foundry, powering agents in GitHub Copilot and Foundry Agent Service. The post Claude Fable 5 available today in Microsoft Foundry: Powering",
-      "date": "2026-06-09T17:00:00.000Z",
-      "category": "azure",
-      "sourceUrl": "https://azure.microsoft.com/en-us/blog/claude-fable-5-is-now-available-in-microsoft-foundry-powering-the-next-era-of-autonomous-agents/",
-      "slug": "claude-fable-5-available-today-in-microsoft-foundry-powering-the-next-era-of-aut",
-      "image": "/api/og?title=Claude%20Fable%205%20available%20today%20in%20Microsoft%20Foundry%3A%20Powering%20the%20next%20era%20of%20autonomous%20agents&category=azure"
-    },
-    {
-      "title": "AI alone won’t change your business. The system running it will.",
-      "summary": "We are building a comprehensive agent platform: one that supports many models, is open, and gives you flexibility at every layer of the stack. The post AI alone won’t change your business. The system running it will. app",
-      "date": "2026-06-02T19:15:57.000Z",
-      "category": "azure",
-      "sourceUrl": "https://blogs.microsoft.com/blog/2026/06/02/ai-alone-wont-change-your-business-the-system-running-it-will/",
-      "slug": "ai-alone-wont-change-your-business-the-system-running-it-will",
-      "image": "/api/og?title=AI%20alone%20won%E2%80%99t%20change%20your%20business.%20The%20system%20running%20it%20will.&category=azure"
-    },
-    {
-      "title": "Announcing Microsoft Discovery general availability and Microsoft Discovery app preview",
-      "summary": "At Microsoft Build, we are announcing that Microsoft Discovery is now generally available for all organizations, providing a comprehensive platform for building and governing agentic AI workflows. The post Announcing Mic",
-      "date": "2026-06-02T18:15:00.000Z",
-      "category": "azure",
-      "sourceUrl": "https://azure.microsoft.com/en-us/blog/announcing-microsoft-discovery-general-availability-and-microsoft-discovery-app-preview/",
-      "slug": "announcing-microsoft-discovery-general-availability-and-microsoft-discovery-app",
-      "image": "/api/og?title=Announcing%20Microsoft%20Discovery%20general%20availability%20and%20Microsoft%20Discovery%20app%20preview&category=azure"
     }
   ]
 }
