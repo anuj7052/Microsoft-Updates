@@ -1,6 +1,15 @@
 {
-  "updatedAt": "2026-07-07T15:46:53.332Z",
+  "updatedAt": "2026-07-07T18:07:54.625Z",
   "items": [
+    {
+      "title": "New in Edge for developers – Style layout gaps, improve keyboard accessibility and migrate your PWA to a new origin",
+      "summary": "Welcome to New in Edge for developers, a new series featuring recent web platform updates in Microsoft Edge that help web developers build better sites and apps. In this first edition, we'll look at CSS gap de The post N",
+      "date": "2026-07-07T16:04:36.000Z",
+      "category": "windows",
+      "sourceUrl": "https://blogs.windows.com/msedgedev/2026/07/07/new-in-edge-for-developers-style-layout-gaps-improve-keyboard-accessibility-and-migrate-your-pwa-to-a-new-origin/",
+      "slug": "new-in-edge-for-developers-style-layout-gaps-improve-keyboard-accessibility-and",
+      "image": "/api/og?title=New%20in%20Edge%20for%20developers%20%E2%80%93%20Style%20layout%20gaps%2C%20improve%20keyboard%20accessibility%20and%20migrate%20your%20PWA%20&category=windows"
+    },
     {
       "title": "Announcing new builds for July 6 2026",
       "summary": "Hello Windows Insiders, We have new releases today with builds across Beta and Experimental. New builds this week Today we are releasing new Windows 11 Insider Preview Builds. As a reminder, all Insiders can find the rel",
@@ -171,15 +180,6 @@
       "sourceUrl": "https://blogs.windows.com/devices/2026/06/10/computex-2026-empowering-a-billion-users-with-windows-across-the-ecosystem/",
       "slug": "computex-2026-empowering-a-billion-users-with-windows-across-the-ecosystem",
       "image": "/api/og?title=Computex%202026%3A%20Empowering%20a%20billion%20users%20with%20Windows%20across%20the%20ecosystem&category=windows"
-    },
-    {
-      "title": "Announcing new builds 8 June 2026",
-      "summary": "[Update 6/11/2026: Release notes have now been published to Windows Insider release notes - Windows Insider Program &#124; Microsoft Learn.] The post Announcing new builds 8 June 2026 appeared first on Windows Blog.",
-      "date": "2026-06-08T21:15:32.000Z",
-      "category": "windows",
-      "sourceUrl": "https://blogs.windows.com/windows-insider/2026/06/08/announcing-new-builds-8-june-2026-2/",
-      "slug": "announcing-new-builds-8-june-2026",
-      "image": "/api/og?title=Announcing%20new%20builds%208%20June%202026&category=windows"
     }
   ]
 }
