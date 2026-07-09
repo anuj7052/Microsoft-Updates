@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-07-09T16:06:27.385Z",
+  "updatedAt": "2026-07-09T18:19:11.823Z",
   "items": [
     {
-      "title": "Built to bounce back: How Azure resiliency evolved",
-      "summary": "Cloud resiliency is about ensuring systems can adapt, recover, and keep functioning within real-world constraints. The post Built to bounce back: How Azure resiliency evolved appeared first on Microsoft Azure Blog.",
-      "date": "2026-07-08T16:00:00.000Z",
-      "category": "azure",
-      "sourceUrl": "https://azure.microsoft.com/en-us/blog/built-to-bounce-back-how-azure-resiliency-evolved/",
-      "slug": "built-to-bounce-back-how-azure-resiliency-evolved",
-      "image": "/api/og?title=Built%20to%20bounce%20back%3A%20How%20Azure%20resiliency%20evolved&category=azure"
+      "title": "Evolving Windows vulnerability management to meet the speed of AI-powered discovery",
+      "summary": "Windows has adapted to emerging threats for decades, all while operating at unparalleled scale. It's our responsibility to bring clarity, transparency and sustained investment so customers understand what is happening, w",
+      "date": "2026-07-09T17:00:04.000Z",
+      "category": "windows",
+      "sourceUrl": "https://blogs.windows.com/windowsexperience/2026/07/09/evolving-windows-vulnerability-management-to-meet-the-speed-of-ai-powered-discovery/",
+      "slug": "evolving-windows-vulnerability-management-to-meet-the-speed-of-ai-powered-discov",
+      "image": "/api/og?title=Evolving%20Windows%20vulnerability%20management%20to%20meet%20the%20speed%20of%20AI-powered%20discovery&category=windows"
     },
     {
       "title": "New in Edge for developers – Style layout gaps, improve keyboard accessibility and migrate your PWA to a new origin",
@@ -18,15 +18,6 @@
       "sourceUrl": "https://blogs.windows.com/msedgedev/2026/07/07/new-in-edge-for-developers-style-layout-gaps-improve-keyboard-accessibility-and-migrate-your-pwa-to-a-new-origin/",
       "slug": "new-in-edge-for-developers-style-layout-gaps-improve-keyboard-accessibility-and",
       "image": "/api/og?title=New%20in%20Edge%20for%20developers%20%E2%80%93%20Style%20layout%20gaps%2C%20improve%20keyboard%20accessibility%20and%20migrate%20your%20PWA%20&category=windows"
-    },
-    {
-      "title": "External key management for Azure Managed HSM is now in public preview",
-      "summary": "Azure Key Vault Managed Hardware Security Module (HSM) provides strong sovereignty over your encryption keys. Keys are generated and stored in a single-tenant, FIPS 140-3 Level 3 HSM that only you control: Microsoft has ",
-      "date": "2026-07-07T16:00:00.000Z",
-      "category": "azure",
-      "sourceUrl": "https://azure.microsoft.com/en-us/blog/external-key-management-for-azure-managed-hsm-is-now-in-public-preview/",
-      "slug": "external-key-management-for-azure-managed-hsm-is-now-in-public-preview",
-      "image": "/api/og?title=External%20key%20management%20for%20Azure%20Managed%20HSM%20is%20now%20in%20public%20preview&category=azure"
     },
     {
       "title": "Announcing new builds for July 6 2026",
@@ -146,6 +137,15 @@
       "image": "/api/og?title=Announcing%20new%20builds%20for%2019%20June%202026%2C%20version%2026H2%20for%20Experimental&category=windows"
     },
     {
+      "title": "Modernize your data with Azure Storage: Plan and migrate with confidence",
+      "summary": "Enterprise storage migrations are rarely just about copying data. They are about protecting business continuity, maintaining performance, managing cost, and giving teams confidence when terabytes or petabytes of data sit",
+      "date": "2026-06-16T16:00:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/modernize-your-data-with-azure-storage-plan-and-migrate-with-confidence/",
+      "slug": "modernize-your-data-with-azure-storage-plan-and-migrate-with-confidence",
+      "image": "/api/og?title=Modernize%20your%20data%20with%20Azure%20Storage%3A%20Plan%20and%20migrate%20with%20confidence&category=azure"
+    },
+    {
       "title": "Introducing the next Surface Pro and Surface Laptop, built for performance and flexibility",
       "summary": "For more than 13 years, Surface has been shaped by the people who use it. Architects sketch buildings, developers train models, students build startups and field engineers solve problems that rarely make headlines. We di",
       "date": "2026-06-16T13:00:07.000Z",
@@ -164,6 +164,15 @@
       "image": "/api/og?title=Announcing%20new%20builds%20for%2012%20June%202026&category=windows"
     },
     {
+      "title": "3 things leaders need to know from Microsoft Build 2026",
+      "summary": "At Microsoft Build 2026, AI moved from experimentation to execution—shifting from isolated tools to connected systems grounded in business data. Organizations that win will embed AI across workflows, scale it effectively",
+      "date": "2026-06-11T19:00:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/3-things-leaders-need-to-know-from-microsoft-build-2026/",
+      "slug": "3-things-leaders-need-to-know-from-microsoft-build-2026",
+      "image": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/408385-AzureBuild"
+    },
+    {
       "title": "Faster updates, enterprise-friendly schedule: the new Microsoft Edge release cycle",
       "summary": "Microsoft Edge is moving to a two-week release cycle, bringing new features and improvements to users and organizations faster than ever. This is great news for teams that thrive on innovation: instead of waiting a full ",
       "date": "2026-06-11T16:01:16.000Z",
@@ -171,15 +180,6 @@
       "sourceUrl": "https://blogs.windows.com/msedgedev/2026/06/11/faster-updates-enterprise-friendly-schedule-the-new-microsoft-edge-release-cycle/",
       "slug": "faster-updates-enterprise-friendly-schedule-the-new-microsoft-edge-release-cycle",
       "image": "/api/og?title=Faster%20updates%2C%20enterprise-friendly%20schedule%3A%20the%20new%20Microsoft%20Edge%20release%20cycle&category=windows"
-    },
-    {
-      "title": "Computex 2026: Empowering a billion users with Windows across the ecosystem",
-      "summary": "Computex has always been one of the most important moments of the year for the PC industry — a stage where our partners come together to show what is next for hardware, silicon and the experiences they unlock. This year ",
-      "date": "2026-06-10T16:21:19.000Z",
-      "category": "windows",
-      "sourceUrl": "https://blogs.windows.com/devices/2026/06/10/computex-2026-empowering-a-billion-users-with-windows-across-the-ecosystem/",
-      "slug": "computex-2026-empowering-a-billion-users-with-windows-across-the-ecosystem",
-      "image": "/api/og?title=Computex%202026%3A%20Empowering%20a%20billion%20users%20with%20Windows%20across%20the%20ecosystem&category=windows"
     }
   ]
 }

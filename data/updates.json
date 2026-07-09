@@ -1,5 +1,5 @@
 {
-  "lastFetchedAt": "2026-07-09T16:06:27.386Z",
+  "lastFetchedAt": "2026-07-09T18:19:11.825Z",
   "processed": [
     {
       "guid": "https://blogs.windows.com/blog/2026/03/30/announcing-windows-11-insider-preview-build-for-canary-channel-29558-1000/",
@@ -680,6 +680,14 @@
       "category": "windows",
       "riskLevel": "SAFE",
       "savedAt": "2026-07-07T18:07:54.626Z"
+    },
+    {
+      "guid": "https://blogs.windows.com/blog/2026/07/09/evolving-windows-vulnerability-management-to-meet-the-speed-of-ai-powered-discovery/",
+      "url": "https://blogs.windows.com/windowsexperience/2026/07/09/evolving-windows-vulnerability-management-to-meet-the-speed-of-ai-powered-discovery/",
+      "slug": "evolving-windows-vulnerability-management-to-meet-the-speed-of-ai-powered-discov",
+      "category": "windows",
+      "riskLevel": "SAFE",
+      "savedAt": "2026-07-09T18:19:11.825Z"
     }
   ]
 }
