@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-11T23:31:21.595Z",
+  "updatedAt": "2026-07-12T03:41:43.790Z",
   "items": [
     {
       "title": "Built to bounce back: How Azure resiliency evolved",
@@ -53,7 +53,7 @@
       "category": "azure",
       "sourceUrl": "https://azure.microsoft.com/en-us/blog/claude-in-microsoft-foundry-is-now-generally-available/",
       "slug": "claude-in-microsoft-foundry-is-now-generally-available",
-      "image": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/1000123-ClaudeModels"
+      "image": "/api/og?title=Claude%20in%20Microsoft%20Foundry%20is%20now%20generally%20available&category=azure"
     },
     {
       "title": "The 2026 Agent Confidence Index: Where 300 builders see real momentum",
