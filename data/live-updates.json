@@ -1,15 +1,6 @@
 {
-  "updatedAt": "2026-07-17T15:58:54.878Z",
+  "updatedAt": "2026-07-17T17:20:03.919Z",
   "items": [
-    {
-      "title": "Azure Databricks delivers proven business value",
-      "summary": "Microsoft Azure Databricks delivers the first-party advantage of Databricks on Microsoft—and for customers, that advantage shows up as real, measurable value. It is the same Databricks platform your teams already know, c",
-      "date": "2026-07-15T15:00:00.000Z",
-      "category": "azure",
-      "sourceUrl": "https://azure.microsoft.com/en-us/blog/azure-databricks-delivers-proven-business-value/",
-      "slug": "azure-databricks-delivers-proven-business-value",
-      "image": "/api/og?title=Azure%20Databricks%20delivers%20proven%20business%20value&category=azure"
-    },
     {
       "title": "Frontier models and production agents: Advancing Microsoft Foundry for the agentic era",
       "summary": "Introducing OpenAI's latest frontier model series, the Asia Pacific Data Zone, and product agent capabilities, all generally available in Microsoft Foundry. The post Frontier models and production agents: Advancing Micro",
@@ -90,6 +81,15 @@
       "sourceUrl": "https://azure.microsoft.com/en-us/blog/accelerate-modern-linux-workloads-with-azure-files/",
       "slug": "accelerate-modern-linux-workloads-with-azure-files",
       "image": "/api/og?title=Accelerate%20modern%20Linux%20workloads%20with%20Azure%20Files&category=azure"
+    },
+    {
+      "title": "The performance dividend: Optimizing PostgreSQL on Azure directly in Visual Studio Code",
+      "summary": "Poor database performance is never just a database problem. In enterprise teams, it shows up as missed SLAs, delayed releases, frustrated development teams, and rising operational risk. The performance problem compounds ",
+      "date": "2026-06-26T17:00:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/the-performance-dividend-optimizing-postgresql-on-azure-directly-in-visual-studio-code/",
+      "slug": "the-performance-dividend-optimizing-postgresql-on-azure-directly-in-visual-studi",
+      "image": "/api/og?title=The%20performance%20dividend%3A%20Optimizing%20PostgreSQL%20on%20Azure%20directly%20in%20Visual%20Studio%20Code&category=azure"
     }
   ]
 }
