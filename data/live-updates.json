@@ -1,6 +1,15 @@
 {
-  "updatedAt": "2026-07-19T21:02:00.944Z",
+  "updatedAt": "2026-07-19T22:27:58.462Z",
   "items": [
+    {
+      "title": "Azure Databricks delivers proven business value",
+      "summary": "Microsoft Azure Databricks delivers the first-party advantage of Databricks on Microsoft—and for customers, that advantage shows up as real, measurable value. It is the same Databricks platform your teams already know, c",
+      "date": "2026-07-15T15:00:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/azure-databricks-delivers-proven-business-value/",
+      "slug": "azure-databricks-delivers-proven-business-value",
+      "image": "/api/og?title=Azure%20Databricks%20delivers%20proven%20business%20value&category=azure"
+    },
     {
       "title": "Improving Windows Search Box, with less clutter and more control",
       "summary": "Hello Windows Insiders, You’ve been asking for search that is faster, more relevant, and easier to use—whether you’re opening an app, finding a file, or changing a setting. Because the Windows Search Box is where many pe",
@@ -135,15 +144,6 @@
       "sourceUrl": "https://blogs.windows.com/windows-insider/2026/06/26/announcing-new-builds-for-26-june-2026-retail-launch-of-new-wip-improvements/",
       "slug": "announcing-new-builds-for-26-june-2026-retail-launch-of-new-wip-improvements",
       "image": "/api/og?title=Announcing%20new%20builds%20for%2026%20June%202026%2C%20retail%20launch%20of%20new%20WIP%20improvements&category=windows"
-    },
-    {
-      "title": "The performance dividend: Optimizing PostgreSQL on Azure directly in Visual Studio Code",
-      "summary": "Poor database performance is never just a database problem. In enterprise teams, it shows up as missed SLAs, delayed releases, frustrated development teams, and rising operational risk. The performance problem compounds ",
-      "date": "2026-06-26T17:00:00.000Z",
-      "category": "azure",
-      "sourceUrl": "https://azure.microsoft.com/en-us/blog/the-performance-dividend-optimizing-postgresql-on-azure-directly-in-visual-studio-code/",
-      "slug": "the-performance-dividend-optimizing-postgresql-on-azure-directly-in-visual-studi",
-      "image": "/api/og?title=The%20performance%20dividend%3A%20Optimizing%20PostgreSQL%20on%20Azure%20directly%20in%20Visual%20Studio%20Code&category=azure"
     },
     {
       "title": "Age of Empires Mobile: PC Edition now available",
