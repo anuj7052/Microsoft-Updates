@@ -1,6 +1,15 @@
 {
-  "updatedAt": "2026-07-20T03:52:08.844Z",
+  "updatedAt": "2026-07-20T06:55:36.798Z",
   "items": [
+    {
+      "title": "Azure Databricks delivers proven business value",
+      "summary": "Microsoft Azure Databricks delivers the first-party advantage of Databricks on Microsoft—and for customers, that advantage shows up as real, measurable value. It is the same Databricks platform your teams already know, c",
+      "date": "2026-07-15T15:00:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/azure-databricks-delivers-proven-business-value/",
+      "slug": "azure-databricks-delivers-proven-business-value",
+      "image": "/api/og?title=Azure%20Databricks%20delivers%20proven%20business%20value&category=azure"
+    },
     {
       "title": "Improving Windows Search Box, with less clutter and more control",
       "summary": "Hello Windows Insiders, You’ve been asking for search that is faster, more relevant, and easier to use—whether you’re opening an app, finding a file, or changing a setting. Because the Windows Search Box is where many pe",
@@ -20,6 +29,24 @@
       "image": "/api/og?title=Evolving%20Windows%20vulnerability%20management%20to%20meet%20the%20speed%20of%20AI-powered%20discovery&category=windows"
     },
     {
+      "title": "Frontier models and production agents: Advancing Microsoft Foundry for the agentic era",
+      "summary": "Introducing OpenAI's latest frontier model series, the Asia Pacific Data Zone, and product agent capabilities, all generally available in Microsoft Foundry. The post Frontier models and production agents: Advancing Micro",
+      "date": "2026-07-09T17:00:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/frontier-models-and-production-agents-advancing-microsoft-foundry-for-the-agentic-era/",
+      "slug": "frontier-models-and-production-agents-advancing-microsoft-foundry-for-the-agenti",
+      "image": "/api/og?title=Frontier%20models%20and%20production%20agents%3A%20Advancing%20Microsoft%20Foundry%20for%20the%20agentic%20era&category=azure"
+    },
+    {
+      "title": "Built to bounce back: How Azure resiliency evolved",
+      "summary": "Cloud resiliency is about ensuring systems can adapt, recover, and keep functioning within real-world constraints. The post Built to bounce back: How Azure resiliency evolved appeared first on Microsoft Azure Blog.",
+      "date": "2026-07-08T16:00:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/built-to-bounce-back-how-azure-resiliency-evolved/",
+      "slug": "built-to-bounce-back-how-azure-resiliency-evolved",
+      "image": "/api/og?title=Built%20to%20bounce%20back%3A%20How%20Azure%20resiliency%20evolved&category=azure"
+    },
+    {
       "title": "New in Edge for developers – Style layout gaps, improve keyboard accessibility and migrate your PWA to a new origin",
       "summary": "Welcome to New in Edge for developers, a new series featuring recent web platform updates in Microsoft Edge that help web developers build better sites and apps. In this first edition, we'll look at CSS gap de The post N",
       "date": "2026-07-07T16:04:36.000Z",
@@ -27,6 +54,15 @@
       "sourceUrl": "https://blogs.windows.com/msedgedev/2026/07/07/new-in-edge-for-developers-style-layout-gaps-improve-keyboard-accessibility-and-migrate-your-pwa-to-a-new-origin/",
       "slug": "new-in-edge-for-developers-style-layout-gaps-improve-keyboard-accessibility-and",
       "image": "/api/og?title=New%20in%20Edge%20for%20developers%20%E2%80%93%20Style%20layout%20gaps%2C%20improve%20keyboard%20accessibility%20and%20migrate%20your%20PWA%20&category=windows"
+    },
+    {
+      "title": "External key management for Azure Managed HSM is now in public preview",
+      "summary": "Azure Key Vault Managed Hardware Security Module (HSM) provides strong sovereignty over your encryption keys. Keys are generated and stored in a single-tenant, FIPS 140-3 Level 3 HSM that only you control: Microsoft has ",
+      "date": "2026-07-07T16:00:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/external-key-management-for-azure-managed-hsm-is-now-in-public-preview/",
+      "slug": "external-key-management-for-azure-managed-hsm-is-now-in-public-preview",
+      "image": "/api/og?title=External%20key%20management%20for%20Azure%20Managed%20HSM%20is%20now%20in%20public%20preview&category=azure"
     },
     {
       "title": "Announcing new builds for July 6 2026",
@@ -38,6 +74,33 @@
       "image": "/api/og?title=Announcing%20new%20builds%20for%20July%206%202026&category=windows"
     },
     {
+      "title": "Meet Brain: The AI system behind Azure reliability",
+      "summary": "Learn how Microsoft is building a digital twin of Azure Service Health and why it changes how hyperscale operates. The post Meet Brain: The AI system behind Azure reliability appeared first on Microsoft Azure Blog.",
+      "date": "2026-07-02T16:00:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/meet-brain-the-ai-system-behind-azure-reliability/",
+      "slug": "meet-brain-the-ai-system-behind-azure-reliability",
+      "image": "/api/og?title=Meet%20Brain%3A%20The%20AI%20system%20behind%20Azure%20reliability&category=azure"
+    },
+    {
+      "title": "Proving application resilience on Azure with Chaos Studio",
+      "summary": "Azure Chaos Studio helps organizations validate application resilience by simulating outages, failovers, network disruptions, and infrastructure failures before they impact production. The post Proving application resili",
+      "date": "2026-07-01T16:00:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/proving-application-resilience-on-azure-with-chaos-studio/",
+      "slug": "proving-application-resilience-on-azure-with-chaos-studio",
+      "image": "/api/og?title=Proving%20application%20resilience%20on%20Azure%20with%20Chaos%20Studio&category=azure"
+    },
+    {
+      "title": "Azure IaaS: How to design, build, and optimize cloud infrastructure for long-term cost efficiency",
+      "summary": "As organizations modernize infrastructure, migrate mission-critical workloads, build cloud-native applications, and scale AI—cost efficiency remains a foundational principle of cloud architectures. The post Azure IaaS: H",
+      "date": "2026-06-30T16:00:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/azure-iaas-how-to-design-build-and-optimize-cloud-infrastructure-for-long-term-cost-optimization-efficiency/",
+      "slug": "azure-iaas-how-to-design-build-and-optimize-cloud-infrastructure-for-long-term-c",
+      "image": "/api/og?title=Azure%20IaaS%3A%20How%20to%20design%2C%20build%2C%20and%20optimize%20cloud%20infrastructure%20for%20long-term%20cost%20efficiency&category=azure"
+    },
+    {
       "title": "Elder Scrolls Online introduces new in-game event: High Seas of Tamriel",
       "summary": "Fans of PC favorite Elder Scrolls Online can look forward to a new in-game event: the High Seas of Tamriel, which XBOX Wire’s Mike Nelson f The post Elder Scrolls Online introduces new in-game event: High Seas of Tamriel",
       "date": "2026-06-29T17:00:31.000Z",
@@ -45,6 +108,33 @@
       "sourceUrl": "https://blogs.windows.com/windowsexperience/2026/06/29/elder-scrolls-online-introduces-new-in-game-event-high-seas-of-tamriel/",
       "slug": "elder-scrolls-online-introduces-new-in-game-event-high-seas-of-tamriel",
       "image": "/api/og?title=Elder%20Scrolls%20Online%20introduces%20new%20in-game%20event%3A%20High%20Seas%20of%20Tamriel&category=windows"
+    },
+    {
+      "title": "Claude in Microsoft Foundry is now generally available",
+      "summary": "Claude in Microsoft Foundry is now generally available, hosted on Azure, and running on NVIDIA GB300 Blackwell Ultra, giving teams a faster path from agent experimentation to production. The post Claude in Microsoft Foun",
+      "date": "2026-06-29T17:00:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/claude-in-microsoft-foundry-is-now-generally-available/",
+      "slug": "claude-in-microsoft-foundry-is-now-generally-available",
+      "image": "/api/og?title=Claude%20in%20Microsoft%20Foundry%20is%20now%20generally%20available&category=azure"
+    },
+    {
+      "title": "The 2026 Agent Confidence Index: Where 300 builders see real momentum",
+      "summary": "At Microsoft, building trustworthy AI agents is as critical as building powerful ones. New research from the 2026 Agent Confidence Index shows where teams trust agents today—and why human judgment remains the defining sk",
+      "date": "2026-06-29T15:15:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://www.microsoft.com/en-us/microsoft-cloud/blog/2026/06/29/the-2026-agent-confidence-index-where-300-builders-see-real-momentum/",
+      "slug": "the-2026-agent-confidence-index-where-300-builders-see-real-momentum",
+      "image": "/api/og?title=The%202026%20Agent%20Confidence%20Index%3A%20Where%20300%20builders%20see%20real%20momentum&category=azure"
+    },
+    {
+      "title": "Accelerate modern Linux workloads with Azure Files",
+      "summary": "Azure Files combines familiar file access with built-in performance, data protection, security, and Azure service integration. The post Accelerate modern Linux workloads with Azure Files appeared first on Microsoft Azure",
+      "date": "2026-06-29T15:00:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/accelerate-modern-linux-workloads-with-azure-files/",
+      "slug": "accelerate-modern-linux-workloads-with-azure-files",
+      "image": "/api/og?title=Accelerate%20modern%20Linux%20workloads%20with%20Azure%20Files&category=azure"
     },
     {
       "title": "Announcing new builds for 26 June 2026, retail launch of new WIP improvements",
