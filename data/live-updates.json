@@ -1,6 +1,15 @@
 {
-  "updatedAt": "2026-07-20T20:49:49.995Z",
+  "updatedAt": "2026-07-20T22:07:36.400Z",
   "items": [
+    {
+      "title": "Announcing new builds for 20 July 2026",
+      "summary": "Hello Windows Insiders, Today we are releasing new Windows 11 Insider Preview Builds across Beta, Experimental and Release Preview. See your channel release notes here: Beta: The post Announcing new builds for 20 July 20",
+      "date": "2026-07-20T21:05:12.000Z",
+      "category": "windows",
+      "sourceUrl": "https://blogs.windows.com/windows-insider/2026/07/20/announcing-new-builds-for-20-july-2026/",
+      "slug": "announcing-new-builds-for-20-july-2026",
+      "image": "/api/og?title=Announcing%20new%20builds%20for%2020%20July%202026&category=windows"
+    },
     {
       "title": "Azure Databricks delivers proven business value",
       "summary": "Microsoft Azure Databricks delivers the first-party advantage of Databricks on Microsoft—and for customers, that advantage shows up as real, measurable value. It is the same Databricks platform your teams already know, c",
@@ -171,15 +180,6 @@
       "sourceUrl": "https://blogs.windows.com/devices/2026/06/16/introducing-the-next-surface-pro-and-surface-laptop-built-for-performance-and-flexibility/",
       "slug": "introducing-the-next-surface-pro-and-surface-laptop-built-for-performance-and-fl",
       "image": "/api/og?title=Introducing%20the%20next%20Surface%20Pro%20and%20Surface%20Laptop%2C%20built%20for%20performance%20and%20flexibility&category=windows"
-    },
-    {
-      "title": "Announcing new builds for 12 June 2026",
-      "summary": "Hello Windows Insiders, We have a number of releases today with new builds across Beta, Experimental and Release Preview. Release notes for inbox Windows 11 apps Windows 11 inbox apps are now getting their own release no",
-      "date": "2026-06-12T17:05:12.000Z",
-      "category": "windows",
-      "sourceUrl": "https://blogs.windows.com/windows-insider/2026/06/12/announcing-new-builds-for-12-june-2026/",
-      "slug": "announcing-new-builds-for-12-june-2026",
-      "image": "/api/og?title=Announcing%20new%20builds%20for%2012%20June%202026&category=windows"
     }
   ]
 }
