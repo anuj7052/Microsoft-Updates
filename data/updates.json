@@ -1,5 +1,5 @@
 {
-  "lastFetchedAt": "2026-07-21T19:43:19.095Z",
+  "lastFetchedAt": "2026-07-21T21:19:34.003Z",
   "processed": [
     {
       "guid": "https://blogs.windows.com/blog/2026/03/30/announcing-windows-11-insider-preview-build-for-canary-channel-29558-1000/",
@@ -704,6 +704,14 @@
       "category": "windows",
       "riskLevel": "SAFE",
       "savedAt": "2026-07-20T22:07:36.402Z"
+    },
+    {
+      "guid": "https://blogs.windows.com/blog/2026/07/21/announcing-windows-11-insider-preview-build-28120-2546-for-experimental-26h1/",
+      "url": "https://blogs.windows.com/windows-insider/2026/07/21/announcing-windows-11-insider-preview-build-28120-2546-for-experimental-26h1/",
+      "slug": "announcing-windows-11-insider-preview-build-281202546-for-experimental-26h1",
+      "category": "windows",
+      "riskLevel": "SAFE",
+      "savedAt": "2026-07-21T21:19:34.003Z"
     }
   ]
 }
