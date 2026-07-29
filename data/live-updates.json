@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-29T00:03:58.099Z",
+  "updatedAt": "2026-07-29T03:52:15.801Z",
   "items": [
     {
       "title": "Announcing Windows 11 Insider Preview Build 29634.1000 for Experimental (Future Platforms)",
@@ -9,15 +9,6 @@
       "sourceUrl": "https://blogs.windows.com/windows-insider/2026/07/27/announcing-windows-11-insider-preview-build-29634-1000-for-experimental-future-platforms/",
       "slug": "announcing-windows-11-insider-preview-build-296341000-for-experimental-future-pl",
       "image": "/api/og?title=Announcing%20Windows%2011%20Insider%20Preview%20Build%2029634.1000%20for%20Experimental%20(Future%20Platforms)&category=windows"
-    },
-    {
-      "title": "AT&#038;T and Microsoft scale trillion-token workloads with Microsoft Foundry and AMD",
-      "summary": "AT&#38;T processed approximately one trillion tokens while developing OTel2.0 using Microsoft Foundry Managed Compute, open AI models, and AMD and NVIDIA GPU infrastructure. Discover how flexible model choice and scalabl",
-      "date": "2026-07-23T18:30:00.000Z",
-      "category": "azure",
-      "sourceUrl": "https://azure.microsoft.com/en-us/blog/att-and-microsoft-scale-trillion-token-workloads-with-microsoft-foundry-and-amd/",
-      "slug": "at038t-and-microsoft-scale-trillion-token-workloads-with-microsoft-foundry-and-a",
-      "image": "/api/og?title=AT%26%23038%3BT%20and%20Microsoft%20scale%20trillion-token%20workloads%20with%20Microsoft%20Foundry%20and%20AMD&category=azure"
     },
     {
       "title": "Announcing Windows 11 Insider Preview Build 28120.2546 for Experimental (26H1)",
@@ -65,13 +56,13 @@
       "image": "/api/og?title=Evolving%20Windows%20vulnerability%20management%20to%20meet%20the%20speed%20of%20AI-powered%20discovery&category=windows"
     },
     {
-      "title": "GPT-5.6 now available in Microsoft Foundry",
-      "summary": "Introducing OpenAI's latest frontier model series, the Asia Pacific Data Zone, and product agent capabilities, all generally available in Microsoft Foundry. The post GPT-5.6 now available in Microsoft Foundry appeared fi",
+      "title": "Frontier models and production agents: Advancing Microsoft Foundry for the agentic era",
+      "summary": "Introducing OpenAI's latest frontier model series, the Asia Pacific Data Zone, and product agent capabilities, all generally available in Microsoft Foundry. The post Frontier models and production agents: Advancing Micro",
       "date": "2026-07-09T17:00:00.000Z",
       "category": "azure",
-      "sourceUrl": "https://azure.microsoft.com/en-us/blog/gpt-5-6-now-available-in-microsoft-foundry/",
-      "slug": "gpt-56-now-available-in-microsoft-foundry",
-      "image": "/api/og?title=GPT-5.6%20now%20available%20in%20Microsoft%20Foundry&category=azure"
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/frontier-models-and-production-agents-advancing-microsoft-foundry-for-the-agentic-era/",
+      "slug": "frontier-models-and-production-agents-advancing-microsoft-foundry-for-the-agenti",
+      "image": "/api/og?title=Frontier%20models%20and%20production%20agents%3A%20Advancing%20Microsoft%20Foundry%20for%20the%20agentic%20era&category=azure"
     },
     {
       "title": "Built to bounce back: How Azure resiliency evolved",
@@ -162,6 +153,15 @@
       "sourceUrl": "https://www.microsoft.com/en-us/microsoft-cloud/blog/2026/06/29/the-2026-agent-confidence-index-where-300-builders-see-real-momentum/",
       "slug": "the-2026-agent-confidence-index-where-300-builders-see-real-momentum",
       "image": "/api/og?title=The%202026%20Agent%20Confidence%20Index%3A%20Where%20300%20builders%20see%20real%20momentum&category=azure"
+    },
+    {
+      "title": "Accelerate modern Linux workloads with Azure Files",
+      "summary": "Azure Files combines familiar file access with built-in performance, data protection, security, and Azure service integration. The post Accelerate modern Linux workloads with Azure Files appeared first on Microsoft Azure",
+      "date": "2026-06-29T15:00:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/accelerate-modern-linux-workloads-with-azure-files/",
+      "slug": "accelerate-modern-linux-workloads-with-azure-files",
+      "image": "/api/og?title=Accelerate%20modern%20Linux%20workloads%20with%20Azure%20Files&category=azure"
     },
     {
       "title": "Announcing new builds for 26 June 2026, retail launch of new WIP improvements",
