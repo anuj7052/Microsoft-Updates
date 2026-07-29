@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-29T14:53:22.848Z",
+  "updatedAt": "2026-07-29T16:27:02.109Z",
   "items": [
     {
       "title": "Announcing Windows 11 Insider Preview Build 29634.1000 for Experimental (Future Platforms)",
@@ -9,6 +9,15 @@
       "sourceUrl": "https://blogs.windows.com/windows-insider/2026/07/27/announcing-windows-11-insider-preview-build-29634-1000-for-experimental-future-platforms/",
       "slug": "announcing-windows-11-insider-preview-build-296341000-for-experimental-future-pl",
       "image": "/api/og?title=Announcing%20Windows%2011%20Insider%20Preview%20Build%2029634.1000%20for%20Experimental%20(Future%20Platforms)&category=windows"
+    },
+    {
+      "title": "What customers value most in Microsoft Databases—from reliability to AI readiness",
+      "summary": "Every day, customers trust Microsoft Databases to power their most critical applications, business processes, and AI-powered experiences. The post What customers value most in Microsoft Databases—from reliability to AI r",
+      "date": "2026-07-27T15:00:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/what-customers-value-most-in-microsoft-databases-from-reliability-to-ai-readiness/",
+      "slug": "what-customers-value-most-in-microsoft-databasesfrom-reliability-to-ai-readiness",
+      "image": "/api/og?title=What%20customers%20value%20most%20in%20Microsoft%20Databases%E2%80%94from%20reliability%20to%20AI%20readiness&category=azure"
     },
     {
       "title": "AT&#038;T and Microsoft scale trillion-token workloads with Microsoft Foundry and AMD",
@@ -153,15 +162,6 @@
       "sourceUrl": "https://azure.microsoft.com/en-us/blog/claude-in-microsoft-foundry-is-now-generally-available/",
       "slug": "claude-in-microsoft-foundry-is-now-generally-available",
       "image": "/api/og?title=Claude%20in%20Microsoft%20Foundry%20is%20now%20generally%20available&category=azure"
-    },
-    {
-      "title": "The 2026 Agent Confidence Index: Where 300 builders see real momentum",
-      "summary": "At Microsoft, building trustworthy AI agents is as critical as building powerful ones. New research from the 2026 Agent Confidence Index shows where teams trust agents today—and why human judgment remains the defining sk",
-      "date": "2026-06-29T15:15:00.000Z",
-      "category": "azure",
-      "sourceUrl": "https://www.microsoft.com/en-us/microsoft-cloud/blog/2026/06/29/the-2026-agent-confidence-index-where-300-builders-see-real-momentum/",
-      "slug": "the-2026-agent-confidence-index-where-300-builders-see-real-momentum",
-      "image": "/api/og?title=The%202026%20Agent%20Confidence%20Index%3A%20Where%20300%20builders%20see%20real%20momentum&category=azure"
     },
     {
       "title": "Announcing new builds for 26 June 2026, retail launch of new WIP improvements",
