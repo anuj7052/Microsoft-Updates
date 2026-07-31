@@ -1,5 +1,5 @@
 {
-  "lastFetchedAt": "2026-07-31T17:07:10.896Z",
+  "lastFetchedAt": "2026-07-31T18:55:06.783Z",
   "seenGuids": [
     "https://blogs.windows.com/blog/2026/04/02/part-3-babylon-js-9-0-openpbr-and-additional-engine-updates/",
     "https://blogs.windows.com/blog/2026/04/03/announcing-windows-11-insider-preview-build-26220-8148-beta-channel/",
@@ -71,7 +71,8 @@
     "https://blogs.windows.com/blog/2026/07/20/announcing-new-builds-for-20-july-2026/",
     "https://blogs.windows.com/blog/2026/07/21/announcing-windows-11-insider-preview-build-28120-2546-for-experimental-26h1/",
     "https://blogs.windows.com/blog/2026/07/27/announcing-windows-11-insider-preview-build-29634-1000-for-experimental-future-platforms/",
-    "https://blogs.windows.com/blog/2026/07/31/announcing-new-builds-for-31-july-2026/"
+    "https://blogs.windows.com/blog/2026/07/31/announcing-new-builds-for-31-july-2026/",
+    "https://blogs.windows.com/blog/2026/07/31/windows-quality-an-update-on-the-commitment-we-made-in-march/"
   ],
-  "totalArticles": 71
+  "totalArticles": 72
 }

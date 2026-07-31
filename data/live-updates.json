@@ -1,6 +1,15 @@
 {
-  "updatedAt": "2026-07-31T17:07:10.895Z",
+  "updatedAt": "2026-07-31T18:55:06.781Z",
   "items": [
+    {
+      "title": "Windows quality: an update on the commitment we made in March",
+      "summary": "In March I wrote to you about our commitment to Windows quality. Four months in, the team and I have been reflecting on our progress and wanted to s The post Windows quality: an update on the commitment we made in March ",
+      "date": "2026-07-31T18:05:18.000Z",
+      "category": "windows",
+      "sourceUrl": "https://blogs.windows.com/windows-insider/2026/07/31/windows-quality-an-update-on-the-commitment-we-made-in-march/",
+      "slug": "windows-quality-an-update-on-the-commitment-we-made-in-march",
+      "image": "/api/og?title=Windows%20quality%3A%20an%20update%20on%20the%20commitment%20we%20made%20in%20March&category=windows"
+    },
     {
       "title": "Announcing new builds for 31 July 2026",
       "summary": "Hello Windows Insiders, We have new releases today with builds across Beta and Experimental, including refreshed security certificates across all new builds. Renewed Windows Insider flight certificates All builds this we",
@@ -171,15 +180,6 @@
       "sourceUrl": "https://azure.microsoft.com/en-us/blog/claude-in-microsoft-foundry-is-now-generally-available/",
       "slug": "claude-in-microsoft-foundry-is-now-generally-available",
       "image": "/api/og?title=Claude%20in%20Microsoft%20Foundry%20is%20now%20generally%20available&category=azure"
-    },
-    {
-      "title": "Announcing new builds for 26 June 2026, retail launch of new WIP improvements",
-      "summary": "Hello Windows Insiders, We have new releases today with builds across Beta and Experimental, and are excited to begin rolling out the new Windows Insider experience to retail Windows 11 builds this week! New Windows Insi",
-      "date": "2026-06-26T17:00:19.000Z",
-      "category": "windows",
-      "sourceUrl": "https://blogs.windows.com/windows-insider/2026/06/26/announcing-new-builds-for-26-june-2026-retail-launch-of-new-wip-improvements/",
-      "slug": "announcing-new-builds-for-26-june-2026-retail-launch-of-new-wip-improvements",
-      "image": "/api/og?title=Announcing%20new%20builds%20for%2026%20June%202026%2C%20retail%20launch%20of%20new%20WIP%20improvements&category=windows"
     }
   ]
 }
