@@ -1,6 +1,15 @@
 {
-  "updatedAt": "2026-07-31T15:05:06.745Z",
+  "updatedAt": "2026-07-31T17:07:10.895Z",
   "items": [
+    {
+      "title": "Announcing new builds for 31 July 2026",
+      "summary": "Hello Windows Insiders, We have new releases today with builds across Beta and Experimental, including refreshed security certificates across all new builds. Renewed Windows Insider flight certificates All builds this we",
+      "date": "2026-07-31T17:01:56.000Z",
+      "category": "windows",
+      "sourceUrl": "https://blogs.windows.com/windows-insider/2026/07/31/announcing-new-builds-for-31-july-2026/",
+      "slug": "announcing-new-builds-for-31-july-2026",
+      "image": "/api/og?title=Announcing%20new%20builds%20for%2031%20July%202026&category=windows"
+    },
     {
       "title": "Announcing Windows 11 Insider Preview Build 29634.1000 for Experimental (Future Platforms)",
       "summary": "Hello Windows Insiders, Today we’re releasing build 29634.1000 for the Experimental (Future Platforms) channel. Release notes can be found over in the The post Announcing Windows 11 Insider Preview Build 29634.1000 for E",
@@ -171,15 +180,6 @@
       "sourceUrl": "https://blogs.windows.com/windows-insider/2026/06/26/announcing-new-builds-for-26-june-2026-retail-launch-of-new-wip-improvements/",
       "slug": "announcing-new-builds-for-26-june-2026-retail-launch-of-new-wip-improvements",
       "image": "/api/og?title=Announcing%20new%20builds%20for%2026%20June%202026%2C%20retail%20launch%20of%20new%20WIP%20improvements&category=windows"
-    },
-    {
-      "title": "Age of Empires Mobile: PC Edition now available",
-      "summary": "Great news for players of Age of Empires Mobile! The game is now available on Steam and the Microsoft Store for PCs. Players who’ve started on mobile can continue to play between their phone, tablet and/or PC without los",
-      "date": "2026-06-24T18:35:40.000Z",
-      "category": "windows",
-      "sourceUrl": "https://blogs.windows.com/windowsexperience/2026/06/24/age-of-empires-mobile-pc-edition-now-available/",
-      "slug": "age-of-empires-mobile-pc-edition-now-available",
-      "image": "/api/og?title=Age%20of%20Empires%20Mobile%3A%20PC%20Edition%20now%20available&category=windows"
     }
   ]
 }
