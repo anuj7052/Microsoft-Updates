@@ -1,6 +1,15 @@
 {
-  "updatedAt": "2026-08-04T14:33:40.974Z",
+  "updatedAt": "2026-08-04T16:58:16.994Z",
   "items": [
+    {
+      "title": "Bring your security stack into Edge for Business — with support for more partners",
+      "summary": "At a glance Edge for Business security connectors extend your security tools into the browser, so you gain visibility and enforcement where work happens. This update adds new partner integrations, including Cisco Secure ",
+      "date": "2026-08-04T16:00:24.000Z",
+      "category": "windows",
+      "sourceUrl": "https://blogs.windows.com/msedgedev/2026/08/04/bring-your-security-stack-into-edge-for-business-with-support-for-more-partners/",
+      "slug": "bring-your-security-stack-into-edge-for-business-with-support-for-more-partners",
+      "image": "/api/og?title=Bring%20your%20security%20stack%20into%20Edge%20for%20Business%20%E2%80%94%20with%20support%20for%20more%20partners&category=windows"
+    },
     {
       "title": "Windows quality: an update on the commitment we made in March",
       "summary": "In March I wrote to you about our commitment to Windows quality. Four months in, the team and I have been reflecting on our progress and wanted to s The post Windows quality: an update on the commitment we made in March ",
@@ -162,15 +171,6 @@
       "sourceUrl": "https://azure.microsoft.com/en-us/blog/azure-iaas-how-to-design-build-and-optimize-cloud-infrastructure-for-long-term-cost-optimization-efficiency/",
       "slug": "azure-iaas-how-to-design-build-and-optimize-cloud-infrastructure-for-long-term-c",
       "image": "/api/og?title=Azure%20IaaS%3A%20How%20to%20design%2C%20build%2C%20and%20optimize%20cloud%20infrastructure%20for%20long-term%20cost%20efficiency&category=azure"
-    },
-    {
-      "title": "Elder Scrolls Online introduces new in-game event: High Seas of Tamriel",
-      "summary": "Fans of PC favorite Elder Scrolls Online can look forward to a new in-game event: the High Seas of Tamriel, which XBOX Wire’s Mike Nelson f The post Elder Scrolls Online introduces new in-game event: High Seas of Tamriel",
-      "date": "2026-06-29T17:00:31.000Z",
-      "category": "windows",
-      "sourceUrl": "https://blogs.windows.com/windowsexperience/2026/06/29/elder-scrolls-online-introduces-new-in-game-event-high-seas-of-tamriel/",
-      "slug": "elder-scrolls-online-introduces-new-in-game-event-high-seas-of-tamriel",
-      "image": "/api/og?title=Elder%20Scrolls%20Online%20introduces%20new%20in-game%20event%3A%20High%20Seas%20of%20Tamriel&category=windows"
     },
     {
       "title": "Claude in Microsoft Foundry is now generally available",
