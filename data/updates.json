@@ -1,5 +1,5 @@
 {
-  "lastFetchedAt": "2026-08-07T15:01:05.056Z",
+  "lastFetchedAt": "2026-08-07T16:25:57.730Z",
   "processed": [
     {
       "guid": "https://blogs.windows.com/blog/2026/03/30/announcing-windows-11-insider-preview-build-for-canary-channel-29558-1000/",
@@ -744,6 +744,14 @@
       "category": "windows",
       "riskLevel": "SAFE",
       "savedAt": "2026-08-04T16:58:16.995Z"
+    },
+    {
+      "guid": "https://blogs.windows.com/blog/2026/08/07/moving-the-microsoft-edge-extensions-ecosystem-forward-with-manifest-version-3/",
+      "url": "https://blogs.windows.com/msedgedev/2026/08/07/moving-the-microsoft-edge-extensions-ecosystem-forward-with-manifest-version-3/",
+      "slug": "moving-the-microsoft-edge-extensions-ecosystem-forward-with-manifest-version-3",
+      "category": "windows",
+      "riskLevel": "SAFE",
+      "savedAt": "2026-08-07T16:25:57.730Z"
     }
   ]
 }
