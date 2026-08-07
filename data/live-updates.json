@@ -1,15 +1,6 @@
 {
-  "updatedAt": "2026-08-07T07:35:37.940Z",
+  "updatedAt": "2026-08-07T09:08:39.004Z",
   "items": [
-    {
-      "title": "Microsoft named a Leader in the 2026 Gartner® Magic Quadrant™ for AI-Augmented Code Modernization Tools",
-      "summary": "GitHub Copilot and Azure are helping organizations modernize legacy applications, reduce technical debt, and prepare for AI innovation. The post Microsoft named a Leader in the 2026 Gartner® Magic Quadrant™ for AI-Augmen",
-      "date": "2026-08-06T15:00:00.000Z",
-      "category": "azure",
-      "sourceUrl": "https://azure.microsoft.com/en-us/blog/microsoft-named-a-leader-in-the-2026-gartner-magic-quadrant-for-ai-augmented-code-modernization-tools/",
-      "slug": "microsoft-named-a-leader-in-the-2026-gartner-magic-quadrant-for-ai-augmented-cod",
-      "image": "/api/og?title=Microsoft%20named%20a%20Leader%20in%20the%202026%20Gartner%C2%AE%20Magic%20Quadrant%E2%84%A2%20for%20AI-Augmented%20Code%20Modernization%20To&category=azure"
-    },
     {
       "title": "Bring your security stack into Edge for Business — with support for more partners",
       "summary": "At a glance Edge for Business security connectors extend your security tools into the browser, so you gain visibility and enforcement where work happens. This update adds new partner integrations, including Cisco Secure ",
@@ -180,6 +171,15 @@
       "sourceUrl": "https://azure.microsoft.com/en-us/blog/azure-iaas-how-to-design-build-and-optimize-cloud-infrastructure-for-long-term-cost-optimization-efficiency/",
       "slug": "azure-iaas-how-to-design-build-and-optimize-cloud-infrastructure-for-long-term-c",
       "image": "/api/og?title=Azure%20IaaS%3A%20How%20to%20design%2C%20build%2C%20and%20optimize%20cloud%20infrastructure%20for%20long-term%20cost%20efficiency&category=azure"
+    },
+    {
+      "title": "Claude in Microsoft Foundry is now generally available",
+      "summary": "Claude in Microsoft Foundry is now generally available, hosted on Azure, and running on NVIDIA GB300 Blackwell Ultra, giving teams a faster path from agent experimentation to production. The post Claude in Microsoft Foun",
+      "date": "2026-06-29T17:00:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/claude-in-microsoft-foundry-is-now-generally-available/",
+      "slug": "claude-in-microsoft-foundry-is-now-generally-available",
+      "image": "/api/og?title=Claude%20in%20Microsoft%20Foundry%20is%20now%20generally%20available&category=azure"
     }
   ]
 }
