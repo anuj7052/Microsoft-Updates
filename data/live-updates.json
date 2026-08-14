@@ -1,6 +1,15 @@
 {
-  "updatedAt": "2026-08-14T16:01:00.831Z",
+  "updatedAt": "2026-08-14T17:30:35.455Z",
   "items": [
+    {
+      "title": "Announcing new Release Preview builds for 14 August 2026",
+      "summary": "Hello Windows Insiders, Today we’re releasing new builds for Release Preview across our supported versions of Windows 11. Please see the build numbers and links to the release notes below: Windows 11 version 24H2/25H2: T",
+      "date": "2026-08-14T17:22:16.000Z",
+      "category": "windows",
+      "sourceUrl": "https://blogs.windows.com/windows-insider/2026/08/14/announcing-new-release-preview-builds-for-14-august-2026/",
+      "slug": "announcing-new-release-preview-builds-for-14-august-2026",
+      "image": "/api/og?title=Announcing%20new%20Release%20Preview%20builds%20for%2014%20August%202026&category=windows"
+    },
     {
       "title": "The Economics of Agent Optimization: From pilots to measurable returns",
       "summary": "Learn how AI cost management helps organizations move from AI pilots to measurable ROI through greater visibility, governance, and optimization. The post The Economics of Agent Optimization: From pilots to measurable ret",
@@ -144,15 +153,6 @@
       "sourceUrl": "https://azure.microsoft.com/en-us/blog/built-to-bounce-back-how-azure-resiliency-evolved/",
       "slug": "built-to-bounce-back-how-azure-resiliency-evolved",
       "image": "/api/og?title=Built%20to%20bounce%20back%3A%20How%20Azure%20resiliency%20evolved&category=azure"
-    },
-    {
-      "title": "New in Edge for developers – Style layout gaps, improve keyboard accessibility and migrate your PWA to a new origin",
-      "summary": "Welcome to New in Edge for developers, a new series featuring recent web platform updates in Microsoft Edge that help web developers build better sites and apps. In this first edition, we'll look at CSS gap de The post N",
-      "date": "2026-07-07T16:04:36.000Z",
-      "category": "windows",
-      "sourceUrl": "https://blogs.windows.com/msedgedev/2026/07/07/new-in-edge-for-developers-style-layout-gaps-improve-keyboard-accessibility-and-migrate-your-pwa-to-a-new-origin/",
-      "slug": "new-in-edge-for-developers-style-layout-gaps-improve-keyboard-accessibility-and",
-      "image": "/api/og?title=New%20in%20Edge%20for%20developers%20%E2%80%93%20Style%20layout%20gaps%2C%20improve%20keyboard%20accessibility%20and%20migrate%20your%20PWA%20&category=windows"
     },
     {
       "title": "External key management for Azure Managed HSM is now in public preview",

@@ -1,5 +1,5 @@
 {
-  "lastFetchedAt": "2026-08-14T16:01:00.831Z",
+  "lastFetchedAt": "2026-08-14T17:30:35.457Z",
   "seenGuids": [
     "https://blogs.windows.com/blog/2026/04/02/part-3-babylon-js-9-0-openpbr-and-additional-engine-updates/",
     "https://blogs.windows.com/blog/2026/04/03/announcing-windows-11-insider-preview-build-26220-8148-beta-channel/",
@@ -74,7 +74,8 @@
     "https://blogs.windows.com/blog/2026/07/31/announcing-new-builds-for-31-july-2026/",
     "https://blogs.windows.com/blog/2026/07/31/windows-quality-an-update-on-the-commitment-we-made-in-march/",
     "https://blogs.windows.com/blog/2026/08/04/bring-your-security-stack-into-edge-for-business-with-support-for-more-partners/",
-    "https://blogs.windows.com/blog/2026/08/07/moving-the-microsoft-edge-extensions-ecosystem-forward-with-manifest-version-3/"
+    "https://blogs.windows.com/blog/2026/08/07/moving-the-microsoft-edge-extensions-ecosystem-forward-with-manifest-version-3/",
+    "https://blogs.windows.com/blog/2026/08/14/announcing-new-release-preview-builds-for-14-august-2026/"
   ],
-  "totalArticles": 74
+  "totalArticles": 75
 }
