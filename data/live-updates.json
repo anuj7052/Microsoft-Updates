@@ -1,6 +1,24 @@
 {
-  "updatedAt": "2026-08-17T20:34:40.478Z",
+  "updatedAt": "2026-08-17T21:32:20.461Z",
   "items": [
+    {
+      "title": "Improving File Explorer &#038; Context Menu: faster, simpler, and more customizable",
+      "summary": "Hi Windows Insiders, File Explorer is one of the most used experiences on Windows. It's where you get work done: organizing files, finding what you need, and moving content seamlessly across local storage and the cloud. ",
+      "date": "2026-08-17T21:20:22.000Z",
+      "category": "windows",
+      "sourceUrl": "https://blogs.windows.com/windows-insider/2026/08/17/improving-file-explorer-context-menu-faster-simpler-and-more-customizable/",
+      "slug": "improving-file-explorer-038-context-menu-faster-simpler-and-more-customizable",
+      "image": "/api/og?title=Improving%20File%20Explorer%20%26%23038%3B%20Context%20Menu%3A%20faster%2C%20simpler%2C%20and%20more%20customizable&category=windows"
+    },
+    {
+      "title": "Announcing new builds for 17 August 2026",
+      "summary": "Hello Windows Insiders, Today, we’re releasing new Windows 11 Insider Preview builds to the Beta and Experimental Channels. This post also includes reminders about renewed flight certificates and the current Feature Flag",
+      "date": "2026-08-17T21:19:57.000Z",
+      "category": "windows",
+      "sourceUrl": "https://blogs.windows.com/windows-insider/2026/08/17/announcing-new-builds-for-17-august-2026/",
+      "slug": "announcing-new-builds-for-17-august-2026",
+      "image": "/api/og?title=Announcing%20new%20builds%20for%2017%20August%202026&category=windows"
+    },
     {
       "title": "Announcing new Release Preview builds for 14 August 2026",
       "summary": "Hello Windows Insiders, Today we’re releasing new builds for Release Preview across our supported versions of Windows 11. Please see the build numbers and links to the release notes below: Windows 11 version 24H2/25H2: T",
@@ -117,24 +135,6 @@
       "sourceUrl": "https://azure.microsoft.com/en-us/blog/azure-databricks-delivers-proven-business-value/",
       "slug": "azure-databricks-delivers-proven-business-value",
       "image": "/api/og?title=Azure%20Databricks%20delivers%20proven%20business%20value&category=azure"
-    },
-    {
-      "title": "Improving Windows Search Box, with less clutter and more control",
-      "summary": "Hello Windows Insiders, You’ve been asking for search that is faster, more relevant, and easier to use—whether you’re opening an app, finding a file, or changing a setting. Because the Windows Search Box is where many pe",
-      "date": "2026-07-13T17:00:32.000Z",
-      "category": "windows",
-      "sourceUrl": "https://blogs.windows.com/windows-insider/2026/07/13/improving-windows-search-box-with-less-clutter-and-more-control/",
-      "slug": "improving-windows-search-box-with-less-clutter-and-more-control",
-      "image": "/api/og?title=Improving%20Windows%20Search%20Box%2C%20with%20less%20clutter%20and%20more%20control&category=windows"
-    },
-    {
-      "title": "Evolving Windows vulnerability management to meet the speed of AI-powered discovery",
-      "summary": "Windows has adapted to emerging threats for decades, all while operating at unparalleled scale. It's our responsibility to bring clarity, transparency and sustained investment so customers understand what is happening, w",
-      "date": "2026-07-09T17:00:04.000Z",
-      "category": "windows",
-      "sourceUrl": "https://blogs.windows.com/windowsexperience/2026/07/09/evolving-windows-vulnerability-management-to-meet-the-speed-of-ai-powered-discovery/",
-      "slug": "evolving-windows-vulnerability-management-to-meet-the-speed-of-ai-powered-discov",
-      "image": "/api/og?title=Evolving%20Windows%20vulnerability%20management%20to%20meet%20the%20speed%20of%20AI-powered%20discovery&category=windows"
     },
     {
       "title": "GPT-5.6 now available in Microsoft Foundry",

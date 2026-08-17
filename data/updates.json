@@ -1,5 +1,5 @@
 {
-  "lastFetchedAt": "2026-08-17T20:34:40.479Z",
+  "lastFetchedAt": "2026-08-17T21:32:20.462Z",
   "processed": [
     {
       "guid": "https://blogs.windows.com/blog/2026/03/30/announcing-windows-11-insider-preview-build-for-canary-channel-29558-1000/",
@@ -760,6 +760,22 @@
       "category": "windows",
       "riskLevel": "SAFE",
       "savedAt": "2026-08-14T17:30:35.457Z"
+    },
+    {
+      "guid": "https://blogs.windows.com/blog/2026/08/17/improving-file-explorer-context-menu-faster-simpler-and-more-customizable/",
+      "url": "https://blogs.windows.com/windows-insider/2026/08/17/improving-file-explorer-context-menu-faster-simpler-and-more-customizable/",
+      "slug": "improving-file-explorer-038-context-menu-faster-simpler-and-more-customizable",
+      "category": "windows",
+      "riskLevel": "SAFE",
+      "savedAt": "2026-08-17T21:32:20.462Z"
+    },
+    {
+      "guid": "https://blogs.windows.com/blog/2026/08/17/announcing-new-builds-for-17-august-2026/",
+      "url": "https://blogs.windows.com/windows-insider/2026/08/17/announcing-new-builds-for-17-august-2026/",
+      "slug": "announcing-new-builds-for-17-august-2026",
+      "category": "windows",
+      "riskLevel": "SAFE",
+      "savedAt": "2026-08-17T21:32:20.462Z"
     }
   ]
 }
