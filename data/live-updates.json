@@ -1,6 +1,15 @@
 {
-  "updatedAt": "2026-08-20T16:00:53.944Z",
+  "updatedAt": "2026-08-20T17:02:11.158Z",
   "items": [
+    {
+      "title": "Windows 365 turns five: Cloud PCs recognized for enabling flexible, trusted workspaces at scale",
+      "summary": "Five years ago, we introduced Windows 365 and created a new personal computing category: the Cloud PC, providing a familiar Windows desktop running in the Microsoft Cloud that is secure by design, simple to manage, and e",
+      "date": "2026-08-20T16:00:28.000Z",
+      "category": "windows",
+      "sourceUrl": "https://blogs.windows.com/windowsexperience/2026/08/20/windows-365-turns-five-cloud-pcs-enable-workspaces-at-scale/",
+      "slug": "windows-365-turns-five-cloud-pcs-recognized-for-enabling-flexible-trusted-worksp",
+      "image": "/api/og?title=Windows%20365%20turns%20five%3A%20Cloud%20PCs%20recognized%20for%20enabling%20flexible%2C%20trusted%20workspaces%20at%20scale&category=windows"
+    },
     {
       "title": "Improving File Explorer &#038; Context Menu: faster, simpler, and more customizable",
       "summary": "Hi Windows Insiders, File Explorer is one of the most used experiences on Windows. It's where you get work done: organizing files, finding what you need, and moving content seamlessly across local storage and the cloud. ",
@@ -126,15 +135,6 @@
       "sourceUrl": "https://blogs.windows.com/windows-insider/2026/07/21/announcing-windows-11-insider-preview-build-28120-2546-for-experimental-26h1/",
       "slug": "announcing-windows-11-insider-preview-build-281202546-for-experimental-26h1",
       "image": "/api/og?title=Announcing%20Windows%2011%20Insider%20Preview%20Build%2028120.2546%20for%20Experimental%20(26H1)&category=windows"
-    },
-    {
-      "title": "Announcing new builds for 20 July 2026",
-      "summary": "Hello Windows Insiders, Today we are releasing new Windows 11 Insider Preview Builds across Beta, Experimental and Release Preview. See your channel release notes here: Beta: The post Announcing new builds for 20 July 20",
-      "date": "2026-07-20T21:05:12.000Z",
-      "category": "windows",
-      "sourceUrl": "https://blogs.windows.com/windows-insider/2026/07/20/announcing-new-builds-for-20-july-2026/",
-      "slug": "announcing-new-builds-for-20-july-2026",
-      "image": "/api/og?title=Announcing%20new%20builds%20for%2020%20July%202026&category=windows"
     },
     {
       "title": "Azure Databricks delivers proven business value",
