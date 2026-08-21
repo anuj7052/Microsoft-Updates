@@ -1,5 +1,5 @@
 {
-  "lastFetchedAt": "2026-08-21T16:47:22.102Z",
+  "lastFetchedAt": "2026-08-21T17:36:04.164Z",
   "seenGuids": [
     "https://blogs.windows.com/blog/2026/04/02/part-3-babylon-js-9-0-openpbr-and-additional-engine-updates/",
     "https://blogs.windows.com/blog/2026/04/03/announcing-windows-11-insider-preview-build-26220-8148-beta-channel/",
@@ -77,7 +77,8 @@
     "https://blogs.windows.com/blog/2026/08/07/moving-the-microsoft-edge-extensions-ecosystem-forward-with-manifest-version-3/",
     "https://blogs.windows.com/blog/2026/08/14/announcing-new-release-preview-builds-for-14-august-2026/",
     "https://blogs.windows.com/blog/2026/08/17/improving-file-explorer-context-menu-faster-simpler-and-more-customizable/",
-    "https://blogs.windows.com/blog/2026/08/17/announcing-new-builds-for-17-august-2026/"
+    "https://blogs.windows.com/blog/2026/08/17/announcing-new-builds-for-17-august-2026/",
+    "https://blogs.windows.com/blog/2026/08/21/announcing-new-builds-for-21-august-2026/"
   ],
-  "totalArticles": 77
+  "totalArticles": 78
 }

@@ -1,6 +1,15 @@
 {
-  "updatedAt": "2026-08-21T16:47:22.102Z",
+  "updatedAt": "2026-08-21T17:36:04.162Z",
   "items": [
+    {
+      "title": "Announcing new builds for 21 August 2026",
+      "summary": "Hello Windows Insiders, Today, we’re releasing new Windows 11 Insider Preview builds to the Beta and Experimental Channels. Experimental Feature Flags We’ve fixed the issue causing the Feature Flags list to show empty fo",
+      "date": "2026-08-21T17:09:32.000Z",
+      "category": "windows",
+      "sourceUrl": "https://blogs.windows.com/windows-insider/2026/08/21/announcing-new-builds-for-21-august-2026/",
+      "slug": "announcing-new-builds-for-21-august-2026",
+      "image": "/api/og?title=Announcing%20new%20builds%20for%2021%20August%202026&category=windows"
+    },
     {
       "title": "Windows 365 turns five: Cloud PCs recognized for enabling flexible, trusted workspaces at scale",
       "summary": "Five years ago, we introduced Windows 365 and created a new personal computing category: the Cloud PC, providing a familiar Windows desktop running in the Microsoft Cloud that is secure by design, simple to manage, and e",
@@ -126,15 +135,6 @@
       "sourceUrl": "https://azure.microsoft.com/en-us/blog/att-and-microsoft-scale-trillion-token-workloads-with-microsoft-foundry-and-amd/",
       "slug": "at038t-and-microsoft-scale-trillion-token-workloads-with-microsoft-foundry-and-a",
       "image": "/api/og?title=AT%26%23038%3BT%20and%20Microsoft%20scale%20trillion-token%20workloads%20with%20Microsoft%20Foundry%20and%20AMD&category=azure"
-    },
-    {
-      "title": "Announcing Windows 11 Insider Preview Build 28120.2546 for Experimental (26H1)",
-      "summary": "Hello Windows Insiders, Today we're releasing build 28120.2546 for the Experimental (26H1) channel. Release notes can be found over in the The post Announcing Windows 11 Insider Preview Build 28120.2546 for Experimental ",
-      "date": "2026-07-21T21:03:05.000Z",
-      "category": "windows",
-      "sourceUrl": "https://blogs.windows.com/windows-insider/2026/07/21/announcing-windows-11-insider-preview-build-28120-2546-for-experimental-26h1/",
-      "slug": "announcing-windows-11-insider-preview-build-281202546-for-experimental-26h1",
-      "image": "/api/og?title=Announcing%20Windows%2011%20Insider%20Preview%20Build%2028120.2546%20for%20Experimental%20(26H1)&category=windows"
     },
     {
       "title": "Azure Databricks delivers proven business value",
