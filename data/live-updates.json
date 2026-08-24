@@ -1,6 +1,15 @@
 {
-  "updatedAt": "2026-08-24T15:11:19.185Z",
+  "updatedAt": "2026-08-24T16:05:50.690Z",
   "items": [
+    {
+      "title": "WebView2 is moving to a 2-week release cadence",
+      "summary": "Microsoft Edge is moving to a two-week release cycle, and the The post WebView2 is moving to a 2-week release cadence appeared first on Windows Blog.",
+      "date": "2026-08-24T15:55:41.000Z",
+      "category": "windows",
+      "sourceUrl": "https://blogs.windows.com/msedgedev/2026/08/24/webview2-is-moving-to-a-2-week-release-cadence/",
+      "slug": "webview2-is-moving-to-a-2-week-release-cadence",
+      "image": "/api/og?title=WebView2%20is%20moving%20to%20a%202-week%20release%20cadence&category=windows"
+    },
     {
       "title": "Announcing new builds for 21 August 2026",
       "summary": "Hello Windows Insiders, Today, we’re releasing new Windows 11 Insider Preview builds to the Beta and Experimental Channels. Experimental Feature Flags We’ve fixed the issue causing the Feature Flags list to show empty fo",
@@ -108,15 +117,6 @@
       "sourceUrl": "https://blogs.windows.com/windows-insider/2026/07/31/announcing-new-builds-for-31-july-2026/",
       "slug": "announcing-new-builds-for-31-july-2026",
       "image": "/api/og?title=Announcing%20new%20builds%20for%2031%20July%202026&category=windows"
-    },
-    {
-      "title": "Announcing Windows 11 Insider Preview Build 29634.1000 for Experimental (Future Platforms)",
-      "summary": "Hello Windows Insiders, Today we’re releasing build 29634.1000 for the Experimental (Future Platforms) channel. Release notes can be found over in the The post Announcing Windows 11 Insider Preview Build 29634.1000 for E",
-      "date": "2026-07-27T21:01:05.000Z",
-      "category": "windows",
-      "sourceUrl": "https://blogs.windows.com/windows-insider/2026/07/27/announcing-windows-11-insider-preview-build-29634-1000-for-experimental-future-platforms/",
-      "slug": "announcing-windows-11-insider-preview-build-296341000-for-experimental-future-pl",
-      "image": "/api/og?title=Announcing%20Windows%2011%20Insider%20Preview%20Build%2029634.1000%20for%20Experimental%20(Future%20Platforms)&category=windows"
     },
     {
       "title": "What customers value most in Microsoft Databases—from reliability to AI readiness",

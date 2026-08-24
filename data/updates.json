@@ -1,5 +1,5 @@
 {
-  "lastFetchedAt": "2026-08-24T15:11:19.186Z",
+  "lastFetchedAt": "2026-08-24T16:05:50.692Z",
   "processed": [
     {
       "guid": "https://blogs.windows.com/blog/2026/03/30/announcing-windows-11-insider-preview-build-for-canary-channel-29558-1000/",
@@ -784,6 +784,14 @@
       "category": "windows",
       "riskLevel": "SAFE",
       "savedAt": "2026-08-21T17:36:04.164Z"
+    },
+    {
+      "guid": "https://blogs.windows.com/blog/2026/08/24/webview2-is-moving-to-a-2-week-release-cadence/",
+      "url": "https://blogs.windows.com/msedgedev/2026/08/24/webview2-is-moving-to-a-2-week-release-cadence/",
+      "slug": "webview2-is-moving-to-a-2-week-release-cadence",
+      "category": "windows",
+      "riskLevel": "SAFE",
+      "savedAt": "2026-08-24T16:05:50.692Z"
     }
   ]
 }
