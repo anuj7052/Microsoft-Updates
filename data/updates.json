@@ -1,5 +1,5 @@
 {
-  "lastFetchedAt": "2026-08-25T15:23:06.885Z",
+  "lastFetchedAt": "2026-08-25T16:09:36.733Z",
   "processed": [
     {
       "guid": "https://blogs.windows.com/blog/2026/03/30/announcing-windows-11-insider-preview-build-for-canary-channel-29558-1000/",
@@ -792,6 +792,14 @@
       "category": "windows",
       "riskLevel": "SAFE",
       "savedAt": "2026-08-24T16:05:50.692Z"
+    },
+    {
+      "guid": "https://blogs.windows.com/blog/2026/08/25/expanding-the-windows-on-arm-app-ecosystem/",
+      "url": "https://blogs.windows.com/windowsdeveloper/2026/08/25/expanding-the-windows-on-arm-app-ecosystem/",
+      "slug": "expanding-the-windows-on-arm-app-ecosystem-across-key-workloads",
+      "category": "windows",
+      "riskLevel": "SAFE",
+      "savedAt": "2026-08-25T16:09:36.733Z"
     }
   ]
 }

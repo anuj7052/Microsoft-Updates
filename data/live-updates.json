@@ -1,6 +1,15 @@
 {
-  "updatedAt": "2026-08-25T15:23:06.884Z",
+  "updatedAt": "2026-08-25T16:09:36.731Z",
   "items": [
+    {
+      "title": "Expanding the Windows on Arm app ecosystem across key workloads",
+      "summary": "In a significant milestone for the platform, The post Expanding the Windows on Arm app ecosystem across key workloads appeared first on Windows Blog.",
+      "date": "2026-08-25T16:00:28.000Z",
+      "category": "windows",
+      "sourceUrl": "https://blogs.windows.com/windowsdeveloper/2026/08/25/expanding-the-windows-on-arm-app-ecosystem/",
+      "slug": "expanding-the-windows-on-arm-app-ecosystem-across-key-workloads",
+      "image": "/api/og?title=Expanding%20the%20Windows%20on%20Arm%20app%20ecosystem%20across%20key%20workloads&category=windows"
+    },
     {
       "title": "WebView2 is moving to a 2-week release cadence",
       "summary": "Microsoft Edge is moving to a two-week release cycle, and the The post WebView2 is moving to a 2-week release cadence appeared first on Windows Blog.",
@@ -108,15 +117,6 @@
       "sourceUrl": "https://blogs.windows.com/windows-insider/2026/07/31/windows-quality-an-update-on-the-commitment-we-made-in-march/",
       "slug": "windows-quality-an-update-on-the-commitment-we-made-in-march",
       "image": "/api/og?title=Windows%20quality%3A%20an%20update%20on%20the%20commitment%20we%20made%20in%20March&category=windows"
-    },
-    {
-      "title": "Announcing new builds for 31 July 2026",
-      "summary": "Hello Windows Insiders, We have new releases today with builds across Beta and Experimental, including refreshed security certificates across all new builds. Renewed Windows Insider flight certificates All builds this we",
-      "date": "2026-07-31T17:01:56.000Z",
-      "category": "windows",
-      "sourceUrl": "https://blogs.windows.com/windows-insider/2026/07/31/announcing-new-builds-for-31-july-2026/",
-      "slug": "announcing-new-builds-for-31-july-2026",
-      "image": "/api/og?title=Announcing%20new%20builds%20for%2031%20July%202026&category=windows"
     },
     {
       "title": "What customers value most in Microsoft Databases—from reliability to AI readiness",
