@@ -1,6 +1,15 @@
 {
-  "updatedAt": "2026-08-27T00:44:03.286Z",
+  "updatedAt": "2026-08-27T11:07:17.139Z",
   "items": [
+    {
+      "title": "The Economics of Agent Optimization: Four ways to lower the cost",
+      "summary": "Microsoft Foundry gives you four levers that act on every request, before a single line of agent logic changes. The post The Economics of Agent Optimization: Four ways to lower the cost appeared first on Microsoft Azure ",
+      "date": "2026-08-26T16:00:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/the-economics-of-agent-optimization-four-ways-to-lower-the-cost/",
+      "slug": "the-economics-of-agent-optimization-four-ways-to-lower-the-cost",
+      "image": "/api/og?title=The%20Economics%20of%20Agent%20Optimization%3A%20Four%20ways%20to%20lower%20the%20cost&category=azure"
+    },
     {
       "title": "Expanding the Windows on Arm app ecosystem across key workloads",
       "summary": "In a significant milestone for the platform, The post Expanding the Windows on Arm app ecosystem across key workloads appeared first on Windows Blog.",
@@ -9,6 +18,15 @@
       "sourceUrl": "https://blogs.windows.com/windowsdeveloper/2026/08/25/expanding-the-windows-on-arm-app-ecosystem/",
       "slug": "expanding-the-windows-on-arm-app-ecosystem-across-key-workloads",
       "image": "/api/og?title=Expanding%20the%20Windows%20on%20Arm%20app%20ecosystem%20across%20key%20workloads&category=windows"
+    },
+    {
+      "title": "The patch window is collapsing: Why security needs a new control plane",
+      "summary": "Organizations need protection that operates in the gap between discovery and remediation. The post The patch window is collapsing: Why security needs a new control plane appeared first on Microsoft Azure Blog.",
+      "date": "2026-08-25T16:00:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/the-patch-window-is-collapsing-why-security-needs-a-new-control-plane/",
+      "slug": "the-patch-window-is-collapsing-why-security-needs-a-new-control-plane",
+      "image": "/api/og?title=The%20patch%20window%20is%20collapsing%3A%20Why%20security%20needs%20a%20new%20control%20plane&category=azure"
     },
     {
       "title": "WebView2 is moving to a 2-week release cadence",
@@ -162,24 +180,6 @@
       "sourceUrl": "https://azure.microsoft.com/en-us/blog/built-to-bounce-back-how-azure-resiliency-evolved/",
       "slug": "built-to-bounce-back-how-azure-resiliency-evolved",
       "image": "/api/og?title=Built%20to%20bounce%20back%3A%20How%20Azure%20resiliency%20evolved&category=azure"
-    },
-    {
-      "title": "External key management for Azure Managed HSM is now in public preview",
-      "summary": "Azure Key Vault Managed Hardware Security Module (HSM) provides strong sovereignty over your encryption keys. Keys are generated and stored in a single-tenant, FIPS 140-3 Level 3 HSM that only you control: Microsoft has ",
-      "date": "2026-07-07T16:00:00.000Z",
-      "category": "azure",
-      "sourceUrl": "https://azure.microsoft.com/en-us/blog/external-key-management-for-azure-managed-hsm-is-now-in-public-preview/",
-      "slug": "external-key-management-for-azure-managed-hsm-is-now-in-public-preview",
-      "image": "/api/og?title=External%20key%20management%20for%20Azure%20Managed%20HSM%20is%20now%20in%20public%20preview&category=azure"
-    },
-    {
-      "title": "Meet Brain: The AI system behind Azure reliability",
-      "summary": "Learn how Microsoft is building a digital twin of Azure Service Health and why it changes how hyperscale operates. The post Meet Brain: The AI system behind Azure reliability appeared first on Microsoft Azure Blog.",
-      "date": "2026-07-02T16:00:00.000Z",
-      "category": "azure",
-      "sourceUrl": "https://azure.microsoft.com/en-us/blog/meet-brain-the-ai-system-behind-azure-reliability/",
-      "slug": "meet-brain-the-ai-system-behind-azure-reliability",
-      "image": "/api/og?title=Meet%20Brain%3A%20The%20AI%20system%20behind%20Azure%20reliability&category=azure"
     }
   ]
 }
