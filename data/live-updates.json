@@ -1,6 +1,15 @@
 {
-  "updatedAt": "2026-08-31T19:56:16.127Z",
+  "updatedAt": "2026-08-31T23:44:06.313Z",
   "items": [
+    {
+      "title": "Announcing new builds for 31 August 2026",
+      "summary": "Hello Windows Insiders, Today, we’re releasing new Windows 11 Insider Preview builds for Windows 11, version 26H1 to the Beta and Experimental channels. Please see the release notes for each channel below: Beta (26H1): T",
+      "date": "2026-08-31T21:00:52.000Z",
+      "category": "windows",
+      "sourceUrl": "https://blogs.windows.com/windows-insider/2026/08/31/announcing-new-builds-for-31-august-2026/",
+      "slug": "announcing-new-builds-for-31-august-2026",
+      "image": "/api/og?title=Announcing%20new%20builds%20for%2031%20August%202026&category=windows"
+    },
     {
       "title": "Releasing Windows 11, version 26H2 to the Release Preview Channel",
       "summary": "[Update 31 August 2026: ISOs are now available] Hello Windows Insiders! Today, we are making this year’s annual feature update, Windows 11, version 26H2 (Build 26300.9278), available in the Release Preview Ch The post Re",
@@ -135,15 +144,6 @@
       "sourceUrl": "https://azure.microsoft.com/en-us/blog/microsoft-named-a-leader-in-the-2026-gartner-magic-quadrant-for-ai-augmented-code-modernization-tools/",
       "slug": "microsoft-named-a-leader-in-the-2026-gartner-magic-quadrant-for-ai-augmented-cod",
       "image": "/api/og?title=Microsoft%20named%20a%20Leader%20in%20the%202026%20Gartner%C2%AE%20Magic%20Quadrant%E2%84%A2%20for%20AI-Augmented%20Code%20Modernization%20To&category=azure"
-    },
-    {
-      "title": "Bring your security stack into Edge for Business — with support for more partners",
-      "summary": "At a glance Edge for Business security connectors extend your security tools into the browser, so you gain visibility and enforcement where work happens. This update adds new partner integrations, including Cisco Secure ",
-      "date": "2026-08-04T16:00:24.000Z",
-      "category": "windows",
-      "sourceUrl": "https://blogs.windows.com/msedgedev/2026/08/04/bring-your-security-stack-into-edge-for-business-with-support-for-more-partners/",
-      "slug": "bring-your-security-stack-into-edge-for-business-with-support-for-more-partners",
-      "image": "/api/og?title=Bring%20your%20security%20stack%20into%20Edge%20for%20Business%20%E2%80%94%20with%20support%20for%20more%20partners&category=windows"
     },
     {
       "title": "What customers value most in Microsoft Databases—from reliability to AI readiness",
