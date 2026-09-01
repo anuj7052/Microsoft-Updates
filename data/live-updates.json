@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-01T04:52:03.039Z",
+  "updatedAt": "2026-09-01T09:55:12.693Z",
   "items": [
     {
       "title": "Announcing new builds for 31 August 2026",
@@ -9,6 +9,24 @@
       "sourceUrl": "https://blogs.windows.com/windows-insider/2026/08/31/announcing-new-builds-for-31-august-2026/",
       "slug": "announcing-new-builds-for-31-august-2026",
       "image": "/api/og?title=Announcing%20new%20builds%20for%2031%20August%202026&category=windows"
+    },
+    {
+      "title": "Introducing Azure Multicloud Interconnect for AWS",
+      "summary": "Azure Multicloud Interconnect helps simplify private connectivity between Microsoft Azure and AWS, enabling organizations to support multicloud and AI workloads with a more streamlined, cloud-native networking experience",
+      "date": "2026-08-31T18:00:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/introducing-azure-multicloud-interconnect-for-aws/",
+      "slug": "introducing-azure-multicloud-interconnect-for-aws",
+      "image": "/api/og?title=Introducing%20Azure%20Multicloud%20Interconnect%20for%20AWS&category=azure"
+    },
+    {
+      "title": "Inside Microsoft&#8217;s marketing team: Scaling expertise with AI",
+      "summary": "AI is helping organizations meet high expectations as markets change quickly and technology advances at a rapid pace. The post Inside Microsoft&#8217;s marketing team: Scaling expertise with AI appeared first on Microsof",
+      "date": "2026-08-31T16:00:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/inside-microsofts-marketing-team-scaling-expertise-with-ai/",
+      "slug": "inside-microsoft8217s-marketing-team-scaling-expertise-with-ai",
+      "image": "/api/og?title=Inside%20Microsoft%26%238217%3Bs%20marketing%20team%3A%20Scaling%20expertise%20with%20AI&category=azure"
     },
     {
       "title": "Releasing Windows 11, version 26H2 to the Release Preview Channel",
@@ -162,24 +180,6 @@
       "sourceUrl": "https://azure.microsoft.com/en-us/blog/att-and-microsoft-scale-trillion-token-workloads-with-microsoft-foundry-and-amd/",
       "slug": "at038t-and-microsoft-scale-trillion-token-workloads-with-microsoft-foundry-and-a",
       "image": "/api/og?title=AT%26%23038%3BT%20and%20Microsoft%20scale%20trillion-token%20workloads%20with%20Microsoft%20Foundry%20and%20AMD&category=azure"
-    },
-    {
-      "title": "Azure Databricks delivers proven business value",
-      "summary": "Microsoft Azure Databricks delivers the first-party advantage of Databricks on Microsoft—and for customers, that advantage shows up as real, measurable value. It is the same Databricks platform your teams already know, c",
-      "date": "2026-07-15T15:00:00.000Z",
-      "category": "azure",
-      "sourceUrl": "https://azure.microsoft.com/en-us/blog/azure-databricks-delivers-proven-business-value/",
-      "slug": "azure-databricks-delivers-proven-business-value",
-      "image": "/api/og?title=Azure%20Databricks%20delivers%20proven%20business%20value&category=azure"
-    },
-    {
-      "title": "GPT-5.6 now available in Microsoft Foundry",
-      "summary": "Introducing OpenAI's latest frontier model series, the Asia Pacific Data Zone, and product agent capabilities, all generally available in Microsoft Foundry. The post GPT-5.6 now available in Microsoft Foundry appeared fi",
-      "date": "2026-07-09T17:00:00.000Z",
-      "category": "azure",
-      "sourceUrl": "https://azure.microsoft.com/en-us/blog/gpt-5-6-now-available-in-microsoft-foundry/",
-      "slug": "gpt-56-now-available-in-microsoft-foundry",
-      "image": "/api/og?title=GPT-5.6%20now%20available%20in%20Microsoft%20Foundry&category=azure"
     }
   ]
 }
