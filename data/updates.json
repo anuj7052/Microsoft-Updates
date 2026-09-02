@@ -1,5 +1,5 @@
 {
-  "lastFetchedAt": "2026-09-02T13:33:04.415Z",
+  "lastFetchedAt": "2026-09-02T17:49:58.793Z",
   "processed": [
     {
       "guid": "https://blogs.windows.com/blog/2026/03/30/announcing-windows-11-insider-preview-build-for-canary-channel-29558-1000/",
@@ -816,6 +816,14 @@
       "category": "windows",
       "riskLevel": "SAFE",
       "savedAt": "2026-08-31T23:44:06.315Z"
+    },
+    {
+      "guid": "https://azure.microsoft.com/en-us/blog/?p=53585",
+      "url": "https://azure.microsoft.com/en-us/blog/the-economics-of-agent-optimization-context-engineering-for-enterprise-ai-agents/",
+      "slug": "the-economics-of-agent-optimization-context-engineering-for-enterprise-ai-agents",
+      "category": "azure",
+      "riskLevel": "SAFE",
+      "savedAt": "2026-09-02T17:49:58.793Z"
     }
   ]
 }
