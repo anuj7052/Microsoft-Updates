@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-03T19:23:35.882Z",
+  "updatedAt": "2026-09-03T21:51:38.032Z",
   "items": [
     {
       "title": "Calling for Interop 2027 proposals",
@@ -9,15 +9,6 @@
       "sourceUrl": "https://blogs.windows.com/msedgedev/2026/09/03/calling-for-interop-2027-proposals/",
       "slug": "calling-for-interop-2027-proposals",
       "image": "/api/og?title=Calling%20for%20Interop%202027%20proposals&category=windows"
-    },
-    {
-      "title": "The Economics of Agent Optimization: Context engineering for enterprise AI agents",
-      "summary": "AI cost optimization goes beyond model selection. Discover how context engineering in Microsoft Foundry helps lower AI costs by improving knowledge retrieval, tool selection, memory, and agent performance at scale. The p",
-      "date": "2026-09-02T16:00:00.000Z",
-      "category": "azure",
-      "sourceUrl": "https://azure.microsoft.com/en-us/blog/the-economics-of-agent-optimization-context-engineering-for-enterprise-ai-agents/",
-      "slug": "the-economics-of-agent-optimization-context-engineering-for-enterprise-ai-agents",
-      "image": "/api/og?title=The%20Economics%20of%20Agent%20Optimization%3A%20Context%20engineering%20for%20enterprise%20AI%20agents&category=azure"
     },
     {
       "title": "Announcing new builds for 31 August 2026",
@@ -180,6 +171,15 @@
       "sourceUrl": "https://azure.microsoft.com/en-us/blog/what-customers-value-most-in-microsoft-databases-from-reliability-to-ai-readiness/",
       "slug": "what-customers-value-most-in-microsoft-databasesfrom-reliability-to-ai-readiness",
       "image": "/api/og?title=What%20customers%20value%20most%20in%20Microsoft%20Databases%E2%80%94from%20reliability%20to%20AI%20readiness&category=azure"
+    },
+    {
+      "title": "AT&#038;T and Microsoft scale trillion-token workloads with Microsoft Foundry and AMD",
+      "summary": "AT&#38;T processed approximately one trillion tokens while developing OTel2.0 using Microsoft Foundry Managed Compute, open AI models, and AMD and NVIDIA GPU infrastructure. Discover how flexible model choice and scalabl",
+      "date": "2026-07-23T18:30:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/att-and-microsoft-scale-trillion-token-workloads-with-microsoft-foundry-and-amd/",
+      "slug": "at038t-and-microsoft-scale-trillion-token-workloads-with-microsoft-foundry-and-a",
+      "image": "/api/og?title=AT%26%23038%3BT%20and%20Microsoft%20scale%20trillion-token%20workloads%20with%20Microsoft%20Foundry%20and%20AMD&category=azure"
     }
   ]
 }
