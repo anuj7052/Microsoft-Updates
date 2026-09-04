@@ -1,5 +1,5 @@
 {
-  "lastFetchedAt": "2026-09-04T09:05:03.298Z",
+  "lastFetchedAt": "2026-09-04T13:26:26.747Z",
   "processed": [
     {
       "guid": "https://blogs.windows.com/blog/2026/03/30/announcing-windows-11-insider-preview-build-for-canary-channel-29558-1000/",
@@ -824,6 +824,14 @@
       "category": "azure",
       "riskLevel": "SAFE",
       "savedAt": "2026-09-02T17:49:58.793Z"
+    },
+    {
+      "guid": "https://blogs.windows.com/blog/2026/09/04/announcing-project-zenith-the-ready-to-code-windows-experience/",
+      "url": "https://blogs.windows.com/windowsdeveloper/2026/09/04/announcing-project-zenith-the-ready-to-code-windows-experience/",
+      "slug": "announcing-project-zenith-the-ready-to-code-windows-experience-on-developer-clas",
+      "category": "windows",
+      "riskLevel": "SAFE",
+      "savedAt": "2026-09-04T13:26:26.747Z"
     }
   ]
 }
