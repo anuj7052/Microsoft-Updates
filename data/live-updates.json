@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-04T23:54:56.786Z",
+  "updatedAt": "2026-09-05T04:11:50.428Z",
   "items": [
     {
       "title": "Announcing Project Zenith: The ready-to-code Windows experience on developer-class devices",
@@ -11,24 +11,6 @@
       "image": "/api/og?title=Announcing%20Project%20Zenith%3A%20The%20ready-to-code%20Windows%20experience%20on%20developer-class%20devices&category=windows"
     },
     {
-      "title": "Enterprise AI transformation relies on the end-to-end platform: Azure was built for this moment",
-      "summary": "The recognition for Microsoft over the past couple of weeks comes down to models, infrastructure, data, applications, and developer tools working as one system when AI moves into production. The post Enterprise AI transf",
-      "date": "2026-09-03T19:00:00.000Z",
-      "category": "azure",
-      "sourceUrl": "https://azure.microsoft.com/en-us/blog/enterprise-ai-transformation-relies-on-the-end-to-end-platform-azure-was-built-for-this-moment/",
-      "slug": "enterprise-ai-transformation-relies-on-the-end-to-end-platform-azure-was-built-f",
-      "image": "/api/og?title=Enterprise%20AI%20transformation%20relies%20on%20the%20end-to-end%20platform%3A%20Azure%20was%20built%20for%20this%20moment&category=azure"
-    },
-    {
-      "title": "GPT-6 Astra: Frontier intelligence for work, now generally available in Microsoft Foundry",
-      "summary": "GPT-6 Astra, OpenAI's newest frontier model, begins rolling out today through the Microsoft Foundry Limited Access Program, with availability expanding to participating customers over the coming days. The post GPT-6 Astr",
-      "date": "2026-09-03T18:15:00.000Z",
-      "category": "azure",
-      "sourceUrl": "https://azure.microsoft.com/en-us/blog/gpt-6-astra-frontier-intelligence-for-work-now-available-in-microsoft-foundry/",
-      "slug": "gpt-6-astra-frontier-intelligence-for-work-now-generally-available-in-microsoft",
-      "image": "/api/og?title=GPT-6%20Astra%3A%20Frontier%20intelligence%20for%20work%2C%20now%20generally%20available%20in%20Microsoft%20Foundry&category=azure"
-    },
-    {
       "title": "Calling for Interop 2027 proposals",
       "summary": "The Interop 2027 call for proposals is open, submit your ideas now! Over the past six years, the I The post Calling for Interop 2027 proposals appeared first on Windows Blog.",
       "date": "2026-09-03T16:09:17.000Z",
@@ -36,15 +18,6 @@
       "sourceUrl": "https://blogs.windows.com/msedgedev/2026/09/03/calling-for-interop-2027-proposals/",
       "slug": "calling-for-interop-2027-proposals",
       "image": "/api/og?title=Calling%20for%20Interop%202027%20proposals&category=windows"
-    },
-    {
-      "title": "How Microsoft&#8217;s Physical Security Engineering Team scaled hybrid operations with Azure Arc and Azure Virtual Desktop",
-      "summary": "Learn how Microsoft used Azure Arc and Azure Virtual Desktop to simplify hybrid security operations, improve visibility, and scale globally. The post How Microsoft&#8217;s Physical Security Engineering Team scaled hybrid",
-      "date": "2026-09-03T15:00:00.000Z",
-      "category": "azure",
-      "sourceUrl": "https://azure.microsoft.com/en-us/blog/how-microsofts-physical-security-engineering-team-scaled-hybrid-operations-with-azure-arc-and-azure-virtual-desktop/",
-      "slug": "how-microsoft8217s-physical-security-engineering-team-scaled-hybrid-operations-w",
-      "image": "/api/og?title=How%20Microsoft%26%238217%3Bs%20Physical%20Security%20Engineering%20Team%20scaled%20hybrid%20operations%20with%20Azure%20Arc%20and&category=azure"
     },
     {
       "title": "The Economics of Agent Optimization: Context engineering for enterprise AI agents",
@@ -180,6 +153,33 @@
       "sourceUrl": "https://azure.microsoft.com/en-us/blog/microsoft-named-a-leader-in-the-2026-gartner-magic-quadrant-for-cloud-native-application-platforms/",
       "slug": "microsoft-named-a-leader-in-the-2026-gartner-magic-quadrant-for-cloud-native-app",
       "image": "/api/og?title=Microsoft%20named%20a%20Leader%20in%20the%202026%20Gartner%C2%AE%20Magic%20Quadrant%E2%84%A2%20for%20Cloud-Native%20Application%20Platforms&category=azure"
+    },
+    {
+      "title": "The Economics of Agent Optimization: From pilots to measurable returns",
+      "summary": "Learn how AI cost management helps organizations move from AI pilots to measurable ROI through greater visibility, governance, and optimization. The post The Economics of Agent Optimization: From pilots to measurable ret",
+      "date": "2026-08-12T16:00:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/the-economics-of-agent-optimization-from-pilots-to-measurable-returns/",
+      "slug": "the-economics-of-agent-optimization-from-pilots-to-measurable-returns",
+      "image": "/api/og?title=The%20Economics%20of%20Agent%20Optimization%3A%20From%20pilots%20to%20measurable%20returns&category=azure"
+    },
+    {
+      "title": "Microsoft named a Leader in the 2026 Gartner® Magic Quadrant™ for AI-Augmented Code Modernization Tools",
+      "summary": "GitHub Copilot and Azure are helping organizations modernize legacy applications, reduce technical debt, and prepare for AI innovation. The post Microsoft named a Leader in the 2026 Gartner® Magic Quadrant™ for AI-Augmen",
+      "date": "2026-08-06T15:00:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/microsoft-named-a-leader-in-the-2026-gartner-magic-quadrant-for-ai-augmented-code-modernization-tools/",
+      "slug": "microsoft-named-a-leader-in-the-2026-gartner-magic-quadrant-for-ai-augmented-cod",
+      "image": "/api/og?title=Microsoft%20named%20a%20Leader%20in%20the%202026%20Gartner%C2%AE%20Magic%20Quadrant%E2%84%A2%20for%20AI-Augmented%20Code%20Modernization%20To&category=azure"
+    },
+    {
+      "title": "What customers value most in Microsoft Databases—from reliability to AI readiness",
+      "summary": "Every day, customers trust Microsoft Databases to power their most critical applications, business processes, and AI-powered experiences. The post What customers value most in Microsoft Databases—from reliability to AI r",
+      "date": "2026-07-27T15:00:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/what-customers-value-most-in-microsoft-databases-from-reliability-to-ai-readiness/",
+      "slug": "what-customers-value-most-in-microsoft-databasesfrom-reliability-to-ai-readiness",
+      "image": "/api/og?title=What%20customers%20value%20most%20in%20Microsoft%20Databases%E2%80%94from%20reliability%20to%20AI%20readiness&category=azure"
     }
   ]
 }
