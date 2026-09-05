@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-05T15:55:23.289Z",
+  "updatedAt": "2026-09-05T18:06:54.383Z",
   "items": [
     {
       "title": "Announcing Project Zenith: The ready-to-code Windows experience on developer-class devices",
@@ -24,7 +24,7 @@
       "summary": "GPT-6 Astra, OpenAI's newest frontier model, begins rolling out today through the Microsoft Foundry Limited Access Program, with availability expanding to participating customers over the coming days. The post GPT-6 Astr",
       "date": "2026-09-03T18:15:00.000Z",
       "category": "azure",
-      "sourceUrl": "https://azure.microsoft.com/en-us/blog/gpt-6-astra-frontier-intelligence-for-work-now-available-in-microsoft-foundry/",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/gpt-6-astra-frontier-intelligence-for-work-now-generally-available-in-microsoft-foundry/",
       "slug": "gpt-6-astra-frontier-intelligence-for-work-now-generally-available-in-microsoft",
       "image": "/api/og?title=GPT-6%20Astra%3A%20Frontier%20intelligence%20for%20work%2C%20now%20generally%20available%20in%20Microsoft%20Foundry&category=azure"
     },
