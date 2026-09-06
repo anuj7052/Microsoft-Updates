@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-06T10:46:08.089Z",
+  "updatedAt": "2026-09-06T14:05:36.217Z",
   "items": [
     {
       "title": "Announcing Project Zenith: The ready-to-code Windows experience on developer-class devices",
@@ -20,13 +20,13 @@
       "image": "/api/og?title=Enterprise%20AI%20transformation%20relies%20on%20the%20end-to-end%20platform%3A%20Azure%20was%20built%20for%20this%20moment&category=azure"
     },
     {
-      "title": "GPT-6 Astra: Frontier intelligence for work, now generally available in Microsoft Foundry",
+      "title": "GPT-6 Astra: Frontier intelligence for work, now available in Microsoft Foundry",
       "summary": "GPT-6 Astra, OpenAI's newest frontier model, begins rolling out today through the Microsoft Foundry Limited Access Program, with availability expanding to participating customers over the coming days. The post GPT-6 Astr",
       "date": "2026-09-03T18:15:00.000Z",
       "category": "azure",
-      "sourceUrl": "https://azure.microsoft.com/en-us/blog/gpt-6-astra-frontier-intelligence-for-work-now-generally-available-in-microsoft-foundry/",
-      "slug": "gpt-6-astra-frontier-intelligence-for-work-now-generally-available-in-microsoft",
-      "image": "/api/og?title=GPT-6%20Astra%3A%20Frontier%20intelligence%20for%20work%2C%20now%20generally%20available%20in%20Microsoft%20Foundry&category=azure"
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/gpt-6-astra-frontier-intelligence-for-work-now-available-in-microsoft-foundry/",
+      "slug": "gpt-6-astra-frontier-intelligence-for-work-now-available-in-microsoft-foundry",
+      "image": "/api/og?title=GPT-6%20Astra%3A%20Frontier%20intelligence%20for%20work%2C%20now%20available%20in%20Microsoft%20Foundry&category=azure"
     },
     {
       "title": "Calling for Interop 2027 proposals",
