@@ -1,5 +1,5 @@
 {
-  "lastFetchedAt": "2026-09-08T16:31:15.945Z",
+  "lastFetchedAt": "2026-09-08T19:49:41.770Z",
   "processed": [
     {
       "guid": "https://blogs.windows.com/blog/2026/03/30/announcing-windows-11-insider-preview-build-for-canary-channel-29558-1000/",
@@ -840,6 +840,30 @@
       "category": "windows",
       "riskLevel": "SAFE",
       "savedAt": "2026-09-08T16:31:15.945Z"
+    },
+    {
+      "guid": "https://blogs.windows.com/blog/2026/09/08/announcing-new-builds-for-8-september-2026/",
+      "url": "https://blogs.windows.com/windows-insider/2026/09/08/announcing-new-builds-for-8-september-2026/",
+      "slug": "announcing-new-builds-for-8-september-2026",
+      "category": "windows",
+      "riskLevel": "SAFE",
+      "savedAt": "2026-09-08T19:49:41.769Z"
+    },
+    {
+      "guid": "https://blogs.windows.com/blog/2026/09/08/listening-to-families-improving-microsoft-family/",
+      "url": "https://blogs.windows.com/windowsexperience/2026/09/08/listening-to-families-improving-microsoft-family/",
+      "slug": "listening-to-families-improving-microsoft-family",
+      "category": "windows",
+      "riskLevel": "SAFE",
+      "savedAt": "2026-09-08T19:49:41.770Z"
+    },
+    {
+      "guid": "https://blogs.windows.com/blog/2026/09/08/helping-families-and-educators-support-safer-experiences-and-healthier-habits-on-windows/",
+      "url": "https://blogs.windows.com/windowsexperience/2026/09/08/helping-families-and-educators-support-safer-experiences-and-healthier-habits-on-windows/",
+      "slug": "helping-families-and-educators-support-safer-experiences-and-healthier-habits-on",
+      "category": "windows",
+      "riskLevel": "SAFE",
+      "savedAt": "2026-09-08T19:49:41.770Z"
     }
   ]
 }

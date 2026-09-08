@@ -1,5 +1,5 @@
 {
-  "lastFetchedAt": "2026-09-08T16:31:15.945Z",
+  "lastFetchedAt": "2026-09-08T19:49:41.770Z",
   "seenGuids": [
     "https://blogs.windows.com/blog/2026/04/02/part-3-babylon-js-9-0-openpbr-and-additional-engine-updates/",
     "https://blogs.windows.com/blog/2026/04/03/announcing-windows-11-insider-preview-build-26220-8148-beta-channel/",
@@ -85,7 +85,10 @@
     "https://blogs.windows.com/blog/2026/08/31/announcing-new-builds-for-31-august-2026/",
     "https://azure.microsoft.com/en-us/blog/?p=53585",
     "https://blogs.windows.com/blog/2026/09/04/announcing-project-zenith-the-ready-to-code-windows-experience/",
-    "https://blogs.windows.com/blog/2026/09/08/faster-reviews-and-quality-recognition-for-microsoft-edge-extensions/"
+    "https://blogs.windows.com/blog/2026/09/08/faster-reviews-and-quality-recognition-for-microsoft-edge-extensions/",
+    "https://blogs.windows.com/blog/2026/09/08/announcing-new-builds-for-8-september-2026/",
+    "https://blogs.windows.com/blog/2026/09/08/listening-to-families-improving-microsoft-family/",
+    "https://blogs.windows.com/blog/2026/09/08/helping-families-and-educators-support-safer-experiences-and-healthier-habits-on-windows/"
   ],
-  "totalArticles": 85
+  "totalArticles": 88
 }
