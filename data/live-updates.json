@@ -1,6 +1,15 @@
 {
-  "updatedAt": "2026-09-08T11:41:36.422Z",
+  "updatedAt": "2026-09-08T16:31:15.943Z",
   "items": [
+    {
+      "title": "Faster reviews and quality recognition for Microsoft Edge extensions",
+      "summary": "Building an extension has never been easier. Rapid adoption of AI-assisted coding is enabling developers to build extensions faster than ever. We have seen that momentum on the Edge Add-ons site The post Faster reviews a",
+      "date": "2026-09-08T16:02:17.000Z",
+      "category": "windows",
+      "sourceUrl": "https://blogs.windows.com/msedgedev/2026/09/08/faster-reviews-and-quality-recognition-for-microsoft-edge-extensions/",
+      "slug": "faster-reviews-and-quality-recognition-for-microsoft-edge-extensions",
+      "image": "/api/og?title=Faster%20reviews%20and%20quality%20recognition%20for%20Microsoft%20Edge%20extensions&category=windows"
+    },
     {
       "title": "Announcing Project Zenith: The ready-to-code Windows experience on developer-class devices",
       "summary": "Breakthroughs in computing become real through the experiences developers create. Our goal is to have Windows be the best platform for developers. That means pairing the latest in hardware innovation with software optimi",
@@ -20,13 +29,13 @@
       "image": "/api/og?title=Enterprise%20AI%20transformation%20relies%20on%20the%20end-to-end%20platform%3A%20Azure%20was%20built%20for%20this%20moment&category=azure"
     },
     {
-      "title": "GPT-6 Astra: Frontier intelligence for work, now available in Microsoft Foundry",
+      "title": "GPT-6 Astra: Frontier intelligence for work, now generally available in Microsoft Foundry",
       "summary": "GPT-6 Astra, OpenAI's newest frontier model, begins rolling out today through the Microsoft Foundry Limited Access Program, with availability expanding to participating customers over the coming days. The post GPT-6 Astr",
       "date": "2026-09-03T18:15:00.000Z",
       "category": "azure",
-      "sourceUrl": "https://azure.microsoft.com/en-us/blog/gpt-6-astra-frontier-intelligence-for-work-now-available-in-microsoft-foundry/",
-      "slug": "gpt-6-astra-frontier-intelligence-for-work-now-available-in-microsoft-foundry",
-      "image": "/api/og?title=GPT-6%20Astra%3A%20Frontier%20intelligence%20for%20work%2C%20now%20available%20in%20Microsoft%20Foundry&category=azure"
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/gpt-6-astra-frontier-intelligence-for-work-now-generally-available-in-microsoft-foundry/",
+      "slug": "gpt-6-astra-frontier-intelligence-for-work-now-generally-available-in-microsoft",
+      "image": "/api/og?title=GPT-6%20Astra%3A%20Frontier%20intelligence%20for%20work%2C%20now%20generally%20available%20in%20Microsoft%20Foundry&category=azure"
     },
     {
       "title": "Calling for Interop 2027 proposals",
@@ -162,15 +171,6 @@
       "sourceUrl": "https://blogs.windows.com/windows-insider/2026/08/17/improving-file-explorer-context-menu-faster-simpler-and-more-customizable/",
       "slug": "improving-file-explorer-038-context-menu-faster-simpler-and-more-customizable",
       "image": "/api/og?title=Improving%20File%20Explorer%20%26%23038%3B%20Context%20Menu%3A%20faster%2C%20simpler%2C%20and%20more%20customizable&category=windows"
-    },
-    {
-      "title": "Announcing new builds for 17 August 2026",
-      "summary": "Hello Windows Insiders, Today, we’re releasing new Windows 11 Insider Preview builds to the Beta and Experimental Channels. This post also includes reminders about renewed flight certificates and the current Feature Flag",
-      "date": "2026-08-17T21:19:57.000Z",
-      "category": "windows",
-      "sourceUrl": "https://blogs.windows.com/windows-insider/2026/08/17/announcing-new-builds-for-17-august-2026/",
-      "slug": "announcing-new-builds-for-17-august-2026",
-      "image": "/api/og?title=Announcing%20new%20builds%20for%2017%20August%202026&category=windows"
     },
     {
       "title": "Microsoft named a Leader in the 2026 Gartner® Magic Quadrant™ for Cloud-Native Application Platforms",
