@@ -1,6 +1,15 @@
 {
-  "updatedAt": "2026-09-09T22:26:33.089Z",
+  "updatedAt": "2026-09-10T00:30:36.377Z",
   "items": [
+    {
+      "title": "Beyond the benchmark: How an adaptive approach drives scientific discovery",
+      "summary": "For research and development (R&#38;D) organizations, the promise of agentic AI is not a better one-time answer. It is a new way to explore complex scientific and engineering problems: pursuing multiple hypotheses, valid",
+      "date": "2026-09-08T20:00:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/beyond-the-benchmark-how-an-adaptive-approach-drives-scientific-discovery/",
+      "slug": "beyond-the-benchmark-how-an-adaptive-approach-drives-scientific-discovery",
+      "image": "/api/og?title=Beyond%20the%20benchmark%3A%20How%20an%20adaptive%20approach%20drives%20scientific%20discovery&category=azure"
+    },
     {
       "title": "Announcing new builds for 8 September 2026",
       "summary": "Hello Windows Insiders, Today, we’re releasing new Windows 11 Insider Preview builds to the Beta and Experimental channels. New builds this week Select your channel below to view its release notes: Beta: The post Announc",
@@ -171,15 +180,6 @@
       "sourceUrl": "https://blogs.windows.com/msedgedev/2026/08/24/webview2-is-moving-to-a-2-week-release-cadence/",
       "slug": "webview2-is-moving-to-a-2-week-release-cadence",
       "image": "/api/og?title=WebView2%20is%20moving%20to%20a%202-week%20release%20cadence&category=windows"
-    },
-    {
-      "title": "Microsoft named a Leader in the 2026 Gartner® Magic Quadrant™ for Cloud-Native Application Platforms",
-      "summary": "Cloud-native platforms are becoming the foundation for AI transformation. Discover how Microsoft's Azure application platform helps organizations modernize, innovate, and operate AI-powered applications at scale. The pos",
-      "date": "2026-08-17T15:00:00.000Z",
-      "category": "azure",
-      "sourceUrl": "https://azure.microsoft.com/en-us/blog/microsoft-named-a-leader-in-the-2026-gartner-magic-quadrant-for-cloud-native-application-platforms/",
-      "slug": "microsoft-named-a-leader-in-the-2026-gartner-magic-quadrant-for-cloud-native-app",
-      "image": "/api/og?title=Microsoft%20named%20a%20Leader%20in%20the%202026%20Gartner%C2%AE%20Magic%20Quadrant%E2%84%A2%20for%20Cloud-Native%20Application%20Platforms&category=azure"
     }
   ]
 }
