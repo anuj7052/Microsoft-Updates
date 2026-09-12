@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-12T11:10:54.877Z",
+  "updatedAt": "2026-09-12T14:19:30.749Z",
   "items": [
     {
       "title": "Announcing new builds for 11 September 2026",
@@ -11,6 +11,15 @@
       "image": "/api/og?title=Announcing%20new%20builds%20for%2011%20September%202026&category=windows"
     },
     {
+      "title": "Microsoft named a Leader in the 2026 Gartner® Magic Quadrant™ for Container Management",
+      "summary": "Microsoft was named a Leader in the 2026 Gartner® Magic Quadrant™ for Container Management. Discover how AKS, Azure Arc, and Azure Container Apps help organizations run AI and hybrid workloads at scale. The post Microsof",
+      "date": "2026-09-10T21:00:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/microsoft-named-a-leader-in-the-2026-gartner-magic-quadrant-for-container-management/",
+      "slug": "microsoft-named-a-leader-in-the-2026-gartner-magic-quadrant-for-container-manage",
+      "image": "/api/og?title=Microsoft%20named%20a%20Leader%20in%20the%202026%20Gartner%C2%AE%20Magic%20Quadrant%E2%84%A2%20for%20Container%20Management&category=azure"
+    },
+    {
       "title": "Announcing Windows 11 Release Preview Builds 26100.9539/26200.9539",
       "summary": "Hello Windows Insiders, Today we’re releasing build Builds 26100.9539/26200.9539 for Release Preview for Windows 11, version 24H2/25H2. Release notes can be found over in the The post Announcing Windows 11 Release Previe",
       "date": "2026-09-10T17:11:27.000Z",
@@ -18,6 +27,42 @@
       "sourceUrl": "https://blogs.windows.com/windows-insider/2026/09/10/announcing-windows-11-release-preview-builds-26100-9539-26200-9539/",
       "slug": "announcing-windows-11-release-preview-builds-261009539262009539",
       "image": "/api/og?title=Announcing%20Windows%2011%20Release%20Preview%20Builds%2026100.9539%2F26200.9539&category=windows"
+    },
+    {
+      "title": "The Economics of Agent Optimization: How AI agent governance controls cost and proves ROI",
+      "summary": "This blog post is the fourth and final installment of The Economics of Agent Optimization, which shares the strategies, capabilities, and proof points that can help you optimize agent costs and run AI as a managed invest",
+      "date": "2026-09-10T17:00:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/the-economics-of-agent-optimization-how-ai-agent-governance-controls-cost-and-proves-roi/",
+      "slug": "the-economics-of-agent-optimization-how-ai-agent-governance-controls-cost-and-pr",
+      "image": "/api/og?title=The%20Economics%20of%20Agent%20Optimization%3A%20How%20AI%20agent%20governance%20controls%20cost%20and%20proves%20ROI&category=azure"
+    },
+    {
+      "title": "The future of infrastructure resiliency starts with modernization",
+      "summary": "Modernization only succeeds when organizations have confidence that their infrastructure can withstand disruption and continue supporting critical operations. The post The future of infrastructure resiliency starts with ",
+      "date": "2026-09-10T16:00:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/the-future-of-infrastructure-resiliency-starts-with-modernization/",
+      "slug": "the-future-of-infrastructure-resiliency-starts-with-modernization",
+      "image": "/api/og?title=The%20future%20of%20infrastructure%20resiliency%20starts%20with%20modernization&category=azure"
+    },
+    {
+      "title": "Two zones or three? A design framework for zone-resilient Azure workloads",
+      "summary": "Zone resiliency isn't a single number you apply to a whole workload. The useful question isn't “how many zones?” but “how many zones does each component need to survive the loss of one?” Decide zone patterns component by",
+      "date": "2026-09-09T18:00:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/two-zones-or-three-a-design-framework-for-zone-resilient-azure-workloads/",
+      "slug": "two-zones-or-three-a-design-framework-for-zone-resilient-azure-workloads",
+      "image": "/api/og?title=Two%20zones%20or%20three%3F%20A%20design%20framework%20for%20zone-resilient%20Azure%20workloads&category=azure"
+    },
+    {
+      "title": "Beyond the benchmark: How an adaptive approach drives scientific discovery",
+      "summary": "For research and development (R&#38;D) organizations, the promise of agentic AI is not a better one-time answer. It is a new way to explore complex scientific and engineering problems: pursuing multiple hypotheses, valid",
+      "date": "2026-09-08T20:00:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/beyond-the-benchmark-how-an-adaptive-approach-drives-scientific-discovery/",
+      "slug": "beyond-the-benchmark-how-an-adaptive-approach-drives-scientific-discovery",
+      "image": "/api/og?title=Beyond%20the%20benchmark%3A%20How%20an%20adaptive%20approach%20drives%20scientific%20discovery&category=azure"
     },
     {
       "title": "Announcing new builds for 8 September 2026",
@@ -128,15 +173,6 @@
       "image": "/api/og?title=Introducing%20Azure%20Multicloud%20Interconnect%20for%20AWS&category=azure"
     },
     {
-      "title": "Inside Microsoft&#8217;s marketing team: Scaling expertise with AI",
-      "summary": "AI is helping organizations meet high expectations as markets change quickly and technology advances at a rapid pace. The post Inside Microsoft&#8217;s marketing team: Scaling expertise with AI appeared first on Microsof",
-      "date": "2026-08-31T16:00:00.000Z",
-      "category": "azure",
-      "sourceUrl": "https://azure.microsoft.com/en-us/blog/inside-microsofts-marketing-team-scaling-expertise-with-ai/",
-      "slug": "inside-microsoft8217s-marketing-team-scaling-expertise-with-ai",
-      "image": "/api/og?title=Inside%20Microsoft%26%238217%3Bs%20marketing%20team%3A%20Scaling%20expertise%20with%20AI&category=azure"
-    },
-    {
       "title": "Releasing Windows 11, version 26H2 to the Release Preview Channel",
       "summary": "[Update 31 August 2026: ISOs are now available] Hello Windows Insiders! Today, we are making this year’s annual feature update, Windows 11, version 26H2 (Build 26300.9278), available in the Release Preview Ch The post Re",
       "date": "2026-08-27T17:00:37.000Z",
@@ -144,42 +180,6 @@
       "sourceUrl": "https://blogs.windows.com/windows-insider/2026/08/27/releasing-windows-11-version-26h2-to-the-release-preview-channel/",
       "slug": "releasing-windows-11-version-26h2-to-the-release-preview-channel",
       "image": "/api/og?title=Releasing%20Windows%2011%2C%20version%2026H2%20to%20the%20Release%20Preview%20Channel&category=windows"
-    },
-    {
-      "title": "Managed PostgreSQL vs. self-hosted PostgreSQL: Key benefits and trade-offs",
-      "summary": "Compare managed PostgreSQL vs. self-hosted PostgreSQL across cost, control, security, resilience, scalability, and operational effort. The post Managed PostgreSQL vs. self-hosted PostgreSQL: Key benefits and trade-offs a",
-      "date": "2026-08-27T17:00:00.000Z",
-      "category": "azure",
-      "sourceUrl": "https://azure.microsoft.com/en-us/blog/managed-postgresql-vs-self-hosted-postgresql-key-benefits-and-trade-offs/",
-      "slug": "managed-postgresql-vs-self-hosted-postgresql-key-benefits-and-trade-offs",
-      "image": "/api/og?title=Managed%20PostgreSQL%20vs.%20self-hosted%20PostgreSQL%3A%20Key%20benefits%20and%20trade-offs&category=azure"
-    },
-    {
-      "title": "The Economics of Agent Optimization: Four ways to lower the cost",
-      "summary": "Microsoft Foundry gives you four levers that act on every request, before a single line of agent logic changes. The post The Economics of Agent Optimization: Four ways to lower the cost appeared first on Microsoft Azure ",
-      "date": "2026-08-26T16:00:00.000Z",
-      "category": "azure",
-      "sourceUrl": "https://azure.microsoft.com/en-us/blog/the-economics-of-agent-optimization-four-ways-to-lower-the-cost/",
-      "slug": "the-economics-of-agent-optimization-four-ways-to-lower-the-cost",
-      "image": "/api/og?title=The%20Economics%20of%20Agent%20Optimization%3A%20Four%20ways%20to%20lower%20the%20cost&category=azure"
-    },
-    {
-      "title": "The patch window is collapsing: Why security needs a new control plane",
-      "summary": "Organizations need protection that operates in the gap between discovery and remediation. The post The patch window is collapsing: Why security needs a new control plane appeared first on Microsoft Azure Blog.",
-      "date": "2026-08-25T16:00:00.000Z",
-      "category": "azure",
-      "sourceUrl": "https://azure.microsoft.com/en-us/blog/the-patch-window-is-collapsing-why-security-needs-a-new-control-plane/",
-      "slug": "the-patch-window-is-collapsing-why-security-needs-a-new-control-plane",
-      "image": "/api/og?title=The%20patch%20window%20is%20collapsing%3A%20Why%20security%20needs%20a%20new%20control%20plane&category=azure"
-    },
-    {
-      "title": "Microsoft named a Leader in the 2026 Gartner® Magic Quadrant™ for Cloud-Native Application Platforms",
-      "summary": "Cloud-native platforms are becoming the foundation for AI transformation. Discover how Microsoft's Azure application platform helps organizations modernize, innovate, and operate AI-powered applications at scale. The pos",
-      "date": "2026-08-17T15:00:00.000Z",
-      "category": "azure",
-      "sourceUrl": "https://azure.microsoft.com/en-us/blog/microsoft-named-a-leader-in-the-2026-gartner-magic-quadrant-for-cloud-native-application-platforms/",
-      "slug": "microsoft-named-a-leader-in-the-2026-gartner-magic-quadrant-for-cloud-native-app",
-      "image": "/api/og?title=Microsoft%20named%20a%20Leader%20in%20the%202026%20Gartner%C2%AE%20Magic%20Quadrant%E2%84%A2%20for%20Cloud-Native%20Application%20Platforms&category=azure"
     }
   ]
 }
