@@ -1,6 +1,24 @@
 {
-  "updatedAt": "2026-09-14T14:57:35.838Z",
+  "updatedAt": "2026-09-14T19:48:40.318Z",
   "items": [
+    {
+      "title": "Build anywhere, stay in flow: How Windows 365 is redefining the developer experience",
+      "summary": "Development teams are under increasing pressure to ship software faster, even as the environments they rely on grow more complex. However, modern development has only become harder to provision and maintain with AI-assis",
+      "date": "2026-09-14T17:00:49.000Z",
+      "category": "windows",
+      "sourceUrl": "https://blogs.windows.com/windowsdeveloper/2026/09/14/build-anywhere-stay-in-flow-with-windows-365/",
+      "slug": "build-anywhere-stay-in-flow-how-windows-365-is-redefining-the-developer-experien",
+      "image": "/api/og?title=Build%20anywhere%2C%20stay%20in%20flow%3A%20How%20Windows%20365%20is%20redefining%20the%20developer%20experience&category=windows"
+    },
+    {
+      "title": "More choice and possibility with Windows PCs at IFA",
+      "summary": "This year at IFA, I saw the Windows ecosystem doing what it does best: bringing innovation to life through products and experiences for every person, purpose, and price point. Our partners intr The post More choice and p",
+      "date": "2026-09-14T17:00:39.000Z",
+      "category": "windows",
+      "sourceUrl": "https://blogs.windows.com/devices/2026/09/14/more-choice-and-possibility-with-windows-pcs-at-ifa/",
+      "slug": "more-choice-and-possibility-with-windows-pcs-at-ifa",
+      "image": "/api/og?title=More%20choice%20and%20possibility%20with%20Windows%20PCs%20at%20IFA&category=windows"
+    },
     {
       "title": "Announcing new builds for 11 September 2026",
       "summary": "Hello Windows Insiders, Today, we’re releasing new Windows 11 Insider Preview builds to the Beta, Experimental, and Release Preview channels. New builds this week Select your channel below to view its release notes: B Th",
@@ -155,15 +173,6 @@
       "image": "/api/og?title=The%20Economics%20of%20Agent%20Optimization%3A%20Context%20engineering%20for%20enterprise%20AI%20agents&category=azure"
     },
     {
-      "title": "Announcing new builds for 31 August 2026",
-      "summary": "Hello Windows Insiders, Today, we’re releasing new Windows 11 Insider Preview builds for Windows 11, version 26H1 to the Beta and Experimental channels. Please see the release notes for each channel below: Beta (26H1): T",
-      "date": "2026-08-31T21:00:52.000Z",
-      "category": "windows",
-      "sourceUrl": "https://blogs.windows.com/windows-insider/2026/08/31/announcing-new-builds-for-31-august-2026/",
-      "slug": "announcing-new-builds-for-31-august-2026",
-      "image": "/api/og?title=Announcing%20new%20builds%20for%2031%20August%202026&category=windows"
-    },
-    {
       "title": "Introducing Azure Multicloud Interconnect for AWS",
       "summary": "Azure Multicloud Interconnect helps simplify private connectivity between Microsoft Azure and AWS, enabling organizations to support multicloud and AI workloads with a more streamlined, cloud-native networking experience",
       "date": "2026-08-31T18:00:00.000Z",
@@ -171,15 +180,6 @@
       "sourceUrl": "https://azure.microsoft.com/en-us/blog/introducing-azure-multicloud-interconnect-for-aws/",
       "slug": "introducing-azure-multicloud-interconnect-for-aws",
       "image": "/api/og?title=Introducing%20Azure%20Multicloud%20Interconnect%20for%20AWS&category=azure"
-    },
-    {
-      "title": "Releasing Windows 11, version 26H2 to the Release Preview Channel",
-      "summary": "[Update 31 August 2026: ISOs are now available] Hello Windows Insiders! Today, we are making this year’s annual feature update, Windows 11, version 26H2 (Build 26300.9278), available in the Release Preview Ch The post Re",
-      "date": "2026-08-27T17:00:37.000Z",
-      "category": "windows",
-      "sourceUrl": "https://blogs.windows.com/windows-insider/2026/08/27/releasing-windows-11-version-26h2-to-the-release-preview-channel/",
-      "slug": "releasing-windows-11-version-26h2-to-the-release-preview-channel",
-      "image": "/api/og?title=Releasing%20Windows%2011%2C%20version%2026H2%20to%20the%20Release%20Preview%20Channel&category=windows"
     }
   ]
 }
