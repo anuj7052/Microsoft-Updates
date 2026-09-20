@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-20T10:02:12.807Z",
+  "updatedAt": "2026-09-20T14:19:49.377Z",
   "items": [
     {
       "title": "Announcing new builds for 18 September 2026",
@@ -9,15 +9,6 @@
       "sourceUrl": "https://blogs.windows.com/windows-insider/2026/09/18/announcing-new-builds-for-18-september-2026/",
       "slug": "announcing-new-builds-for-18-september-2026",
       "image": "/api/og?title=Announcing%20new%20builds%20for%2018%20September%202026&category=windows"
-    },
-    {
-      "title": "Microsoft recognized as a Leader in the 2026 Gartner® Magic Quadrant™ for Distributed Hybrid Infrastructure",
-      "summary": "Gartner highlighted Microsoft’s unified single-product architecture, flexibility across hyperconverged and disaggregated architectures, and more. The post Microsoft recognized as a Leader in the 2026 Gartner® Magic Quadr",
-      "date": "2026-09-16T16:00:00.000Z",
-      "category": "azure",
-      "sourceUrl": "https://azure.microsoft.com/en-us/blog/microsoft-recognized-as-a-leader-in-the-2026-gartner-magic-quadrant-for-distributed-hybrid-infrastructure/",
-      "slug": "microsoft-recognized-as-a-leader-in-the-2026-gartner-magic-quadrant-for-distribu",
-      "image": "/api/og?title=Microsoft%20recognized%20as%20a%20Leader%20in%20the%202026%20Gartner%C2%AE%20Magic%20Quadrant%E2%84%A2%20for%20Distributed%20Hybrid%20Infrast&category=azure"
     },
     {
       "title": "Build anywhere, stay in flow: How Windows 365 is redefining the developer experience",
@@ -180,6 +171,15 @@
       "sourceUrl": "https://azure.microsoft.com/en-us/blog/the-economics-of-agent-optimization-context-engineering-for-enterprise-ai-agents/",
       "slug": "the-economics-of-agent-optimization-context-engineering-for-enterprise-ai-agents",
       "image": "/api/og?title=The%20Economics%20of%20Agent%20Optimization%3A%20Context%20engineering%20for%20enterprise%20AI%20agents&category=azure"
+    },
+    {
+      "title": "Introducing Azure Multicloud Interconnect for AWS",
+      "summary": "Azure Multicloud Interconnect helps simplify private connectivity between Microsoft Azure and AWS, enabling organizations to support multicloud and AI workloads with a more streamlined, cloud-native networking experience",
+      "date": "2026-08-31T18:00:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/introducing-azure-multicloud-interconnect-for-aws/",
+      "slug": "introducing-azure-multicloud-interconnect-for-aws",
+      "image": "/api/og?title=Introducing%20Azure%20Multicloud%20Interconnect%20for%20AWS&category=azure"
     }
   ]
 }
