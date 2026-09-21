@@ -1,6 +1,15 @@
 {
-  "updatedAt": "2026-09-21T14:29:23.719Z",
+  "updatedAt": "2026-09-21T19:42:40.496Z",
   "items": [
+    {
+      "title": "New in Edge for developers – Create better components and make your site agent-ready",
+      "summary": "Welcome back to New in Edge for developers, our recurring roundup of recent web platform updates in Microsoft Edge. In this edition, we'll look more closely at some of the newest additions to Microsoft Edge and the Chrom",
+      "date": "2026-09-21T16:58:01.000Z",
+      "category": "windows",
+      "sourceUrl": "https://blogs.windows.com/msedgedev/2026/09/21/new-in-edge-for-developers-create-better-components-and-make-your-site-agent-ready/",
+      "slug": "new-in-edge-for-developers-create-better-components-and-make-your-site-agent-rea",
+      "image": "/api/og?title=New%20in%20Edge%20for%20developers%20%E2%80%93%20Create%20better%20components%20and%20make%20your%20site%20agent-ready&category=windows"
+    },
     {
       "title": "Announcing new builds for 18 September 2026",
       "summary": "Hello Windows Insiders, Today, we’re releasing new Windows 11 Insider Preview builds to the Beta and Experimental channels. New builds this week Select your channel below to view its release notes: Beta: The post Announc",
@@ -135,15 +144,6 @@
       "sourceUrl": "https://blogs.windows.com/msedgedev/2026/09/08/faster-reviews-and-quality-recognition-for-microsoft-edge-extensions/",
       "slug": "faster-reviews-and-quality-recognition-for-microsoft-edge-extensions",
       "image": "/api/og?title=Faster%20reviews%20and%20quality%20recognition%20for%20Microsoft%20Edge%20extensions&category=windows"
-    },
-    {
-      "title": "Announcing Project Zenith: The ready-to-code Windows experience on developer-class devices",
-      "summary": "Breakthroughs in computing become real through the experiences developers create. Our goal is to have Windows be the best platform for developers. That means pairing the latest in hardware innovation with software optimi",
-      "date": "2026-09-04T10:00:29.000Z",
-      "category": "windows",
-      "sourceUrl": "https://blogs.windows.com/windowsdeveloper/2026/09/04/announcing-project-zenith-the-ready-to-code-windows-experience/",
-      "slug": "announcing-project-zenith-the-ready-to-code-windows-experience-on-developer-clas",
-      "image": "/api/og?title=Announcing%20Project%20Zenith%3A%20The%20ready-to-code%20Windows%20experience%20on%20developer-class%20devices&category=windows"
     },
     {
       "title": "Enterprise AI transformation relies on the end-to-end platform: Azure was built for this moment",

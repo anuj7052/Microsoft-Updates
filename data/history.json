@@ -1,5 +1,5 @@
 {
-  "lastFetchedAt": "2026-09-21T14:29:23.719Z",
+  "lastFetchedAt": "2026-09-21T19:42:40.498Z",
   "seenGuids": [
     "https://blogs.windows.com/blog/2026/04/02/part-3-babylon-js-9-0-openpbr-and-additional-engine-updates/",
     "https://blogs.windows.com/blog/2026/04/03/announcing-windows-11-insider-preview-build-26220-8148-beta-channel/",
@@ -93,7 +93,8 @@
     "https://blogs.windows.com/blog/2026/09/11/announcing-new-builds-for-11-september-2026/",
     "https://blogs.windows.com/blog/2026/09/14/build-anywhere-stay-in-flow-with-windows-365/",
     "https://blogs.windows.com/blog/2026/09/14/more-choice-and-possibility-with-windows-pcs-at-ifa/",
-    "https://blogs.windows.com/blog/2026/09/18/announcing-new-builds-for-18-september-2026/"
+    "https://blogs.windows.com/blog/2026/09/18/announcing-new-builds-for-18-september-2026/",
+    "https://blogs.windows.com/blog/2026/09/21/new-in-edge-for-developers-create-better-components-and-make-your-site-agent-ready/"
   ],
-  "totalArticles": 93
+  "totalArticles": 94
 }
