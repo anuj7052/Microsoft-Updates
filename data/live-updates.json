@@ -1,6 +1,15 @@
 {
-  "updatedAt": "2026-09-21T19:42:40.496Z",
+  "updatedAt": "2026-09-21T23:10:19.132Z",
   "items": [
+    {
+      "title": "Beyond the Build &#8211; September 2026",
+      "summary": "Beyond the Build is a monthly update from Marcus Ash, CVP Design and Research across Windows &#38; Devices, on what’s happening across the Windows Insider Program. Plus, read on to see how you can register to attend our ",
+      "date": "2026-09-21T22:36:41.000Z",
+      "category": "windows",
+      "sourceUrl": "https://blogs.windows.com/windows-insider/2026/09/21/beyond-the-build-september-2026/",
+      "slug": "beyond-the-build-8211-september-2026",
+      "image": "/api/og?title=Beyond%20the%20Build%20%26%238211%3B%20September%202026&category=windows"
+    },
     {
       "title": "New in Edge for developers – Create better components and make your site agent-ready",
       "summary": "Welcome back to New in Edge for developers, our recurring roundup of recent web platform updates in Microsoft Edge. In this edition, we'll look more closely at some of the newest additions to Microsoft Edge and the Chrom",
@@ -135,15 +144,6 @@
       "sourceUrl": "https://blogs.windows.com/windowsexperience/2026/09/08/helping-families-and-educators-support-safer-experiences-and-healthier-habits-on-windows/",
       "slug": "helping-families-and-educators-support-safer-experiences-and-healthier-habits-on",
       "image": "/api/og?title=Helping%20families%20and%20educators%20support%20safer%20experiences%20and%20healthier%20habits%20on%20Windows&category=windows"
-    },
-    {
-      "title": "Faster reviews and quality recognition for Microsoft Edge extensions",
-      "summary": "Building an extension has never been easier. Rapid adoption of AI-assisted coding is enabling developers to build extensions faster than ever. We have seen that momentum on the Edge Add-ons site The post Faster reviews a",
-      "date": "2026-09-08T16:02:17.000Z",
-      "category": "windows",
-      "sourceUrl": "https://blogs.windows.com/msedgedev/2026/09/08/faster-reviews-and-quality-recognition-for-microsoft-edge-extensions/",
-      "slug": "faster-reviews-and-quality-recognition-for-microsoft-edge-extensions",
-      "image": "/api/og?title=Faster%20reviews%20and%20quality%20recognition%20for%20Microsoft%20Edge%20extensions&category=windows"
     },
     {
       "title": "Enterprise AI transformation relies on the end-to-end platform: Azure was built for this moment",
