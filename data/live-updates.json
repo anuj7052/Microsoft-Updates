@@ -1,6 +1,15 @@
 {
-  "updatedAt": "2026-09-23T18:57:30.067Z",
+  "updatedAt": "2026-09-23T22:12:19.247Z",
   "items": [
+    {
+      "title": "Introducing the next Surface Pro 12-inch and Surface Laptop 13-inch with Snapdragon X2 Plus: Greater performance that travels light",
+      "summary": "Today at Snapdragon Summit, we introduced the next Surface Pro 12-inch and Surface Laptop 13-inch, built on The post Introducing the next Surface Pro 12-inch and Surface Laptop 13-inch with Snapdragon X2 Plus: Greater pe",
+      "date": "2026-09-23T20:30:27.000Z",
+      "category": "windows",
+      "sourceUrl": "https://blogs.windows.com/devices/2026/09/23/introducing-surface-pro-12-inch-and-surface-laptop-13-inch-with-snapdragon-x2/",
+      "slug": "introducing-the-next-surface-pro-12-inch-and-surface-laptop-13-inch-with-snapdra",
+      "image": "/api/og?title=Introducing%20the%20next%20Surface%20Pro%2012-inch%20and%20Surface%20Laptop%2013-inch%20with%20Snapdragon%20X2%20Plus%3A%20Greater&category=windows"
+    },
     {
       "title": "GPT-6 Astra, Sol, and Luna: For production agents in Microsoft Foundry",
       "summary": "Explore GPT-6 Astra, Sol, and GPT-6 Luna in Microsoft Foundry, with scalable model options for production AI agents, complex workflows, and high-volume tasks. The post GPT-6 Astra, Sol, and Luna: For production agents in",
@@ -153,15 +162,6 @@
       "sourceUrl": "https://blogs.windows.com/windowsexperience/2026/09/08/listening-to-families-improving-microsoft-family/",
       "slug": "listening-to-families-improving-microsoft-family",
       "image": "/api/og?title=Listening%20to%20families.%20Improving%20Microsoft%20Family.&category=windows"
-    },
-    {
-      "title": "Helping families and educators support safer experiences and healthier habits on Windows",
-      "summary": "Our children and teens are growing up in a digital world where apps, games, and AI-powered tools are part of how they learn, play, create, and connect. For parents and educators, that brings both opportunity and responsi",
-      "date": "2026-09-08T17:00:07.000Z",
-      "category": "windows",
-      "sourceUrl": "https://blogs.windows.com/windowsexperience/2026/09/08/helping-families-and-educators-support-safer-experiences-and-healthier-habits-on-windows/",
-      "slug": "helping-families-and-educators-support-safer-experiences-and-healthier-habits-on",
-      "image": "/api/og?title=Helping%20families%20and%20educators%20support%20safer%20experiences%20and%20healthier%20habits%20on%20Windows&category=windows"
     },
     {
       "title": "Enterprise AI transformation relies on the end-to-end platform: Azure was built for this moment",
