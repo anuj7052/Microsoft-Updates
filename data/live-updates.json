@@ -1,6 +1,15 @@
 {
-  "updatedAt": "2026-09-25T04:41:20.141Z",
+  "updatedAt": "2026-09-25T10:07:28.140Z",
   "items": [
+    {
+      "title": "Ship agents faster with expanded model choice, voice agents, and continuous optimization",
+      "summary": "The best model for your business will keep changing. Adopting it should move your business forward, not send your team back to rebuild the architecture around it. The post Ship agents faster with expanded model choice, v",
+      "date": "2026-09-24T18:00:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/ship-agents-faster-with-expanded-model-choice-voice-agents-and-continuous-optimization/",
+      "slug": "ship-agents-faster-with-expanded-model-choice-voice-agents-and-continuous-optimi",
+      "image": "/api/og?title=Ship%20agents%20faster%20with%20expanded%20model%20choice%2C%20voice%20agents%2C%20and%20continuous%20optimization&category=azure"
+    },
     {
       "title": "Introducing the next Surface Pro 12-inch and Surface Laptop 13-inch with Snapdragon X2 Plus: Greater performance that travels light",
       "summary": "Today at Snapdragon Summit, we introduced the next Surface Pro 12-inch and Surface Laptop 13-inch, built on The post Introducing the next Surface Pro 12-inch and Surface Laptop 13-inch with Snapdragon X2 Plus: Greater pe",
@@ -153,15 +162,6 @@
       "sourceUrl": "https://azure.microsoft.com/en-us/blog/two-zones-or-three-a-design-framework-for-zone-resilient-azure-workloads/",
       "slug": "two-zones-or-three-a-design-framework-for-zone-resilient-azure-workloads",
       "image": "/api/og?title=Two%20zones%20or%20three%3F%20A%20design%20framework%20for%20zone-resilient%20Azure%20workloads&category=azure"
-    },
-    {
-      "title": "Beyond the benchmark: How an adaptive approach drives scientific discovery",
-      "summary": "For research and development (R&#38;D) organizations, the promise of agentic AI is not a better one-time answer. It is a new way to explore complex scientific and engineering problems: pursuing multiple hypotheses, valid",
-      "date": "2026-09-08T20:00:00.000Z",
-      "category": "azure",
-      "sourceUrl": "https://azure.microsoft.com/en-us/blog/beyond-the-benchmark-how-an-adaptive-approach-drives-scientific-discovery/",
-      "slug": "beyond-the-benchmark-how-an-adaptive-approach-drives-scientific-discovery",
-      "image": "/api/og?title=Beyond%20the%20benchmark%3A%20How%20an%20adaptive%20approach%20drives%20scientific%20discovery&category=azure"
     },
     {
       "title": "Announcing new builds for 8 September 2026",
