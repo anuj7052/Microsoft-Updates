@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-24T23:50:12.402Z",
+  "updatedAt": "2026-09-25T04:41:20.141Z",
   "items": [
     {
       "title": "Introducing the next Surface Pro 12-inch and Surface Laptop 13-inch with Snapdragon X2 Plus: Greater performance that travels light",
@@ -9,6 +9,42 @@
       "sourceUrl": "https://blogs.windows.com/devices/2026/09/23/introducing-surface-pro-12-inch-and-surface-laptop-13-inch-with-snapdragon-x2/",
       "slug": "introducing-the-next-surface-pro-12-inch-and-surface-laptop-13-inch-with-snapdra",
       "image": "/api/og?title=Introducing%20the%20next%20Surface%20Pro%2012-inch%20and%20Surface%20Laptop%2013-inch%20with%20Snapdragon%20X2%20Plus%3A%20Greater&category=windows"
+    },
+    {
+      "title": "Your architecture diagram is not your resilience",
+      "summary": "For years, resilience was something you set up once. That kept the lights on, but it treated resilience as a project with an end date rather than a property you maintain. The post Your architecture diagram is not your re",
+      "date": "2026-09-23T16:00:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/your-architecture-diagram-is-not-your-resilience/",
+      "slug": "your-architecture-diagram-is-not-your-resilience",
+      "image": "/api/og?title=Your%20architecture%20diagram%20is%20not%20your%20resilience&category=azure"
+    },
+    {
+      "title": "Designing agent-first platforms: What changes when agents do the work",
+      "summary": "The organizations pulling ahead are not simply adding AI to what they already have. They are designing for a different kind of software. The post Designing agent-first platforms: What changes when agents do the work appe",
+      "date": "2026-09-23T15:00:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/designing-agent-first-platforms-what-changes-when-agents-do-the-work/",
+      "slug": "designing-agent-first-platforms-what-changes-when-agents-do-the-work",
+      "image": "/api/og?title=Designing%20agent-first%20platforms%3A%20What%20changes%20when%20agents%20do%20the%20work&category=azure"
+    },
+    {
+      "title": "GPT-6 Astra, Sol, and Luna: For production agents in Microsoft Foundry",
+      "summary": "Explore GPT-6 Astra, Sol, and GPT-6 Luna in Microsoft Foundry, with scalable model options for production AI agents, complex workflows, and high-volume tasks. The post GPT-6 Astra, Sol, and Luna: For production agents in",
+      "date": "2026-09-22T18:30:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/gpt-6-astra-sol-and-luna-for-production-agents-in-microsoft-foundry/",
+      "slug": "gpt-6-astra-sol-and-luna-for-production-agents-in-microsoft-foundry",
+      "image": "/api/og?title=GPT-6%20Astra%2C%20Sol%2C%20and%20Luna%3A%20For%20production%20agents%20in%20Microsoft%20Foundry&category=azure"
+    },
+    {
+      "title": "Claude Opus 5.5 comes to Microsoft Foundry for long-running coding and knowledge work",
+      "summary": "AI models are increasingly taking on work that extends far beyond a single prompt: building a feature across a codebase, investigating a complex issue, synthesizing hundreds of pages of information, or working through a ",
+      "date": "2026-09-22T17:00:25.000Z",
+      "category": "azure",
+      "sourceUrl": "https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/claude-opus-5-5-comes-to-microsoft-foundry-for-long-running-coding-and-knowledge/4558051",
+      "slug": "claude-opus-55-comes-to-microsoft-foundry-for-long-running-coding-and-knowledge",
+      "image": "/api/og?title=Claude%20Opus%205.5%20comes%20to%20Microsoft%20Foundry%20for%20long-running%20coding%20and%20knowledge%20work&category=azure"
     },
     {
       "title": "Beyond the Build &#8211; September 2026",
@@ -144,42 +180,6 @@
       "sourceUrl": "https://blogs.windows.com/windowsexperience/2026/09/08/listening-to-families-improving-microsoft-family/",
       "slug": "listening-to-families-improving-microsoft-family",
       "image": "/api/og?title=Listening%20to%20families.%20Improving%20Microsoft%20Family.&category=windows"
-    },
-    {
-      "title": "Enterprise AI transformation relies on the end-to-end platform: Azure was built for this moment",
-      "summary": "The recognition for Microsoft over the past couple of weeks comes down to models, infrastructure, data, applications, and developer tools working as one system when AI moves into production. The post Enterprise AI transf",
-      "date": "2026-09-03T19:00:00.000Z",
-      "category": "azure",
-      "sourceUrl": "https://azure.microsoft.com/en-us/blog/enterprise-ai-transformation-relies-on-the-end-to-end-platform-azure-was-built-for-this-moment/",
-      "slug": "enterprise-ai-transformation-relies-on-the-end-to-end-platform-azure-was-built-f",
-      "image": "/api/og?title=Enterprise%20AI%20transformation%20relies%20on%20the%20end-to-end%20platform%3A%20Azure%20was%20built%20for%20this%20moment&category=azure"
-    },
-    {
-      "title": "GPT-6 Astra: Frontier intelligence for work, now generally available in Microsoft Foundry",
-      "summary": "GPT-6 Astra, OpenAI's newest frontier model, begins rolling out today through the Microsoft Foundry Limited Access Program, with availability expanding to participating customers over the coming days. The post GPT-6 Astr",
-      "date": "2026-09-03T18:15:00.000Z",
-      "category": "azure",
-      "sourceUrl": "https://azure.microsoft.com/en-us/blog/gpt-6-astra-frontier-intelligence-for-work-now-generally-available-in-microsoft-foundry/",
-      "slug": "gpt-6-astra-frontier-intelligence-for-work-now-generally-available-in-microsoft",
-      "image": "/api/og?title=GPT-6%20Astra%3A%20Frontier%20intelligence%20for%20work%2C%20now%20generally%20available%20in%20Microsoft%20Foundry&category=azure"
-    },
-    {
-      "title": "How Microsoft&#8217;s Physical Security Engineering Team scaled hybrid operations with Azure Arc and Azure Virtual Desktop",
-      "summary": "Learn how Microsoft used Azure Arc and Azure Virtual Desktop to simplify hybrid security operations, improve visibility, and scale globally. The post How Microsoft&#8217;s Physical Security Engineering Team scaled hybrid",
-      "date": "2026-09-03T15:00:00.000Z",
-      "category": "azure",
-      "sourceUrl": "https://azure.microsoft.com/en-us/blog/how-microsofts-physical-security-engineering-team-scaled-hybrid-operations-with-azure-arc-and-azure-virtual-desktop/",
-      "slug": "how-microsoft8217s-physical-security-engineering-team-scaled-hybrid-operations-w",
-      "image": "/api/og?title=How%20Microsoft%26%238217%3Bs%20Physical%20Security%20Engineering%20Team%20scaled%20hybrid%20operations%20with%20Azure%20Arc%20and&category=azure"
-    },
-    {
-      "title": "The Economics of Agent Optimization: Context engineering for enterprise AI agents",
-      "summary": "AI cost optimization goes beyond model selection. Discover how context engineering in Microsoft Foundry helps lower AI costs by improving knowledge retrieval, tool selection, memory, and agent performance at scale. The p",
-      "date": "2026-09-02T16:00:00.000Z",
-      "category": "azure",
-      "sourceUrl": "https://azure.microsoft.com/en-us/blog/the-economics-of-agent-optimization-context-engineering-for-enterprise-ai-agents/",
-      "slug": "the-economics-of-agent-optimization-context-engineering-for-enterprise-ai-agents",
-      "image": "/api/og?title=The%20Economics%20of%20Agent%20Optimization%3A%20Context%20engineering%20for%20enterprise%20AI%20agents&category=azure"
     }
   ]
 }
