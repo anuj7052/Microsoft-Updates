@@ -1,6 +1,24 @@
 {
-  "updatedAt": "2026-09-29T13:15:29.374Z",
+  "updatedAt": "2026-09-29T18:49:45.161Z",
   "items": [
+    {
+      "title": "WSL containers is now generally available",
+      "summary": "WSL is central to our commitment to making Windows the best place to build, run and manage Linux workloads. As AI, cloud-native development, containers, and open-source ecosystems continue to converge on Linux, more deve",
+      "date": "2026-09-29T17:00:52.000Z",
+      "category": "windows",
+      "sourceUrl": "https://blogs.windows.com/windowsdeveloper/2026/09/29/wsl-containers-now-generally-available/",
+      "slug": "wsl-containers-is-now-generally-available",
+      "image": "/api/og?title=WSL%20containers%20is%20now%20generally%20available&category=windows"
+    },
+    {
+      "title": "How to get the Windows 11 2026 Update",
+      "summary": "Windows powers how people around the world work, learn, create, and connect every day. Today, we're announcing the availability of the Windows 11 2026 Update, also known as Windows 11, version 26H2. Built on the same ser",
+      "date": "2026-09-29T17:00:38.000Z",
+      "category": "windows",
+      "sourceUrl": "https://blogs.windows.com/windowsexperience/2026/09/29/how-to-get-windows-11-2026-update/",
+      "slug": "how-to-get-the-windows-11-2026-update",
+      "image": "/api/og?title=How%20to%20get%20the%20Windows%2011%202026%20Update&category=windows"
+    },
     {
       "title": "Announcing new builds for 25 September 2026",
       "summary": "Hello Windows Insiders, Today, we’re releasing new Windows 11 Insider Preview builds to the Beta and Experimental channels. New builds this week Select your channel below to view its release notes: Beta: The post Announc",
@@ -137,15 +155,6 @@
       "image": "/api/og?title=Microsoft%20named%20a%20Leader%20in%20the%202026%20Gartner%C2%AE%20Magic%20Quadrant%E2%84%A2%20for%20Container%20Management&category=azure"
     },
     {
-      "title": "Announcing Windows 11 Release Preview Builds 26100.9539/26200.9539",
-      "summary": "Hello Windows Insiders, Today we’re releasing build Builds 26100.9539/26200.9539 for Release Preview for Windows 11, version 24H2/25H2. Release notes can be found over in the The post Announcing Windows 11 Release Previe",
-      "date": "2026-09-10T17:11:27.000Z",
-      "category": "windows",
-      "sourceUrl": "https://blogs.windows.com/windows-insider/2026/09/10/announcing-windows-11-release-preview-builds-26100-9539-26200-9539/",
-      "slug": "announcing-windows-11-release-preview-builds-261009539262009539",
-      "image": "/api/og?title=Announcing%20Windows%2011%20Release%20Preview%20Builds%2026100.9539%2F26200.9539&category=windows"
-    },
-    {
       "title": "The Economics of Agent Optimization: How AI agent governance controls cost and proves ROI",
       "summary": "This blog post is the fourth and final installment of The Economics of Agent Optimization, which shares the strategies, capabilities, and proof points that can help you optimize agent costs and run AI as a managed invest",
       "date": "2026-09-10T17:00:00.000Z",
@@ -171,15 +180,6 @@
       "sourceUrl": "https://azure.microsoft.com/en-us/blog/two-zones-or-three-a-design-framework-for-zone-resilient-azure-workloads/",
       "slug": "two-zones-or-three-a-design-framework-for-zone-resilient-azure-workloads",
       "image": "/api/og?title=Two%20zones%20or%20three%3F%20A%20design%20framework%20for%20zone-resilient%20Azure%20workloads&category=azure"
-    },
-    {
-      "title": "Announcing new builds for 8 September 2026",
-      "summary": "Hello Windows Insiders, Today, we’re releasing new Windows 11 Insider Preview builds to the Beta and Experimental channels. New builds this week Select your channel below to view its release notes: Beta: The post Announc",
-      "date": "2026-09-08T17:05:10.000Z",
-      "category": "windows",
-      "sourceUrl": "https://blogs.windows.com/windows-insider/2026/09/08/announcing-new-builds-for-8-september-2026/",
-      "slug": "announcing-new-builds-for-8-september-2026",
-      "image": "/api/og?title=Announcing%20new%20builds%20for%208%20September%202026&category=windows"
     }
   ]
 }

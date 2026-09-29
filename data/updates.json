@@ -1,5 +1,5 @@
 {
-  "lastFetchedAt": "2026-09-29T13:15:29.375Z",
+  "lastFetchedAt": "2026-09-29T18:49:45.175Z",
   "processed": [
     {
       "guid": "https://blogs.windows.com/blog/2026/03/30/announcing-windows-11-insider-preview-build-for-canary-channel-29558-1000/",
@@ -936,6 +936,22 @@
       "category": "windows",
       "riskLevel": "SAFE",
       "savedAt": "2026-09-25T19:29:49.796Z"
+    },
+    {
+      "guid": "https://blogs.windows.com/blog/2026/09/29/wsl-containers-now-generally-available/",
+      "url": "https://blogs.windows.com/windowsdeveloper/2026/09/29/wsl-containers-now-generally-available/",
+      "slug": "wsl-containers-is-now-generally-available",
+      "category": "windows",
+      "riskLevel": "SAFE",
+      "savedAt": "2026-09-29T18:49:45.175Z"
+    },
+    {
+      "guid": "https://blogs.windows.com/blog/2026/09/29/how-to-get-windows-11-2026-update/",
+      "url": "https://blogs.windows.com/windowsexperience/2026/09/29/how-to-get-windows-11-2026-update/",
+      "slug": "how-to-get-the-windows-11-2026-update",
+      "category": "windows",
+      "riskLevel": "SAFE",
+      "savedAt": "2026-09-29T18:49:45.175Z"
     }
   ]
 }
