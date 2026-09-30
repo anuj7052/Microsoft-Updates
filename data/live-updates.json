@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-29T22:55:03.835Z",
+  "updatedAt": "2026-09-30T01:58:49.635Z",
   "items": [
     {
       "title": "WSL containers is now generally available",
@@ -144,15 +144,6 @@
       "sourceUrl": "https://blogs.windows.com/devices/2026/09/14/more-choice-and-possibility-with-windows-pcs-at-ifa/",
       "slug": "more-choice-and-possibility-with-windows-pcs-at-ifa",
       "image": "/api/og?title=More%20choice%20and%20possibility%20with%20Windows%20PCs%20at%20IFA&category=windows"
-    },
-    {
-      "title": "Announcing new builds for 11 September 2026",
-      "summary": "Hello Windows Insiders, Today, we’re releasing new Windows 11 Insider Preview builds to the Beta, Experimental, and Release Preview channels. New builds this week Select your channel below to view its release notes: B Th",
-      "date": "2026-09-11T17:11:03.000Z",
-      "category": "windows",
-      "sourceUrl": "https://blogs.windows.com/windows-insider/2026/09/11/announcing-new-builds-for-11-september-2026/",
-      "slug": "announcing-new-builds-for-11-september-2026",
-      "image": "/api/og?title=Announcing%20new%20builds%20for%2011%20September%202026&category=windows"
     },
     {
       "title": "Microsoft named a Leader in the 2026 Gartner® Magic Quadrant™ for Container Management",
