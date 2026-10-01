@@ -1,15 +1,6 @@
 {
-  "updatedAt": "2026-10-01T13:48:45.576Z",
+  "updatedAt": "2026-10-01T19:25:07.243Z",
   "items": [
-    {
-      "title": "Responsible infrastructure at hyperscale: Managing the full lifecycle of Azure hardware",
-      "summary": "Microsoft is advancing Azure cloud infrastructure with more efficient systems and Circular Centers that extend the useful life of datacenter hardware. The post Responsible infrastructure at hyperscale: Managing the full ",
-      "date": "2026-09-30T15:00:00.000Z",
-      "category": "azure",
-      "sourceUrl": "https://azure.microsoft.com/en-us/blog/responsible-infrastructure-at-hyperscale-managing-the-full-lifecycle-of-azure-hardware/",
-      "slug": "responsible-infrastructure-at-hyperscale-managing-the-full-lifecycle-of-azure-ha",
-      "image": "/api/og?title=Responsible%20infrastructure%20at%20hyperscale%3A%20Managing%20the%20full%20lifecycle%20of%20Azure%20hardware&category=azure"
-    },
     {
       "title": "WSL containers is now generally available",
       "summary": "WSL is central to our commitment to making Windows the best place to build, run and manage Linux workloads. As AI, cloud-native development, containers, and open-source ecosystems continue to converge on Linux, more deve",
@@ -180,6 +171,15 @@
       "sourceUrl": "https://blogs.windows.com/windows-insider/2026/09/11/announcing-new-builds-for-11-september-2026/",
       "slug": "announcing-new-builds-for-11-september-2026",
       "image": "/api/og?title=Announcing%20new%20builds%20for%2011%20September%202026&category=windows"
+    },
+    {
+      "title": "Microsoft named a Leader in the 2026 Gartner® Magic Quadrant™ for Container Management",
+      "summary": "Microsoft was named a Leader in the 2026 Gartner® Magic Quadrant™ for Container Management. Discover how AKS, Azure Arc, and Azure Container Apps help organizations run AI and hybrid workloads at scale. The post Microsof",
+      "date": "2026-09-10T21:00:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/microsoft-named-a-leader-in-the-2026-gartner-magic-quadrant-for-container-management/",
+      "slug": "microsoft-named-a-leader-in-the-2026-gartner-magic-quadrant-for-container-manage",
+      "image": "/api/og?title=Microsoft%20named%20a%20Leader%20in%20the%202026%20Gartner%C2%AE%20Magic%20Quadrant%E2%84%A2%20for%20Container%20Management&category=azure"
     }
   ]
 }
