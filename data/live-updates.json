@@ -1,15 +1,6 @@
 {
-  "updatedAt": "2026-10-07T07:08:33.318Z",
+  "updatedAt": "2026-10-07T14:42:02.599Z",
   "items": [
-    {
-      "title": "Microsoft named a Leader in the 2026 Gartner® Magic Quadrant™ for Global Industrial AIoT Platforms",
-      "summary": "We’re proud to share that Microsoft has been named a Leader in the 2026 Gartner® Magic Quadrant™ for Global Industrial AIoT Platforms. The post Microsoft named a Leader in the 2026 Gartner® Magic Quadrant™ for Global Ind",
-      "date": "2026-10-06T21:00:00.000Z",
-      "category": "azure",
-      "sourceUrl": "https://azure.microsoft.com/en-us/blog/microsoft-named-a-leader-in-the-2026-gartner-magic-quadrant-for-global-industrial-aiot-platforms/",
-      "slug": "microsoft-named-a-leader-in-the-2026-gartner-magic-quadrant-for-global-industria",
-      "image": "/api/og?title=Microsoft%20named%20a%20Leader%20in%20the%202026%20Gartner%C2%AE%20Magic%20Quadrant%E2%84%A2%20for%20Global%20Industrial%20AIoT%20Platforms&category=azure"
-    },
     {
       "title": "Announcing new builds for 2 October 2026",
       "summary": "Hello Windows Insiders, Today, we’re releasing new Windows 11 Insider Preview builds to the Beta and Experimental channels. New builds this week Select your channel below to view its release notes: Beta: The post Announc",
@@ -162,6 +153,15 @@
       "sourceUrl": "https://blogs.windows.com/windows-insider/2026/09/18/announcing-new-builds-for-18-september-2026/",
       "slug": "announcing-new-builds-for-18-september-2026",
       "image": "/api/og?title=Announcing%20new%20builds%20for%2018%20September%202026&category=windows"
+    },
+    {
+      "title": "Microsoft recognized as a Leader in the 2026 Gartner® Magic Quadrant™ for Distributed Hybrid Infrastructure",
+      "summary": "Gartner highlighted Microsoft’s unified single-product architecture, flexibility across hyperconverged and disaggregated architectures, and more. The post Microsoft recognized as a Leader in the 2026 Gartner® Magic Quadr",
+      "date": "2026-09-16T16:00:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/microsoft-recognized-as-a-leader-in-the-2026-gartner-magic-quadrant-for-distributed-hybrid-infrastructure/",
+      "slug": "microsoft-recognized-as-a-leader-in-the-2026-gartner-magic-quadrant-for-distribu",
+      "image": "/api/og?title=Microsoft%20recognized%20as%20a%20Leader%20in%20the%202026%20Gartner%C2%AE%20Magic%20Quadrant%E2%84%A2%20for%20Distributed%20Hybrid%20Infrast&category=azure"
     },
     {
       "title": "Build anywhere, stay in flow: How Windows 365 is redefining the developer experience",
