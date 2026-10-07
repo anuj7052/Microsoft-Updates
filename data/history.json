@@ -1,5 +1,5 @@
 {
-  "lastFetchedAt": "2026-10-07T14:42:02.600Z",
+  "lastFetchedAt": "2026-10-07T20:32:44.247Z",
   "seenGuids": [
     "https://blogs.windows.com/blog/2026/04/02/part-3-babylon-js-9-0-openpbr-and-additional-engine-updates/",
     "https://blogs.windows.com/blog/2026/04/03/announcing-windows-11-insider-preview-build-26220-8148-beta-channel/",
@@ -100,7 +100,12 @@
     "https://blogs.windows.com/blog/2026/09/25/announcing-new-builds-for-25-september-2026/",
     "https://blogs.windows.com/blog/2026/09/29/wsl-containers-now-generally-available/",
     "https://blogs.windows.com/blog/2026/09/29/how-to-get-windows-11-2026-update/",
-    "https://blogs.windows.com/blog/2026/10/02/announcing-new-builds-for-2-october-2026/"
+    "https://blogs.windows.com/blog/2026/10/02/announcing-new-builds-for-2-october-2026/",
+    "https://blogs.windows.com/blog/2026/10/07/announcing-new-builds-for-7-october-2026/",
+    "https://blogs.windows.com/blog/2026/10/07/pre-order-our-most-powerful-surface-devices-ever/",
+    "https://blogs.windows.com/blog/2026/10/07/microsoft-execution-containers-policy-driven-containment-for-ai-agents/",
+    "https://blogs.windows.com/blog/2026/10/07/building-windows-for-hybrid-intelligence/",
+    "https://blogs.windows.com/blog/2026/10/07/from-searching-to-doing-building-a-faster-more-streamlined-windows-search/"
   ],
-  "totalArticles": 100
+  "totalArticles": 105
 }

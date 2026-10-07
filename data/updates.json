@@ -1,5 +1,5 @@
 {
-  "lastFetchedAt": "2026-10-07T14:42:02.600Z",
+  "lastFetchedAt": "2026-10-07T20:32:44.247Z",
   "processed": [
     {
       "guid": "https://blogs.windows.com/blog/2026/03/30/announcing-windows-11-insider-preview-build-for-canary-channel-29558-1000/",
@@ -960,6 +960,46 @@
       "category": "windows",
       "riskLevel": "SAFE",
       "savedAt": "2026-10-02T20:53:56.841Z"
+    },
+    {
+      "guid": "https://blogs.windows.com/blog/2026/10/07/announcing-new-builds-for-7-october-2026/",
+      "url": "https://blogs.windows.com/windows-insider/2026/10/07/announcing-new-builds-for-7-october-2026/",
+      "slug": "announcing-new-builds-for-7-october-2026",
+      "category": "windows",
+      "riskLevel": "SAFE",
+      "savedAt": "2026-10-07T20:32:44.246Z"
+    },
+    {
+      "guid": "https://blogs.windows.com/blog/2026/10/07/pre-order-our-most-powerful-surface-devices-ever/",
+      "url": "https://blogs.windows.com/devices/2026/10/07/pre-order-our-most-powerful-surface-devices-ever/",
+      "slug": "pre-order-our-most-powerful-surface-devices-ever",
+      "category": "windows",
+      "riskLevel": "SAFE",
+      "savedAt": "2026-10-07T20:32:44.247Z"
+    },
+    {
+      "guid": "https://blogs.windows.com/blog/2026/10/07/microsoft-execution-containers-policy-driven-containment-for-ai-agents/",
+      "url": "https://blogs.windows.com/windowsdeveloper/2026/10/07/microsoft-execution-containers-policy-driven-containment-for-ai-agents/",
+      "slug": "microsoft-execution-containers-policy-driven-containment-for-ai-agents",
+      "category": "windows",
+      "riskLevel": "SAFE",
+      "savedAt": "2026-10-07T20:32:44.247Z"
+    },
+    {
+      "guid": "https://blogs.windows.com/blog/2026/10/07/building-windows-for-hybrid-intelligence/",
+      "url": "https://blogs.windows.com/windowsexperience/2026/10/07/building-windows-for-hybrid-intelligence/",
+      "slug": "building-windows-for-hybrid-intelligence",
+      "category": "windows",
+      "riskLevel": "SAFE",
+      "savedAt": "2026-10-07T20:32:44.247Z"
+    },
+    {
+      "guid": "https://blogs.windows.com/blog/2026/10/07/from-searching-to-doing-building-a-faster-more-streamlined-windows-search/",
+      "url": "https://blogs.windows.com/windows-insider/2026/10/07/from-searching-to-doing-building-a-faster-more-streamlined-windows-search/",
+      "slug": "from-searching-to-doing-building-a-faster-more-streamlined-windows-search",
+      "category": "windows",
+      "riskLevel": "SAFE",
+      "savedAt": "2026-10-07T20:32:44.247Z"
     }
   ]
 }

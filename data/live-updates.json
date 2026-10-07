@@ -1,6 +1,51 @@
 {
-  "updatedAt": "2026-10-07T14:42:02.599Z",
+  "updatedAt": "2026-10-07T20:32:44.245Z",
   "items": [
+    {
+      "title": "Announcing new builds for 7 October 2026",
+      "summary": "Hello Windows Insiders, Today, we’re releasing new Windows 11 Insider Preview builds to the Beta and Experimental channels! Coming straight off the back of our Windows + Surface event, we have some exciting new features ",
+      "date": "2026-10-07T18:10:17.000Z",
+      "category": "windows",
+      "sourceUrl": "https://blogs.windows.com/windows-insider/2026/10/07/announcing-new-builds-for-7-october-2026/",
+      "slug": "announcing-new-builds-for-7-october-2026",
+      "image": "/api/og?title=Announcing%20new%20builds%20for%207%20October%202026&category=windows"
+    },
+    {
+      "title": "Pre-order our most powerful Surface devices ever",
+      "summary": "For more than a decade, Surface has been shaped by the people pushing technology further. Creators rendering complex scenes. Developers building what doesn't exist yet. Designers moving between ideas, models, code, and c",
+      "date": "2026-10-07T18:00:35.000Z",
+      "category": "windows",
+      "sourceUrl": "https://blogs.windows.com/devices/2026/10/07/pre-order-our-most-powerful-surface-devices-ever/",
+      "slug": "pre-order-our-most-powerful-surface-devices-ever",
+      "image": "/api/og?title=Pre-order%20our%20most%20powerful%20Surface%20devices%20ever&category=windows"
+    },
+    {
+      "title": "Microsoft Execution Containers: Policy-driven containment for AI agents",
+      "summary": "Agents are unlocking enormous productivity gains for customers, but their ability to work across files, networks, and applications can introduce new security risks. This can leave customers feeling like they only have tw",
+      "date": "2026-10-07T18:00:28.000Z",
+      "category": "windows",
+      "sourceUrl": "https://blogs.windows.com/windowsdeveloper/2026/10/07/microsoft-execution-containers-policy-driven-containment-for-ai-agents/",
+      "slug": "microsoft-execution-containers-policy-driven-containment-for-ai-agents",
+      "image": "/api/og?title=Microsoft%20Execution%20Containers%3A%20Policy-driven%20containment%20for%20AI%20agents&category=windows"
+    },
+    {
+      "title": "Building Windows for hybrid intelligence",
+      "summary": "Agents are creating a foundational shift in how people get things done, unlocking new levels of productivity and capability on the PC. As agents become part of everyday work, they also raise the bar for compute, security",
+      "date": "2026-10-07T18:00:22.000Z",
+      "category": "windows",
+      "sourceUrl": "https://blogs.windows.com/windowsexperience/2026/10/07/building-windows-for-hybrid-intelligence/",
+      "slug": "building-windows-for-hybrid-intelligence",
+      "image": "/api/og?title=Building%20Windows%20for%20hybrid%20intelligence&category=windows"
+    },
+    {
+      "title": "From searching to doing: Building a faster, more streamlined Windows Search",
+      "summary": "Hello Windows Insiders, Search is one of the most familiar ways to get around a Windows PC. It is how you may open an app, find a file, change a setting, or simply look for information. As Insiders, you have also been cl",
+      "date": "2026-10-07T18:00:05.000Z",
+      "category": "windows",
+      "sourceUrl": "https://blogs.windows.com/windows-insider/2026/10/07/from-searching-to-doing-building-a-faster-more-streamlined-windows-search/",
+      "slug": "from-searching-to-doing-building-a-faster-more-streamlined-windows-search",
+      "image": "/api/og?title=From%20searching%20to%20doing%3A%20Building%20a%20faster%2C%20more%20streamlined%20Windows%20Search&category=windows"
+    },
     {
       "title": "Announcing new builds for 2 October 2026",
       "summary": "Hello Windows Insiders, Today, we’re releasing new Windows 11 Insider Preview builds to the Beta and Experimental channels. New builds this week Select your channel below to view its release notes: Beta: The post Announc",
@@ -128,33 +173,6 @@
       "image": "/api/og?title=Claude%20Opus%205.5%20comes%20to%20Microsoft%20Foundry%20for%20long-running%20coding%20and%20knowledge%20work&category=azure"
     },
     {
-      "title": "Beyond the Build &#8211; September 2026",
-      "summary": "Beyond the Build is a monthly update from Marcus Ash, CVP Design and Research across Windows &#38; Devices, on what’s happening across the Windows Insider Program. Plus, read on to see how you can register to attend our ",
-      "date": "2026-09-21T22:36:41.000Z",
-      "category": "windows",
-      "sourceUrl": "https://blogs.windows.com/windows-insider/2026/09/21/beyond-the-build-september-2026/",
-      "slug": "beyond-the-build-8211-september-2026",
-      "image": "/api/og?title=Beyond%20the%20Build%20%26%238211%3B%20September%202026&category=windows"
-    },
-    {
-      "title": "New in Edge for developers – Create better components and make your site agent-ready",
-      "summary": "Welcome back to New in Edge for developers, our recurring roundup of recent web platform updates in Microsoft Edge. In this edition, we'll look more closely at some of the newest additions to Microsoft Edge and the Chrom",
-      "date": "2026-09-21T16:58:01.000Z",
-      "category": "windows",
-      "sourceUrl": "https://blogs.windows.com/msedgedev/2026/09/21/new-in-edge-for-developers-create-better-components-and-make-your-site-agent-ready/",
-      "slug": "new-in-edge-for-developers-create-better-components-and-make-your-site-agent-rea",
-      "image": "/api/og?title=New%20in%20Edge%20for%20developers%20%E2%80%93%20Create%20better%20components%20and%20make%20your%20site%20agent-ready&category=windows"
-    },
-    {
-      "title": "Announcing new builds for 18 September 2026",
-      "summary": "Hello Windows Insiders, Today, we’re releasing new Windows 11 Insider Preview builds to the Beta and Experimental channels. New builds this week Select your channel below to view its release notes: Beta: The post Announc",
-      "date": "2026-09-18T17:02:07.000Z",
-      "category": "windows",
-      "sourceUrl": "https://blogs.windows.com/windows-insider/2026/09/18/announcing-new-builds-for-18-september-2026/",
-      "slug": "announcing-new-builds-for-18-september-2026",
-      "image": "/api/og?title=Announcing%20new%20builds%20for%2018%20September%202026&category=windows"
-    },
-    {
       "title": "Microsoft recognized as a Leader in the 2026 Gartner® Magic Quadrant™ for Distributed Hybrid Infrastructure",
       "summary": "Gartner highlighted Microsoft’s unified single-product architecture, flexibility across hyperconverged and disaggregated architectures, and more. The post Microsoft recognized as a Leader in the 2026 Gartner® Magic Quadr",
       "date": "2026-09-16T16:00:00.000Z",
@@ -162,24 +180,6 @@
       "sourceUrl": "https://azure.microsoft.com/en-us/blog/microsoft-recognized-as-a-leader-in-the-2026-gartner-magic-quadrant-for-distributed-hybrid-infrastructure/",
       "slug": "microsoft-recognized-as-a-leader-in-the-2026-gartner-magic-quadrant-for-distribu",
       "image": "/api/og?title=Microsoft%20recognized%20as%20a%20Leader%20in%20the%202026%20Gartner%C2%AE%20Magic%20Quadrant%E2%84%A2%20for%20Distributed%20Hybrid%20Infrast&category=azure"
-    },
-    {
-      "title": "Build anywhere, stay in flow: How Windows 365 is redefining the developer experience",
-      "summary": "Development teams are under increasing pressure to ship software faster, even as the environments they rely on grow more complex. However, modern development has only become harder to provision and maintain with AI-assis",
-      "date": "2026-09-14T17:00:49.000Z",
-      "category": "windows",
-      "sourceUrl": "https://blogs.windows.com/windowsdeveloper/2026/09/14/build-anywhere-stay-in-flow-with-windows-365/",
-      "slug": "build-anywhere-stay-in-flow-how-windows-365-is-redefining-the-developer-experien",
-      "image": "/api/og?title=Build%20anywhere%2C%20stay%20in%20flow%3A%20How%20Windows%20365%20is%20redefining%20the%20developer%20experience&category=windows"
-    },
-    {
-      "title": "More choice and possibility with Windows PCs at IFA",
-      "summary": "This year at IFA, I saw the Windows ecosystem doing what it does best: bringing innovation to life through products and experiences for every person, purpose, and price point. Our partners intr The post More choice and p",
-      "date": "2026-09-14T17:00:39.000Z",
-      "category": "windows",
-      "sourceUrl": "https://blogs.windows.com/devices/2026/09/14/more-choice-and-possibility-with-windows-pcs-at-ifa/",
-      "slug": "more-choice-and-possibility-with-windows-pcs-at-ifa",
-      "image": "/api/og?title=More%20choice%20and%20possibility%20with%20Windows%20PCs%20at%20IFA&category=windows"
     }
   ]
 }
