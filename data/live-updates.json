@@ -1,6 +1,15 @@
 {
-  "updatedAt": "2026-10-12T19:44:55.608Z",
+  "updatedAt": "2026-10-13T01:57:23.999Z",
   "items": [
+    {
+      "title": "Deep dive into Azure Maia 300 architecture",
+      "summary": "Maia 300 operates as a single platform to meet the demands of cloud-scale agentic inference. The post Deep dive into Azure Maia 300 architecture appeared first on Microsoft Azure Blog.",
+      "date": "2026-10-12T13:00:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/deep-dive-into-azure-maia-300-architecture/",
+      "slug": "deep-dive-into-azure-maia-300-architecture",
+      "image": "/api/og?title=Deep%20dive%20into%20Azure%20Maia%20300%20architecture&category=azure"
+    },
     {
       "title": "Announcing new builds for 7 October 2026",
       "summary": "Hello Windows Insiders, Today, we’re releasing new Windows 11 Insider Preview builds to the Beta and Experimental channels! Coming straight off the back of our Windows + Surface event, we have some exciting new features ",
@@ -171,15 +180,6 @@
       "sourceUrl": "https://azure.microsoft.com/en-us/blog/designing-agent-first-platforms-what-changes-when-agents-do-the-work/",
       "slug": "designing-agent-first-platforms-what-changes-when-agents-do-the-work",
       "image": "/api/og?title=Designing%20agent-first%20platforms%3A%20What%20changes%20when%20agents%20do%20the%20work&category=azure"
-    },
-    {
-      "title": "GPT-6 Astra, Sol, and Luna: For production agents in Microsoft Foundry",
-      "summary": "Explore GPT-6 Astra, Sol, and GPT-6 Luna in Microsoft Foundry, with scalable model options for production AI agents, complex workflows, and high-volume tasks. The post GPT-6 Astra, Sol, and Luna: For production agents in",
-      "date": "2026-09-22T18:30:00.000Z",
-      "category": "azure",
-      "sourceUrl": "https://azure.microsoft.com/en-us/blog/gpt-6-astra-sol-and-luna-for-production-agents-in-microsoft-foundry/",
-      "slug": "gpt-6-astra-sol-and-luna-for-production-agents-in-microsoft-foundry",
-      "image": "/api/og?title=GPT-6%20Astra%2C%20Sol%2C%20and%20Luna%3A%20For%20production%20agents%20in%20Microsoft%20Foundry&category=azure"
     }
   ]
 }
