@@ -1,5 +1,5 @@
 {
-  "lastFetchedAt": "2026-10-14T12:48:55.899Z",
+  "lastFetchedAt": "2026-10-14T17:55:43.777Z",
   "seenGuids": [
     "https://blogs.windows.com/blog/2026/04/02/part-3-babylon-js-9-0-openpbr-and-additional-engine-updates/",
     "https://blogs.windows.com/blog/2026/04/03/announcing-windows-11-insider-preview-build-26220-8148-beta-channel/",
@@ -105,7 +105,8 @@
     "https://blogs.windows.com/blog/2026/10/07/pre-order-our-most-powerful-surface-devices-ever/",
     "https://blogs.windows.com/blog/2026/10/07/microsoft-execution-containers-policy-driven-containment-for-ai-agents/",
     "https://blogs.windows.com/blog/2026/10/07/building-windows-for-hybrid-intelligence/",
-    "https://blogs.windows.com/blog/2026/10/07/from-searching-to-doing-building-a-faster-more-streamlined-windows-search/"
+    "https://blogs.windows.com/blog/2026/10/07/from-searching-to-doing-building-a-faster-more-streamlined-windows-search/",
+    "https://blogs.windows.com/blog/2026/10/14/python-3-15-delivers-native-by-default-experience-on-windows-arm/"
   ],
-  "totalArticles": 105
+  "totalArticles": 106
 }

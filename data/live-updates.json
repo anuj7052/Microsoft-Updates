@@ -1,6 +1,33 @@
 {
-  "updatedAt": "2026-10-14T12:48:55.899Z",
+  "updatedAt": "2026-10-14T17:55:43.775Z",
   "items": [
+    {
+      "title": "Python 3.15 delivers a native-by-default experience on Windows on Arm",
+      "summary": "Windows on Arm has been ready for Python development for some time. With Python 3.15, the broader ecosystem has matured significantly, with more package maintainers publishing native Arm64 wheels, allow The post Python 3",
+      "date": "2026-10-14T17:00:05.000Z",
+      "category": "windows",
+      "sourceUrl": "https://blogs.windows.com/windowsdeveloper/2026/10/14/python-3-15-delivers-native-by-default-experience-on-windows-arm/",
+      "slug": "python-315-delivers-a-native-by-default-experience-on-windows-on-arm",
+      "image": "/api/og?title=Python%203.15%20delivers%20a%20native-by-default%20experience%20on%20Windows%20on%20Arm&category=windows"
+    },
+    {
+      "title": "Advancing hardware security with open-source Integrated HSM technology",
+      "summary": "Explore how Microsoft is advancing hardware security through open-source Integrated HSM technology, collaboration, and cryptographic key protection. The post Advancing hardware security with open-source Integrated HSM te",
+      "date": "2026-10-13T16:15:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/advancing-hardware-security-with-open-source-integrated-hsm-technology/",
+      "slug": "advancing-hardware-security-with-open-source-integrated-hsm-technology",
+      "image": "/api/og?title=Advancing%20hardware%20security%20with%20open-source%20Integrated%20HSM%20technology&category=azure"
+    },
+    {
+      "title": "Infrastructure for the frontier era: Scaling intelligence through open industry collaboration",
+      "summary": "AI is reaching such a pivotal moment, and the focus is shifting from building larger frontier models to intelligence that delivers practical impact. The post Infrastructure for the frontier era: Scaling intelligence thro",
+      "date": "2026-10-13T16:15:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/infrastructure-for-the-frontier-era-scaling-intelligence-through-open-industry-collaboration/",
+      "slug": "infrastructure-for-the-frontier-era-scaling-intelligence-through-open-industry-c",
+      "image": "/api/og?title=Infrastructure%20for%20the%20frontier%20era%3A%20Scaling%20intelligence%20through%20open%20industry%20collaboration&category=azure"
+    },
     {
       "title": "Deep dive into Azure Maia 300 architecture",
       "summary": "Maia 300 operates as a single platform to meet the demands of cloud-scale agentic inference. The post Deep dive into Azure Maia 300 architecture appeared first on Microsoft Azure Blog.",
@@ -153,33 +180,6 @@
       "sourceUrl": "https://azure.microsoft.com/en-us/blog/ship-agents-faster-with-expanded-model-choice-voice-agents-and-continuous-optimization/",
       "slug": "ship-agents-faster-with-expanded-model-choice-voice-agents-and-continuous-optimi",
       "image": "/api/og?title=Ship%20agents%20faster%20with%20expanded%20model%20choice%2C%20voice%20agents%2C%20and%20continuous%20optimization&category=azure"
-    },
-    {
-      "title": "Introducing the next Surface Pro 12-inch and Surface Laptop 13-inch with Snapdragon X2 Plus: Greater performance that travels light",
-      "summary": "Today at Snapdragon Summit, we introduced the next Surface Pro 12-inch and Surface Laptop 13-inch, built on The post Introducing the next Surface Pro 12-inch and Surface Laptop 13-inch with Snapdragon X2 Plus: Greater pe",
-      "date": "2026-09-23T20:30:27.000Z",
-      "category": "windows",
-      "sourceUrl": "https://blogs.windows.com/devices/2026/09/23/introducing-surface-pro-12-inch-and-surface-laptop-13-inch-with-snapdragon-x2/",
-      "slug": "introducing-the-next-surface-pro-12-inch-and-surface-laptop-13-inch-with-snapdra",
-      "image": "/api/og?title=Introducing%20the%20next%20Surface%20Pro%2012-inch%20and%20Surface%20Laptop%2013-inch%20with%20Snapdragon%20X2%20Plus%3A%20Greater&category=windows"
-    },
-    {
-      "title": "Your architecture diagram is not your resilience",
-      "summary": "For years, resilience was something you set up once. That kept the lights on, but it treated resilience as a project with an end date rather than a property you maintain. The post Your architecture diagram is not your re",
-      "date": "2026-09-23T16:00:00.000Z",
-      "category": "azure",
-      "sourceUrl": "https://azure.microsoft.com/en-us/blog/your-architecture-diagram-is-not-your-resilience/",
-      "slug": "your-architecture-diagram-is-not-your-resilience",
-      "image": "/api/og?title=Your%20architecture%20diagram%20is%20not%20your%20resilience&category=azure"
-    },
-    {
-      "title": "Designing agent-first platforms: What changes when agents do the work",
-      "summary": "The organizations pulling ahead are not simply adding AI to what they already have. They are designing for a different kind of software. The post Designing agent-first platforms: What changes when agents do the work appe",
-      "date": "2026-09-23T15:00:00.000Z",
-      "category": "azure",
-      "sourceUrl": "https://azure.microsoft.com/en-us/blog/designing-agent-first-platforms-what-changes-when-agents-do-the-work/",
-      "slug": "designing-agent-first-platforms-what-changes-when-agents-do-the-work",
-      "image": "/api/og?title=Designing%20agent-first%20platforms%3A%20What%20changes%20when%20agents%20do%20the%20work&category=azure"
     }
   ]
 }
