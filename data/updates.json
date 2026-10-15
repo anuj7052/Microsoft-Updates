@@ -1,5 +1,5 @@
 {
-  "lastFetchedAt": "2026-10-15T10:14:45.755Z",
+  "lastFetchedAt": "2026-10-15T15:17:36.761Z",
   "processed": [
     {
       "guid": "https://blogs.windows.com/blog/2026/03/30/announcing-windows-11-insider-preview-build-for-canary-channel-29558-1000/",
@@ -1008,6 +1008,30 @@
       "category": "windows",
       "riskLevel": "SAFE",
       "savedAt": "2026-10-14T17:55:43.777Z"
+    },
+    {
+      "guid": "https://blogs.windows.com/blog/2026/10/15/meet-the-new-photos-app-on-windows-11/",
+      "url": "https://blogs.windows.com/windowsexperience/2026/10/15/meet-the-new-photos-app-on-windows-11/",
+      "slug": "meet-the-new-photos-app-on-windows-11",
+      "category": "windows",
+      "riskLevel": "SAFE",
+      "savedAt": "2026-10-15T15:17:36.761Z"
+    },
+    {
+      "guid": "https://blogs.windows.com/blog/2026/10/15/whats-new-in-windows-11-everyday-experiences-reimagined/",
+      "url": "https://blogs.windows.com/windowsexperience/2026/10/15/whats-new-in-windows-11-everyday-experiences-reimagined/",
+      "slug": "whats-new-in-windows-11-everyday-experiences-reimagined",
+      "category": "windows",
+      "riskLevel": "SAFE",
+      "savedAt": "2026-10-15T15:17:36.761Z"
+    },
+    {
+      "guid": "https://blogs.windows.com/blog/2026/10/15/incredible-deals-and-more-to-love-in-a-new-windows-pc-this-holiday/",
+      "url": "https://blogs.windows.com/windowsexperience/2026/10/15/incredible-deals-and-more-to-love-in-a-new-windows-pc-this-holiday/",
+      "slug": "incredible-deals-and-more-to-love-in-a-new-windows-pc-this-holiday",
+      "category": "windows",
+      "riskLevel": "SAFE",
+      "savedAt": "2026-10-15T15:17:36.761Z"
     }
   ]
 }

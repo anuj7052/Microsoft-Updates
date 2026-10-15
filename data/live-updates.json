@@ -1,6 +1,33 @@
 {
-  "updatedAt": "2026-10-15T10:14:45.755Z",
+  "updatedAt": "2026-10-15T15:17:36.759Z",
   "items": [
+    {
+      "title": "Meet the new Photos app on Windows 11",
+      "summary": "Photos hold some of our most meaningful memories: the people we love, the milestones we celebrate, and the everyday moments we want to remember. They connect us to our past and help us share our stories. The post Meet th",
+      "date": "2026-10-15T13:00:43.000Z",
+      "category": "windows",
+      "sourceUrl": "https://blogs.windows.com/windowsexperience/2026/10/15/meet-the-new-photos-app-on-windows-11/",
+      "slug": "meet-the-new-photos-app-on-windows-11",
+      "image": "/api/og?title=Meet%20the%20new%20Photos%20app%20on%20Windows%2011&category=windows"
+    },
+    {
+      "title": "What’s new in Windows 11: Everyday experiences, reimagined",
+      "summary": "Every day, your PC helps you get things done, stay connected, capture ideas and make time for what you enjoy. That’s why Windows 11 continues to evolve, starting with a faster, more dependable and refined experience. Thr",
+      "date": "2026-10-15T13:00:41.000Z",
+      "category": "windows",
+      "sourceUrl": "https://blogs.windows.com/windowsexperience/2026/10/15/whats-new-in-windows-11-everyday-experiences-reimagined/",
+      "slug": "whats-new-in-windows-11-everyday-experiences-reimagined",
+      "image": "/api/og?title=What%E2%80%99s%20new%20in%20Windows%2011%3A%20Everyday%20experiences%2C%20reimagined&category=windows"
+    },
+    {
+      "title": "Incredible deals and more to love in a new Windows PC this holiday",
+      "summary": "A new PC is a meaningful purchase. Whether you are upgrading a family laptop, shopping for a student, or someone who loves to create or game, you want your money to go further. The right PC should deliver value when you ",
+      "date": "2026-10-15T13:00:11.000Z",
+      "category": "windows",
+      "sourceUrl": "https://blogs.windows.com/windowsexperience/2026/10/15/incredible-deals-and-more-to-love-in-a-new-windows-pc-this-holiday/",
+      "slug": "incredible-deals-and-more-to-love-in-a-new-windows-pc-this-holiday",
+      "image": "/api/og?title=Incredible%20deals%20and%20more%20to%20love%20in%20a%20new%20Windows%20PC%20this%20holiday&category=windows"
+    },
     {
       "title": "Python 3.15 delivers a native-by-default experience on Windows on Arm",
       "summary": "Windows on Arm has been ready for Python development for some time. With Python 3.15, the broader ecosystem has matured significantly, with more package maintainers publishing native Arm64 wheels, allow The post Python 3",
@@ -9,6 +36,24 @@
       "sourceUrl": "https://blogs.windows.com/windowsdeveloper/2026/10/14/python-3-15-delivers-native-by-default-experience-on-windows-arm/",
       "slug": "python-315-delivers-a-native-by-default-experience-on-windows-on-arm",
       "image": "/api/og?title=Python%203.15%20delivers%20a%20native-by-default%20experience%20on%20Windows%20on%20Arm&category=windows"
+    },
+    {
+      "title": "Advancing hardware security with open-source Integrated HSM technology",
+      "summary": "Explore how Microsoft is advancing hardware security through open-source Integrated HSM technology, collaboration, and cryptographic key protection. The post Advancing hardware security with open-source Integrated HSM te",
+      "date": "2026-10-13T16:15:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/advancing-hardware-security-with-open-source-integrated-hsm-technology/",
+      "slug": "advancing-hardware-security-with-open-source-integrated-hsm-technology",
+      "image": "/api/og?title=Advancing%20hardware%20security%20with%20open-source%20Integrated%20HSM%20technology&category=azure"
+    },
+    {
+      "title": "Infrastructure for the frontier era: Scaling intelligence through open industry collaboration",
+      "summary": "AI is reaching such a pivotal moment, and the focus is shifting from building larger frontier models to intelligence that delivers practical impact. The post Infrastructure for the frontier era: Scaling intelligence thro",
+      "date": "2026-10-13T16:15:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/infrastructure-for-the-frontier-era-scaling-intelligence-through-open-industry-collaboration/",
+      "slug": "infrastructure-for-the-frontier-era-scaling-intelligence-through-open-industry-c",
+      "image": "/api/og?title=Infrastructure%20for%20the%20frontier%20era%3A%20Scaling%20intelligence%20through%20open%20industry%20collaboration&category=azure"
     },
     {
       "title": "Deep dive into Azure Maia 300 architecture",
@@ -101,24 +146,6 @@
       "image": "/api/og?title=Responsible%20infrastructure%20at%20hyperscale%3A%20Managing%20the%20full%20lifecycle%20of%20Azure%20hardware&category=azure"
     },
     {
-      "title": "WSL containers is now generally available",
-      "summary": "WSL is central to our commitment to making Windows the best place to build, run and manage Linux workloads. As AI, cloud-native development, containers, and open-source ecosystems continue to converge on Linux, more deve",
-      "date": "2026-09-29T17:00:52.000Z",
-      "category": "windows",
-      "sourceUrl": "https://blogs.windows.com/windowsdeveloper/2026/09/29/wsl-containers-now-generally-available/",
-      "slug": "wsl-containers-is-now-generally-available",
-      "image": "/api/og?title=WSL%20containers%20is%20now%20generally%20available&category=windows"
-    },
-    {
-      "title": "How to get the Windows 11 2026 Update",
-      "summary": "Windows powers how people around the world work, learn, create, and connect every day. Today, we're announcing the availability of the Windows 11 2026 Update, also known as Windows 11, version 26H2. Built on the same ser",
-      "date": "2026-09-29T17:00:38.000Z",
-      "category": "windows",
-      "sourceUrl": "https://blogs.windows.com/windowsexperience/2026/09/29/how-to-get-windows-11-2026-update/",
-      "slug": "how-to-get-the-windows-11-2026-update",
-      "image": "/api/og?title=How%20to%20get%20the%20Windows%2011%202026%20Update&category=windows"
-    },
-    {
       "title": "SQL Server on Azure Local is now generally available",
       "summary": "With SQL Server on Azure Local, customers can modernize where their data resides while maintaining control over infrastructure, connectivity, and data placement. The post SQL Server on Azure Local is now generally availa",
       "date": "2026-09-29T16:40:06.000Z",
@@ -146,15 +173,6 @@
       "image": "/api/og?title=Enhancing%20Microsoft%20Azure%20Virtual%20Machine%20lifecycle&category=azure"
     },
     {
-      "title": "Announcing new builds for 25 September 2026",
-      "summary": "Hello Windows Insiders, Today, we’re releasing new Windows 11 Insider Preview builds to the Beta and Experimental channels. New builds this week Select your channel below to view its release notes: Beta: The post Announc",
-      "date": "2026-09-25T17:02:08.000Z",
-      "category": "windows",
-      "sourceUrl": "https://blogs.windows.com/windows-insider/2026/09/25/announcing-new-builds-for-25-september-2026/",
-      "slug": "announcing-new-builds-for-25-september-2026",
-      "image": "/api/og?title=Announcing%20new%20builds%20for%2025%20September%202026&category=windows"
-    },
-    {
       "title": "Ship agents faster with expanded model choice, voice agents, and continuous optimization",
       "summary": "The best model for your business will keep changing. Adopting it should move your business forward, not send your team back to rebuild the architecture around it. The post Ship agents faster with expanded model choice, v",
       "date": "2026-09-24T18:00:00.000Z",
@@ -162,24 +180,6 @@
       "sourceUrl": "https://azure.microsoft.com/en-us/blog/ship-agents-faster-with-expanded-model-choice-voice-agents-and-continuous-optimization/",
       "slug": "ship-agents-faster-with-expanded-model-choice-voice-agents-and-continuous-optimi",
       "image": "/api/og?title=Ship%20agents%20faster%20with%20expanded%20model%20choice%2C%20voice%20agents%2C%20and%20continuous%20optimization&category=azure"
-    },
-    {
-      "title": "Your architecture diagram is not your resilience",
-      "summary": "For years, resilience was something you set up once. That kept the lights on, but it treated resilience as a project with an end date rather than a property you maintain. The post Your architecture diagram is not your re",
-      "date": "2026-09-23T16:00:00.000Z",
-      "category": "azure",
-      "sourceUrl": "https://azure.microsoft.com/en-us/blog/your-architecture-diagram-is-not-your-resilience/",
-      "slug": "your-architecture-diagram-is-not-your-resilience",
-      "image": "/api/og?title=Your%20architecture%20diagram%20is%20not%20your%20resilience&category=azure"
-    },
-    {
-      "title": "Designing agent-first platforms: What changes when agents do the work",
-      "summary": "The organizations pulling ahead are not simply adding AI to what they already have. They are designing for a different kind of software. The post Designing agent-first platforms: What changes when agents do the work appe",
-      "date": "2026-09-23T15:00:00.000Z",
-      "category": "azure",
-      "sourceUrl": "https://azure.microsoft.com/en-us/blog/designing-agent-first-platforms-what-changes-when-agents-do-the-work/",
-      "slug": "designing-agent-first-platforms-what-changes-when-agents-do-the-work",
-      "image": "/api/og?title=Designing%20agent-first%20platforms%3A%20What%20changes%20when%20agents%20do%20the%20work&category=azure"
     }
   ]
 }
