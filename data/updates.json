@@ -1,5 +1,5 @@
 {
-  "lastFetchedAt": "2026-10-15T15:17:36.761Z",
+  "lastFetchedAt": "2026-10-15T19:20:40.294Z",
   "processed": [
     {
       "guid": "https://blogs.windows.com/blog/2026/03/30/announcing-windows-11-insider-preview-build-for-canary-channel-29558-1000/",
@@ -1032,6 +1032,14 @@
       "category": "windows",
       "riskLevel": "SAFE",
       "savedAt": "2026-10-15T15:17:36.761Z"
+    },
+    {
+      "guid": "https://blogs.windows.com/blog/2026/10/15/faster-protection-fewer-interruptions-how-microsoft-edge-is-rethinking-updates/",
+      "url": "https://blogs.windows.com/msedgedev/2026/10/15/faster-protection-fewer-interruptions-how-microsoft-edge-is-rethinking-updates/",
+      "slug": "faster-protection-fewer-interruptions-how-microsoft-edge-is-rethinking-updates",
+      "category": "windows",
+      "riskLevel": "SAFE",
+      "savedAt": "2026-10-15T19:20:40.294Z"
     }
   ]
 }

@@ -1,6 +1,15 @@
 {
-  "updatedAt": "2026-10-15T15:17:36.759Z",
+  "updatedAt": "2026-10-15T19:20:40.293Z",
   "items": [
+    {
+      "title": "Faster protection, fewer interruptions: How Microsoft Edge is rethinking updates",
+      "summary": "At a glance Microsoft Edge is developing new ways to help security updates reach people faster with less disruption. A seamless-updates prototype shows how Edge could update while work continues. Available today, Restar ",
+      "date": "2026-10-15T16:01:39.000Z",
+      "category": "windows",
+      "sourceUrl": "https://blogs.windows.com/msedgedev/2026/10/15/faster-protection-fewer-interruptions-how-microsoft-edge-is-rethinking-updates/",
+      "slug": "faster-protection-fewer-interruptions-how-microsoft-edge-is-rethinking-updates",
+      "image": "/api/og?title=Faster%20protection%2C%20fewer%20interruptions%3A%20How%20Microsoft%20Edge%20is%20rethinking%20updates&category=windows"
+    },
     {
       "title": "Meet the new Photos app on Windows 11",
       "summary": "Photos hold some of our most meaningful memories: the people we love, the milestones we celebrate, and the everyday moments we want to remember. They connect us to our past and help us share our stories. The post Meet th",
@@ -126,15 +135,6 @@
       "sourceUrl": "https://azure.microsoft.com/en-us/blog/microsoft-named-a-leader-in-the-2026-gartner-magic-quadrant-for-global-industrial-aiot-platforms/",
       "slug": "microsoft-named-a-leader-in-the-2026-gartner-magic-quadrant-for-global-industria",
       "image": "/api/og?title=Microsoft%20named%20a%20Leader%20in%20the%202026%20Gartner%C2%AE%20Magic%20Quadrant%E2%84%A2%20for%20Global%20Industrial%20AIoT%20Platforms&category=azure"
-    },
-    {
-      "title": "Announcing new builds for 2 October 2026",
-      "summary": "Hello Windows Insiders, Today, we’re releasing new Windows 11 Insider Preview builds to the Beta and Experimental channels. New builds this week Select your channel below to view its release notes: Beta: The post Announc",
-      "date": "2026-10-02T17:04:36.000Z",
-      "category": "windows",
-      "sourceUrl": "https://blogs.windows.com/windows-insider/2026/10/02/announcing-new-builds-for-2-october-2026/",
-      "slug": "announcing-new-builds-for-2-october-2026",
-      "image": "/api/og?title=Announcing%20new%20builds%20for%202%20October%202026&category=windows"
     },
     {
       "title": "Responsible infrastructure at hyperscale: Managing the full lifecycle of Azure hardware",
