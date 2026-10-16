@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-16T01:09:03.094Z",
+  "updatedAt": "2026-10-16T06:17:08.237Z",
   "items": [
     {
       "title": "Faster protection, fewer interruptions: How Microsoft Edge is rethinking updates",
@@ -36,6 +36,15 @@
       "sourceUrl": "https://blogs.windows.com/windowsexperience/2026/10/15/incredible-deals-and-more-to-love-in-a-new-windows-pc-this-holiday/",
       "slug": "incredible-deals-and-more-to-love-in-a-new-windows-pc-this-holiday",
       "image": "/api/og?title=Incredible%20deals%20and%20more%20to%20love%20in%20a%20new%20Windows%20PC%20this%20holiday&category=windows"
+    },
+    {
+      "title": "Microsoft named a Leader in the 2026 Gartner® Magic Quadrant™ for Server Virtualization Platforms",
+      "summary": "We're building operational consistency through Azure and Azure Arc, and infrastructure consistency through Hyper-V. The post Microsoft named a Leader in the 2026 Gartner® Magic Quadrant™ for Server Virtualization Platfor",
+      "date": "2026-10-14T19:00:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/microsoft-named-a-leader-in-the-2026-gartner-magic-quadrant-for-server-virtualization-platforms/",
+      "slug": "microsoft-named-a-leader-in-the-2026-gartner-magic-quadrant-for-server-virtualiz",
+      "image": "/api/og?title=Microsoft%20named%20a%20Leader%20in%20the%202026%20Gartner%C2%AE%20Magic%20Quadrant%E2%84%A2%20for%20Server%20Virtualization%20Platforms&category=azure"
     },
     {
       "title": "Python 3.15 delivers a native-by-default experience on Windows on Arm",
@@ -171,15 +180,6 @@
       "sourceUrl": "https://azure.microsoft.com/en-us/blog/enhancing-microsoft-azure-virtual-machine-lifecycle/",
       "slug": "enhancing-microsoft-azure-virtual-machine-lifecycle",
       "image": "/api/og?title=Enhancing%20Microsoft%20Azure%20Virtual%20Machine%20lifecycle&category=azure"
-    },
-    {
-      "title": "Ship agents faster with expanded model choice, voice agents, and continuous optimization",
-      "summary": "The best model for your business will keep changing. Adopting it should move your business forward, not send your team back to rebuild the architecture around it. The post Ship agents faster with expanded model choice, v",
-      "date": "2026-09-24T18:00:00.000Z",
-      "category": "azure",
-      "sourceUrl": "https://azure.microsoft.com/en-us/blog/ship-agents-faster-with-expanded-model-choice-voice-agents-and-continuous-optimization/",
-      "slug": "ship-agents-faster-with-expanded-model-choice-voice-agents-and-continuous-optimi",
-      "image": "/api/og?title=Ship%20agents%20faster%20with%20expanded%20model%20choice%2C%20voice%20agents%2C%20and%20continuous%20optimization&category=azure"
     }
   ]
 }
