@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-18T09:49:34.471Z",
+  "updatedAt": "2026-10-18T13:54:16.594Z",
   "items": [
     {
       "title": "Announcing new builds for 16 October 2026",
@@ -9,6 +9,15 @@
       "sourceUrl": "https://blogs.windows.com/windows-insider/2026/10/16/announcing-new-builds-for-16-october-2026/",
       "slug": "announcing-new-builds-for-16-october-2026",
       "image": "/api/og?title=Announcing%20new%20builds%20for%2016%20October%202026&category=windows"
+    },
+    {
+      "title": "Managing open-weight model risk in enterprise deployments",
+      "summary": "The growing AI landscape is giving enterprises more choice in how they build, customize, and deploy increasingly capable models. The post Managing open-weight model risk in enterprise deployments appeared first on Micros",
+      "date": "2026-10-16T16:05:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/managing-open-weight-model-risk-in-enterprise-deployments/",
+      "slug": "managing-open-weight-model-risk-in-enterprise-deployments",
+      "image": "/api/og?title=Managing%20open-weight%20model%20risk%20in%20enterprise%20deployments&category=azure"
     },
     {
       "title": "Faster protection, fewer interruptions: How Microsoft Edge is rethinking updates",
@@ -171,15 +180,6 @@
       "sourceUrl": "https://www.microsoft.com/en-us/sql-server/blog/2026/09/28/sql-server-on-azure-local-is-now-generally-available/",
       "slug": "sql-server-on-azure-local-is-now-generally-available",
       "image": "/api/og?title=SQL%20Server%20on%20Azure%20Local%20is%20now%20generally%20available&category=azure"
-    },
-    {
-      "title": "FabCon and SQLCon 2026 in Barcelona: Building the data foundation for Microsoft Copilot and agents",
-      "summary": "Microsoft Fabric and SQL innovations announced at FabCon and SQLCon Barcelona 2026 help organizations build trusted data foundations for AI. The post FabCon and SQLCon 2026 in Barcelona: Building the data foundation for ",
-      "date": "2026-09-29T06:30:00.000Z",
-      "category": "azure",
-      "sourceUrl": "https://azure.microsoft.com/en-us/blog/fabcon-and-sqlcon-2026-in-barcelona-building-the-data-foundation-for-microsoft-copilot-and-agents/",
-      "slug": "fabcon-and-sqlcon-2026-in-barcelona-building-the-data-foundation-for-microsoft-c",
-      "image": "/api/og?title=FabCon%20and%20SQLCon%202026%20in%20Barcelona%3A%20Building%20the%20data%20foundation%20for%20Microsoft%20Copilot%20and%20agents&category=azure"
     }
   ]
 }
