@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-17T22:09:49.045Z",
+  "updatedAt": "2026-10-18T00:13:02.240Z",
   "items": [
     {
       "title": "Announcing new builds for 16 October 2026",
@@ -11,6 +11,15 @@
       "image": "/api/og?title=Announcing%20new%20builds%20for%2016%20October%202026&category=windows"
     },
     {
+      "title": "Managing open-weight model risk in enterprise deployments",
+      "summary": "The growing AI landscape is giving enterprises more choice in how they build, customize, and deploy increasingly capable models. The post Managing open-weight model risk in enterprise deployments appeared first on Micros",
+      "date": "2026-10-16T16:05:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/managing-open-weight-model-risk-in-enterprise-deployments/",
+      "slug": "managing-open-weight-model-risk-in-enterprise-deployments",
+      "image": "/api/og?title=Managing%20open-weight%20model%20risk%20in%20enterprise%20deployments&category=azure"
+    },
+    {
       "title": "Faster protection, fewer interruptions: How Microsoft Edge is rethinking updates",
       "summary": "At a glance Microsoft Edge is developing new ways to help security updates reach people faster with less disruption. A seamless-updates prototype shows how Edge could update while work continues. Available today, Restar ",
       "date": "2026-10-15T16:01:39.000Z",
@@ -18,6 +27,15 @@
       "sourceUrl": "https://blogs.windows.com/msedgedev/2026/10/15/faster-protection-fewer-interruptions-how-microsoft-edge-is-rethinking-updates/",
       "slug": "faster-protection-fewer-interruptions-how-microsoft-edge-is-rethinking-updates",
       "image": "/api/og?title=Faster%20protection%2C%20fewer%20interruptions%3A%20How%20Microsoft%20Edge%20is%20rethinking%20updates&category=windows"
+    },
+    {
+      "title": "Evolving the cloud-native foundation for the next generation of AI",
+      "summary": "Discover how Azure is advancing cloud-native infrastructure to help organizations build, run, and optimize applications and agents at scale. The post Evolving the cloud-native foundation for the next generation of AI app",
+      "date": "2026-10-15T16:00:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/evolving-the-cloud-native-foundation-for-the-next-generation-of-ai/",
+      "slug": "evolving-the-cloud-native-foundation-for-the-next-generation-of-ai",
+      "image": "/api/og?title=Evolving%20the%20cloud-native%20foundation%20for%20the%20next%20generation%20of%20AI&category=azure"
     },
     {
       "title": "Meet the new Photos app on Windows 11",
@@ -162,24 +180,6 @@
       "sourceUrl": "https://www.microsoft.com/en-us/sql-server/blog/2026/09/28/sql-server-on-azure-local-is-now-generally-available/",
       "slug": "sql-server-on-azure-local-is-now-generally-available",
       "image": "/api/og?title=SQL%20Server%20on%20Azure%20Local%20is%20now%20generally%20available&category=azure"
-    },
-    {
-      "title": "FabCon and SQLCon 2026 in Barcelona: Building the data foundation for Microsoft Copilot and agents",
-      "summary": "Microsoft Fabric and SQL innovations announced at FabCon and SQLCon Barcelona 2026 help organizations build trusted data foundations for AI. The post FabCon and SQLCon 2026 in Barcelona: Building the data foundation for ",
-      "date": "2026-09-29T06:30:00.000Z",
-      "category": "azure",
-      "sourceUrl": "https://azure.microsoft.com/en-us/blog/fabcon-and-sqlcon-2026-in-barcelona-building-the-data-foundation-for-microsoft-copilot-and-agents/",
-      "slug": "fabcon-and-sqlcon-2026-in-barcelona-building-the-data-foundation-for-microsoft-c",
-      "image": "/api/og?title=FabCon%20and%20SQLCon%202026%20in%20Barcelona%3A%20Building%20the%20data%20foundation%20for%20Microsoft%20Copilot%20and%20agents&category=azure"
-    },
-    {
-      "title": "Enhancing Microsoft Azure Virtual Machine lifecycle",
-      "summary": "Our Virtual Machine Lifecycle policy guides how we manage these transitions, giving Azure customers transparency, predictability, and guidance. The post Enhancing Microsoft Azure Virtual Machine lifecycle appeared first ",
-      "date": "2026-09-28T15:00:00.000Z",
-      "category": "azure",
-      "sourceUrl": "https://azure.microsoft.com/en-us/blog/enhancing-microsoft-azure-virtual-machine-lifecycle/",
-      "slug": "enhancing-microsoft-azure-virtual-machine-lifecycle",
-      "image": "/api/og?title=Enhancing%20Microsoft%20Azure%20Virtual%20Machine%20lifecycle&category=azure"
     }
   ]
 }
