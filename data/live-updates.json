@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-19T05:10:19.148Z",
+  "updatedAt": "2026-10-19T11:09:03.394Z",
   "items": [
     {
       "title": "Announcing new builds for 16 October 2026",
@@ -18,6 +18,15 @@
       "sourceUrl": "https://blogs.windows.com/msedgedev/2026/10/15/faster-protection-fewer-interruptions-how-microsoft-edge-is-rethinking-updates/",
       "slug": "faster-protection-fewer-interruptions-how-microsoft-edge-is-rethinking-updates",
       "image": "/api/og?title=Faster%20protection%2C%20fewer%20interruptions%3A%20How%20Microsoft%20Edge%20is%20rethinking%20updates&category=windows"
+    },
+    {
+      "title": "Evolving the cloud-native foundation for the next generation of AI",
+      "summary": "Discover how Azure is advancing cloud-native infrastructure to help organizations build, run, and optimize applications and agents at scale. The post Evolving the cloud-native foundation for the next generation of AI app",
+      "date": "2026-10-15T16:00:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/evolving-the-cloud-native-foundation-for-the-next-generation-of-ai/",
+      "slug": "evolving-the-cloud-native-foundation-for-the-next-generation-of-ai",
+      "image": "/api/og?title=Evolving%20the%20cloud-native%20foundation%20for%20the%20next%20generation%20of%20AI&category=azure"
     },
     {
       "title": "Meet the new Photos app on Windows 11",
@@ -171,15 +180,6 @@
       "sourceUrl": "https://azure.microsoft.com/en-us/blog/fabcon-and-sqlcon-2026-in-barcelona-building-the-data-foundation-for-microsoft-copilot-and-agents/",
       "slug": "fabcon-and-sqlcon-2026-in-barcelona-building-the-data-foundation-for-microsoft-c",
       "image": "/api/og?title=FabCon%20and%20SQLCon%202026%20in%20Barcelona%3A%20Building%20the%20data%20foundation%20for%20Microsoft%20Copilot%20and%20agents&category=azure"
-    },
-    {
-      "title": "Enhancing Microsoft Azure Virtual Machine lifecycle",
-      "summary": "Our Virtual Machine Lifecycle policy guides how we manage these transitions, giving Azure customers transparency, predictability, and guidance. The post Enhancing Microsoft Azure Virtual Machine lifecycle appeared first ",
-      "date": "2026-09-28T15:00:00.000Z",
-      "category": "azure",
-      "sourceUrl": "https://azure.microsoft.com/en-us/blog/enhancing-microsoft-azure-virtual-machine-lifecycle/",
-      "slug": "enhancing-microsoft-azure-virtual-machine-lifecycle",
-      "image": "/api/og?title=Enhancing%20Microsoft%20Azure%20Virtual%20Machine%20lifecycle&category=azure"
     }
   ]
 }
