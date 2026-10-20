@@ -1,15 +1,6 @@
 {
-  "updatedAt": "2026-10-20T17:27:31.774Z",
+  "updatedAt": "2026-10-20T20:48:48.943Z",
   "items": [
-    {
-      "title": "Designing for sovereign AI: A shared foundation from edge to cloud",
-      "summary": "A flexible sovereign architecture allows organizations to place each workload in the right environment, apply the controls it requires, and maintain consistency. The post Designing for sovereign AI: A shared foundation f",
-      "date": "2026-10-19T19:00:00.000Z",
-      "category": "azure",
-      "sourceUrl": "https://azure.microsoft.com/en-us/blog/designing-for-sovereign-ai-a-shared-foundation-from-edge-to-cloud/",
-      "slug": "designing-for-sovereign-ai-a-shared-foundation-from-edge-to-cloud",
-      "image": "/api/og?title=Designing%20for%20sovereign%20AI%3A%20A%20shared%20foundation%20from%20edge%20to%20cloud&category=azure"
-    },
     {
       "title": "Announcing new builds for 16 October 2026",
       "summary": "Hello Windows Insiders, Today, we’re releasing new Windows 11 Insider Preview builds to the Beta, Experimental, and Release Preview channels. New builds this week Select your channel below to view its release notes: B Th",
@@ -180,6 +171,15 @@
       "sourceUrl": "https://azure.microsoft.com/en-us/blog/responsible-infrastructure-at-hyperscale-managing-the-full-lifecycle-of-azure-hardware/",
       "slug": "responsible-infrastructure-at-hyperscale-managing-the-full-lifecycle-of-azure-ha",
       "image": "/api/og?title=Responsible%20infrastructure%20at%20hyperscale%3A%20Managing%20the%20full%20lifecycle%20of%20Azure%20hardware&category=azure"
+    },
+    {
+      "title": "SQL Server on Azure Local is now generally available",
+      "summary": "With SQL Server on Azure Local, customers can modernize where their data resides while maintaining control over infrastructure, connectivity, and data placement. The post SQL Server on Azure Local is now generally availa",
+      "date": "2026-09-29T16:40:06.000Z",
+      "category": "azure",
+      "sourceUrl": "https://www.microsoft.com/en-us/sql-server/blog/2026/09/28/sql-server-on-azure-local-is-now-generally-available/",
+      "slug": "sql-server-on-azure-local-is-now-generally-available",
+      "image": "/api/og?title=SQL%20Server%20on%20Azure%20Local%20is%20now%20generally%20available&category=azure"
     }
   ]
 }
