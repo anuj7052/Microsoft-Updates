@@ -1,6 +1,15 @@
 {
-  "updatedAt": "2026-10-21T23:09:41.613Z",
+  "updatedAt": "2026-10-22T01:44:27.561Z",
   "items": [
+    {
+      "title": "Advancing digital sovereignty with greater control and choice",
+      "summary": "Across conversations with leaders in government, critical infrastructure and regulated industries, one priority consistently rises to the top: putting technology to work on the most important systems while maintaining th",
+      "date": "2026-10-20T17:34:47.000Z",
+      "category": "azure",
+      "sourceUrl": "https://blogs.microsoft.com/blog/2026/10/20/advancing-digital-sovereignty-with-greater-control-and-choice/",
+      "slug": "advancing-digital-sovereignty-with-greater-control-and-choice",
+      "image": "/api/og?title=Advancing%20digital%20sovereignty%20with%20greater%20control%20and%20choice&category=azure"
+    },
     {
       "title": "Designing for sovereign AI: A shared foundation from edge to cloud",
       "summary": "A flexible sovereign architecture allows organizations to place each workload in the right environment, apply the controls it requires, and maintain consistency. The post Designing for sovereign AI: A shared foundation f",
@@ -171,15 +180,6 @@
       "sourceUrl": "https://azure.microsoft.com/en-us/blog/microsoft-named-a-leader-in-the-2026-gartner-magic-quadrant-for-global-industrial-aiot-platforms/",
       "slug": "microsoft-named-a-leader-in-the-2026-gartner-magic-quadrant-for-global-industria",
       "image": "/api/og?title=Microsoft%20named%20a%20Leader%20in%20the%202026%20Gartner%C2%AE%20Magic%20Quadrant%E2%84%A2%20for%20Global%20Industrial%20AIoT%20Platforms&category=azure"
-    },
-    {
-      "title": "Responsible infrastructure at hyperscale: Managing the full lifecycle of Azure hardware",
-      "summary": "Microsoft is advancing Azure cloud infrastructure with more efficient systems and Circular Centers that extend the useful life of datacenter hardware. The post Responsible infrastructure at hyperscale: Managing the full ",
-      "date": "2026-09-30T15:00:00.000Z",
-      "category": "azure",
-      "sourceUrl": "https://azure.microsoft.com/en-us/blog/responsible-infrastructure-at-hyperscale-managing-the-full-lifecycle-of-azure-hardware/",
-      "slug": "responsible-infrastructure-at-hyperscale-managing-the-full-lifecycle-of-azure-ha",
-      "image": "/api/og?title=Responsible%20infrastructure%20at%20hyperscale%3A%20Managing%20the%20full%20lifecycle%20of%20Azure%20hardware&category=azure"
     }
   ]
 }
