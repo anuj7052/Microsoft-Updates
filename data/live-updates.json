@@ -1,6 +1,15 @@
 {
-  "updatedAt": "2026-10-23T15:51:46.196Z",
+  "updatedAt": "2026-10-23T19:54:18.477Z",
   "items": [
+    {
+      "title": "Announcing new builds for 23 October 2026",
+      "summary": "Hello Windows Insiders, Today, we’re releasing new Windows 11 Insider Preview builds to the Beta and Experimental channels. New builds this week Select your channel below to view its release notes: Beta: The post Announc",
+      "date": "2026-10-23T17:05:25.000Z",
+      "category": "windows",
+      "sourceUrl": "https://blogs.windows.com/windows-insider/2026/10/23/announcing-new-builds-for-23-october-2026/",
+      "slug": "announcing-new-builds-for-23-october-2026",
+      "image": "/api/og?title=Announcing%20new%20builds%20for%2023%20October%202026&category=windows"
+    },
     {
       "title": "Advancing digital sovereignty with greater control and choice",
       "summary": "Across conversations with leaders in government, critical infrastructure and regulated industries, one priority consistently rises to the top: putting technology to work on the most important systems while maintaining th",
@@ -153,15 +162,6 @@
       "sourceUrl": "https://blogs.windows.com/windowsdeveloper/2026/10/07/microsoft-execution-containers-policy-driven-containment-for-ai-agents/",
       "slug": "microsoft-execution-containers-policy-driven-containment-for-ai-agents",
       "image": "/api/og?title=Microsoft%20Execution%20Containers%3A%20Policy-driven%20containment%20for%20AI%20agents&category=windows"
-    },
-    {
-      "title": "Building Windows for hybrid intelligence",
-      "summary": "Agents are cre The post Building Windows for hybrid intelligence appeared first on Windows Blog.",
-      "date": "2026-10-07T18:00:22.000Z",
-      "category": "windows",
-      "sourceUrl": "https://blogs.windows.com/windowsexperience/2026/10/07/building-windows-for-hybrid-intelligence/",
-      "slug": "building-windows-for-hybrid-intelligence",
-      "image": "/api/og?title=Building%20Windows%20for%20hybrid%20intelligence&category=windows"
     },
     {
       "title": "AI transformation across the infrastructure lifecycle: From supply chain to fleet operations",
