@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-29T16:50:32.263Z",
+  "updatedAt": "2026-10-29T21:43:27.104Z",
   "items": [
     {
       "title": "Edge is faster on Windows with Accelerated App Launches",
@@ -9,15 +9,6 @@
       "sourceUrl": "https://blogs.windows.com/msedgedev/2026/10/29/edge-is-faster-on-windows-with-accelerated-app-launches/",
       "slug": "edge-is-faster-on-windows-with-accelerated-app-launches",
       "image": "/api/og?title=Edge%20is%20faster%20on%20Windows%20with%20Accelerated%20App%20Launches&category=windows"
-    },
-    {
-      "title": "Introducing the Microsoft Copilot harness in Foundry Agent Service",
-      "summary": "Today, we’re introducing the Microsoft Copilot harness in Foundry Agent Service in public preview. The post Introducing the Microsoft Copilot harness in Foundry Agent Service appeared first on Microsoft Azure Blog.",
-      "date": "2026-10-28T17:40:56.000Z",
-      "category": "azure",
-      "sourceUrl": "https://devblogs.microsoft.com/foundry/microsoft-copilot-harness-in-foundry/",
-      "slug": "introducing-the-microsoft-copilot-harness-in-foundry-agent-service",
-      "image": "/api/og?title=Introducing%20the%20Microsoft%20Copilot%20harness%20in%20Foundry%20Agent%20Service&category=azure"
     },
     {
       "title": "Scale reservoir uncertainty analysis with agile reservoir modeling",
@@ -180,6 +171,15 @@
       "sourceUrl": "https://blogs.windows.com/devices/2026/10/07/pre-order-our-most-powerful-surface-devices-ever/",
       "slug": "pre-order-our-most-powerful-surface-devices-ever",
       "image": "/api/og?title=Pre-order%20our%20most%20powerful%20Surface%20devices%20ever&category=windows"
+    },
+    {
+      "title": "AI transformation across the infrastructure lifecycle: From supply chain to fleet operations",
+      "summary": "The opportunity is bigger than making individual tasks faster. It’s to build a system that learns from how infrastructure is designed, sourced, and operated. The post AI transformation across the infrastructure lifecycle",
+      "date": "2026-10-07T15:00:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/ai-transformation-across-the-infrastructure-lifecycle-from-supply-chain-to-fleet-operations/",
+      "slug": "ai-transformation-across-the-infrastructure-lifecycle-from-supply-chain-to-fleet",
+      "image": "/api/og?title=AI%20transformation%20across%20the%20infrastructure%20lifecycle%3A%20From%20supply%20chain%20to%20fleet%20operations&category=azure"
     }
   ]
 }
