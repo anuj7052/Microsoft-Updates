@@ -1,5 +1,5 @@
 {
-  "lastFetchedAt": "2026-10-29T09:45:51.484Z",
+  "lastFetchedAt": "2026-10-29T16:50:32.285Z",
   "processed": [
     {
       "guid": "https://blogs.windows.com/blog/2026/03/30/announcing-windows-11-insider-preview-build-for-canary-channel-29558-1000/",
@@ -1056,6 +1056,14 @@
       "category": "windows",
       "riskLevel": "SAFE",
       "savedAt": "2026-10-23T19:54:18.478Z"
+    },
+    {
+      "guid": "https://blogs.windows.com/blog/2026/10/29/edge-is-faster-on-windows-with-accelerated-app-launches/",
+      "url": "https://blogs.windows.com/msedgedev/2026/10/29/edge-is-faster-on-windows-with-accelerated-app-launches/",
+      "slug": "edge-is-faster-on-windows-with-accelerated-app-launches",
+      "category": "windows",
+      "riskLevel": "SAFE",
+      "savedAt": "2026-10-29T16:50:32.285Z"
     }
   ]
 }
