@@ -1,5 +1,5 @@
 {
-  "lastFetchedAt": "2026-10-30T15:16:14.947Z",
+  "lastFetchedAt": "2026-10-30T20:03:46.725Z",
   "seenGuids": [
     "https://blogs.windows.com/blog/2026/04/02/part-3-babylon-js-9-0-openpbr-and-additional-engine-updates/",
     "https://blogs.windows.com/blog/2026/04/03/announcing-windows-11-insider-preview-build-26220-8148-beta-channel/",
@@ -113,7 +113,8 @@
     "https://blogs.windows.com/blog/2026/10/15/faster-protection-fewer-interruptions-how-microsoft-edge-is-rethinking-updates/",
     "https://blogs.windows.com/blog/2026/10/16/announcing-new-builds-for-16-october-2026/",
     "https://blogs.windows.com/blog/2026/10/23/announcing-new-builds-for-23-october-2026/",
-    "https://blogs.windows.com/blog/2026/10/29/edge-is-faster-on-windows-with-accelerated-app-launches/"
+    "https://blogs.windows.com/blog/2026/10/29/edge-is-faster-on-windows-with-accelerated-app-launches/",
+    "https://blogs.windows.com/blog/2026/10/30/announcing-new-builds-for-30-october-2026/"
   ],
-  "totalArticles": 113
+  "totalArticles": 114
 }

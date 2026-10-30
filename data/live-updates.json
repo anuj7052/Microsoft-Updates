@@ -1,6 +1,24 @@
 {
-  "updatedAt": "2026-10-30T15:16:14.947Z",
+  "updatedAt": "2026-10-30T20:03:46.724Z",
   "items": [
+    {
+      "title": "Announcing new builds for 30 October 2026",
+      "summary": "Hello Windows Insiders, Today, we’re releasing new Windows 11 Insider Preview builds to the Beta and Experimental channels, as well as introducing a new commercial Feedback Hub policy for commercial customers. New builds",
+      "date": "2026-10-30T17:05:33.000Z",
+      "category": "windows",
+      "sourceUrl": "https://blogs.windows.com/windows-insider/2026/10/30/announcing-new-builds-for-30-october-2026/",
+      "slug": "announcing-new-builds-for-30-october-2026",
+      "image": "/api/og?title=Announcing%20new%20builds%20for%2030%20October%202026&category=windows"
+    },
+    {
+      "title": "Azure Cloud HSM Hardware Audit Logging: Verifiable audit trails for security and compliance",
+      "summary": "Security, compliance, and operations teams can use this hardware-originated evidence for monitoring, compliance reporting, and forensic investigations. The post Azure Cloud HSM Hardware Audit Logging: Verifiable audit tr",
+      "date": "2026-10-29T16:00:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/azure-cloud-hsm-hardware-audit-logging-verifiable-audit-trails-for-security-and-compliance/",
+      "slug": "azure-cloud-hsm-hardware-audit-logging-verifiable-audit-trails-for-security-and",
+      "image": "/api/og?title=Azure%20Cloud%20HSM%20Hardware%20Audit%20Logging%3A%20Verifiable%20audit%20trails%20for%20security%20and%20compliance&category=azure"
+    },
     {
       "title": "Edge is faster on Windows with Accelerated App Launches",
       "summary": "We're excited to announce that Edge is the first browser to support accelerated app launches on Windows, delivering a faster and more consistent browser launch experience. With accelerated app launch, most Windows users ",
@@ -155,15 +173,6 @@
       "image": "/api/og?title=Infrastructure%20for%20the%20frontier%20era%3A%20Scaling%20intelligence%20through%20open%20industry%20collaboration&category=azure"
     },
     {
-      "title": "Deep dive into Azure Maia 300 architecture",
-      "summary": "Maia 300 operates as a single platform to meet the demands of cloud-scale agentic inference. The post Deep dive into Azure Maia 300 architecture appeared first on Microsoft Azure Blog.",
-      "date": "2026-10-12T13:00:00.000Z",
-      "category": "azure",
-      "sourceUrl": "https://azure.microsoft.com/en-us/blog/deep-dive-into-azure-maia-300-architecture/",
-      "slug": "deep-dive-into-azure-maia-300-architecture",
-      "image": "/api/og?title=Deep%20dive%20into%20Azure%20Maia%20300%20architecture&category=azure"
-    },
-    {
       "title": "Announcing new builds for 7 October 2026",
       "summary": "Hello Windows Insiders, Today, we’re releasing new Windows 11 Insider Preview builds to the Beta and Experimental channels! Coming straight off the back of our Windows + Surface event, we have some exciting new features ",
       "date": "2026-10-07T18:10:17.000Z",
@@ -171,15 +180,6 @@
       "sourceUrl": "https://blogs.windows.com/windows-insider/2026/10/07/announcing-new-builds-for-7-october-2026/",
       "slug": "announcing-new-builds-for-7-october-2026",
       "image": "/api/og?title=Announcing%20new%20builds%20for%207%20October%202026&category=windows"
-    },
-    {
-      "title": "Pre-order our most powerful Surface devices ever",
-      "summary": "For more than a decade, Surface has been shaped by the people pushing technology further. Creators rendering complex scenes. Developers building what doesn't exist yet. Designers moving between ideas, models, code, and c",
-      "date": "2026-10-07T18:00:35.000Z",
-      "category": "windows",
-      "sourceUrl": "https://blogs.windows.com/devices/2026/10/07/pre-order-our-most-powerful-surface-devices-ever/",
-      "slug": "pre-order-our-most-powerful-surface-devices-ever",
-      "image": "/api/og?title=Pre-order%20our%20most%20powerful%20Surface%20devices%20ever&category=windows"
     }
   ]
 }
