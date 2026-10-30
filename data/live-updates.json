@@ -1,15 +1,6 @@
 {
-  "updatedAt": "2026-10-30T08:28:09.676Z",
+  "updatedAt": "2026-10-30T15:16:14.947Z",
   "items": [
-    {
-      "title": "Azure Cloud HSM Hardware Audit Logging: Verifiable audit trails for security and compliance",
-      "summary": "Security, compliance, and operations teams can use this hardware-originated evidence for monitoring, compliance reporting, and forensic investigations. The post Azure Cloud HSM Hardware Audit Logging: Verifiable audit tr",
-      "date": "2026-10-29T16:00:00.000Z",
-      "category": "azure",
-      "sourceUrl": "https://azure.microsoft.com/en-us/blog/azure-cloud-hsm-hardware-audit-logging-verifiable-audit-trails-for-security-and-compliance/",
-      "slug": "azure-cloud-hsm-hardware-audit-logging-verifiable-audit-trails-for-security-and",
-      "image": "/api/og?title=Azure%20Cloud%20HSM%20Hardware%20Audit%20Logging%3A%20Verifiable%20audit%20trails%20for%20security%20and%20compliance&category=azure"
-    },
     {
       "title": "Edge is faster on Windows with Accelerated App Launches",
       "summary": "We're excited to announce that Edge is the first browser to support accelerated app launches on Windows, delivering a faster and more consistent browser launch experience. With accelerated app launch, most Windows users ",
@@ -162,6 +153,15 @@
       "sourceUrl": "https://azure.microsoft.com/en-us/blog/infrastructure-for-the-frontier-era-scaling-intelligence-through-open-industry-collaboration/",
       "slug": "infrastructure-for-the-frontier-era-scaling-intelligence-through-open-industry-c",
       "image": "/api/og?title=Infrastructure%20for%20the%20frontier%20era%3A%20Scaling%20intelligence%20through%20open%20industry%20collaboration&category=azure"
+    },
+    {
+      "title": "Deep dive into Azure Maia 300 architecture",
+      "summary": "Maia 300 operates as a single platform to meet the demands of cloud-scale agentic inference. The post Deep dive into Azure Maia 300 architecture appeared first on Microsoft Azure Blog.",
+      "date": "2026-10-12T13:00:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/deep-dive-into-azure-maia-300-architecture/",
+      "slug": "deep-dive-into-azure-maia-300-architecture",
+      "image": "/api/og?title=Deep%20dive%20into%20Azure%20Maia%20300%20architecture&category=azure"
     },
     {
       "title": "Announcing new builds for 7 October 2026",
