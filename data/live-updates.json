@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-31T23:37:15.122Z",
+  "updatedAt": "2026-11-01T05:46:13.122Z",
   "items": [
     {
       "title": "Announcing new builds for 30 October 2026",
@@ -87,7 +87,7 @@
       "summary": "The growing AI landscape is giving enterprises more choice in how they build, customize, and deploy increasingly capable models. The post Managing open-weight model risk in enterprise deployments appeared first on Micros",
       "date": "2026-10-16T16:05:00.000Z",
       "category": "azure",
-      "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/10/16/managing-open-weight-model-risk-in-enterprise-deployments/",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/managing-open-weight-model-risk-in-enterprise-deployments/",
       "slug": "managing-open-weight-model-risk-in-enterprise-deployments",
       "image": "/api/og?title=Managing%20open-weight%20model%20risk%20in%20enterprise%20deployments&category=azure"
     },
