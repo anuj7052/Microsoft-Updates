@@ -1,6 +1,15 @@
 {
-  "updatedAt": "2026-11-03T10:42:26.574Z",
+  "updatedAt": "2026-11-03T18:21:09.100Z",
   "items": [
+    {
+      "title": "Raising the bar for 8 GB Windows 11 PCs: what’s improved and how to get it",
+      "summary": "A great Windows experience starts with a simple expectation: your PC should respond when you need it to. You open Start. You launch an app. You switch back to the document or browser tab you left an hour ago and pick up ",
+      "date": "2026-11-03T17:00:48.000Z",
+      "category": "windows",
+      "sourceUrl": "https://blogs.windows.com/windowsexperience/2026/11/03/raising-the-bar-for-8-gb-windows-11-pcs-whats-improved-and-how-to-get-it/",
+      "slug": "raising-the-bar-for-8-gb-windows-11-pcs-whats-improved-and-how-to-get-it",
+      "image": "/api/og?title=Raising%20the%20bar%20for%208%20GB%20Windows%2011%20PCs%3A%20what%E2%80%99s%20improved%20and%20how%20to%20get%20it&category=windows"
+    },
     {
       "title": "Client-side threat detection: how Scareware blocker uncovered malicious notification abuse",
       "summary": "Website notifications were designed to help us stay informed. They can alert you to a new message, remind you of an upcoming event, or share an important update from a service you trust. But scammers are turning this use",
@@ -153,15 +162,6 @@
       "sourceUrl": "https://azure.microsoft.com/en-us/blog/microsoft-named-a-leader-in-the-2026-gartner-magic-quadrant-for-server-virtualization-platforms/",
       "slug": "microsoft-named-a-leader-in-the-2026-gartner-magic-quadrant-for-server-virtualiz",
       "image": "/api/og?title=Microsoft%20named%20a%20Leader%20in%20the%202026%20Gartner%C2%AE%20Magic%20Quadrant%E2%84%A2%20for%20Server%20Virtualization%20Platforms&category=azure"
-    },
-    {
-      "title": "Python 3.15 delivers a native-by-default experience on Windows on Arm",
-      "summary": "Windows on Arm has been ready for Python development for some time. With Python 3.15, the broader ecosystem has matured significantly, with more package maintainers publishing native Arm64 wheels, allow The post Python 3",
-      "date": "2026-10-14T17:00:05.000Z",
-      "category": "windows",
-      "sourceUrl": "https://blogs.windows.com/windowsdeveloper/2026/10/14/python-3-15-delivers-native-by-default-experience-on-windows-arm/",
-      "slug": "python-315-delivers-a-native-by-default-experience-on-windows-on-arm",
-      "image": "/api/og?title=Python%203.15%20delivers%20a%20native-by-default%20experience%20on%20Windows%20on%20Arm&category=windows"
     },
     {
       "title": "Advancing hardware security with open-source Integrated HSM technology",
