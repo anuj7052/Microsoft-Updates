@@ -1,5 +1,5 @@
 {
-  "lastFetchedAt": "2026-11-02T20:11:30.656Z",
+  "lastFetchedAt": "2026-11-03T02:34:20.922Z",
   "processed": [
     {
       "guid": "https://blogs.windows.com/blog/2026/03/30/announcing-windows-11-insider-preview-build-for-canary-channel-29558-1000/",
@@ -1072,6 +1072,14 @@
       "category": "windows",
       "riskLevel": "SAFE",
       "savedAt": "2026-10-30T20:03:46.725Z"
+    },
+    {
+      "guid": "https://blogs.windows.com/blog/2026/11/02/client-side-threat-detection-how-scareware-blocker-uncovered-malicious-notification-abuse/",
+      "url": "https://blogs.windows.com/msedgedev/2026/11/02/client-side-threat-detection-how-scareware-blocker-uncovered-malicious-notification-abuse/",
+      "slug": "client-side-threat-detection-how-scareware-blocker-uncovered-malicious-notificat",
+      "category": "windows",
+      "riskLevel": "SAFE",
+      "savedAt": "2026-11-03T02:34:20.922Z"
     }
   ]
 }

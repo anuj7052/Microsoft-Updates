@@ -1,6 +1,15 @@
 {
-  "updatedAt": "2026-11-02T20:11:30.655Z",
+  "updatedAt": "2026-11-03T02:34:20.920Z",
   "items": [
+    {
+      "title": "Client-side threat detection: how Scareware blocker uncovered malicious notification abuse",
+      "summary": "Website notifications were designed to help us stay informed. They can alert you to a new message, remind you of an upcoming event, or share an important update from a service you trust. But scammers are turning this use",
+      "date": "2026-11-02T22:05:53.000Z",
+      "category": "windows",
+      "sourceUrl": "https://blogs.windows.com/msedgedev/2026/11/02/client-side-threat-detection-how-scareware-blocker-uncovered-malicious-notification-abuse/",
+      "slug": "client-side-threat-detection-how-scareware-blocker-uncovered-malicious-notificat",
+      "image": "/api/og?title=Client-side%20threat%20detection%3A%20how%20Scareware%20blocker%20uncovered%20malicious%20notification%20abuse&category=windows"
+    },
     {
       "title": "Announcing new builds for 30 October 2026",
       "summary": "Hello Windows Insiders, Today, we’re releasing new Windows 11 Insider Preview builds to the Beta and Experimental channels, as well as introducing a new commercial Feedback Hub policy for commercial customers. New builds",
@@ -171,15 +180,6 @@
       "sourceUrl": "https://azure.microsoft.com/en-us/blog/infrastructure-for-the-frontier-era-scaling-intelligence-through-open-industry-collaboration/",
       "slug": "infrastructure-for-the-frontier-era-scaling-intelligence-through-open-industry-c",
       "image": "/api/og?title=Infrastructure%20for%20the%20frontier%20era%3A%20Scaling%20intelligence%20through%20open%20industry%20collaboration&category=azure"
-    },
-    {
-      "title": "Announcing new builds for 7 October 2026",
-      "summary": "Hello Windows Insiders, Today, we’re releasing new Windows 11 Insider Preview builds to the Beta and Experimental channels! Coming straight off the back of our Windows + Surface event, we have some exciting new features ",
-      "date": "2026-10-07T18:10:17.000Z",
-      "category": "windows",
-      "sourceUrl": "https://blogs.windows.com/windows-insider/2026/10/07/announcing-new-builds-for-7-october-2026/",
-      "slug": "announcing-new-builds-for-7-october-2026",
-      "image": "/api/og?title=Announcing%20new%20builds%20for%207%20October%202026&category=windows"
     }
   ]
 }
