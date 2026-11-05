@@ -1,6 +1,24 @@
 {
-  "updatedAt": "2026-11-05T16:42:17.194Z",
+  "updatedAt": "2026-11-05T22:38:15.606Z",
   "items": [
+    {
+      "title": "A new standard for vulnerability management in the AI era",
+      "summary": "Windows is evolving vulnerability management as advances in AI make it possible to discover and analyze security vulnerabilities faster and at greater scale. AI is accelerating vulnerability discovery on both sides. It c",
+      "date": "2026-11-05T17:00:49.000Z",
+      "category": "windows",
+      "sourceUrl": "https://blogs.windows.com/windowsexperience/2026/11/05/a-new-standard-for-vulnerability-management-in-the-ai-era/",
+      "slug": "a-new-standard-for-vulnerability-management-in-the-ai-era",
+      "image": "/api/og?title=A%20new%20standard%20for%20vulnerability%20management%20in%20the%20AI%20era&category=windows"
+    },
+    {
+      "title": "Discover more of what matters, every time you open a new tab in Microsoft Edge",
+      "summary": "A new browser tab is full of possibilities. It can be the start of something you set out to do—or a chance to discover something you didn't know. As the amount of content online has grown, Edge users have told us they wa",
+      "date": "2026-11-05T16:56:07.000Z",
+      "category": "windows",
+      "sourceUrl": "https://blogs.windows.com/msedgedev/2026/11/05/discover-more-of-what-matters-every-time-you-open-a-new-tab-in-microsoft-edge/",
+      "slug": "discover-more-of-what-matters-every-time-you-open-a-new-tab-in-microsoft-edge",
+      "image": "/api/og?title=Discover%20more%20of%20what%20matters%2C%20every%20time%20you%20open%20a%20new%20tab%20in%20Microsoft%20Edge&category=windows"
+    },
     {
       "title": "Raising the bar for 8 GB Windows 11 PCs: what’s improved and how to get it",
       "summary": "A great Windows experience starts with a simple expectation: your PC should respond when you need it to. You open Start. You launch an app. You switch back to the document or browser tab you left an hour ago and pick up ",
@@ -18,15 +36,6 @@
       "sourceUrl": "https://blogs.windows.com/msedgedev/2026/11/02/client-side-threat-detection-how-scareware-blocker-uncovered-malicious-notification-abuse/",
       "slug": "client-side-threat-detection-how-scareware-blocker-uncovered-malicious-notificat",
       "image": "/api/og?title=Client-side%20threat%20detection%3A%20how%20Scareware%20blocker%20uncovered%20malicious%20notification%20abuse&category=windows"
-    },
-    {
-      "title": "The Platform Behind the Next AI Breakthrough",
-      "summary": "The next frontier of AI is coming into focus as agents take on longer, more strategic work. The post The Platform Behind the Next AI Breakthrough appeared first on Microsoft Azure Blog.",
-      "date": "2026-11-02T20:52:22.000Z",
-      "category": "azure",
-      "sourceUrl": "https://www.wired.com/sponsored/story/the-platform-behind-the-next-ai-breakthrough/",
-      "slug": "the-platform-behind-the-next-ai-breakthrough",
-      "image": "/api/og?title=The%20Platform%20Behind%20the%20Next%20AI%20Breakthrough&category=azure"
     },
     {
       "title": "Announcing new builds for 30 October 2026",
@@ -146,24 +155,6 @@
       "image": "/api/og?title=Meet%20the%20new%20Photos%20app%20on%20Windows%2011&category=windows"
     },
     {
-      "title": "What’s new in Windows 11: Everyday experiences, reimagined",
-      "summary": "Every day, your PC helps you get things done, stay connected, capture ideas and make time for what you enjoy. That’s why Windows 11 continues to evolve, starting with a faster, more dependable and refined experience. Thr",
-      "date": "2026-10-15T13:00:41.000Z",
-      "category": "windows",
-      "sourceUrl": "https://blogs.windows.com/windowsexperience/2026/10/15/whats-new-in-windows-11-everyday-experiences-reimagined/",
-      "slug": "whats-new-in-windows-11-everyday-experiences-reimagined",
-      "image": "/api/og?title=What%E2%80%99s%20new%20in%20Windows%2011%3A%20Everyday%20experiences%2C%20reimagined&category=windows"
-    },
-    {
-      "title": "Incredible deals and more to love in a new Windows PC this holiday",
-      "summary": "A new PC is a meaningful purchase. Whether you are upgrading a family laptop, shopping for a student, or someone who loves to create or game, you want your money to go further. The right PC should deliver value when you ",
-      "date": "2026-10-15T13:00:11.000Z",
-      "category": "windows",
-      "sourceUrl": "https://blogs.windows.com/windowsexperience/2026/10/15/incredible-deals-and-more-to-love-in-a-new-windows-pc-this-holiday/",
-      "slug": "incredible-deals-and-more-to-love-in-a-new-windows-pc-this-holiday",
-      "image": "/api/og?title=Incredible%20deals%20and%20more%20to%20love%20in%20a%20new%20Windows%20PC%20this%20holiday&category=windows"
-    },
-    {
       "title": "Microsoft named a Leader in the 2026 Gartner® Magic Quadrant™ for Server Virtualization Platforms",
       "summary": "We're building operational consistency through Azure and Azure Arc, and infrastructure consistency through Hyper-V. The post Microsoft named a Leader in the 2026 Gartner® Magic Quadrant™ for Server Virtualization Platfor",
       "date": "2026-10-14T19:00:00.000Z",
@@ -180,6 +171,15 @@
       "sourceUrl": "https://azure.microsoft.com/en-us/blog/advancing-hardware-security-with-open-source-integrated-hsm-technology/",
       "slug": "advancing-hardware-security-with-open-source-integrated-hsm-technology",
       "image": "/api/og?title=Advancing%20hardware%20security%20with%20open-source%20Integrated%20HSM%20technology&category=azure"
+    },
+    {
+      "title": "Infrastructure for the frontier era: Scaling intelligence through open industry collaboration",
+      "summary": "AI is reaching such a pivotal moment, and the focus is shifting from building larger frontier models to intelligence that delivers practical impact. The post Infrastructure for the frontier era: Scaling intelligence thro",
+      "date": "2026-10-13T16:15:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/infrastructure-for-the-frontier-era-scaling-intelligence-through-open-industry-collaboration/",
+      "slug": "infrastructure-for-the-frontier-era-scaling-intelligence-through-open-industry-c",
+      "image": "/api/og?title=Infrastructure%20for%20the%20frontier%20era%3A%20Scaling%20intelligence%20through%20open%20industry%20collaboration&category=azure"
     }
   ]
 }
