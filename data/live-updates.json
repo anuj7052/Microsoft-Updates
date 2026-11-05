@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-05T08:24:08.435Z",
+  "updatedAt": "2026-11-05T16:42:17.194Z",
   "items": [
     {
       "title": "Raising the bar for 8 GB Windows 11 PCs: what’s improved and how to get it",
@@ -18,6 +18,15 @@
       "sourceUrl": "https://blogs.windows.com/msedgedev/2026/11/02/client-side-threat-detection-how-scareware-blocker-uncovered-malicious-notification-abuse/",
       "slug": "client-side-threat-detection-how-scareware-blocker-uncovered-malicious-notificat",
       "image": "/api/og?title=Client-side%20threat%20detection%3A%20how%20Scareware%20blocker%20uncovered%20malicious%20notification%20abuse&category=windows"
+    },
+    {
+      "title": "The Platform Behind the Next AI Breakthrough",
+      "summary": "The next frontier of AI is coming into focus as agents take on longer, more strategic work. The post The Platform Behind the Next AI Breakthrough appeared first on Microsoft Azure Blog.",
+      "date": "2026-11-02T20:52:22.000Z",
+      "category": "azure",
+      "sourceUrl": "https://www.wired.com/sponsored/story/the-platform-behind-the-next-ai-breakthrough/",
+      "slug": "the-platform-behind-the-next-ai-breakthrough",
+      "image": "/api/og?title=The%20Platform%20Behind%20the%20Next%20AI%20Breakthrough&category=azure"
     },
     {
       "title": "Announcing new builds for 30 October 2026",
@@ -171,15 +180,6 @@
       "sourceUrl": "https://azure.microsoft.com/en-us/blog/advancing-hardware-security-with-open-source-integrated-hsm-technology/",
       "slug": "advancing-hardware-security-with-open-source-integrated-hsm-technology",
       "image": "/api/og?title=Advancing%20hardware%20security%20with%20open-source%20Integrated%20HSM%20technology&category=azure"
-    },
-    {
-      "title": "Infrastructure for the frontier era: Scaling intelligence through open industry collaboration",
-      "summary": "AI is reaching such a pivotal moment, and the focus is shifting from building larger frontier models to intelligence that delivers practical impact. The post Infrastructure for the frontier era: Scaling intelligence thro",
-      "date": "2026-10-13T16:15:00.000Z",
-      "category": "azure",
-      "sourceUrl": "https://azure.microsoft.com/en-us/blog/infrastructure-for-the-frontier-era-scaling-intelligence-through-open-industry-collaboration/",
-      "slug": "infrastructure-for-the-frontier-era-scaling-intelligence-through-open-industry-c",
-      "image": "/api/og?title=Infrastructure%20for%20the%20frontier%20era%3A%20Scaling%20intelligence%20through%20open%20industry%20collaboration&category=azure"
     }
   ]
 }
