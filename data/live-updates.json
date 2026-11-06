@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-05T22:38:15.606Z",
+  "updatedAt": "2026-11-06T03:20:09.137Z",
   "items": [
     {
       "title": "A new standard for vulnerability management in the AI era",
@@ -20,6 +20,15 @@
       "image": "/api/og?title=Discover%20more%20of%20what%20matters%2C%20every%20time%20you%20open%20a%20new%20tab%20in%20Microsoft%20Edge&category=windows"
     },
     {
+      "title": "Predicting and detecting failures: How Azure strengthens reliability for mission-critical workloads",
+      "summary": "Azure Failure Prediction and Detection (AFPD) helps reduce interruptions by predicting hardware failures, moving eligible workloads, and notifying customers when action is needed. See what that means for SAP on Azure and",
+      "date": "2026-11-04T16:00:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/predicting-and-detecting-failures-how-azure-strengthens-reliability-for-mission-critical-workloads/",
+      "slug": "predicting-and-detecting-failures-how-azure-strengthens-reliability-for-mission",
+      "image": "/api/og?title=Predicting%20and%20detecting%20failures%3A%20How%20Azure%20strengthens%20reliability%20for%20mission-critical%20workloads&category=azure"
+    },
+    {
       "title": "Raising the bar for 8 GB Windows 11 PCs: what’s improved and how to get it",
       "summary": "A great Windows experience starts with a simple expectation: your PC should respond when you need it to. You open Start. You launch an app. You switch back to the document or browser tab you left an hour ago and pick up ",
       "date": "2026-11-03T17:00:48.000Z",
@@ -36,6 +45,15 @@
       "sourceUrl": "https://blogs.windows.com/msedgedev/2026/11/02/client-side-threat-detection-how-scareware-blocker-uncovered-malicious-notification-abuse/",
       "slug": "client-side-threat-detection-how-scareware-blocker-uncovered-malicious-notificat",
       "image": "/api/og?title=Client-side%20threat%20detection%3A%20how%20Scareware%20blocker%20uncovered%20malicious%20notification%20abuse&category=windows"
+    },
+    {
+      "title": "The Platform Behind the Next AI Breakthrough",
+      "summary": "The next frontier of AI is coming into focus as agents take on longer, more strategic work. The post The Platform Behind the Next AI Breakthrough appeared first on Microsoft Azure Blog.",
+      "date": "2026-11-02T20:52:22.000Z",
+      "category": "azure",
+      "sourceUrl": "https://www.wired.com/sponsored/story/the-platform-behind-the-next-ai-breakthrough/",
+      "slug": "the-platform-behind-the-next-ai-breakthrough",
+      "image": "/api/og?title=The%20Platform%20Behind%20the%20Next%20AI%20Breakthrough&category=azure"
     },
     {
       "title": "Announcing new builds for 30 October 2026",
@@ -162,24 +180,6 @@
       "sourceUrl": "https://azure.microsoft.com/en-us/blog/microsoft-named-a-leader-in-the-2026-gartner-magic-quadrant-for-server-virtualization-platforms/",
       "slug": "microsoft-named-a-leader-in-the-2026-gartner-magic-quadrant-for-server-virtualiz",
       "image": "/api/og?title=Microsoft%20named%20a%20Leader%20in%20the%202026%20Gartner%C2%AE%20Magic%20Quadrant%E2%84%A2%20for%20Server%20Virtualization%20Platforms&category=azure"
-    },
-    {
-      "title": "Advancing hardware security with open-source Integrated HSM technology",
-      "summary": "Explore how Microsoft is advancing hardware security through open-source Integrated HSM technology, collaboration, and cryptographic key protection. The post Advancing hardware security with open-source Integrated HSM te",
-      "date": "2026-10-13T16:15:00.000Z",
-      "category": "azure",
-      "sourceUrl": "https://azure.microsoft.com/en-us/blog/advancing-hardware-security-with-open-source-integrated-hsm-technology/",
-      "slug": "advancing-hardware-security-with-open-source-integrated-hsm-technology",
-      "image": "/api/og?title=Advancing%20hardware%20security%20with%20open-source%20Integrated%20HSM%20technology&category=azure"
-    },
-    {
-      "title": "Infrastructure for the frontier era: Scaling intelligence through open industry collaboration",
-      "summary": "AI is reaching such a pivotal moment, and the focus is shifting from building larger frontier models to intelligence that delivers practical impact. The post Infrastructure for the frontier era: Scaling intelligence thro",
-      "date": "2026-10-13T16:15:00.000Z",
-      "category": "azure",
-      "sourceUrl": "https://azure.microsoft.com/en-us/blog/infrastructure-for-the-frontier-era-scaling-intelligence-through-open-industry-collaboration/",
-      "slug": "infrastructure-for-the-frontier-era-scaling-intelligence-through-open-industry-c",
-      "image": "/api/og?title=Infrastructure%20for%20the%20frontier%20era%3A%20Scaling%20intelligence%20through%20open%20industry%20collaboration&category=azure"
     }
   ]
 }
