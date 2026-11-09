@@ -1,5 +1,5 @@
 {
-  "lastFetchedAt": "2026-11-09T11:16:37.130Z",
+  "lastFetchedAt": "2026-11-09T21:36:23.333Z",
   "processed": [
     {
       "guid": "https://blogs.windows.com/blog/2026/03/30/announcing-windows-11-insider-preview-build-for-canary-channel-29558-1000/",
@@ -1112,6 +1112,14 @@
       "category": "windows",
       "riskLevel": "SAFE",
       "savedAt": "2026-11-06T18:18:47.022Z"
+    },
+    {
+      "guid": "https://blogs.windows.com/blog/2026/11/09/shop-faster-and-save-money-with-built-in-tools-in-microsoft-edge/",
+      "url": "https://blogs.windows.com/msedgedev/2026/11/09/shop-faster-and-save-money-with-built-in-tools-in-microsoft-edge/",
+      "slug": "shop-faster-and-save-money-with-built-in-tools-in-microsoft-edge",
+      "category": "windows",
+      "riskLevel": "SAFE",
+      "savedAt": "2026-11-09T21:36:23.333Z"
     }
   ]
 }
