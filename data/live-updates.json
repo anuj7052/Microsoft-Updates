@@ -1,6 +1,15 @@
 {
-  "updatedAt": "2026-11-13T17:06:23.450Z",
+  "updatedAt": "2026-11-13T22:48:19.748Z",
   "items": [
+    {
+      "title": "Announcing new builds for 13 November 2026",
+      "summary": "Hello Windows Insiders, Today, we’re releasing new Windows 11 Insider Preview builds to the Beta (26H1), Experimental (26H1) and Experimental (Future Platforms) channels only. We will provide updates on the regular Beta ",
+      "date": "2026-11-13T18:05:09.000Z",
+      "category": "windows",
+      "sourceUrl": "https://blogs.windows.com/windows-insider/2026/11/13/announcing-new-builds-for-13-november-2026/",
+      "slug": "announcing-new-builds-for-13-november-2026",
+      "image": "/api/og?title=Announcing%20new%20builds%20for%2013%20November%202026&category=windows"
+    },
     {
       "title": "Shop faster and save money with built-in tools in Microsoft Edge",
       "summary": "It's 11 p.m. Fifteen tabs are open, the reviews don't agree, and you've checked the price three times. Then, just when you think you're done, a promo code box appears with a code you don't have. So, you keep shopping, lo",
@@ -171,15 +180,6 @@
       "sourceUrl": "https://azure.microsoft.com/en-us/blog/designing-for-sovereign-ai-a-shared-foundation-from-edge-to-cloud/",
       "slug": "designing-for-sovereign-ai-a-shared-foundation-from-edge-to-cloud",
       "image": "/api/og?title=Designing%20for%20sovereign%20AI%3A%20A%20shared%20foundation%20from%20edge%20to%20cloud&category=azure"
-    },
-    {
-      "title": "Announcing new builds for 16 October 2026",
-      "summary": "Hello Windows Insiders, Today, we’re releasing new Windows 11 Insider Preview builds to the Beta, Experimental, and Release Preview channels. New builds this week Select your channel below to view its release notes: B Th",
-      "date": "2026-10-16T17:04:32.000Z",
-      "category": "windows",
-      "sourceUrl": "https://blogs.windows.com/windows-insider/2026/10/16/announcing-new-builds-for-16-october-2026/",
-      "slug": "announcing-new-builds-for-16-october-2026",
-      "image": "/api/og?title=Announcing%20new%20builds%20for%2016%20October%202026&category=windows"
     }
   ]
 }
