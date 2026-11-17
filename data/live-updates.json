@@ -1,6 +1,42 @@
 {
-  "updatedAt": "2026-11-17T10:35:53.424Z",
+  "updatedAt": "2026-11-17T19:44:04.303Z",
   "items": [
+    {
+      "title": "Edge for Business becomes the most used enterprise browser and unveils Ignite 2026 innovations",
+      "summary": "https://www.youtube.com/watch?v=eK7msluMltY Summary: Edge for Business is the most used enterprise browser in the world. At Microsoft Ignite 2026, we're introducing new ways for users and agents to get more done. Deeper ",
+      "date": "2026-11-17T18:40:43.000Z",
+      "category": "windows",
+      "sourceUrl": "https://blogs.windows.com/msedgedev/2026/11/17/edge-for-business-ignite-2026-innovations/",
+      "slug": "edge-for-business-becomes-the-most-used-enterprise-browser-and-unveils-ignite-20",
+      "image": "/api/og?title=Edge%20for%20Business%20becomes%20the%20most%20used%20enterprise%20browser%20and%20unveils%20Ignite%202026%20innovations&category=windows"
+    },
+    {
+      "title": "Microsoft Ignite 2026: Building Windows for the next era of work",
+      "summary": "Every major shift in computing has changed what people can do at work, and The post Microsoft Ignite 2026: Building Windows for the next era of work appeared first on Windows Blog.",
+      "date": "2026-11-17T18:20:56.000Z",
+      "category": "windows",
+      "sourceUrl": "https://blogs.windows.com/windowsexperience/2026/11/17/microsoft-ignite-2026-building-windows-for-the-next-era-of-work/",
+      "slug": "microsoft-ignite-2026-building-windows-for-the-next-era-of-work",
+      "image": "/api/og?title=Microsoft%20Ignite%202026%3A%20Building%20Windows%20for%20the%20next%20era%20of%20work&category=windows"
+    },
+    {
+      "title": "Windows security at Ignite 2026: Start secure, protect what matters, prepare for AI",
+      "summary": "AI is changing the threat landscape as fast as it is changing the way we work. Attackers are using AI to find vulnerabilities, build exploits and scale their campaigns faster than ever, shrinking the time between a weakn",
+      "date": "2026-11-17T18:15:58.000Z",
+      "category": "windows",
+      "sourceUrl": "https://blogs.windows.com/windowsexperience/2026/11/17/windows-security-at-ignite-2026-start-secure-protect-what-matters-prepare-for-ai/",
+      "slug": "windows-security-at-ignite-2026-start-secure-protect-what-matters-prepare-for-ai",
+      "image": "/api/og?title=Windows%20security%20at%20Ignite%202026%3A%20Start%20secure%2C%20protect%20what%20matters%2C%20prepare%20for%20AI&category=windows"
+    },
+    {
+      "title": "Enterprise Deployment of Governed Agents on Windows",
+      "summary": "As AI agents become more capable, they promise substantial productivity gains across enterprise workflows. At the same time, they can collapse familiar execution boundaries and introduce new risk paths—from agent to huma",
+      "date": "2026-11-17T18:15:01.000Z",
+      "category": "windows",
+      "sourceUrl": "https://blogs.windows.com/windowsdeveloper/2026/11/17/enterprise-deployment-of-governed-agents-on-windows/",
+      "slug": "enterprise-deployment-of-governed-agents-on-windows",
+      "image": "/api/og?title=Enterprise%20Deployment%20of%20Governed%20Agents%20on%20Windows&category=windows"
+    },
     {
       "title": "Announcing new builds for 16 November 2026",
       "summary": "Hello Windows Insiders, Today, we’re releasing new Windows 11 Insider Preview builds to the Beta and Experimental channels. New builds this week Select your channel below to view its release notes: Beta: The post Announc",
@@ -92,24 +128,6 @@
       "image": "/api/og?title=Predicting%20and%20detecting%20failures%3A%20How%20Azure%20strengthens%20reliability%20for%20mission-critical%20workloads&category=azure"
     },
     {
-      "title": "Raising the bar for 8 GB Windows 11 PCs: what’s improved and how to get it",
-      "summary": "A great Windows experience starts with a simple expectation: your PC should respond when you need it to. You open Start. You launch an app. You switch back to the document or browser tab you left an hour ago and pick up ",
-      "date": "2026-11-03T17:00:48.000Z",
-      "category": "windows",
-      "sourceUrl": "https://blogs.windows.com/windowsexperience/2026/11/03/raising-the-bar-for-8-gb-windows-11-pcs-whats-improved-and-how-to-get-it/",
-      "slug": "raising-the-bar-for-8-gb-windows-11-pcs-whats-improved-and-how-to-get-it",
-      "image": "/api/og?title=Raising%20the%20bar%20for%208%20GB%20Windows%2011%20PCs%3A%20what%E2%80%99s%20improved%20and%20how%20to%20get%20it&category=windows"
-    },
-    {
-      "title": "Client-side threat detection: how Scareware blocker uncovered malicious notification abuse",
-      "summary": "Website notifications were designed to help us stay informed. They can alert you to a new message, remind you of an upcoming event, or share an important update from a service you trust. But scammers are turning this use",
-      "date": "2026-11-02T22:05:53.000Z",
-      "category": "windows",
-      "sourceUrl": "https://blogs.windows.com/msedgedev/2026/11/02/client-side-threat-detection-how-scareware-blocker-uncovered-malicious-notification-abuse/",
-      "slug": "client-side-threat-detection-how-scareware-blocker-uncovered-malicious-notificat",
-      "image": "/api/og?title=Client-side%20threat%20detection%3A%20how%20Scareware%20blocker%20uncovered%20malicious%20notification%20abuse&category=windows"
-    },
-    {
       "title": "The Platform Behind the Next AI Breakthrough",
       "summary": "The next frontier of AI is coming into focus as agents take on longer, more strategic work. The post The Platform Behind the Next AI Breakthrough appeared first on Microsoft Azure Blog.",
       "date": "2026-11-02T20:52:22.000Z",
@@ -119,15 +137,6 @@
       "image": "/api/og?title=The%20Platform%20Behind%20the%20Next%20AI%20Breakthrough&category=azure"
     },
     {
-      "title": "Announcing new builds for 30 October 2026",
-      "summary": "Hello Windows Insiders, Today, we’re releasing new Windows 11 Insider Preview builds to the Beta and Experimental channels, as well as introducing a new commercial Feedback Hub policy for commercial customers. New builds",
-      "date": "2026-10-30T17:05:33.000Z",
-      "category": "windows",
-      "sourceUrl": "https://blogs.windows.com/windows-insider/2026/10/30/announcing-new-builds-for-30-october-2026/",
-      "slug": "announcing-new-builds-for-30-october-2026",
-      "image": "/api/og?title=Announcing%20new%20builds%20for%2030%20October%202026&category=windows"
-    },
-    {
       "title": "Azure Cloud HSM Hardware Audit Logging: Verifiable audit trails for security and compliance",
       "summary": "Security, compliance, and operations teams can use this hardware-originated evidence for monitoring, compliance reporting, and forensic investigations. The post Azure Cloud HSM Hardware Audit Logging: Verifiable audit tr",
       "date": "2026-10-29T16:00:00.000Z",
@@ -135,15 +144,6 @@
       "sourceUrl": "https://azure.microsoft.com/en-us/blog/azure-cloud-hsm-hardware-audit-logging-verifiable-audit-trails-for-security-and-compliance/",
       "slug": "azure-cloud-hsm-hardware-audit-logging-verifiable-audit-trails-for-security-and",
       "image": "/api/og?title=Azure%20Cloud%20HSM%20Hardware%20Audit%20Logging%3A%20Verifiable%20audit%20trails%20for%20security%20and%20compliance&category=azure"
-    },
-    {
-      "title": "Edge is faster on Windows with Accelerated App Launches",
-      "summary": "We're excited to announce that Edge is the first browser to support accelerated app launches on Windows, delivering a faster and more consistent browser launch experience. With accelerated app launch, most Windows users ",
-      "date": "2026-10-29T15:56:55.000Z",
-      "category": "windows",
-      "sourceUrl": "https://blogs.windows.com/msedgedev/2026/10/29/edge-is-faster-on-windows-with-accelerated-app-launches/",
-      "slug": "edge-is-faster-on-windows-with-accelerated-app-launches",
-      "image": "/api/og?title=Edge%20is%20faster%20on%20Windows%20with%20Accelerated%20App%20Launches&category=windows"
     },
     {
       "title": "Introducing the Microsoft Copilot harness in Foundry Agent Service",

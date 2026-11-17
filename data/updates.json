@@ -1,5 +1,5 @@
 {
-  "lastFetchedAt": "2026-11-17T10:35:53.424Z",
+  "lastFetchedAt": "2026-11-17T19:44:04.305Z",
   "processed": [
     {
       "guid": "https://blogs.windows.com/blog/2026/03/30/announcing-windows-11-insider-preview-build-for-canary-channel-29558-1000/",
@@ -1136,6 +1136,38 @@
       "category": "windows",
       "riskLevel": "SAFE",
       "savedAt": "2026-11-17T02:00:16.141Z"
+    },
+    {
+      "guid": "https://blogs.windows.com/blog/2026/11/17/edge-for-business-ignite-2026-innovations/",
+      "url": "https://blogs.windows.com/msedgedev/2026/11/17/edge-for-business-ignite-2026-innovations/",
+      "slug": "edge-for-business-becomes-the-most-used-enterprise-browser-and-unveils-ignite-20",
+      "category": "windows",
+      "riskLevel": "SAFE",
+      "savedAt": "2026-11-17T19:44:04.304Z"
+    },
+    {
+      "guid": "https://blogs.windows.com/blog/2026/11/17/microsoft-ignite-2026-building-windows-for-the-next-era-of-work/",
+      "url": "https://blogs.windows.com/windowsexperience/2026/11/17/microsoft-ignite-2026-building-windows-for-the-next-era-of-work/",
+      "slug": "microsoft-ignite-2026-building-windows-for-the-next-era-of-work",
+      "category": "windows",
+      "riskLevel": "SAFE",
+      "savedAt": "2026-11-17T19:44:04.304Z"
+    },
+    {
+      "guid": "https://blogs.windows.com/blog/2026/11/17/windows-security-at-ignite-2026-start-secure-protect-what-matters-prepare-for-ai/",
+      "url": "https://blogs.windows.com/windowsexperience/2026/11/17/windows-security-at-ignite-2026-start-secure-protect-what-matters-prepare-for-ai/",
+      "slug": "windows-security-at-ignite-2026-start-secure-protect-what-matters-prepare-for-ai",
+      "category": "windows",
+      "riskLevel": "SAFE",
+      "savedAt": "2026-11-17T19:44:04.305Z"
+    },
+    {
+      "guid": "https://blogs.windows.com/blog/2026/11/17/enterprise-deployment-of-governed-agents-on-windows/",
+      "url": "https://blogs.windows.com/windowsdeveloper/2026/11/17/enterprise-deployment-of-governed-agents-on-windows/",
+      "slug": "enterprise-deployment-of-governed-agents-on-windows",
+      "category": "windows",
+      "riskLevel": "SAFE",
+      "savedAt": "2026-11-17T19:44:04.305Z"
     }
   ]
 }
