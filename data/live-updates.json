@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-18T02:18:11.590Z",
+  "updatedAt": "2026-11-18T10:37:04.433Z",
   "items": [
     {
       "title": "Edge for Business becomes the most used enterprise browser and unveils Ignite 2026 innovations",
@@ -11,6 +11,33 @@
       "image": "/api/og?title=Edge%20for%20Business%20becomes%20the%20most%20used%20enterprise%20browser%20and%20unveils%20Ignite%202026%20innovations&category=windows"
     },
     {
+      "title": "Microsoft and Oracle bring agentic AI into flow of enterprise work",
+      "summary": "Our new integrations let AI agents reason across Oracle’s business-critical data. The post Microsoft and Oracle bring agentic AI into flow of enterprise work appeared first on Microsoft Azure Blog.",
+      "date": "2026-11-17T18:35:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/microsoft-and-oracle-bring-agentic-ai-into-flow-of-enterprise-work/",
+      "slug": "microsoft-and-oracle-bring-agentic-ai-into-flow-of-enterprise-work",
+      "image": "/api/og?title=Microsoft%20and%20Oracle%20bring%20agentic%20AI%20into%20flow%20of%20enterprise%20work&category=azure"
+    },
+    {
+      "title": "Introducing Azure Catalyst agentic modernization and new AI infrastructure innovations",
+      "summary": "At Microsoft Ignite 2026, we’ll showcase what’s possible when models, silicon, and cloud infrastructure converge into a single, co-engineered system. By tuning the entire stack, and introducing new capabilities across is",
+      "date": "2026-11-17T18:35:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/introducing-azure-catalyst-agentic-modernization-and-new-ai-infrastructure-innovations/",
+      "slug": "introducing-azure-catalyst-agentic-modernization-and-new-ai-infrastructure-innov",
+      "image": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/1307382-azurecatalyst"
+    },
+    {
+      "title": "Microsoft Ignite 2026: What&#8217;s new in Azure, the platform purpose-built for AI",
+      "summary": "At Microsoft Ignite, we're sharing what's new across every layer of the platform. New capabilities spanning compute, storage, and networking let you run AI at scale with the control of your own infrastructure, without ha",
+      "date": "2026-11-17T18:35:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/microsoft-ignite-2026-whats-new-in-azure-the-platform-purpose-built-for-ai/",
+      "slug": "microsoft-ignite-2026-what8217s-new-in-azure-the-platform-purpose-built-for-ai",
+      "image": "/api/og?title=Microsoft%20Ignite%202026%3A%20What%26%238217%3Bs%20new%20in%20Azure%2C%20the%20platform%20purpose-built%20for%20AI&category=azure"
+    },
+    {
       "title": "Microsoft Ignite 2026: Building Windows for the next era of work",
       "summary": "Every major shift in computing has changed what people can do at work, and The post Microsoft Ignite 2026: Building Windows for the next era of work appeared first on Windows Blog.",
       "date": "2026-11-17T18:20:56.000Z",
@@ -18,6 +45,15 @@
       "sourceUrl": "https://blogs.windows.com/windowsexperience/2026/11/17/microsoft-ignite-2026-building-windows-for-the-next-era-of-work/",
       "slug": "microsoft-ignite-2026-building-windows-for-the-next-era-of-work",
       "image": "/api/og?title=Microsoft%20Ignite%202026%3A%20Building%20Windows%20for%20the%20next%20era%20of%20work&category=windows"
+    },
+    {
+      "title": "Azure Cobalt 200 VMs now available, proven on real workloads and built for the agentic era",
+      "summary": "Azure Cobalt 200 VMs bring improved performance and efficiency to cloud-native applications, databases, developer tools, and agentic AI workloads. The post Azure Cobalt 200 VMs now available, proven on real workloads and",
+      "date": "2026-11-17T18:20:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/azure-cobalt-200-vms-now-available-proven-on-real-workloads-and-built-for-the-agentic-era/",
+      "slug": "azure-cobalt-200-vms-now-available-proven-on-real-workloads-and-built-for-the-ag",
+      "image": "/api/og?title=Azure%20Cobalt%20200%20VMs%20now%20available%2C%20proven%20on%20real%20workloads%20and%20built%20for%20the%20agentic%20era&category=azure"
     },
     {
       "title": "Windows security at Ignite 2026: Start secure, protect what matters, prepare for AI",
@@ -36,6 +72,24 @@
       "sourceUrl": "https://blogs.windows.com/windowsdeveloper/2026/11/17/enterprise-deployment-of-governed-agents-on-windows/",
       "slug": "enterprise-deployment-of-governed-agents-on-windows",
       "image": "/api/og?title=Enterprise%20Deployment%20of%20Governed%20Agents%20on%20Windows&category=windows"
+    },
+    {
+      "title": "Continuous improvement comes to Microsoft Foundry",
+      "summary": "Discover how continuous improvement in Microsoft Foundry helps organizations evaluate, optimize, and improve agents over time while keeping teams in control. The post Continuous improvement comes to Microsoft Foundry app",
+      "date": "2026-11-17T18:15:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/continuous-improvement-comes-to-microsoft-foundry/",
+      "slug": "continuous-improvement-comes-to-microsoft-foundry",
+      "image": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/1307367-microsoftfoundry2"
+    },
+    {
+      "title": "Introducing the new Microsoft IQ: Putting your organization&#8217;s intelligence to work in every agent",
+      "summary": "Today, we are announcing Microsoft IQ, the enterprise context management platform that helps organizations create their own IQ. What sets an organization apart is everything around the model: its own intelligence. The po",
+      "date": "2026-11-17T18:05:00.000Z",
+      "category": "azure",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/introducing-the-new-microsoft-iq-putting-your-organizations-intelligence-to-work-in-every-agent/",
+      "slug": "introducing-the-new-microsoft-iq-putting-your-organization8217s-intelligence-to",
+      "image": "/api/og?title=Introducing%20the%20new%20Microsoft%20IQ%3A%20Putting%20your%20organization%26%238217%3Bs%20intelligence%20to%20work%20in%20every%20ag&category=azure"
     },
     {
       "title": "Announcing new builds for 16 November 2026",
@@ -126,60 +180,6 @@
       "sourceUrl": "https://azure.microsoft.com/en-us/blog/predicting-and-detecting-failures-how-azure-strengthens-reliability-for-mission-critical-workloads/",
       "slug": "predicting-and-detecting-failures-how-azure-strengthens-reliability-for-mission",
       "image": "/api/og?title=Predicting%20and%20detecting%20failures%3A%20How%20Azure%20strengthens%20reliability%20for%20mission-critical%20workloads&category=azure"
-    },
-    {
-      "title": "The Platform Behind the Next AI Breakthrough",
-      "summary": "The next frontier of AI is coming into focus as agents take on longer, more strategic work. The post The Platform Behind the Next AI Breakthrough appeared first on Microsoft Azure Blog.",
-      "date": "2026-11-02T20:52:22.000Z",
-      "category": "azure",
-      "sourceUrl": "https://www.wired.com/sponsored/story/the-platform-behind-the-next-ai-breakthrough/",
-      "slug": "the-platform-behind-the-next-ai-breakthrough",
-      "image": "/api/og?title=The%20Platform%20Behind%20the%20Next%20AI%20Breakthrough&category=azure"
-    },
-    {
-      "title": "Azure Cloud HSM Hardware Audit Logging: Verifiable audit trails for security and compliance",
-      "summary": "Security, compliance, and operations teams can use this hardware-originated evidence for monitoring, compliance reporting, and forensic investigations. The post Azure Cloud HSM Hardware Audit Logging: Verifiable audit tr",
-      "date": "2026-10-29T16:00:00.000Z",
-      "category": "azure",
-      "sourceUrl": "https://azure.microsoft.com/en-us/blog/azure-cloud-hsm-hardware-audit-logging-verifiable-audit-trails-for-security-and-compliance/",
-      "slug": "azure-cloud-hsm-hardware-audit-logging-verifiable-audit-trails-for-security-and",
-      "image": "/api/og?title=Azure%20Cloud%20HSM%20Hardware%20Audit%20Logging%3A%20Verifiable%20audit%20trails%20for%20security%20and%20compliance&category=azure"
-    },
-    {
-      "title": "Introducing the Microsoft Copilot harness in Foundry Agent Service",
-      "summary": "Today, we’re introducing the Microsoft Copilot harness in Foundry Agent Service in public preview. The post Introducing the Microsoft Copilot harness in Foundry Agent Service appeared first on Microsoft Azure Blog.",
-      "date": "2026-10-28T17:40:56.000Z",
-      "category": "azure",
-      "sourceUrl": "https://devblogs.microsoft.com/foundry/microsoft-copilot-harness-in-foundry/",
-      "slug": "introducing-the-microsoft-copilot-harness-in-foundry-agent-service",
-      "image": "/api/og?title=Introducing%20the%20Microsoft%20Copilot%20harness%20in%20Foundry%20Agent%20Service&category=azure"
-    },
-    {
-      "title": "Scale reservoir uncertainty analysis with agile reservoir modeling",
-      "summary": "As subsurface data grows in scale and complexity, teams need a faster, more connected way to transform uncertainty into actionable decisions. The post Scale reservoir uncertainty analysis with agile reservoir modeling ap",
-      "date": "2026-10-26T16:00:00.000Z",
-      "category": "azure",
-      "sourceUrl": "https://azure.microsoft.com/en-us/blog/scale-reservoir-uncertainty-analysis-with-agile-reservoir-modeling/",
-      "slug": "scale-reservoir-uncertainty-analysis-with-agile-reservoir-modeling",
-      "image": "/api/og?title=Scale%20reservoir%20uncertainty%20analysis%20with%20agile%20reservoir%20modeling&category=azure"
-    },
-    {
-      "title": "Advancing digital sovereignty with greater control and choice",
-      "summary": "Across conversations with leaders in government, critical infrastructure and regulated industries, one priority consistently rises to the top: putting technology to work on the most important systems while maintaining th",
-      "date": "2026-10-20T17:34:47.000Z",
-      "category": "azure",
-      "sourceUrl": "https://blogs.microsoft.com/blog/2026/10/20/advancing-digital-sovereignty-with-greater-control-and-choice/",
-      "slug": "advancing-digital-sovereignty-with-greater-control-and-choice",
-      "image": "/api/og?title=Advancing%20digital%20sovereignty%20with%20greater%20control%20and%20choice&category=azure"
-    },
-    {
-      "title": "Designing for sovereign AI: A shared foundation from edge to cloud",
-      "summary": "A flexible sovereign architecture allows organizations to place each workload in the right environment, apply the controls it requires, and maintain consistency. The post Designing for sovereign AI: A shared foundation f",
-      "date": "2026-10-19T19:00:00.000Z",
-      "category": "azure",
-      "sourceUrl": "https://azure.microsoft.com/en-us/blog/designing-for-sovereign-ai-a-shared-foundation-from-edge-to-cloud/",
-      "slug": "designing-for-sovereign-ai-a-shared-foundation-from-edge-to-cloud",
-      "image": "/api/og?title=Designing%20for%20sovereign%20AI%3A%20A%20shared%20foundation%20from%20edge%20to%20cloud&category=azure"
     }
   ]
 }
