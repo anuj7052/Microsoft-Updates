@@ -1,6 +1,15 @@
 {
-  "updatedAt": "2026-11-19T18:34:26.962Z",
+  "updatedAt": "2026-11-20T01:09:40.081Z",
   "items": [
+    {
+      "title": "Hybrid intelligence on the Web: Introducing Aion Instruct and Prompt API in Microsoft Edge",
+      "summary": "Rapidly evolving AI capabilities are redefining what sites can do for users on the web. With on-device AI in Microsoft The post Hybrid intelligence on the Web: Introducing Aion Instruct and Prompt API in Microsoft Edge a",
+      "date": "2026-11-19T23:08:46.000Z",
+      "category": "windows",
+      "sourceUrl": "https://blogs.windows.com/msedgedev/2026/11/19/hybrid-intelligence-on-the-web-introducing-aion-instruct-and-prompt-api-in-microsoft-edge/",
+      "slug": "hybrid-intelligence-on-the-web-introducing-aion-instruct-and-prompt-api-in-micro",
+      "image": "/api/og?title=Hybrid%20intelligence%20on%20the%20Web%3A%20Introducing%20Aion%20Instruct%20and%20Prompt%20API%20in%20Microsoft%20Edge&category=windows"
+    },
     {
       "title": "Edge for Business becomes the most used enterprise browser and unveils Ignite 2026 innovations",
       "summary": "https://www.youtube.com/watch?v=eK7msluMltY Summary: Edge for Business is the most used enterprise browser in the world. At Microsoft Ignite 2026, we're introducing new ways for users and agents to get more done. Deeper ",
@@ -153,15 +162,6 @@
       "sourceUrl": "https://azure.microsoft.com/en-us/blog/stop-treating-agents-as-one-off-projects-and-start-running-them-as-a-continuous-discipline/",
       "slug": "stop-treating-agents-as-one-off-projects-and-start-running-them-as-a-continuous",
       "image": "/api/og?title=Stop%20treating%20agents%20as%20one-off%20projects%20and%20start%20running%20them%20as%20a%20continuous%20discipline&category=azure"
-    },
-    {
-      "title": "Discover more of what matters, every time you open a new tab in Microsoft Edge",
-      "summary": "A new browser tab is full of possibilities. It can be the start of something you set out to do—or a chance to discover something you didn't know. As the amount of content online has grown, Edge users have told us they wa",
-      "date": "2026-11-05T16:56:07.000Z",
-      "category": "windows",
-      "sourceUrl": "https://blogs.windows.com/msedgedev/2026/11/05/discover-more-of-what-matters-every-time-you-open-a-new-tab-in-microsoft-edge/",
-      "slug": "discover-more-of-what-matters-every-time-you-open-a-new-tab-in-microsoft-edge",
-      "image": "/api/og?title=Discover%20more%20of%20what%20matters%2C%20every%20time%20you%20open%20a%20new%20tab%20in%20Microsoft%20Edge&category=windows"
     },
     {
       "title": "Designing Azure silicon on Azure silicon: EDA workloads on Cobalt 200",
