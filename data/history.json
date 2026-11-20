@@ -1,5 +1,5 @@
 {
-  "lastFetchedAt": "2026-11-20T17:57:59.609Z",
+  "lastFetchedAt": "2026-11-20T23:56:09.797Z",
   "seenGuids": [
     "https://blogs.windows.com/blog/2026/04/02/part-3-babylon-js-9-0-openpbr-and-additional-engine-updates/",
     "https://blogs.windows.com/blog/2026/04/03/announcing-windows-11-insider-preview-build-26220-8148-beta-channel/",
@@ -127,7 +127,8 @@
     "https://blogs.windows.com/blog/2026/11/17/microsoft-ignite-2026-building-windows-for-the-next-era-of-work/",
     "https://blogs.windows.com/blog/2026/11/17/windows-security-at-ignite-2026-start-secure-protect-what-matters-prepare-for-ai/",
     "https://blogs.windows.com/blog/2026/11/17/enterprise-deployment-of-governed-agents-on-windows/",
-    "https://blogs.windows.com/blog/2026/11/19/hybrid-intelligence-on-the-web-introducing-aion-instruct-and-prompt-api-in-microsoft-edge/"
+    "https://blogs.windows.com/blog/2026/11/19/hybrid-intelligence-on-the-web-introducing-aion-instruct-and-prompt-api-in-microsoft-edge/",
+    "https://blogs.windows.com/blog/2026/11/20/announcing-new-builds-for-20-november-2026/"
   ],
-  "totalArticles": 127
+  "totalArticles": 128
 }

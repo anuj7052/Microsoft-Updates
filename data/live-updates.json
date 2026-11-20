@@ -1,6 +1,15 @@
 {
-  "updatedAt": "2026-11-20T17:57:59.609Z",
+  "updatedAt": "2026-11-20T23:56:09.796Z",
   "items": [
+    {
+      "title": "Announcing new builds for 20 November 2026",
+      "summary": "Hello Windows Insiders, Today, we’re releasing new Windows 11 Insider Preview builds to the Beta and Experimental channels. New builds this week Select your channel below to view its release notes: Beta: The post Announc",
+      "date": "2026-11-20T18:05:27.000Z",
+      "category": "windows",
+      "sourceUrl": "https://blogs.windows.com/windows-insider/2026/11/20/announcing-new-builds-for-20-november-2026/",
+      "slug": "announcing-new-builds-for-20-november-2026",
+      "image": "/api/og?title=Announcing%20new%20builds%20for%2020%20November%202026&category=windows"
+    },
     {
       "title": "Hybrid intelligence on the Web: Introducing Aion Instruct and Prompt API in Microsoft Edge",
       "summary": "Rapidly evolving AI capabilities are redefining what sites can do for users on the web. With on-device AI in Microsoft The post Hybrid intelligence on the Web: Introducing Aion Instruct and Prompt API in Microsoft Edge a",
@@ -144,15 +153,6 @@
       "sourceUrl": "https://blogs.windows.com/windows-insider/2026/11/06/announcing-new-builds-for-6-november-2026/",
       "slug": "announcing-new-builds-for-6-november-2026",
       "image": "/api/og?title=Announcing%20new%20builds%20for%206%20November%202026&category=windows"
-    },
-    {
-      "title": "A new standard for vulnerability management in the AI era",
-      "summary": "Windows is evolving vulnerability management as advances in AI make it possible to discover and analyze security vulnerabilities faster and at greater scale. AI is accelerating vulnerability discovery on both sides. It c",
-      "date": "2026-11-05T17:00:49.000Z",
-      "category": "windows",
-      "sourceUrl": "https://blogs.windows.com/windowsexperience/2026/11/05/a-new-standard-for-vulnerability-management-in-the-ai-era/",
-      "slug": "a-new-standard-for-vulnerability-management-in-the-ai-era",
-      "image": "/api/og?title=A%20new%20standard%20for%20vulnerability%20management%20in%20the%20AI%20era&category=windows"
     },
     {
       "title": "Stop treating agents as one-off projects and start running them as a continuous discipline",
